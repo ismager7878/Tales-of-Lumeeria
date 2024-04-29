@@ -26,31 +26,92 @@
         {
           "colLabels": ["Soulburn Die"],
           "rows": [
-            [
-              "{@dice 1d6}",
-              "{@dice 1d6}",
-              "{@dice 1d6}",
-              "{@dice 1d6}",
-              "{@dice 1d8}",
-              "{@dice 1d8}",
-              "{@dice 1d8}",
-              "{@dice 1d8}",
-              "{@dice 1d8}",
-              "{@dice 1d8}",
-              "{@dice 1d10}",
-              "{@dice 1d10}",
-              "{@dice 1d10}",
-              "{@dice 1d10}",
-              "{@dice 1d10}",
-              "{@dice 1d10}",
-              "{@dice 1d12}",
-              "{@dice 1d12}",
-              "{@dice 1d12}",
-              "{@dice 1d12}"
-            ]
+            ["{@dice 1d6}"],
+            ["{@dice 1d6}"],
+            ["{@dice 1d6}"],
+            ["{@dice 1d6}"],
+            ["{@dice 1d8}"],
+            ["{@dice 1d8}"],
+            ["{@dice 1d8}"],
+            ["{@dice 1d8}"],
+            ["{@dice 1d8}"],
+            ["{@dice 1d8}"],
+            ["{@dice 1d10}"],
+            ["{@dice 1d10}"],
+            ["{@dice 1d10}"],
+            ["{@dice 1d10}"],
+            ["{@dice 1d10}"],
+            ["{@dice 1d10}"],
+            ["{@dice 1d12}"],
+            ["{@dice 1d12}"],
+            ["{@dice 1d12}"],
+            ["{@dice 1d12}"]
           ]
         }
-      ]
+      ],
+      "startingProficiencies": {
+        "armor": ["light", "medium", "shield"],
+        "weapons": ["simple", "martial"],
+        "tools": ["None"],
+        "skills": [
+          {
+            "choose": {
+              "from": [
+                "athletics",
+                "acrobatics",
+                "medicine",
+                "persuasion",
+                "intimidation",
+                "history",
+                "arcana",
+                "insight"
+              ],
+              "count": 2
+            }
+          }
+        ]
+      },
+      "startingEquipment": {
+        "additionalFromBackground": true,
+        "default": [
+          "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} or (b) two {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+          "(a) a {@item light crossbow|phb} and {@item bolts (20)|phb|20 bolts} or (b) an {@item handaxe|phb|two handaxes}",
+          "(a) {@item stutted leather armor|phb} and {@item scale mail|phb}"
+        ]
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13
+        },
+        "proficienciesGained": {
+          "armor": ["light"],
+          "weapons": ["simple"]
+        }
+      },
+      "classFeatures": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "classFeature": [],
+      "subclassFeature": []
     }
   ],
   "spell": [
