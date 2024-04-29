@@ -9,7 +9,6 @@
         "url": "https://1drv.ms/o/s!AoDIzXs213kGjmopHGAgx-BDfuCh?e=HZtHvD",
         "authors": ["Josh Oak"],
         "convertedBy": ["Josh Oak"],
-        "targetSchema": "1.1.0",
         "color": "5c0000"
       }
     ]
@@ -110,9 +109,7 @@
         "",
         "",
         ""
-      ],
-      "classFeature": [],
-      "subclassFeature": []
+      ]
     }
   ]
 }
