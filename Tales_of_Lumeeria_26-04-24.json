@@ -6,6 +6,7 @@
         "abbreviation": "ToL",
         "full": "Tales of Lumeeria",
         "version": "1.0.0",
+        "targetSchema": "1.1.0",
         "url": "https://1drv.ms/o/s!AoDIzXs213kGjmopHGAgx-BDfuCh?e=HZtHvD",
         "authors": ["Josh Oak"],
         "convertedBy": ["Josh Oak"],
