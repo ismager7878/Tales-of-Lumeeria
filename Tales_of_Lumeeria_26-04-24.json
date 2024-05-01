@@ -230,7 +230,7 @@
         {
           "type": "abilityDc",
           "name": "Soul Power",
-          "attributes": ["chosen Mental Stat"]
+          "attributes": ["chosen mental stat"]
         }
       ]
     },
@@ -386,7 +386,7 @@
         "At 13th level, your control over soul manipulation allows you to augment your strikes  ensuring their accuracy at the expense of your own vitality.",
         "When you make an attack roll and it is about to miss, you can choose to roll a Soulburn Die and add the amount rolled to your attack roll. However, using this ability inflicts necrotic damage upon yourself equal to the result rolled on the Soulburn Die.",
         "If the added value from the Soulburn Die still does not result in a successful hit, you can choose to roll an additional Soulburn Die and repeat the process. You can continue to roll additional Soulburn Dice in this manner until you either hit your target or choose not to roll further.",
-        "You can use this feature equal to your chosen {@classFeature Mental Stat|Soulburner|ToL|1} modifier. Once you have expended all uses, you must finish a long rest before you can use this feature again."
+        "You can use this feature equal to your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} modifier. Once you have expended all uses, you must finish a long rest before you can use this feature again."
       ]
     },
     {
@@ -436,7 +436,7 @@
       "level": 17,
       "entries": [
         "At 17th level, you can channel the raw, unstable power of your soul into a devastating melee attack.",
-        "As a bonus action, you unleash Unstable Surge. The next time you hit a creature with a melee weapon attack, it deals an extra {@dice 6d12} + Your chosen {@classFeature Mental Stat|Soulburner|ToL|1} (Minimum of +1) necrotic damage.",
+        "As a bonus action, you unleash Unstable Surge. The next time you hit a creature with a melee weapon attack, it deals an extra {@dice 6d12} + Your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} (Minimum of +1) necrotic damage.",
         "However this comes at a price. Your accuracy wavers and for as long as the Unstable Surge is active, all your bonuses to your attack roll, including magical weapon bonuses, momentarily vanish. As well as you rolling at disadvantage.",
         "After Unstable Surge has been used, roll a {@dice d6}. The result of the {@dice d6} determines how many long rest's you must take before using this feature again. Additionally you must roll 2 of your soulburn die. The result of these equal to the amount of years taken from your life expectancy. As you've burned away those years."
       ]
@@ -544,7 +544,7 @@
       "header": 2,
       "entries": [
         "At 10th level, your {@subclassFeature Lifesteal|Soulburner|ToL|Soulstealer|ToL|7} ability undergoes a profound transformation. ",
-        "When activating {@subclassFeature Lifesteal|Soulburner|ToL|Soulstealer|ToL|7}, you now add you chosen {@classFeature Mental Stat|Soulburner|ToL|1} modifier to the necrotic damage dealt by the ability (minimum of +1)"
+        "When activating {@subclassFeature Lifesteal|Soulburner|ToL|Soulstealer|ToL|7}, you now add you chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} modifier to the necrotic damage dealt by the ability (minimum of +1)"
       ]
     },
     {
@@ -605,18 +605,43 @@
         "To cast a spell, you must roll soulburn dice equal to the spell's level and take that amount of necrotic damage. For example, casting a 1st-level spell requires rolling 1 soulburn die, while casting a 3rd-level spell requires rolling 3 soulburn dice.",
         {
           "type": "entries",
-          "name": "Spell Slots",
+          "name": "Spell Slots:",
           "entries": [
             "The Soulkeeper does not use traditional spell slots to cast spells. Instead, they expend soulburn dice, sacrificing fragments of their own soul to manifest arcane effects. The number of soulburn dice required to cast a spell depends on the level of the spell being cast, as outlined in the Soulkeeper Class table."
           ]
         },
         {
           "type": "entries",
-          "name": "Spells Know",
+          "name": "Spells Known:",
           "entries": [
             "Starting at 3rd level, you know three 1st-level spells from the Soulkeeper spell list. Every other level, you learn an additional spell, expanding your magical repertoire. You can choose any spell from the Soulkeeper spell list with a level you can cast. This and the total number of spells you know is listed in the Spells Known and Spell level column of the Soulkeeper Class table. The Soulkeeper shares its spell list with Wizards.",
-            "In the arcane arts of the Soulkeeper, your chosen {@classFeature Mental Stat|Soulburner|ToL|1} serves as your conduit for casting spells.",
-            "When casting spells as a Soulkeeper, you utilize your chosen {@classFeature Mental Stat|Soulburner|ToL|1|mental stat} as your spellcasting ability. This stat governs the effectiveness of your spells and determines their saving throw DC and attack rolls."
+            "In the arcane arts of the Soulkeeper, your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} serves as your conduit for casting spells."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Ability:",
+          "entries": [
+            "When casting spells as a Soulkeeper, you utilize your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} as your spellcasting ability. This stat governs the effectiveness of your spells and determines their saving throw DC and attack rolls.",
+            "The formular for your spell save DC and spell attack modifier are as follows:",
+            " ",
+            {
+              "type": "abilityDc",
+              "name": "Spell",
+              "attributes": ["chosen mental stat"]
+            },
+            {
+              "type": "abilityAttackMod",
+              "name": "Spell",
+              "attributes": ["chosen mental stat"]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Spellcasting Focus:",
+          "entries": [
+            "You can use an {@item arcane focus|phb} as a spellcasting focus for your soulkeeper spells."
           ]
         }
       ]
@@ -630,7 +655,9 @@
       "subclassSource": "ToL",
       "level": 3,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 3rd level, you become proficient in two skills associated with your chosen mental stat as well as acquiring an arcane focus. "
+      ]
     },
     {
       "name": "Spell Predator",
@@ -641,7 +668,19 @@
       "subclassSource": "ToL",
       "level": 3,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 3rd level, you gain the ability to harvest spells from spellcasters, absorbing their magical knowledge into your own repertoire.",
+        "As an action, you can attempt to harvest a spell from a non-friendly spellcaster within 15 feet of you.",
+        "To do so, make an Arcana check with a DC equal to the practitioner's spell save DC. On a successful check, you can choose one leveled spell from a list of three options provided by the DM, and that spell becomes permanently known to you, these spells can even be ones that are 1 level above your current casting limit. The possible spells are spells that the targeted spellcaster has access to, and the spells can only be chosen if they are in the wizard spell list.",
+        "Failure comes at a cost. If you fail the Arcana check, you immediately suffer backlash, rolling soulburn dice equal to your proficiency and taking that amount of necrotic damage. Additionally, you are incapacitated until the end of your next turn.",
+        "Once you've attempted to harvest a spell from a practitioner, the target becomes immune to further attempts from your Spell Predator feature for one month.",
+        "Alternatively, you can attempt to harvest a spell from the corpse of a spellcaster. The same rules apply, but there is no backlash for failing the Arcana check. However, the attempt might still fail for various reasons, such as the age of the corpse or the weakness of the lingering soul. Once a corpse of a spellcaster has been harvested for a spell, it is permanently immune to any further attempts from your spell predator feature.",
+        "After Spell Predator has successfully harvested a spell. Roll a {@dice d4}. The result dictates how many long rests you need to finish before Spell predator can be used again. This only happens if the Spell Predator successfully harvested a spell. Failure does not put the feature on a cooldown.",
+        "After you have acquired a spell from Spell Predator. That spell's level goes into a Predator Count.",
+        "The maximum of spells that Spell Predator can acquire are equal to your {@bold level + your chosen mental stat}.",
+        "For Example, acquiring the 3rd level spell fireball, would add 3 to the overall count. The maximum in this example would be 10 (Soulkeeper level) + 4 (Mental stat) = 14",
+        "You can choose to permanently abandoned one of these spells acquired through Spell Predator. You can do this for one spell each time you finish a long rest. After a spell has been abandoned, the spell's level is removed from the Predator Count and the spell can never be acquired again."
+      ]
     },
     {
       "name": "Orbs of Keeping",
@@ -652,7 +691,15 @@
       "subclassSource": "ToL",
       "level": 7,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 7th level, your character undergoes a transformation, as soul orbs manifest themselves on your body. The cosmetic characteristics of this transformation are determined by you, making them a personalized and distinctive feature of your character. The only stipulation is that these orbs must be visible to you.",
+        "For example, you might envision the orbs growing out from your collarbone Starting as marrow from the bone, gradually pushing through the surface of your skin until they become fully formed orbs affixed to your body.",
+        "Each soul orb can be used to store a reaped soul inside them until the soul is consumed.",
+        "When consuming a soul orb, each orb is considered 1 charge. For each charge consumed as a bonus action, the spell level is equal. For example, by consuming 3 charges, the soulkeeper can cast fly without having to pay the cost in soulburn dice. Similarly, the soulkeeper could consume 3 charges to upcast chromatic orb to level 3.",
+        "As a bonus action, you can consume a soul within a soul orb. Consuming a soul will make the next spell that you cast be free from rolling soulburn dice, as the spell consumes the stored soul instead of you.",
+        "The number of orbs on your body is equal to {@bold double your proficiency bonus}.",
+        "Each soul orb can be used to store a reaped soul inside them until the soul is consumed."
+      ]
     },
     {
       "name": "Reap Soul",
@@ -663,7 +710,12 @@
       "subclassSource": "ToL",
       "level": 7,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 7th level, you gain the ability to reap souls from recent mortal deceased humanoid creatures and store them inside your orbs of Keeping.",
+        "After reducing a creature within 30 feet of you to 0 hit points, you can as a bonus action reap the soul from the creature. Reaping a soul stores the soul in one of your unoccupied Orbs of Keeping.",
+        "You need to finish a short/long rest before you can use this feature again",
+        "Creatures whose souls have been taken from them are unable to be revived by anything other than a Wish spell."
+      ]
     },
     {
       "name": "Memories of the Soul",
@@ -674,7 +726,11 @@
       "subclassSource": "ToL",
       "level": 10,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 10th level, you can gaze into the memories of a soul that is stored inside one of your soul orbs.",
+        "You can spend 1 minute concentrating on a specific soul that is within your possession. After 1 minute you gaze into the memories of the soul. What you see may differ, they can be fragments, whole memories or even places that the soul remembers.",
+        "You need to finish a long rest before you can use this feature again"
+      ]
     },
     {
       "name": "Soul Glyph",
@@ -685,7 +741,10 @@
       "subclassSource": "ToL",
       "level": 10,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 10th level, you gain the ability to inscribe a magical glyph using the energy stored within your soul orbs.",
+        "By consuming 2 charges, you can cast the {@spell glyph of warding|phb} without the need for any material components, the glyph functions exactly as described in the {@spell glyph of warding|phb} spell."
+      ]
     },
     {
       "name": "Soul Spear",
@@ -696,7 +755,12 @@
       "subclassSource": "ToL",
       "level": 15,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 15th level, you gain the ability to conjure a Soul Spear and potentially tether it to a target's soul, enabling you to draw upon their essence.",
+        "As an action, you consume 3 charges of soul orbs and you make a ranged spell attack against a creature within 80 feet of you. On a hit, the target takes 3 soulburn dice damage + your chosen mental stat modifier (minimum of +1)",
+        "Additionally on a hit the Soul Spear remains attached to the target and a small arcane tether goes from you to the spear. For the next spell that you cast, the tethered target will take the soulburn dice damage for casting the spell, instead of you. The tether remains for 1 minute or until a spell has been cast.",
+        "You need to finish a long rest before you can use this feature again"
+      ]
     },
     {
       "name": "Ultimate Keeper",
@@ -707,7 +771,9 @@
       "subclassSource": "ToL",
       "level": 20,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 20th level, you unluck the full potential of your soulkeeper abilities. The cosmetic characteristics of your Ultimate Keeper form is entirely up to you."
+      ]
     },
     {
       "name": "Path of Greater Soulburning",
