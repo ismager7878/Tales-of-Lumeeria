@@ -386,7 +386,7 @@
         "At 13th level, your control over soul manipulation allows you to augment your strikes  ensuring their accuracy at the expense of your own vitality.",
         "When you make an attack roll and it is about to miss, you can choose to roll a Soulburn Die and add the amount rolled to your attack roll. However, using this ability inflicts necrotic damage upon yourself equal to the result rolled on the Soulburn Die.",
         "If the added value from the Soulburn Die still does not result in a successful hit, you can choose to roll an additional Soulburn Die and repeat the process. You can continue to roll additional Soulburn Dice in this manner until you either hit your target or choose not to roll further.",
-        "You can use this feature equal to your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} modifier. Once you have expended all uses, you must finish a long rest before you can use this feature again."
+        "You can use this feature equal to your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental stat} modifier. Once you have expended all uses, you must finish a long rest before you can use this feature again."
       ]
     },
     {
@@ -396,12 +396,12 @@
       "classSource": "ToL",
       "level": 14,
       "entries": [
-        "At 14th level, your mastery over soul manipulation reaches new heights, granting you unprecedented control over your {@subclassFeature Soul Infusion|Soulburner|ToL|2} ability. You gain the following benefits:",
+        "At 14th level, your mastery over soul manipulation reaches new heights, granting you unprecedented control over your {@classFeature Soul Infusion|Soulburner|ToL|2} ability. You gain the following benefits:",
         {
           "type": "list",
           "items": [
-            "{@bold Extended Duration:} When you activate your {@subclassFeature Soul Infusion|Soulburner|ToL|2} feature, the duration is now extended to 30 minutes.",
-            "{@bold Multiple Infusions:} You can now maintain three different elemental infusions simultaneously. This means you can choose three different enhancements from the {@subclassFeature Soul Infusion|Soulburner|ToL|2} options and have all three active at the same time. However, you must still suffer the necrotic damage for each infusion activated. There can still only be one infusion active on a weapon at a time.",
+            "{@bold Extended Duration:} When you activate your {@classFeature Soul Infusion|Soulburner|ToL|2} feature, the duration is now extended to 30 minutes.",
+            "{@bold Multiple Infusions:} You can now maintain three different elemental infusions simultaneously. This means you can choose three different enhancements from the {@classFeature Soul Infusion|Soulburner|ToL|2} options and have all three active at the same time. However, you must still suffer the necrotic damage for each infusion activated. There can still only be one infusion active on a weapon at a time.",
             "{@bold Allied Infusion:} You can now extend the benefits of your Soul Infusion to allies. As a bonus action, you can infuse an allies weapon that is within 30 feet of you. Like with your own infusions, you must still suffer the necrotic damage for each ally's weapon you infuse. "
           ]
         }
@@ -436,7 +436,7 @@
       "level": 17,
       "entries": [
         "At 17th level, you can channel the raw, unstable power of your soul into a devastating melee attack.",
-        "As a bonus action, you unleash Unstable Surge. The next time you hit a creature with a melee weapon attack, it deals an extra {@dice 6d12} + Your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} (Minimum of +1) necrotic damage.",
+        "As a bonus action, you unleash Unstable Surge. The next time you hit a creature with a melee weapon attack, it deals an extra {@dice 6d12} + Your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental stat} (Minimum of +1) necrotic damage.",
         "However this comes at a price. Your accuracy wavers and for as long as the Unstable Surge is active, all your bonuses to your attack roll, including magical weapon bonuses, momentarily vanish. As well as you rolling at disadvantage.",
         "After Unstable Surge has been used, roll a {@dice d6}. The result of the {@dice d6} determines how many long rest's you must take before using this feature again. Additionally you must roll 2 of your soulburn die. The result of these equal to the amount of years taken from your life expectancy. As you've burned away those years."
       ]
@@ -544,7 +544,7 @@
       "header": 2,
       "entries": [
         "At 10th level, your {@subclassFeature Lifesteal|Soulburner|ToL|Soulstealer|ToL|7} ability undergoes a profound transformation. ",
-        "When activating {@subclassFeature Lifesteal|Soulburner|ToL|Soulstealer|ToL|7}, you now add you chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} modifier to the necrotic damage dealt by the ability (minimum of +1)"
+        "When activating {@subclassFeature Lifesteal|Soulburner|ToL|Soulstealer|ToL|7}, you now add you chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental stat} modifier to the necrotic damage dealt by the ability (minimum of +1)"
       ]
     },
     {
@@ -575,7 +575,7 @@
       "level": 20,
       "header": 2,
       "entries": [
-        "At 20th level, your Lifesteal ascends to its ultimate form, manifesting as a passive ability that triggers once a turn whenever you strike an enemy with your melee weapon using an Attack action."
+        "At 20th level, your {@subclassFeature Lifesteal|Soulburner|ToL|Soulkeeper|ToL|7} ascends to its ultimate form, manifesting as a passive ability that triggers once a turn whenever you strike an enemy with your melee weapon using an Attack action."
       ]
     },
     {
@@ -615,14 +615,14 @@
           "name": "Spells Known:",
           "entries": [
             "Starting at 3rd level, you know three 1st-level spells from the Soulkeeper spell list. Every other level, you learn an additional spell, expanding your magical repertoire. You can choose any spell from the Soulkeeper spell list with a level you can cast. This and the total number of spells you know is listed in the Spells Known and Spell level column of the Soulkeeper Class table. The Soulkeeper shares its spell list with Wizards.",
-            "In the arcane arts of the Soulkeeper, your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} serves as your conduit for casting spells."
+            "In the arcane arts of the Soulkeeper, your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental stat} serves as your conduit for casting spells."
           ]
         },
         {
           "type": "entries",
           "name": "Spellcasting Ability:",
           "entries": [
-            "When casting spells as a Soulkeeper, you utilize your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental Stat} as your spellcasting ability. This stat governs the effectiveness of your spells and determines their saving throw DC and attack rolls.",
+            "When casting spells as a Soulkeeper, you utilize your chosen {@classFeature Mental Stat|Soulburner|ToL|1|Tol|mental stat} as your spellcasting ability. This stat governs the effectiveness of your spells and determines their saving throw DC and attack rolls.",
             "The formular for your spell save DC and spell attack modifier are as follows:",
             " ",
             {
@@ -772,7 +772,19 @@
       "level": 20,
       "header": 2,
       "entries": [
-        "At 20th level, you unluck the full potential of your soulkeeper abilities. The cosmetic characteristics of your Ultimate Keeper form is entirely up to you."
+        "At 20th level, you unluck the full potential of your soulkeeper abilities. The cosmetic characteristics of your Ultimate Keeper form is entirely up to you.",
+        "As an Action you consume 6 charges of soul orbs and you magically transform into your Ultimate Keeper form.",
+        {
+          "type": "list",
+          "items": [
+            "In this form you gain 60 feet of flight",
+            "While in this form, once a turn, whenever you reduce a creature, that meets the conditions for {@subclassFeature Reap Soul|Soulburner|ToL|Soulkeeper|ToL|7}, to 0 hit points within 60 feet of you. The soul of that creature is automatically reaped and stored in your {@subclassFeature Orbs of Keeping|Soulburner|ToL|Soulkeeper|ToL|7}.",
+            "While in this form, if you have a minimum of 8 charges of soul orbs. You have advantage on saving throws against spells and other magical effects",
+            "    While in this form, if you have a minimum of 4 charges of soul orbs. You are considered resistant to your soulburn dice damage. Taking half of all the necrotic damage you deal to yourself through Sacrificial magic."
+          ]
+        },
+        "You remain in this form for 1 minute. It ends early if you are {@condition incapacitated|phb}, if you die, or if you dismiss it as a bonus action.",
+        "You need to finish a long rest before you can use this feature again."
       ]
     },
     {
@@ -783,7 +795,9 @@
       "subclassShortName": "Greater Soulburner",
       "subclassSource": "ToL",
       "level": 3,
-      "entries": ["."]
+      "entries": [
+        "For those who choose the path of the Greater Soulburner, the boundaries of their soul's power are pushed to their limits. They can unleash devastating attacks that exact a heavy toll on their own essence, sacrificing their soul for raw, destructive power."
+      ]
     },
     {
       "name": "Greater Soul Infusion",
@@ -794,7 +808,19 @@
       "subclassSource": "ToL",
       "level": 3,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 3rd level, your understanding of soul manipulation grants you access to an enhanced form of Soul Infusion, known as Greater Soul Infusion. This ability allows you to infuse your weapons with even greater elemental power.",
+        "When you activate Greater Soul Infusion, you can choose one of the following enhancements:",
+        {
+          "type": "list",
+          "items": [
+            "{@bold Soulfire Surge:} Your weapon crackles with intense flames as you channel the fiery essence of your soul into it. When you make a weapon attack with a weapon infused with Soulfire Surge, you add your Soulburn Die to the damage roll as fire damage. Additionally, any creature hit by your weapon attack must make a Dexterity saving throw against your Soul Power DC or catch fire, taking additional fire damage equal to your Soulburn Die at the start of each of its turns until it takes an action to extinguish the flames. Additionally Each time the target takes fire damage from catching on fire, they can redo the Dexterity saving throw.",
+            "{@bold Frostbound Edge:} Frost swirls around your weapon as you infuse it with bitter cold, chilling the very soul of your enemies. When you make a weapon attack with a weapon infused with Frostbound Edge, you add your Soulburn Die to the damage roll as cold damage. Additionally, any creature hit by your weapon attack must succeed on a Constitution saving throw against your Soul Power DC or have its movement speed halved until the end of your next turn as it struggles to endure the numbing cold.",
+            "{@bold Stormforged Strike:} Arcs of crackling lightning envelop your weapon as you harness the raw power of lightning. When you make a weapon attack with a weapon infused with Stormforged Strike, you add your Soulburn Die to the damage roll as lightning damage. Additionally, any creature hit by your weapon attack must make a Dexterity saving throw against your Soul Power DC. On a failed save, the target takes an additional 1d6 lightning damage. If the target is within 5 feet of another creature, the lightning arcs to the closest ally. The closest ally must then make a Dexterity saving throw against the same DC. On a failed save, the ally takes 1d6 lightning damage."
+          ]
+        },
+        "Each of these enhancements follows the same mechanics as the standard Soul Infusion ability, requiring you to suffer necrotic damage equal to your Soulburn Die when activating the infusion. The only difference is that each elemental version of Greater Soul Infusion comes with additional effects tailored to its elemental nature."
+      ]
     },
     {
       "name": "Soul Control",
@@ -805,7 +831,17 @@
       "subclassSource": "ToL",
       "level": 7,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 7th level, your control over soul infusion reaches new heights, granting you additional ways to empower your weapons with elemental energy.",
+        "These additional methods of empowerment can also be combined with the elemental enhancements introduced through Greater Soul Infusion at 3rd level but cannot be combined with each other.",
+        {
+          "type": "list",
+          "items":[
+            "{@bold Soul Empowerment:} You can choose to pour more of your soul into your soul infusion, enhancing its potency. When you activate your Soul Infusion feature, you can opt to double the dice rolled both for your Soulburn Die and the elemental damage infused in your weapon. For example, at level 7, you would normally roll 1d8 for both the Soulburn Die and the elemental damage; with Soul Empowerment, you instead roll 2d8 for each.",
+            "{@bold Alternative Infusion:} You have discovered alternative sources for infusing your weapons with elemental power. Instead of sacrificing a fragment of your own soul, you tap into external sources. When you activate your Soul Infusion feature, you can choose take no damage from your Soulburn Die, but your weapon still becomes infused with the chosen elemental damage. This allows you to wield formidable power without risking harm to your own soul."
+          ]
+        }
+      ]
     },
     {
       "name": "Soul Overload",
@@ -816,7 +852,14 @@
       "subclassSource": "ToL",
       "level": 10,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 10th level, you can harness the full extent of your soul's power, albeit at great cost.",
+        "As a bonus action, you enter the state of Soul Overload. To activate this ability roll {@dice 1d4}, the result you rolled determines the price for overloading your soul. You must roll the amount of Soulburn Die, equal to the {@dice d4} result, and take necrotic damage equal to the result.",
+        "While in this state, your weapon attacks deal maximum damage, but you cannot crit.",
+        "However, at the end of you turn, you suffer {@dice 1d4} levels of exhaustion. Afterwards you suffer a backlash in your hit point maximum equal to {@dice 2d4} times 10. This effect lingers until your exhaustion from soul overload is gone.",
+        "This powerful state lasts for your entire turn, after which you immediately gain the exhaustion levels determined by the rolls. Once you have used Soul Overload, you cannot use it again until you complete a long rest.",
+        "After each Soul overload. Roll your soulburn die. The result from the roll is taken as years from your life expectancy. As you've burned away those years."
+      ]
     },
     {
       "name": "Soul Cleaver",
@@ -827,7 +870,12 @@
       "subclassSource": "ToL",
       "level": 15,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 15th level, you gain the ability to unleash a devastating cleave attack with your weapon.",
+        "As an action, each creature in a 15-foot cone must make a Dexterity saving throw against your Soul Power DC, taking your weapon damage on a failed save or half as much damage on a successful one. The weapon damage benefits from any potential infusions on the weapon",
+        "As a cost, if there are 1-3 enemies within the cone, you must roll 1 Soulburn Die and take necrotic damage equal to the result rolled. This cost increases to 2 Soulburn Dice if there are 4-6 enemies, and for 7 or more enemies, you must roll 3 Soulburn Dice.",
+        "You can use this feature three times. Once you have expended all uses, you must finish a long rest before you can use this feature again."
+      ]
     },
     {
       "name": "Ultimate Soul Overload",
@@ -838,7 +886,30 @@
       "subclassSource": "ToL",
       "level": 20,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 20th level, your mastery over soul manipulation reaches its zenith. Your previous Soul Overload state is now split into two. One being the Improved Soul Overload State and the other the Ultimate Soul overload State.",
+        "When you activate the Ultimate Soul Overload feature, you now push your soul to its absolute limits, abandoning your very life for overwhelming strength.",
+        "Only one of these Soul Overload States can be used once per long rest.",
+        {
+          "type": "list",
+          "items":[
+            "As a bonus action, you enter the state of improved Soul overload. While in this state, your weapon attacks deal maximum damage, but you cannot crit. This state lasts until the end of your next turn.",
+            "As a bonus action, you enter the state of Ultimate Soul overload You gain the following benefits when you enter your Ultimate Soul Overload state.",
+            {
+              "type": "list",
+              "items":[
+                "You're weapon attacks deal maximum damage.",
+                "Your Ultimate Soul Overload state now lasts for 3 rounds.",
+                "You can now critical strike while in the Ultimate Soul Overload state, and your critical hit range is temporarily increased by one.",
+                "You gain resistance to all damage types except Necrotic, Force and Psychic damage while in the Ultimate Soul Overload State."
+              ]
+            }
+          ]
+        },
+        "The Ultimate Soul Overload state remains even if you were to become incapacitated or die.",
+        "After 3 rounds in the Ultimate Soul Overload state, your soul is completely depleted and you die.",
+        "Only a Wish spell can bring a Greater Soulburner back from this Death. As it was not the death itself, but the burning of every last bit of their soul that led to their demise."
+      ]
     },
     {
       "name": "Path of the Dragonsoul",
@@ -848,7 +919,9 @@
       "subclassShortName": "Dragonsoul",
       "subclassSource": "ToL",
       "level": 3,
-      "entries": ["."]
+      "entries": [
+        "With this path, you forge a contract with a powerful dragon, slowly changing your soul forever."
+      ]
     },
     {
       "name": "Draconic Contract",
@@ -859,7 +932,36 @@
       "subclassSource": "ToL",
       "level": 3,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "You have successfully established a contract with a dragon of significant power. This contract will forever change your soul. Slowly turning you more towards the draconic.",
+        "The type of dragon that you have made a contract with also indicated your damage type for future Dragonsoul features.",
+        {
+          "type": "table",
+          "colLabels": [
+            "Dragon",
+            "Damage Type",
+            "Related Saving Throw Type"
+          ],
+          "colStyles":[
+            "col-1  text-center",
+            "col-1-5",
+            "col-1-5"
+          ],
+          "rows":[
+            ["Black", "Acid", "Dexterity"],
+            ["Blue", "Lightning", "Dexterity"],
+            ["Brass", "Fire", "Dexterity"],
+            ["Bronze", "Lightning", "Dexterity"],
+            ["Copper", "Acid", "Dexterity"],
+            ["Gold", "Fire", "Dexterity"],
+            ["Green", "Poison", "Constitution"],
+            ["Red", "Fire", "Dexterity"],
+            ["Silver", "Cold", "Constitution"],
+            ["White", "Cold", "Constitution"]
+          ]
+        },
+        "Additionally you can speak, read and write Draconic."
+      ]
     },
     {
       "name": "Draconic Defense",
@@ -870,7 +972,9 @@
       "subclassSource": "ToL",
       "level": 3,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "Beginning at 3rd level, draconic features manifest themselves on your body. While you are wearing no armor, your armor class is equal to 10 + Dexterity modifier + (Chosen mental stat) modifier. You can use a shield and still gain this benefit."
+      ]
     },
     {
       "name": "Dragon Form",
@@ -881,7 +985,21 @@
       "subclassSource": "ToL",
       "level": 3,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 3rd level you learn how to temporarily unleash your soul's draconic power.",
+        "The cosmetic characteristics of this transformation are determined by you, making them a personalized and distinctive feature of your character. The only stipulation is that this transformation still needs to resemble your original humanoid form.",
+        "As a bonus action, you can assume your dragon form for 1 minute.",
+        "While transformed, you gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Your jaw becomes elongated and you grow sharp fangs. Bite becomes a natural weapon for you that deals 1d6 piercing damage on a hit. You can use either Strength or Dexterity. Bite damage grows to a d8 at level 7, and again to a d10 at level 10, and finally to a d12 at level 15.",
+            "You grow sharp and deadly claws. Claw becomes a natural weapon for you that deals 1d4 piercing damage on a hit. You can use either Strength or Dexterity. Claw can be used both as an Action or Bonus Action. Claw damage grows to a d6 at level 7, and again to a d8 at level 10, and finally to a d10 at level 15."
+          ]
+        },
+        "Your natural weapons from your Dragon Form can be infused by your {@classFeature Soul Infusion|Soulburner|ToL|2} feature.",
+        "You can use this feature equal to your Proficiency Bonus. Once you have expended all uses, you must finish a long rest before you can use this feature again."
+      ]
     },
     {
       "name": "Draconic Breath",
@@ -892,7 +1010,12 @@
       "subclassSource": "ToL",
       "level": 7,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "Beginning at 7th level, you can unleash the destructive draconic powers that have been accumulating in your soul.",
+        "As an action you can exhale a 30-foot cone of Draconic breath. The damage as well as Saving Throw type is related to your Draconic Contract. Each creature in the cone must make a saving throw against your Soul Power DC, taking (Proficiency Bonus x Soulburn Die) on a failed save, or half as much damage on a successful one.",
+        "Afterward you also suffer the Draconic Breath damage rolled as necrotic damage.",
+        "The Draconic Breath Cone is increased to a 60-foot cone at level 15."
+      ]
     },
     {
       "name": "Draconic Growth",
@@ -903,7 +1026,11 @@
       "subclassSource": "ToL",
       "level": 7,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 7th level, whenever you transform into your Dragon Form, you now grow to the large size.",
+        "While in your Dragon Form, you have an extra 10ft of speed.",
+        "Any attacks you make from your natural weapons now count as magical."
+      ]
     },
     {
       "name": "Draconic Resistance",
@@ -914,7 +1041,9 @@
       "subclassSource": "ToL",
       "level": 7,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 7th level, you become resistant to the chosen damage type in your draconic contract."
+      ]
     },
     {
       "name": "Draconic Wings",
@@ -925,7 +1054,10 @@
       "subclassSource": "ToL",
       "level": 10,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 10th level, your Dragon Form now sprout a pair of wings from your back, gaining a flying speed equal to your current speed.",
+        "You can't manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them."
+      ]
     },
     {
       "name": "Improved Draconic Growth",
@@ -936,7 +1068,10 @@
       "subclassSource": "ToL",
       "level": 10,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 10th level, your Dragon Form now lasts for 10 minutes. Your form grows, as it now also includes a tail being up to 10ft long.",
+        "You can use your tail as a natural weapon, dealing {@dice 1d8} bludgeoning  damage on a hit. You can use either Strength or Dexterity."
+      ]
     },
     {
       "name": "Draconic Attacks",
@@ -947,7 +1082,10 @@
       "subclassSource": "ToL",
       "level": 15,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 15th level, whenever you use the attack action while in your Dragon Form. You can unleash a barrage of natural weapon attacks. You make one with your bite, one with claw and one with your tail.",
+        "You can use this feature three times per long rest."
+      ]
     },
     {
       "name": "Draconic Presence",
@@ -958,7 +1096,11 @@
       "subclassSource": "ToL",
       "level": 15,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "Beginning at 15th level, your soul holds the presence of a true dragon.",
+        "As an action you can unleash a roar, each creature within 80 feet of you and aware of you must succeed on a Wisdom saving throw against your Soul Power DC or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+        "You can use this feature once per long rest."
+      ]
     },
     {
       "name": "Ultimate Dragon Soul",
@@ -969,7 +1111,20 @@
       "subclassSource": "ToL",
       "level": 20,
       "header": 2,
-      "entries": ["."]
+      "entries": [
+        "At 20th level, you have reached the pinnacle of your Dragon Form.",
+        "Now each time you enter your Dragon Form as a bonus action. You can choose to transform into an adult version of your Dragon Type, instead of the humanoid version of your Dragon Form.",
+        {
+          "type": "list",
+          "items": [
+            "You can now stay in this form for however long you want.",
+            "You gain a flying speed of 80ft, as well as a climbing speed of 40ft.",
+            "You grow to the size of huge.",
+            "You are immune to your related damage type.",
+            "Your Draconic Breath damage is increased to 12d12 and you now only take half of the rolled damage as necrotic damage."
+          ]
+        }
+      ]
     }
   ],
   "subclass": [
