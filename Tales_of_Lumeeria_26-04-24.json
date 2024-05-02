@@ -20,6 +20,7 @@
       "shortName": "exhaustion",
       "entries":[
         "There are now 10 points of exhaustion with each point from 1 to 9 give a -1 equal to the level of exhaustion one has. If a character reaches 10 points of exhaustion, they die immediately.",
+        "A characters speed is halved when they have 5 or more exhaustion points",
         {
           "type": "table",
           "caption": "Exhaustion table",
