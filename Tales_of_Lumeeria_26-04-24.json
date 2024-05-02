@@ -1016,8 +1016,8 @@
         "At 10th level, you can harness the full extent of your soul's power, albeit at great cost.",
         "As a bonus action, you enter the state of Soul Overload. To activate this ability roll {@dice 1d4}, the result you rolled determines the price for overloading your soul. You must roll the amount of Soulburn Die, equal to the {@dice d4} result, and take necrotic damage equal to the result.",
         "While in this state, your weapon attacks deal maximum damage, but you cannot crit.",
-        "However, at the end of you turn, you suffer {@dice 1d4} levels of exhaustion. Afterwards you suffer a backlash in your hit point maximum equal to {@dice 2d4} times 10. This effect lingers until your exhaustion from soul overload is gone.",
-        "This powerful state lasts for your entire turn, after which you immediately gain the exhaustion levels determined by the rolls. Once you have used Soul Overload, you cannot use it again until you complete a long rest.",
+        "However, at the end of you turn, you suffer {@dice 1d4} levels of {@variantrule Lumeeria variant: Exhaustion|ToL|exhaustion}. Afterwards you suffer a backlash in your hit point maximum equal to {@dice 2d4} times 10. This effect lingers until your {@variantrule Lumeeria variant: Exhaustion|ToL|exhaustion} from soul overload is gone.",
+        "This powerful state lasts for your entire turn, after which you immediately gain the {@variantrule Lumeeria variant: Exhaustion|ToL|exhaustion} levels determined by the rolls. Once you have used Soul Overload, you cannot use it again until you complete a long rest.",
         "After each Soul overload. Roll your soulburn die. The result from the roll is taken as years from your life expectancy. As you've burned away those years."
       ]
     },
