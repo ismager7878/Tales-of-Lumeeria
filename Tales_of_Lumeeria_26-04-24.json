@@ -105,6 +105,72 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Lumeeria variant: Falling",
+      "source": "ToL",
+      "entries":[
+        "Falling from a great height is a significant risk for adventurers and their foes. At the end of the fall, you take {@dice 1d6} bludgeoning damage for every 10 feet you fell. There is no maximum height. You also land prone, unless you somehow avoid taking damage from the fall, such as with a special ability or the {@spell Feather Fall|phb} spell.",
+        "When you fall from a great height, you instantly descend up to 500 feet. If you're still falling on your next turn, you descend up to 500 feet at the end of that turn. This process continues until the fall ends, either because you hit the ground or the fall is otherwise halted."
+      ]
+    },
+    {
+      "name": "Lumeeria variant: Mastery Feature",
+      "source": "ToL",
+      "entries":[
+        "Mastery is a new feature that can only be granted through supernatural means.",
+        "Mastery acts like another layer of Proficiency, being above Expertise in the sense that it tripples a character's Proficiency Bonus to chosen skill.",
+        "A character can only have 1 Mastery Skill at any time.",
+        "Mastery gained through an item, should make the item Very Rare."
+      ]
+    },
+    {
+      "name": "Lumeeria variant: Inspiration",
+      "source": "ToL",
+      "entries":[
+        "Inspirations can stack up to the character's Proficiency Bonus.",
+        "If you are granted inspiration while at max, the inspiration is lost.",
+        "Inspirations can be given around the table, though certain situations do not allow for this, such as a character being temporarily against the party.",
+        "Inspirations work as a reroll of all the dice, including any dice gained from outside sources (Such as Guidance or Bless). If you have advantage on the initial roll and you choose to use inspiration, you roll with advantage again."
+      ]
+    },
+    {
+      "name": "Lumeeria variant: Attunement",
+      "source": "ToL",
+      "entries":[
+        "Attunement is very important in Dungeons And Dragons, as it limits the amount of magic items a player can possess if the items. The amount of attuned items a player can have at any time is changed from the standard 3 items, now being equal to a character's Proficiency Bonus instead.",
+        "The time it takes to attune with a item is changed to an action, though some items can have different attunement times. When you unattune from an item, you lose all abilities and benefits it gives."
+      ]
+    },
+    {
+      "name": "Lumeeria variant: Magic Scrolls",
+      "source": "ToL",
+      "entries": [
+        "If magic is put into a scroll, then anyone, even people not attuned to the Arcane Realm, can make use of the magic within. However, this only counts for weaker spells, being on the level of cantrips, 1st-, or 2nd level.",
+        "Magic scrolls and other magical elements are usable to martials and commoners, even if the user does not have proficiency in the arcana skill. To use a scroll, one has to tear the scroll in half to release the magic. This destroys the scroll in the process.",
+        "Any scroll of 3rd level and higher require an Arcana check to be successfully used. If the Arcana check fails, the scroll burns up without activating. If one has proficiency in arcana they have advantage on their arcana checks for using spell scrolls.",
+        {
+          "type":"table",
+          "colLabels":[
+            "Scroll Level",
+            "Arcana DC"
+          ],
+          "colStyles":[
+            "col-1 text-center",
+            "col-9"
+          ],
+          "rows":[
+            ["3rd", "15"],
+            ["4th", "15"],
+            ["5th", "17"],
+            ["6th", "17"],
+            ["7th", "18"],
+            ["8th", "18"],
+            ["9th", "19"]
+          ]
+
+        }
+      ]
     }
   ],
   "class": [
@@ -401,7 +467,7 @@
       "level": 6,
       "entries": [
         "At 6th level, your soul grows resilient.",
-        "Your hit point maximum increases by 6, and it increases by an additional 1 point each time you gain a level in this class. You gain advantage against the {@condition poisoned} condition and become resistant to poison damage. Additionally during a long rest, you can now recover from two points of exhaustion instead of one."
+        "Your hit point maximum increases by 6, and it increases by an additional 1 point each time you gain a level in this class. You gain advantage against the {@condition poisoned} condition and become resistant to poison damage. Additionally during a long rest, you can now recover from two points of {@variantrule Lumeeria variant: Exhaustion|ToL|exhaustion} instead of one."
       ]
     },
     {
@@ -2437,7 +2503,7 @@
       },
       "entries": [
         "As you sit and concentrate on the spell, you create a calming aura around yourself. Up to three individuals within a 10-foot radius of you can join your aura by sitting and meditating, refraining from other activities or rest.",
-        "After an hour has passed, the individuals within the aura, excluding yourself, experience a soothing effect, reducing their level of {@condition exhaustion} by one."
+        "After an hour has passed, the individuals within the aura, excluding yourself, experience a soothing effect, reducing their level of {@variantrule Lumeeria variant: Exhaustion|ToL|exhaustion} by one."
       ],
       "source": "ToL",
       "components": {
@@ -3399,7 +3465,7 @@
       "entries": [
         "You infuse a creature with supercharged energy, allowing it to move and act with incredible speed. Until the spell ends, the target's speed is doubled, It gains a +3 bonus to AC, it has advantage on Dexterity saving throws, and It gains an additional action on each of its turns. This action can be used only to take the Attack (one weapon attack only), Dash, Disengage, Hide, or Use an Object action.",
         "If the affected creature has the extra attack feature, it can make two attacks instead of one when taking the Attack action granted by this spell.",
-        "Upon the spell's end or if the affected creature is knocked {@condition unconscious}, the intense burst of energy fades, leaving the creature lethargic. The target can't move or take actions until after its next turn, and it gains {@dice 1d4} levels of {@condition exhaustion}."
+        "Upon the spell's end or if the affected creature is knocked {@condition unconscious}, the intense burst of energy fades, leaving the creature lethargic. The target can't move or take actions until after its next turn, and it gains {@dice 1d4} levels of {@variantrule Lumeeria variant: Exhaustion|ToL|exhaustion}."
       ],
       "source": "ToL",
       "components": {
