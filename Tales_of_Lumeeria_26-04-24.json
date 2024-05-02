@@ -15,12 +15,11 @@
   },
   "variantrule":[
     {
-      "name": "Lumeria variant: Exhaustion",
+      "name": "Lumeeria variant: Exhaustion",
       "source": "ToL",
       "shortName": "exhaustion",
       "entries":[
         "There are now 10 points of exhaustion with each point from 1 to 9 give a -1 equal to the level of exhaustion one has. If a character reaches 10 points of exhaustion, they die immediately.",
-        "Meaning:",
         {
           "type": "table",
           "caption": "Exhaustion table",
