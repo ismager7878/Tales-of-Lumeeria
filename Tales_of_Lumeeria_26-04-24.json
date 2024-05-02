@@ -1492,7 +1492,7 @@
 				"Vitality bursts forth as rain cascades down in a 40-foot radius sphere, originating from a point of your choosing within range. You select up to six creatures of your choice within the sphere. Each of these creatures regains hit points equal to {@dice 8d6} + your spellcasting ability modifier.",
 				"Furthermore, any undead within the sphere must make a Wisdom saving throw. On a failed save, they suffer {@damage 4d6} radiant damage."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -1547,7 +1547,7 @@
 					}
 				]
 			},
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -1614,7 +1614,7 @@
 			"entries": [
 				"You create a semi-translucent eye that hovers in a location of your choice within range. This eye temporarily disables all invisibility and illusion magic within 90 feet of it. Any {@condition invisible} creatures or illusions within range become visible and their illusionary nature is revealed while the eye is active. If an {@condition invisible} creature or illusion exits the 90-foot range of the eye, the invisibility or illusion effect returns."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -1676,7 +1676,7 @@
 				"Your mount responds to verbal commands and can understand any language that you speak.",
 				"When your mount drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your mount at any time as an action, causing it to disappear in a plume of black smoke. In either case, casting this spell again heals your risen mount, restoring it to its hit point maximum."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -1746,7 +1746,7 @@
 				"The spell provides protection against the abrasive forces of sandstorms. Sand Stepping ignores {@status concentration} checks caused by damage taken during such harsh weather conditions.",
 				"Dashing while under this spell has no effect. "
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -1827,7 +1827,7 @@
 			"entries": [
 				"You beseech the divine energies, manifesting as radiant motes of light, to breathe life back into those who have fallen. When you cast this spell, up to three {@condition unconscious} creatures of your choice within range regain hit points equal to {@dice 3d4} + your spellcasting modifier. As the divine energy lifts them, they are also raised from a {@condition prone} position."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -1907,7 +1907,7 @@
 				"You create three spears of ice and hurl them at targets within range. You can hurl them at one target or several. ",
 				"Make a ranged spell attack for each spear. On a hit, the target takes {@damage 2d6} cold damage, and its speed is reduced by 10 feet until the start of your next turn. Speed reduction can stack with each hit.  "
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -1964,7 +1964,7 @@
 				"As you hold your hands with thumbs touching and fingers spread, a thin sheet of water shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a Strength saving throw. A creature takes {@damage 2d8} Cold damage on a failed save, or half as much damage on a successful one. ",
 				"The water pushed any creature that failed the save, back 5 feet. "
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -2095,7 +2095,7 @@
 				"Each affected creature, including the target, must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d8} thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.",
 				"Additionally, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's thunderous force, and a booming sound echoes audibly up to 300 feet."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -2147,7 +2147,7 @@
 			"entries": [
 				"You concentrate the elemental powers of fire. The next time you make a ranged weapon attack during the spell's duration, the weapon's ammunition, or the weapon itself if it's a thrown weapon, bursts into flame. Make the attack roll as normal. The target takes {@dice 2d10} extra fire damage on a hit. The piece of ammunition or weapon then returns to its normal form."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -2199,7 +2199,7 @@
 				"This spell summons a {@creature crawling claw} and a {@creature Stomping Foot|oow} to serve as temporary undead servants. Choose a pile of bones, a corpse, or a severed hand of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, creating a crawling hand and a stomping foot as undead creatures. The crawling hand and stomping foot remain for 1 minute. When this time expires, the creatures are destroyed.",
 				"On each of your turns, you can use a bonus action to mentally command either the crawling hand or the stomping foot if they are within 60 feet of you. You decide what action each creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular area. If you issue no commands, the creatures only defend themselves against hostile creatures. Once given an order, each creature continues to follow it until its task is complete."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2292,7 +2292,7 @@
 				"A blast of spectral necrotic energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d10} necrotic damage. ",
 				"This spell's damage increases by {@dice 1d10} when you reach 5th level ({@dice 2d10}), 11th level ({@dice 3d10}), and 17th level ({@dice 4d10})."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -2344,7 +2344,7 @@
 				"Under the spell's influence, those affected are safeguarded against the perils of the Aetherwall, which threatens to unravel their memories and displace them in time. As long as they remain under the effect of this spell for the entirety of their stay in the Feylands, they are shielded from the adverse effects of the Aetherwall, ensuring their experiences remain unaltered and coherent.",
 				"To invoke Fey Guest's Refuge, the caster must trace arcane sigils in the air and infuse the spell with the essence of a Moonpetal Bloom, a rare and ephemeral flower native to the Feylands. Once the casting is complete, the protective aura extends to the designated individuals, allowing them to traverse the Feylands with confidence and security for the duration of the spell."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2404,7 +2404,7 @@
 				"On a failed save the target is {@condition restrained} by lightning shackels for up to 1 minute. ",
 				"A creature {@condition restrained} by the shackles can use its action to make a Strength or Dexterity check (its choice) against your spell save DC. On a success, it frees itself."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2460,7 +2460,7 @@
 			"entries": [
 				"You unleash a burst of blinding light and deafening sound at a point within range. Each creature within a 20-foot-radius sphere centered on that point must make a Constitution saving throw. On a failed save, a creature takes {@damage 2d6} radiant damage and is {@condition blinded} and {@condition deafened} until the end of its next turn. On a successful save, the creature takes half as much damage and isn't {@condition blinded} or {@condition deafened}."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2518,7 +2518,7 @@
 				"As you sit and concentrate on the spell, you create a calming aura around yourself. Up to three individuals within a 10-foot radius of you can join your aura by sitting and meditating, refraining from other activities or rest.",
 				"After an hour has passed, the individuals within the aura, excluding yourself, experience a soothing effect, reducing their level of {@condition exhaustion} by one."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2570,7 +2570,7 @@
 				"Additionally, if the caster possesses a crystal ball, they can choose to link the Shadow Trace spell to it. This creates a visual link between the caster and the marked target, allowing the caster to see everything within 30 feet of the target as if they were standing there themselves. However, no sounds are transmitted through this link.",
 				"The Shadow Trace spell lasts until it is dispelled. The mark can only be seen by spells or effects that can detect invisibility or magic, such as See Invisibility or Detect Magic."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"m": "a small piece of black silk thread worth 50 gp, Consumed"
 			},
@@ -2616,7 +2616,7 @@
 				"Any attempt to physically pass through the wall will result in taking {@damage 2d10} psychic damage and be repelled. ",
 				"The {@condition invisible} barrier can be detected by any means that allow the user to see {@condition invisible} objects."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2662,7 +2662,7 @@
 				"You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to all of them. To receive the command, a creature must be within 120 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
 				"The creatures are under your control until the spell ends, after which they become inanimate once more."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2714,11 +2714,11 @@
 				]
 			},
 			"entries": [
-				"Necrotic energies gather at your fingertips as you pull from the grounds two {@creature Skeletal Knight|TalesofLumeeria}. (the statistics for Skeletal Knight are in Tales of Lumeeria}",
+				"Necrotic energies gather at your fingertips as you pull from the grounds two {@creature Skeletal Knight|ToL}. (the statistics for Skeletal Knight are in Tales of Lumeeria}",
 				"You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to both of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
 				"The creatures are under your control until the spell ends, after which they become inanimate once more."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2762,7 +2762,7 @@
 				"Though loyal to you, the Death Knight possesses its own initiative in combat and acts independently. It considers you its eternal master and will offer strategic guidance if requested, but it never disobeys your commands.",
 				"The Death Knight's statistics are determined by the Dungeon Master. It cannot be healed by any magical means, but it benefits from the same restorative properties of a long rest as you do."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2815,7 +2815,7 @@
 			"entries": [
 				"You speak words of encouragement that carry an arcane twist to them, letting them clear their minds in times of turmoil. Creatures of your choice within 30 feet of you can add {@dice 1d6} to skill checks if they are proficient in the skill they are rolling for. If the skill has any other bonus applied to it, such as expertise or permanent advantage, they cannot benefit from this spell."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true
 			}
@@ -2862,7 +2862,7 @@
 				"You hold the coin in your hand and conjure a spectral eye in front of you. The eye shoots a flat beam of magical disturbance towards your enemies. Each creature in a 30-foot line in front of you must make a Dexterity saving throw. On a failed save, a creature takes {@damage 2d8} force damage, or half as much on a success.",
 				"Additionally, if a creature hit by this spell is currently {@status concentration||concentrating} on a spell, it has disadvantage on the {@status concentration} saving throw caused by this spell, unless it succeeded on the initial Dexterity saving throw."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -2919,7 +2919,7 @@
 				"If a spot covered by ice created by this spell, it can only be removed by magical fire. Coming into contact with any kind of magical fire will melt a 5-foot square, as appropriate.",
 				"If a creature has its movement enhanced by any kind of magic, it is immune to the effects of this spell."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"s": true,
 				"m": "Water droplets"
@@ -2980,7 +2980,7 @@
 				"You produce 10 gallons of water. If used offensively, it gushes forth in a water jet 30 feet long and 1 foot wide. As a bonus action, you can aim the jet at a creature you can see within 30 feet of you. The target must succeed on a Strength saving throw or take {@damage 1d6} bludgeoning damage and fall {@condition prone}.",
 				"Alternatively, you can target an object that isn't being worn or carried and that weighs no more than 200 pounds. The object is either knocked over or pushed up to 15 feet away from you."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3053,7 +3053,7 @@
 				"If an enemy succeeds on the saving throw, they become immune to the effects of Sapphire's Sanctum for the next 24 hours.",
 				"Moving out of the sphere causes the targets to lose the respective effects. As an action, you can move the sphere up to 30 feet, adjusting its protective influence to different areas of the battlefield."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3095,11 +3095,11 @@
 				]
 			},
 			"entries": [
-				"You spend time creating a Mobile Aid construct. Upon finishing the creation of {@creature Ral's Aiding Construct|TalesofLumeeria}, you choose its appearance and design.(The statistics for Ral's Aiding Construct are in Tales of Lumeeria}",
+				"You spend time creating a Mobile Aid construct. Upon finishing the creation of {@creature Ral's Aiding Construct|ToL}, you choose its appearance and design.(The statistics for Ral's Aiding Construct are in Tales of Lumeeria}",
 				"The creature disappears when it drops to 0 hit points or when the spell ends.",
 				"The construct is an ally to you and your companions. In combat, the construct shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands without requiring any action from you. If you don't issue any commands, it takes the Dodge action and uses its movement to avoid danger."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3146,7 +3146,7 @@
 			"entries": [
 				"In a swift reaction, you extend your hand, deploying an ingenious artificer creation that materializes before your designated ally within range. This mystical construct provides enhanced protection. Until the start of your next turn, the targeted ally gains a bonus to their Armor Class equal to your Intelligence modifier."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3196,7 +3196,7 @@
 			"entries": [
 				"With a swift bonus action, you extend your hand, forging a connection with a weapon under your infusions. The next strike unleashed by the chosen weapon carries a surge of enhanced power, dealing an additional {@damage 2d10} force damage."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3246,7 +3246,7 @@
 				"For a brief moment, you gather Lotoza's moon energy in your palm. As you slam your wrists together and aim your palms at your target, a beam of compact moonlight flashes out from your palms in a 10-foot wide, 60-foot long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes {@damage 12d6} radiant damage. On a successful save, it takes half as much damage. Undead and oozes have disadvantage on this saving throw.",
 				"If the spell is cast at night and while in an area where it's outside and there is visibility to Lotoza, the red moon, then Nightshades' Moonbeam has a reddish color to it and will deal an extra {@dice 6d6} while being 5 feet wider."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -3299,7 +3299,7 @@
 				"As you snap your finger, a dead creature within range, that you know of, explodes with necrotic energy. Each creature in a 15-foot-radius sphere centered on the dead creature must make a Dexterity saving throw. A target takes {@damage 5d8} necrotic damage on a failed save, or half as much damage on a successful one.",
 				"The spell can also be cast on an undead creature that is under your control. "
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"s": true
 			},
@@ -3374,7 +3374,7 @@
 			"entries": [
 				"You summon forth a shimmering orb of water infused with the healing essence of the sea. With a swift motion, you propel it towards a point of your choosing within range, where it bursts into a radiant explosion of droplets. Each droplet carries the essence of rejuvenation, healing the wounds of creatures within a 20-foot-radius sphere centered on that point. Each creature in the area regains hit points equal to {@dice 6d6} + your spellcasting ability modifier as the healing waters cascade over them, restoring vitality and vigor."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3446,7 +3446,7 @@
 				"You conjure a swirling vortex of air that rapidly ascends to the sky in a 20-foot-radius, 60-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Strength saving throw. On a failed save, they are lifted up 60 feet into the air and become {@condition restrained}.",
 				"At the end of your next turn, the tornado dissipates, and all creatures caught in the air come plummeting down, taking fall damage equal to {@dice 6d6}. Tiny or Small creatures have disadvantage on the saving throw, while Huge or Gargantuan creatures have advantage."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3496,7 +3496,7 @@
 				"If the affected creature has the extra attack feature, it can make two attacks instead of one when taking the Attack action granted by this spell.",
 				"Upon the spell's end or if the affected creature is knocked {@condition unconscious}, the intense burst of energy fades, leaving the creature lethargic. The target can't move or take actions until after its next turn, and it gains {@dice 1d4} levels of {@condition exhaustion}."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3554,7 +3554,7 @@
 				"Should the target creature have more than 150 hit points, the spell has no effect, leaving the creature unharmed and unaffected.",
 				"The {@condition restrained} creature can attempt to break free from the magical restraint by making a Strength saving throw at the end of each of its turns. On a successful save, the restraining effect ends, allowing the creature to stand once more."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true
 			},
@@ -3606,11 +3606,11 @@
 				]
 			},
 			"entries": [
-				"Sova's Undead Beasts is a dark necromantic spell that grants the caster the ability to raise an undead creature from a pile of bones or a corpse of a Medium or Large beast within range. The spell imbues the target with a foul mimicry of life, transforming it into an undead creature of the caster's choice: {@creature Undead Brown Bear|talesoflumeeria}, {@creature Undead Tiger|talesoflumeeria}, or {@creature Undead Dire Wolf|talesoflumeeria}. (The DM determines the creature's game statistics)",
+				"Sova's Undead Beasts is a dark necromantic spell that grants the caster the ability to raise an undead creature from a pile of bones or a corpse of a Medium or Large beast within range. The spell imbues the target with a foul mimicry of life, transforming it into an undead creature of the caster's choice: {@creature Undead Brown Bear|ToL}, {@creature Undead Tiger|ToL}, or {@creature Undead Dire Wolf|ToL}. (The DM determines the creature's game statistics)",
 				"Once animated, the undead creature follows the mental commands of the caster, who can use a bonus action on each of their turns to direct its actions. The caster can command the creature to perform specific actions, such as attacking a target or guarding a location, or issue general commands for self-defense. The undead beast remains obedient to the caster's commands until its task is completed or the duration of the spell expires.",
 				"The duration of Sova's Undead Beasts is up to 1 hour. Once this time elapses, the magic sustaining the undead creature fades, and it is destroyed, returning to its lifeless state."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3654,11 +3654,11 @@
 				]
 			},
 			"entries": [
-				"Upon casting, the caster must choose either a corpse of a giant or five medium humanoid corpses within range. If humanoid corpses are chosen, they stretch and fuse in gruesome ways, mimicking the size and strength of a giant. The spell imbues the target with a vile mockery of life, transforming it into an undead creature of the caster's choice: {@creature Zombie Giant|talesoflumeeria} or {@creature Skeleton Giant|talesoflumeeria}. (The DM determines the creature's game statistics)",
+				"Upon casting, the caster must choose either a corpse of a giant or five medium humanoid corpses within range. If humanoid corpses are chosen, they stretch and fuse in gruesome ways, mimicking the size and strength of a giant. The spell imbues the target with a vile mockery of life, transforming it into an undead creature of the caster's choice: {@creature Zombie Giant|ToL} or {@creature Skeleton Giant|ToL}. (The DM determines the creature's game statistics)",
 				"Once animated, the undead creature follows the mental commands of the caster. As a bonus action on each of the caster's turns, they can mentally command the creature if it is within 60 feet. The caster can dictate the creature's actions and movement for its next turn or issue general commands such as guarding a specific location. If no commands are issued, the creature will defend itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.",
 				"The caster maintains control over the undead creature until the spell's {@status concentration} ends, after which the creature's bones turn to ash and are destroyed, leaving little to no trace of its existence."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3711,7 +3711,7 @@
 				"{@b Extra Hit Points:} The target gains 30 additional maximum hit points for the duration of the spell.",
 				"{@b Climbable:} Adjacent creatures may spend half of their movement to attempt a DC 15 Strength (Athletics) check to climb onto the target. While climbing on the target, a creature has advantage on melee attacks against it, and the target has disadvantage on melee attacks against the climbing creature."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3761,7 +3761,7 @@
 				"While the Shade cannot pass through solid walls, it can effortlessly move through creatures and objects, allowing it to traverse openings such as windows or average wooden doors. Observers can discern the Shade's illusory nature with a successful investigation check (DC equal to your spell save DC), or if they witnessed you casting the spell.",
 				"At the end of your next turn, a silver light emanates from the Shade's last location, and you instantaneously teleport to that position. "
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3813,7 +3813,7 @@
 			"entries": [
 				"You choose a creature within range that you can see. The creature must make a Dexterity saving throw. On a failed save, the creature takes {@damage 4d8} fire damage, and an additional {@damage 2d8} fire damage on your next turn. On a successful save, the creature takes half as much damage with no follow-up damage."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3877,7 +3877,7 @@
 				"The intense heat of the explosion damages objects within the area, incinerating flammable objects that are neither worn nor carried.",
 				"At the apex of the cylinder, if the explosion occurred in an area where the cylinder reached its maximum height, a lingering effect remains. A transparent red star is suspended, emitting enough radiant light to cast Bright light for up to 1 mile in every direction. The red star persists for a thousand years. The first 500 years there bright light in 1 mile. The last 500 years it becomes dim light. "
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -3935,7 +3935,7 @@
 				"You choose a point within range that you can see. Each unwilling creature in a 15-foot-radius sphere centered on that point must make a Wisdom saving throw. On a failed save, a creature takes {@damage 2d4} force damage and is teleported 20 feet away from the center of the sphere. On a successful save, nothing happens.",
 				"The space for the teleportation must be unoccupied and on the ground or a floor."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -3983,7 +3983,7 @@
 			"entries": [
 				"With a sinister incantation, you tap into the life force of others, empowering them with renewed vitality. Choose two willing creatures within range. Each target can expend 1 hit die, rolling it and regaining hit points equal to the result plus their Constitution modifier plus your Spellcasting Modifier."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true,
@@ -4059,7 +4059,7 @@
 			"entries": [
 				"Upon seeing the outcome of the initiative roll, you or a friendly creature within range that you choose gain sudden insight, allowing them to reroll their initiative with advantage. The creature can choose to use the new roll or keep the original result. This spell must be cast immediately after the initiative roll is made but before the turn order is finalized."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -4118,7 +4118,7 @@
 				"On any subsequent turns, they take 20 psychic damage and afterwards they can attempt to make a charisma saving throw. On a success they reappear in the space they left or in the nearest unoccupied space if that space is occupied.",
 				"While in the demiplane, if the targeted creature is reduced to 50 hit points or fewer, they immediately die as their bones, along with any magic items they wore, appears in the space they left or in the nearest unoccupied space if that space is occupied."
 			],
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"components": {
 				"v": true,
 				"s": true
@@ -4131,7 +4131,7 @@
 	"monster": [
 		{
 			"name": "Skeletal Knight",
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"page": 208,
 			"size": [
 				"M"
@@ -4257,7 +4257,7 @@
 				"M"
 			],
 			"type": "construct",
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"alignment": [
 				"N"
 			],
@@ -4345,7 +4345,7 @@
 				"M"
 			],
 			"type": "blood elemental",
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"alignment": [
 				"C",
 				"N"
@@ -4482,7 +4482,7 @@
 		},
 		{
 			"name": "Undead Tiger",
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"page": 339,
 			"basicRules": true,
 			"size": [
@@ -4580,7 +4580,7 @@
 		},
 		{
 			"name": "Undead Brown Bear",
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"page": 319,
 			"basicRules": true,
 			"size": [
@@ -4674,7 +4674,7 @@
 		},
 		{
 			"name": "Undead Dire Wolf",
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"page": 321,
 			"basicRules": true,
 			"size": [
@@ -4782,7 +4782,7 @@
 				"L"
 			],
 			"type": "beast",
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"alignment": [
 				"N"
 			],
@@ -4883,7 +4883,7 @@
 		},
 		{
 			"name": "Zombie Giant",
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"page": 155,
 			"basicRules": true,
 			"size": [
@@ -5129,7 +5129,7 @@
 		},
 		{
 			"name": "Skeleton Giant",
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"page": 155,
 			"basicRules": true,
 			"size": [
@@ -5369,7 +5369,7 @@
 		{
 			"name": "Kaleehn (No looking)",
 			"isNamedCreature": true,
-			"source": "TalesofLumeeria",
+			"source": "ToL",
 			"size": [
 				"M"
 			],
@@ -5461,7 +5461,7 @@
 						"3": {
 							"spells": [
 								"{@spell counterspell}",
-								"{@spell evermoor's lightning shackles|TalesofLumeeria}",
+								"{@spell evermoor's lightning shackles|ToL}",
 								"{@spell lightning bolt}"
 							],
 							"slots": 3
@@ -5506,7 +5506,7 @@
 						},
 						"9": {
 							"spells": [
-								"{@spell obliteration|TalesofLumeeria}",
+								"{@spell obliteration|ToL}",
 								"{@spell power word kill}"
 							],
 							"slots": 1
