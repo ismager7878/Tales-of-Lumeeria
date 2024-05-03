@@ -5118,8 +5118,50 @@
 			"conditionInflict": [
 				"incapacitated"
 			]
+		},
+		{
+			"name": "Sova's Deathly Hand",
+			"level": 6,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You manifest a ghostly hand that reaches out and touches a creature that you can see within range. The creature must make a Constitution saving throw, taking {@damage 10d10} necrotic damage on a failed save and you gain half the amount of necrotic damage as temporary hit points. ",
+				"If the saving throw fails by 10 or more, the creature dies and the caster gains no temporary hit points. "
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A ruby in the form of a hand worth at least 300 Gold, Consumed"
+			}
 		}
 	],
+	
 	"monster": [
 		{
 			"name": "Skeletal Knight",
