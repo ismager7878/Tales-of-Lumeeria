@@ -13,6 +13,460 @@
       }
     ]
   },
+  "table":[
+    {
+      "name": "Lumeerian Gunslinger: Firearms Table",
+      "source": "ToL",
+      "colLabels": [
+        "Name",
+        "Cost",
+        "Ammo",
+        "Damage",
+        "Range",
+        "Properties"
+      ],
+      "colStyles":[
+        "col-1",
+        "col-1",
+        "col-1",
+        "col-1",
+        "col-1",
+        "col-1"
+      ],
+      "rows":[
+        ["{@item Flintlock Pistol|ToL}", "25gp", "Pistol Bullets(1sp)", "{@dice 1d6} piercing", "30(60)ft", "Loading 1"],
+        ["{@item Revolver|ToL}", "50gp", "Pistol Bullets(1sp)", "{@dice 2d6} piercing", "40(120)ft", "Loading 6"],
+        ["{@item Musket|ToL}", "75gp", "Musket Rounds(2sp)", "{@dice 1d12} piercing", "40(120)ft", "Loading 1"],
+        ["{@item Rifle|ToL}", "100gp", "Rifle Rounds(3sp)", "{@dice 1d10} piercing", "80(240)ft", "Loading 1"],
+        ["{@item Shotgun|ToL}", "75gp", "Shotgun Shells(2sp)", "{@dice 2d6} piercing", "30(60)ft", "Loading 2"],
+        ["{@item Blunderbuss|ToL}", "100gp", "Blunderbuss Bullets(2sp)", "{@dice 2d8} piercing", "15(30)ft", "Loading 1"],
+        ["{@item Carbine|ToL}", "150gp", "Carbine Rounds(3sp)", "{@dice 1d8} piercing", "60(180)ft", "Loading 1"],
+        ["{@item Pepperbox Pistol|ToL}", "150gp", "Pistol Bullets(3sp)", "{@dice 1d10} piercing", "40(120)ft", "Loading 6"],
+        ["{@item Derringer|ToL}", "200gp", "Pistol Bullets(4sp)", "{@dice 1d8} piercing", "20(60)ft", "Loading 2"],
+        ["{@item Sniper Rifle|ToL}", "500gp", "Sniper Rounds(10sp)", "{@dice 2d10} piercing", "120(360)ft", "Loading 1"]
+      ]
+    }
+  ],
+  "item":[
+    {
+			"name": "Flintlock Pistol",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Common",
+			"value": 2500,
+			"range": "30(90)",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A simple, single-shot firearm featuring a flintlock mechanism. It's the most common firearm found across Lumeeria, favored for its affordability and reliability.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Pistol Bullets(1 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 1",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Revolver",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Common",
+			"value": 5000,
+			"range": "40(120)",
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A multi-shot firearm equipped with a revolving cylinder. It offers rapid firing and increased ammunition capacity compared to flintlock pistols.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Pistol Bullets(1 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 6",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Musket",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Common",
+			"value": 7500,
+			"range": "40(120)",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A multi-shot firearm equipped with a revolving cylinder. It offers rapid firing and increased ammunition capacity compared to flintlock pistols.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Musket Rounds (2 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 1",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Rifle",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Uncommon",
+			"value": 10000,
+			"range": "80(240)",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A specialized firearm with a rifled barrel for improved accuracy. Rifles are prized for their long-range capabilities and precision.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Rifle bullets (3 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 1",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Blunderbuss",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Uncommon",
+			"value": 10000,
+			"range": "15(30)",
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A firearm with a short barrel and a flared muzzle, firing a spread of shot or pellets. Blunderbusses excel at close-range combat and crowd control.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Blunderbuss Bullets (2 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 1",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Shotgun",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Uncommon",
+			"value": 7500,
+			"range": "30(60)",
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A close-range firearm with a wide spread, effective for hunting and close-quarters combat. Shotguns deliver devastating damage at short distances.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Shotgun Shells (2 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 2",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Carbine",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Rare",
+			"value": 15000,
+			"range": "60(180)",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A shorter, lighter version of the rifle, favored for its portability and versatility in close to medium-range combat situations.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Carbine Rounds (4 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 1",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Pepperbox Pistol",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Rare",
+			"value": 15000,
+			"range": "40(120)",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A unique pistol with multiple barrels arranged in a circular pattern around a central axis. Pepperbox pistols offer rapid-fire capability.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Pistol Bullets (3 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 6",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Derringer",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "rare",
+			"value": 20000,
+			"range": "40(120)",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A compact, concealable pistol favored by nobles and individuals seeking discreet personal protection. Derringers are known for their small size and reliability.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Pistol Bullets (4 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 2",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Sniper Rifle",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Very Rare",
+			"value": 50000,
+			"range": "120(360)",
+			"dmg1": "2d10",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A precision firearm equipped with a telescopic sight for long-range engagements. Sniper rifles are rare and highly sought after for their unmatched accuracy.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Sniper Rounds (10 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 1",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		},
+    {
+			"name": "Musket",
+			"source": "ToL",
+			"type": "R",
+			"rarity": "Common",
+			"value": 75,
+			"range": "40(120)",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"firearm": true,
+			"entries":[
+        "A multi-shot firearm equipped with a revolving cylinder. It offers rapid firing and increased ammunition capacity compared to flintlock pistols.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Ammunition Type",
+              "entries":[
+                "Musket Rounds (2 sp)"
+              ]
+            }
+          ]
+        },
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Loading 1",
+              "entries":[
+                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
+              ]
+            }
+          ]
+        }
+      ]
+		}
+  ],
   "variantrule":[
     {
       "name": "Lumeeria variant: Exhaustion",
@@ -1286,9 +1740,466 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Puppeteer Sorcerery",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 1,
+      "entries": [
+        "{@italic Created By : Victor}",
+        "Puppeteer sorcerers, whispered to be Velena's children, wield the dark art of manipulation. Hailing from the elusive Black Rose organization, these enigmatic sorcerers instill fear across Lumeeria. Their mastery over behind-the-scenes control, akin to the rumored powers of The Black Rose, chills the hearts of those who possess valuable secrets. Feared for their ability to puppeteer destinies, Puppeteer sorcerers embody the unsettling legacy of Velena's shadowy offspring, leaving an indelible mark on the lands they tread."
+      ]
+    },
+    {
+      "name": "Puppeteer Spells",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 1,
+      "header":2,
+      "entries":[
+        "You gain additional spells at the indicated levels, as shown below. They are considered sorcerer spells for you, and do not count towards the total number of spells you know.",
+        {
+          "type": "table",
+          "caption": "Puppeteer Spells",
+          "colLabels": ["Puppeteer Level", "Spell"],
+          "colStyles":[
+            "col-2 text-center",
+            "col-10"
+          ],
+          "rows":[
+            ["1st", "{@spell Charm Person}, {@spell Command}, {@spell Friends}"],
+            ["3rd", "{@spell Suggestion}, {@spell Crown of madness}"],
+            ["5th", "{@spell Hypnotic Pattern}, {@spell Enemies Abound|XGE}"],
+            ["7th", "{@spell Compulsion}, {@spell Raulothim's Psychic Lance|FTD|Psychic Lance}"],
+            ["9th", "{@spell Dominate Person}, {@spell Geas}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pull the Strings",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 1,
+      "header":2,
+      "entries":[
+        "Your charming demeanor is enough to let you get a grip on anyone’s mind, letting your words cut through doubt like daggers. You gain proficiency in Persuasion, or expertise if you are already proficient in it. Additionally, you can give yourself advantage on a Persuasion check an amount of times equal to your Proficiency Bonus per long rest, utilizing basic manipulation to influence others."
+      ]
+    },
+    {
+      "name": "Controlled Companion",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 1,
+      "header": 2,
+      "entries":[
+        "You can control the movements of smaller objects with ease, tricking those around you into believing they contain some sort of life. You can perform a Connection Ritual by spending 10 minutes concentrating on a Tiny object, holding it throughout the process. After the 10 minutes have passed, invisible strings connect your fingetips to the object, letting you manipulate it at a distance up to 60 feet, and if the object would have a way of seeing, it can act as if you had casted {@spell Find Familiar}. The object has an AC of 10 + your PB, and has 1 hit point and becomes unusable if it takes any damage. It is immune to psychic damage.",
+        "An object connected to you lasts until you perform the ritual again or if it is destroyed. While the object is connected to you, you can use it as a spellcasting focus for your sorcerer spells."
+      ]
+    },
+    {
+      "name": "No One's Marionette",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 6,
+      "header":2,
+      "entries":[
+          "You gain resistance to Psychic damage, as well as advantage on saves against being {@condition frightened} or {@condition charmed}."
+      ]
+    },
+    {
+      "name": "Force The Hand",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 6,
+      "header":2,
+      "entries":[
+          "Your ability to charm and control others has grown significantly, allowing you to temporarily change the flow of combat to your advantage. As an Action, you can spend 2 sorcery points to attempt to puppeteer a creature within 60 feet of you. If a creature has Legendary Actions, or similar abilities, they are automatically immune to this feature.", 
+          "The target makes a Wisdom saving throw, becoming Bound to you on a failed save. While bound, you can use your bonus action to decide what action the Bound creature will take. If you try to command it to do something that would bring direct harm to itself (Jumping in a pit of spikes, leaping out of a window, etc.), the target immediately escapes the bind. A Bound creature can repeat the saving throw at the end of their turn.", 
+          "When you reach 11th level in this class, you can have 2 creatures Bound at the same time. When you reach 16th level in this class, you can have 3 creatures Bound at the same time."
+      ]
+    },
+    {
+      "name": "What Is Dead May Never Die",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 6,
+      "header": 2,
+      "entries":[
+          "Over time, you have realized that fallen warriors are not entirely useless, as long as you know how to work with a dead body. Luckily for you, you do. When a small or medium humanoid creature within 60 feet of you falls to 0 HP, you can use your reaction to cause ethereal strings to hold it upright, gaining a temporary ally. You can use a Bonus action on each of your turns to control the creature, which has the statistics of a Skeleton with any and all appropriate changes. When using your reaction, you can also spend sorcery points to empower your hold over the deceased target, giving it an amount of Temporary Hit Points equal to 5 times the amount of sorcery points spent + half your level (Rounded up) in this class. You are considered to be concentrating on this."
+      ]
+    },
+    {
+      "name": "Unwilling Devotion",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 14,
+      "header":2,
+      "entries":[
+          "When a creature is affected by an Enchantment spell you cast, or a subclass feature, you can attempt to change their memory, as with {@spell Modify Memory} cast at its base level."
+      ]
+    },
+    {
+      "name": "Sever the Strings",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 14,
+      "header":2,
+      "entries":[
+        "When a creature is freed from either {@subclassFeature Force the Hand|Sorcerer||Puppeteer|ToL|6} or an Enchantment you have cast on them, you can use your reaction and spend sorcery points to deal psychic damage to the creature equal to your level + an amount of d6s equal the amount of sorcery points spent. You can only spend an amount of sorcery points on this feature equal to half your level in this class, per long rest."
+      ]
+    },
+    {
+      "name": "Master of Puppets",
+      "source": "ToL",
+      "className": "Sorcerer",
+      "classSource": "phb",
+      "subclassShortName": "Puppeteer",
+      "subclassSource": "ToL",
+      "level": 18,
+      "header":2,
+      "entries":[
+        "At 18th level, you gain the ability to channel all of your manipulative energy into a physical manifestation of control. As an action, you spend 6 Sorcery Points and gain the following benefits for 1 minute:",
+        {
+          "type": "list",
+          "items":[
+            "You gain immunity to Psychic damage, as well as being {@condition frightened} or {@condition charmed}.",
+            "At the start of every turn, you can choose whether or not a creature either Charmed or Bound to you takes psychic damage equal to your Charisma modifier + your Proficiency Bonus.",
+            "When you deal Psychic damage with a spell or class feature, you can add your Charisma Modifier to the damage roll.",
+            "Creatures have disadvantage on their save against {@subclassFeature Force the Hand|Sorcerer||Puppeteer|ToL|6}."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lumeerian Gunslinger",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 3,
+      "entries":[
+        "{@italic Inspired from Matthew Mercer's Gunslingers and altered to fit Lumeeria}",
+        "In the vast and varied world of Lumeeria, where magic and technology intertwine in unexpected ways, Gunslingers are a rare breed of warriors who have mastered the art of wielding firearms with deadly precision. Armed with their trusty pistols, rifles, or other exotic firearms, Gunslingers navigate the dangers of their world with a blend of steely resolve, quick reflexes, and a keen eye for their target."
+      ]
+    },
+    {
+      "name": "Firearm Proficiency",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries":[
+        "Upon choosing this archetype at 3rd level, you gain proficiency with {@item Tinker's Tools}.",
+        "Your proficiency with {@item Tinker's Tools} allows you to maintain, repair, and even create firearms. You can use your Tinker's Tools to craft ammunition, repair damaged firearms, or even design and construct new firearms, subject to your Dungeon Master's discretion. Your knowledge of firearms and their mechanisms grants your insight into their operation, giving you an edge in combat and ensuring your weapons remain in top condition."
+      ]
+    },
+    {
+      "name": "Firearms: Ammunition",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries":[
+        "All firearms require specialized ammunition to function properly. Due to their rarity, finding ammunition for firearms can be challenging. However, with your proficiency in Tinker's Tools, you can craft your own ammunition at half the cost using gathered materials. Each type of firearm typically uses its own unique ammunition, which is often sold or crafted in batches to ensure compatibility with the weapon's design. As a Gunslinger, your ability to craft ammunition ensures that you're never caught unprepared when the bullets start flying."
+      ] 
+    },
+    {
+      "name": "Firearms: Firearm Properties",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries":[
+        "Firearms come in many different variations all from small flintlock pistols to large expensive sniper rifles.",
+        "Firearms in Lumeeria have replaced the optional ones presented in the {@table Adventuring Options; Firearms|DMG|Dungeon Master's Guide}.",
+        "Firearms can be found in the {@table Lumeerian Gunslinger: Firearms Table|ToL|Firearms Table}."
+      ]
+    },
+    {
+      "name": "Adept Marksman",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries":[
+        "When you choose this archetype at 3rd level, you learn to perform powerful trick shots to disable or damage your opponent using your firearms.",
+        {
+          "type": "entries",
+          "name": "Trick Shots:",
+          "entries":[
+            "You learn two trick shots of your choice, which are detailed under {@subclassFeature Gunslinger: Trick Shots|Fighter||Lumeerian Gunslinger|ToL|3|ToL|Trick Shots} below. Many trick shots enhance an attack in some way. Each use of a trick shot must be declared before the attack roll is made."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Grit:",
+          "entries": [
+            "You gain a number of grit points equal to your Intelligence modifier (minimum of 1) + your proficiency bonus. You regain 1 expended grit point each time you roll a 20 on the {@dice d20} roll for an attack with a firearm. You regain all expended grit points after a short or long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Grit:",
+          "entries":[
+            "Some of your trick shots require your targets to make a saving throw to resist the trick shot's effects. The saving throw DC is calculated as follows:",
+            {
+              "type": "abilityDc",
+              "name": "Trick Shot",
+              "attributes": [
+                "dex"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gunslinger: Trick Shots",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries":[
+         {
+          "type": "entries",
+          "name": "Bullying Shot:",
+          "entries":[
+            "You can use the powerful blast and thundering sound of your firearm to shake the resolve of a creature. When making a Charisma (Intimidation) check, you can expend one grit point to gain advantage on the roll."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Dazing Shot:",
+          "entries":[
+            "When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw or suffer disadvantage on attacks until the end of their next turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Deadeye Shot:",
+          "entries":[
+            "When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Disarming Shot:",
+          "entries":[
+            "When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or drop 1 held object of your choice and have that object be pushed 10 feet away from you."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Forceful Shot:",
+          "entries":[
+            "When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 15 feet away from you."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Piercing Shot:",
+          "entries":[
+            "When you make a firearm attack against a creature, you can expend one grit point to attempt to fire through multiple opponents. On a hit, the creature suffers normal damage and you make an attack roll with disadvantage against every creature in a line directly behind the target within your first range increment."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Winging Shot:",
+          "entries":[
+            "When you make a firearm attack against a creature, you can expend one grit point to attempt to topple a moving target. On a hit, the creature suffers normal damage and must make a Strength saving throw or be knocked {@condition prone}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Violent Shot:",
+          "entries":[
+            "When you make a firearm attack against a creature, you can expend one or more grit points to enhance the volatility of the attack. If the attack hits, you can roll one additional weapon damage die per grit point spent when determining the damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Blinding Shot:",
+          "entries":[
+            "When you make a firearm attack against a creature, you can expend one grit point to attempt to blind your target with a well-aimed shot. On a hit, the creature suffers normal damage and must succeed on a Constitution saving throw or be {@condition blinded} until the end of its next turn."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Concussive Shot:",
+          "entries":[
+            "When you make a firearm attack against a creature, you can expend three grit points to unleash a concussive blast with your shot. On a hit, the creature suffers normal damage and must succeed on a Constitution saving throw or be {@condition stunned} until the end of its next turn."
+          ]
+        }
+      ]
+    }, 
+    {
+      "name": "Quickdraw",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 7,
+      "header": 2,
+      "entries":[
+        "When you reach 7th level, you add your proficiency bonus to your initiative.",
+        "Furthermore, when you roll for initiative, you can expend up to a maximum of 3 grit points to boost your initiative score. For each grit point spent in this way, your initiative score increases by 2,"
+      ] 
+    },
+    {
+      "name": "Quick Thinking",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 10,
+      "header": 2,
+      "entries":[
+        "Upon reaching 10th level, your sharp wit and quick reflexes enable you to recalibrate your aim when your shots go awry in the heat of battle.",
+        "Once per round, when you miss with an attack roll, you can add your Intelligence modifier to the roll to potentially hit the target. If the modified roll is successful, you also add your Intelligence modifier to the damage dealt.",
+        "You can use this feature a number of times equal to your Intelligence modifier, regaining expended uses after completing a long rest."
+      ] 
+    },
+    {
+      "name": "Quick Movement",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 15,
+      "header": 2,
+      "entries":[
+        "Starting at 15th level, you gain an additional 10 feet of movement, and you can use the {@action Disengage}, or {@action Dash} action as a bonus action.",
+        "Furthermore, when you roll for initiative, you can expend up to a maximum of 3 grit points to boost your initiative score. For each grit point spent in this way, your initiative score increases by 2,"
+      ] 
+    },
+    {
+      "name": "Slinger's Aim",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 15,
+      "header": 2,
+      "entries":[
+        "When you reach 15th level, you add half of your proficiency bonus (rounded down) to attack rolls with firearms."
+      ] 
+    },
+    {
+      "name": "Vicious Intent",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 18,
+      "header": 2,
+      "entries":[
+        "At 18th level, your firearm attacks score a critical hit on a roll of 19-20, and you regain a grit point on a roll of 19 or 20 on a d20 attack roll."
+      ] 
+    },
+    {
+      "name": "Hemorrhaging Critical",
+      "source": "ToL",
+      "className": "Fighter",
+      "classSource": "phb",
+      "subclassShortName": "Lumeerian Gunslinger",
+      "subclassSource": "ToL",
+      "level": 18,
+      "header": 2,
+      "entries":[
+        "Upon reaching 18th level, whenever you score a critical hit on an attack with a firearm, the target additionally suffers half of the damage from the attack at the end of its next turn."
+      ] 
     }
   ],
   "subclass": [
+    {
+      "name": "Lumeerian Gunslinger",
+      "subclassFeatures": [
+        "Lumeerian Gunslinger|Fighter||Lumeerian Gunslinger|ToL|3",
+        "Firearm Proficiency|Fighter||Lumeerian Gunslinger|ToL|3",
+        "Firearms: Ammunition|Fighter||Lumeerian Gunslinger|ToL|3",
+        "Firearms: Firearm Properties|Fighter||Lumeerian Gunslinger|ToL|3",
+        "Adept Marksman|Fighter||Lumeerian Gunslinger|ToL|3",
+        "Gunslinger: Trick Shots|Fighter||Lumeerian Gunslinger|ToL|3",
+        "Quickdraw|Fighter||Lumeerian Gunslinger|ToL|7",
+        "Quick Thinking|Fighter||Lumeerian Gunslinger|ToL|10",
+        "Quick Movement|Fighter||Lumeerian Gunslinger|ToL|15",
+        "Slinger's Aim|Fighter||Lumeerian Gunslinger|ToL|15",
+        "Vicious Intent|Fighter||Lumeerian Gunslinger|ToL|18",
+        "Hemorrhaging Critical|Fighter||Lumeerian Gunslinger|ToL|18"
+      ],
+      "source": "ToL",
+      "shortName": "Lumeerian Gunslinger",
+      "className": "Fighter",
+      "classSource": "phb"
+    },
+    {
+      "name": "Puppeteer Sorcerer",
+      "subclassFeatures": [
+        "Puppeteer Sorcerery|Sorcerer||Puppeteer|ToL|1",
+        "Pull the Strings|Sorcerer||Puppeteer|ToL|1",
+        "Puppeteer Spells|Sorcerer||Puppeteer|ToL|1",
+        "Controlled Companion|Sorcerer||Puppeteer|ToL|1",
+        "No One's Marionette|Sorcerer||Puppeteer|ToL|6",
+        "Force The Hand|Sorcerer||Puppeteer|ToL|6",
+        "Unwilling Devotion|Sorcerer||Puppeteer|ToL|14",
+        "Sever the Strings|Sorcerer||Puppeteer|ToL|14",
+        "Master of Puppets|Sorcerer||Puppeteer|ToL|18"
+      ],
+      "source": "ToL",
+      "shortName": "Puppeteer",
+      "className": "Sorcerer",
+      "classSource": "phb"
+    },
     {
       "name": "Path of the Soulstealer",
       "subclassFeatures": [
