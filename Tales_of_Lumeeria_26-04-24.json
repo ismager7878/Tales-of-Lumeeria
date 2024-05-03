@@ -150,7 +150,7 @@
         ["{@item Blunderbuss|ToL}", "50gp", "Blunderbuss Bullets(1sp)", "{@dice 2d8} piercing", "15(30)ft", "Loading 1"],
         ["{@item Carbine|ToL}", "150gp", "Carbine Rounds(3sp)", "{@dice 1d10} piercing", "80(180)ft", "Loading 8"],
         ["{@item Derringer|ToL}", "200gp", "Pistol Bullets(4sp)", "{@dice 1d8} piercing", "20(60)ft", "Loading 2"],
-        ["{@item Sniper Rifle|ToL}", "500gp", "Sniper Rounds(10sp)", "{@dice 2d10} piercing", "100(500)ft", "Loading 1"]
+        ["{@item Sniper Rifle|ToL}", "500gp", "Sniper Rounds(10sp)", "{@dice 4d10} piercing", "1000(3000)ft", "Loading 1, Scoped"]
       ]
     }
   ],
