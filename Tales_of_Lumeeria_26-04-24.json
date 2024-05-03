@@ -13,6 +13,114 @@
       }
     ]
   },
+  "feat":[
+    {
+			"name": "Toughend",
+			"source": "ToL",
+			"prerequisite": [
+				{
+					"feat": [
+						"tough"
+					]
+				}
+			],
+      "entries":[
+        "You have honed your endurance and resilience to a higher degree, becoming even more formidable in combat.",
+        {
+          "type": "list",
+          "items":[
+            "Increase your maximum hit points by rolling a toughened die, which is a d4, and adding the result to your hit point total.",
+            "Each time you gain a level, roll the toughened die and add the result to your hit point total."
+          ]
+        },
+        "This feat enhances the character's durability over time, granting them additional hit points with each level gained. It builds upon the foundation laid by the Tough feat, further solidifying the character's resilience in the face of adversity."
+      ]
+    },
+    {
+      "name":"Magical Insight",
+      "source": "ToL",
+      "prerequisite":[
+        {
+          "spellcastingFeature": true
+        }
+      ],
+      "ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+      "entries":[
+        "Your magical ability have granted you an insight into battle.",
+        {
+          "type":"list",
+          "items":[
+            "You can give yourself a bonus to your initiative rolls equal to your spellcasting modifier."
+          ]
+        }
+      ]
+    },
+    {
+      "name":"Talented Preparer",
+      "source": "ToL",
+      "prerequisite": [
+				{
+          "level": {
+						"level": 8,
+						"class": {
+							"name": "Cleric",
+							"visible": true
+						}
+					}
+        },
+        {
+          "level": {
+						"level": 8,
+						"class": {
+							"name": "Druid",
+							"visible": true
+						}
+					}
+        },
+        {
+          "level": {
+						"level": 8,
+						"class": {
+							"name": "Wizard",
+							"visible": true
+						}
+					}
+        }
+			],
+      "ability": [
+				{
+					"choose": {
+						"from": [
+							"int",
+							"wis",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+      "entries":[
+        "Whether through keen insight, natural charm, or profound intellect, you have unlocked the ability to prepare a greater array of spells.",
+        {
+          "type":"list",
+          "items":[
+            "    The number of spells you can prepare each day increases by your proficiency bonus."
+          ]
+        }
+      ]
+    }
+  ],
   "table":[
     {
       "name": "Lumeerian Gunslinger: Firearms Table",
@@ -38,12 +146,11 @@
         ["{@item Revolver|ToL}", "50gp", "Pistol Bullets(1sp)", "{@dice 2d6} piercing", "40(120)ft", "Loading 6"],
         ["{@item Musket|ToL}", "75gp", "Musket Rounds(2sp)", "{@dice 1d12} piercing", "40(120)ft", "Loading 1"],
         ["{@item Rifle|ToL}", "100gp", "Rifle Rounds(3sp)", "{@dice 1d10} piercing", "80(240)ft", "Loading 1"],
-        ["{@item Shotgun|ToL}", "75gp", "Shotgun Shells(2sp)", "{@dice 2d6} piercing", "30(60)ft", "Loading 2"],
-        ["{@item Blunderbuss|ToL}", "100gp", "Blunderbuss Bullets(2sp)", "{@dice 2d8} piercing", "15(30)ft", "Loading 1"],
-        ["{@item Carbine|ToL}", "150gp", "Carbine Rounds(3sp)", "{@dice 1d8} piercing", "60(180)ft", "Loading 1"],
-        ["{@item Pepperbox Pistol|ToL}", "150gp", "Pistol Bullets(3sp)", "{@dice 1d10} piercing", "40(120)ft", "Loading 6"],
+        ["{@item Shotgun|ToL}", "75gp", "Shotgun Shells(2sp)", "{@dice 4d6} piercing", "20(60)ft", "Loading 2"],
+        ["{@item Blunderbuss|ToL}", "50gp", "Blunderbuss Bullets(1sp)", "{@dice 2d8} piercing", "15(30)ft", "Loading 1"],
+        ["{@item Carbine|ToL}", "150gp", "Carbine Rounds(3sp)", "{@dice 1d10} piercing", "80(180)ft", "Loading 8"],
         ["{@item Derringer|ToL}", "200gp", "Pistol Bullets(4sp)", "{@dice 1d8} piercing", "20(60)ft", "Loading 2"],
-        ["{@item Sniper Rifle|ToL}", "500gp", "Sniper Rounds(10sp)", "{@dice 2d10} piercing", "120(360)ft", "Loading 1"]
+        ["{@item Sniper Rifle|ToL}", "500gp", "Sniper Rounds(10sp)", "{@dice 2d10} piercing", "100(500)ft", "Loading 1"]
       ]
     }
   ],
@@ -204,8 +311,8 @@
 			"name": "Blunderbuss",
 			"source": "ToL",
 			"type": "R",
-			"rarity": "Uncommon",
-			"value": 10000,
+			"rarity": "Common",
+			"value": 5000,
 			"range": "15(30)",
 			"dmg1": "2d8",
 			"dmgType": "P",
@@ -219,7 +326,7 @@
               "type":"entries",
               "name":"Ammunition Type",
               "entries":[
-                "Blunderbuss Bullets (2 sp)"
+                "Blunderbuss Bullets (1 sp)"
               ]
             }
           ]
@@ -244,8 +351,8 @@
 			"type": "R",
 			"rarity": "Uncommon",
 			"value": 7500,
-			"range": "30(60)",
-			"dmg1": "2d6",
+			"range": "20(60)",
+			"dmg1": "4d6",
 			"dmgType": "P",
 			"firearm": true,
 			"entries":[
@@ -283,7 +390,7 @@
 			"rarity": "Rare",
 			"value": 15000,
 			"range": "60(180)",
-			"dmg1": "1d8",
+			"dmg1": "1d10",
 			"dmgType": "P",
 			"firearm": true,
 			"entries":[
@@ -305,45 +412,7 @@
           "entries":[
             {
               "type":"entries",
-              "name":"Loading 1",
-              "entries":[
-                "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
-              ]
-            }
-          ]
-        }
-      ]
-		},
-    {
-			"name": "Pepperbox Pistol",
-			"source": "ToL",
-			"type": "R",
-			"rarity": "Rare",
-			"value": 15000,
-			"range": "40(120)",
-			"dmg1": "1d10",
-			"dmgType": "P",
-			"firearm": true,
-			"entries":[
-        "A unique pistol with multiple barrels arranged in a circular pattern around a central axis. Pepperbox pistols offer rapid-fire capability.",
-        {
-          "type":"entries",
-          "entries":[
-            {
-              "type":"entries",
-              "name":"Ammunition Type",
-              "entries":[
-                "Pistol Bullets (3 sp)"
-              ]
-            }
-          ]
-        },
-        {
-          "type":"entries",
-          "entries":[
-            {
-              "type":"entries",
-              "name":"Loading 6",
+              "name":"Loading 8",
               "entries":[
                 "The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload. You must have one free hand to reload a firearm."
               ]
@@ -396,12 +465,24 @@
 			"type": "R",
 			"rarity": "Very Rare",
 			"value": 50000,
-			"range": "120(360)",
-			"dmg1": "2d10",
+			"range": "1000(3000)",
+			"dmg1": "4d10",
 			"dmgType": "P",
 			"firearm": true,
 			"entries":[
-        "A precision firearm equipped with a telescopic sight for long-range engagements. Sniper rifles are rare and highly sought after for their unmatched accuracy.",
+        "A precision firearm equipped with an arcane telescopic sight for long-range engagements. Sniper rifles are rare and highly sought after for their unmatched accuracy.",
+        {
+          "type":"entries",
+          "entries":[
+            {
+              "type":"entries",
+              "name":"Scoped",
+              "entries":[
+                "When your within 20ft of your target, you have disadvantage on hitting them."
+              ]
+            }
+          ]
+        },
         {
           "type":"entries",
           "entries":[
@@ -1190,7 +1271,7 @@
       "level": 20,
       "header": 2,
       "entries": [
-        "At 20th level, your {@subclassFeature Lifesteal|Soulburner|ToL|Soulkeeper|ToL|7} ascends to its ultimate form, manifesting as a passive ability that triggers once a turn whenever you strike an enemy with your melee weapon using an Attack action."
+        "At 20th level, your {@subclassFeature Lifesteal|Soulburner|ToL|Soulstealer|ToL|7} ascends to its ultimate form, manifesting as a passive ability that triggers once a turn whenever you strike an enemy with your melee weapon using an Attack action."
       ]
     },
     {
