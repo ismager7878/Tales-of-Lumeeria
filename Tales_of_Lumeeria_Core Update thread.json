@@ -2050,8 +2050,9 @@
           "type": "entries",
           "name": "Trick Shots:",
           "entries":[
-            "You learn two trick shots of your choice, which are detailed under {@subclassFeature Gunslinger: Trick Shots|Fighter||Lumeerian Gunslinger|ToL|3|ToL|Trick Shots} below. Many trick shots enhance an attack in some way. Each use of a trick shot must be declared before the attack roll is made."
-          ]
+            "You learn two trick shots of your choice, which are detailed under {@subclassFeature Gunslinger: Trick Shots|Fighter||Lumeerian Gunslinger|ToL|3|ToL|Trick Shots} below. Many trick shots enhance an attack in some way. Each use of a trick shot must be declared before the attack roll is made.",
+			"You learn an additional trick shot of your choice at 7th, 10th, 15th and 18th level. Each time you learn a new trick shot, you can also replace one trick shot you know with a different one."
+		]
         },
         {
           "type": "entries",
@@ -2197,8 +2198,7 @@
       "level": 15,
       "header": 2,
       "entries":[
-        "Starting at 15th level, you gain an additional 10 feet of movement, and you can use the {@action Disengage}, or {@action Dash} action as a bonus action.",
-        "Furthermore, when you roll for initiative, you can expend up to a maximum of 3 grit points to boost your initiative score. For each grit point spent in this way, your initiative score increases by 2,"
+        "Starting at 15th level, you gain an additional 10 feet of movement, and you can use the {@action Disengage}, or {@action Dash} action as a bonus action."
       ] 
     },
     {
@@ -2364,7 +2364,7 @@
     {
       "name": "Path of the Dragonsoul",
       "subclassFeatures": [
-        "Path of The Dragonsoul|Soulburner|Soulburner|ToL|Dragonsoul|ToL|3",
+        "Path of The Dragonsoul|Soulburner|ToL|Dragonsoul|ToL|3",
         "Draconic Contract|Soulburner|ToL|Dragonsoul|ToL|3",
         "Draconic Defense|Soulburner|ToL|Dragonsoul|ToL|3",
         "Dragon Form|Soulburner|ToL|Dragonsoul|ToL|3",
