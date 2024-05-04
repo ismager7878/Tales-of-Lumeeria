@@ -15,7 +15,39 @@
   },
   "feat": [
     {
-      "name": "Toughend",
+      "name": "Firearms Expert",
+      "source": "ToL",
+      "prerequisite": [
+        {
+          "otherSummary": {
+            "entry": "Proficiency with firearms",
+            "entrySummary": "Prof firearms"
+          }
+        }
+      ],
+      "ability": [
+        {
+          "choose": {
+            "from": ["dex"],
+            "amount": 1
+          }
+        }
+      ],
+      "entries": [
+        "Thanks to extensive practice with firearms, you gain the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You ignore the loading quality of firearms with which you are proficient.",
+            "Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls with firearms. This counts for weapons with the Scoped Pro  ",
+            "When you use the Attack action and attack with a one-handed weapon shooting pistol bullets, you can use a bonus action to attack with a different firearm that shoots pistol bullets that you are holding."
+          ]
+        },
+        "This feat enhances your proficiency with firearms, allowing for quicker reloads, improved accuracy in close combat, and the ability to make rapid successive attacks with pistols."
+      ]
+    },
+    {
+      "name": "Toughened",
       "source": "ToL",
       "prerequisite": [
         {
