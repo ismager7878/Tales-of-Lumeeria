@@ -6744,6 +6744,386 @@
         "dexterity",
         "wisdom"
       ]
+    },
+    {
+			"name": "Greater Succubus",
+			"source": "ToL",
+			"page": 285,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d8 + 100",
+				"average": 190
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 12,
+			"dex": 22,
+			"con": 20,
+			"int": 20,
+			"wis": 20,
+			"cha": 24,
+			"skill": {
+				"perception": "+10",
+				"persuasion": "+12",
+				"stealth": "+11",
+				"deception": "+12",
+				"insight": "+10"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				"poison",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal",
+				"telepathy 120 ft."
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Telepathic Bond",
+					"entries": [
+						"The fiend ignores the range restriction on its telepathy when communicating with a creature it has {@condition charmed}. The two don't even need to be on the same plane of existence."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The fiend can use its action to polymorph into a Small, Medium or Large humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Greater Succubus makes 3 claw attacks"
+					]
+				},
+				{
+					"name": "Claw (Fiend Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}26 ({@damage 3d6 + 6}) slashing damage plus ({@damage 2d10}) psychic damage. "
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"One creature the fiend can see within 60 feet of it must succeed on a {@dc 22} Wisdom saving throw or be magically {@condition charmed} for 1 day. The {@condition charmed} target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Charm for the next 24 hours.",
+						"The fiend can have only one target {@condition charmed} at a time. If it charms another, the effect on the previous target ends."
+					]
+				},
+				{
+					"name": "Draining Kiss",
+					"entries": [
+						"The fiend kisses a creature {@condition charmed} by it or a willing creature. The target must make a {@dc 22} Constitution saving throw against this magic, taking 62 ({@damage 10d10 + 7}) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Etherealness",
+					"entries": [
+						"The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/succubus-incubus.mp3"
+			},
+			"traitTags": [
+				"Shapechanger"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I",
+				"TP"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Succubus",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Succubus",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Succubus.webp"
+						}
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Succubi and incubi inhabit all of the Lower Planes, and the lascivious dark-winged fiends can be found in service to devils, demons, night hags, rakshasas, and yugoloths. Asmodeus, ruler of the Nine Hells, uses these fiends to tempt mortals to perform evil acts. The demon lord Graz'zt keeps succubi and incubi as advisers and consorts.",
+									"Though legend speaks of them separately, any succubus can become an incubus, and vice versa. Most of these fiends do have a preference for one form or the other. Mortals only rarely see a succubus or incubus in its true form, however, for the fiend typically begins its corruption in veiled, insidious ways.",
+									{
+										"name": "Beautiful Corrupters",
+										"type": "entries",
+										"entries": [
+											"A succubus or incubus first appears in ethereal form, passing through walls like a ghost to lurk next to a mortal's bedside and whisper forbidden pleasures. Sleeping victims are tempted to give in to their darkest desires, indulge in taboos, and feed forbidden appetites. As the fiend fills the victim's dreams with debauched images, the victim becomes more susceptible to temptation in everyday life.",
+											"Inevitably, the fiend enters the mortal realm in tempting form to directly influence a creature's actions. Appearing in the guise of a humanoid who has previously appeared only in the victim's dreams, the succubus or incubus seduces or befriends its victim, indulging all its desires so that it performs evil acts of its own free will.",
+											"A mortal bequeaths its soul to the fiend not by formal pledge or contract. Instead, when a succubus or incubus has corrupted a creature completely-some say by causing the victim to commit the three betrayals of thought, word, and deed-the victim's soul belongs to the fiend. The more virtuous the fiend's prey, the longer the corruption takes, but the more rewarding the downfall. After successfully corrupting a victim, the succubus or incubus kills it, and the tainted soul descends into the Lower Planes.",
+											"The succubus or incubus resorts to charming a victim magically only when necessary, usually as a form of self-defense. A {@condition charmed} creature isn't responsible for its actions, so forcing it to behave against its will won't bring the fiend closer to the ultimate prize: the victim's soul."
+										]
+									},
+									{
+										"name": "Deadly Kiss",
+										"type": "entries",
+										"entries": [
+											"The kiss of a succubus or incubus is an echo of the emptiness that is the fiend's longing for a corrupted soul. Likewise, the recipient of the fiend's kiss gains no satisfaction from it, experiencing only pain and the profound emptiness that the fiend imparts. The kiss is nothing short of an attack, usually delivered as a final farewell before the fiend escapes."
+										]
+									},
+									{
+										"name": "Fiendish Offspring",
+										"type": "entries",
+										"entries": [
+											"Succubi and incubi can reproduce with one another to spawn more of their kind. Less commonly, a succubus or incubus reproduces with a humanoid. From this unholy union, a {@creature cambion} child is conceived. Invariably, the fiendish offspring is as wicked as its fiendish parent."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"save": {
+				"con": "+10",
+				"cha": "+12",
+				"wis": "+10"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Greater Succubus casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (Spell Save {@dc 22})"
+					],
+					"daily": {
+						"1": [
+							"{@spell greater haste|ToL}"
+						],
+						"3": [
+							"{@spell banishment}",
+							"{@spell hold monster}",
+							"{@spell modify memory}",
+							"{@spell nondetection}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Student of the Spellbreaker Arts",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item half plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 85",
+				"average": 161
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 18,
+			"con": 20,
+			"int": 16,
+			"wis": 18,
+			"cha": 15,
+			"passive": 22,
+			"cr": "9",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"resist": [
+				"force",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed"
+			],
+			"save": {
+				"wis": "+8",
+				"con": "+9",
+				"cha": "+6"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"arcana": "+11",
+				"insight": "+8",
+				"perception": "+12",
+				"investigation": "+7"
+			},
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The student of the spellbreaker arts has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the student of the spellbreaker arts hits with it."
+					]
+				},
+				{
+					"name": "Indomitable (2/Day).",
+					"entries": [
+						"The student of the spellbreaker rerolls a failed saving throw. "
+					]
+				},
+				{
+					"name": "Mage Slayer",
+					"entries": [
+						"When the student of the spellbreaker arts damage a creature that is {@status concentration||concentrating} on a spell, that creature has disadvantage on the saving throw it makes to maintain its {@status concentration}."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute",
+				"Magic Resistance"
+			],
+			"reaction": [
+				{
+					"name": "Striker the Caster",
+					"entries": [
+						"When a creature within 20 feet of the student of the spellbreaker arts casts a spell, they can use their reaction to make a melee weapon attack against that creature."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit +10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit +8} to hit, range 100/400 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"attachedItems": [
+				"heavy crossbow|phb",
+				"longsword|phb"
+			],
+			"bonus": [
+				{
+					"name": "Bracelet of Misty Step (3/Day)",
+					"entries": [
+						"The student of the spellbreaker arts can as a bonus action {@spell misty step} using its Bracelet of Misty Step. "
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
     }
   ]
 }
