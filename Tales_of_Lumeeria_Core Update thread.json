@@ -6200,6 +6200,354 @@
       "damageTags": ["B"]
     },
     {
+			"name": "Winged Guard",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"special": "22 (Dwarven Plate, Shield)"
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 45",
+				"average": 112
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 15,
+			"passive": 11,
+			"cr": "9",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"str": "+10",
+				"dex": "+6",
+				"con": "+7"
+			},
+			"skill": {
+				"athletics": "+14",
+				"intimidation": "+6"
+			},
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The winged guard has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the winged guard hits with it."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Winged Guard makes two attacks. "
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft. or range 20/60ft., one target. {@h}20 ({@damage 3d6 + 6}) piercing damage plus ({@damage 1d10}) radiant damage."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 6}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 17} Strength Saving Throw or be knocked Prone"
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"attachedItems": [
+				"spear|phb"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The Winged Guard Adds 3 to its AC against one melee attack that would hit it. TO do so, the winged Guard must see the attacker and be wielding a melee weapon"
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+    {
+			"name": "Scriber of Lies",
+			"size": [
+				"M",
+				"L"
+			],
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"Devil"
+				]
+			},
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "20d10 + 100",
+				"average": 210
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 20,
+			"int": 28,
+			"wis": 18,
+			"cha": 19,
+			"passive": 20,
+			"cr": "20",
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Draconic",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I"
+			],
+			"save": {
+				"int": "+15",
+				"con": "+11",
+				"dex": "+10"
+			},
+			"skill": {
+				"arcana": "+21",
+				"history": "+21",
+				"insight": "+10",
+				"investigation": "+21",
+				"perception": "+10",
+				"religion": "+21"
+			},
+			"resist": [
+				"cold",
+				"force",
+				"lightning",
+				"psychic",
+				{
+					"special": "bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered"
+				}
+			],
+			"immune": [
+				"fire",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"poisoned"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Scriber of Lies is a 20th-level spellcaster. Their Spellcasting Ability is Intelligence (spell save {@dc 23}, {@hit 15} to hit with spell attacks). The Scriber of Lies has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"{@b Equipment: Headband of Dual Consciousness}. The wearer of this headband gains the ability to concentrate on two spells simultaneously. Whenever they take damage, they need to make concentration checks as normal, but failing this check results in losing both spells.  "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell spectral blast|ToL}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell comprehend languages}",
+								"{@spell detect magic}",
+								"{@spell identify}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell mirror image}",
+								"{@spell misty step}",
+								"{@spell rivel's ignite|ToL}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell evermoor's lightning shackles|ToL}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell dimension door}",
+								"{@spell shadow trace|ToL}",
+								"{@spell wall of fire}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell hold monster}",
+								"{@spell scrying}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell evermoor's gigantification|ToL}",
+								"{@spell sova's deathly hand|ToL}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell greater haste|ToL}",
+								"{@spell rivel's red star|ToL}",
+								"{@spell teleport}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell feeblemind}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell obliteration|ToL}",
+								"{@spell power word kill}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The scriber of lies has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Trained Thinker",
+					"entries": [
+						"The Scriber of Lies has advantage on Constitution saving throws that you make to maintain your {@status concentration} on a spell when you take damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Whip",
+					"entries": [
+						"{@atk mw} {@hit +10} to hit, reach 10 ft., one target. {@h}18 ({@damage 4d6 + 4}) Fire damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"MLW"
+			],
+			"attachedItems": [
+				"whip|phb"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
+		},
+    {
       "name": "Kaleehn (No looking)",
       "isNamedCreature": true,
       "source": "ToL",
