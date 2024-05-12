@@ -2201,7 +2201,7 @@
           "type": "entries",
           "name": "Smoke Bomb Shot:",
           "entries": [
-            "You can expend one grit point to load your firearm with a specially prepared bullet that releases a cloud of obscuring smoke upon impact. On a hit, the creature suffers normal damage, and a 10-foot radius sphere of thick smoke is created at the point of impact, {@table Screen; Obscured Areas|ScDun|heavily obscuring} the area for 1 minute. Smoke Bomb Ammunition is required to use this Trick shot and costs 20sp to make."
+            "You can expend one grit point to load your firearm with a specially prepared bullet that releases a cloud of obscuring smoke upon impact. On a hit, the creature suffers normal damage, and a 10-foot radius sphere of thick smoke is created at the point of impact, {@table Screen; Obscured Areas|screendungeonkit|heavily obscured} the area for 1 minute. Smoke Bomb Ammunition is required to use this Trick shot and costs 20sp to make."
           ]
         },
         {
