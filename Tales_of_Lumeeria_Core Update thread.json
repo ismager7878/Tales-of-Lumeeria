@@ -5196,7 +5196,110 @@
         "s": true,
         "m": "A ruby in the form of a hand worth at least 300 Gold, Consumed"
       }
-    }
+    },{
+			"name": "Nightshade's Moon Fall",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "miles",
+					"amount": 1
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You stretch out your arm, reaching for something, as you manifest a piece of the Red Moon Lotoza as it comes plummeting down to the ground.",
+				"Choose a point within range. A shimmering portal opens in the sky above that point, revealing a fragment of the Red Moon Lotoza hurtling towards the ground. You can adjust the size of the resulting sphere upon casting, ranging from 50 feet to 120 feet in radius.",
+				"Each creature within the chosen sphere must make a Dexterity saving throw for each damage type from the spell. The sphere spreads around corners. On a failed save, a creature takes {@damage 10d10} bludgeoning damage, {@damage 10d10} fire damage, {@damage 10d10} radiant damage, {@damage 10d10} cold damage, and {@damage 10d10} force damage. On a successful save, the damage is halved.",
+				"The spell also damages objects in the area, shattering and incinerating them. Additionally, upon impact, the spell leaves behind a permanent crater with 20-foot-tall walls surrounding the area."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of the Red Moon Lotoza, not consumed"
+			}
+		},
+		{
+			"name": "Nightshade's Wolven Aspect",
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"As you cast this spell, a gigantic spectral and translucent wolf, emanating a protective aura, materializes around you, symbolizing your connection with the spirit of the wolf. ",
+				"The wolf takes on a specific elemental aspect, chosen from acid, cold, fire, lightning, or poison, which manifests visibly within its form",
+				"Your body undergoes a transformation and you gain the following benefits until the spell ends.",
+				"{@bold Fur}. Your body becomes covered in fur that aligns with the appearance of the wolf, increasing your armor class by 3. Additionally you become immune to damage of the chosen element.",
+				"{@bold Movement}. You gain an additional 30 feet of movement speed. ",
+				"{@bold Spectral Wolf}. During your turn and on each subsequent turn for the duration, the wolf can make a swipe attack as a bonus action, unleashing a powerful force in a 60-foot cone. Each creature in that area must make a Dexterity saving throw, suffering {@damage 6d8} force damage on a failed save, or half as much damage on a successful one."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a statuette of a wolf, worth at least 500 gp, consumed"
+			}
+		}
   ],
 
   "monster": [
