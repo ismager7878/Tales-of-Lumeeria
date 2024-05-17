@@ -7227,6 +7227,796 @@
 				"P",
 				"S"
 			]
-    }
+    },
+		{
+			"name": "Perran Eldergaze (Perran Stormcaller)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"{@item +1 plate armor}",
+						"{@item sentinel shield}"
+					]
+				}
+			],
+			"hp": {
+				"special": "215"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 22,
+			"int": 9,
+			"wis": 10,
+			"cha": 20,
+			"passive": 22,
+			"cr": "13",
+			"shortName": "Perran",
+			"level": 13,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan",
+				"Dwarvish",
+				"Celestial"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S",
+				"D",
+				"CE"
+			],
+			"save": {
+				"str": "+13",
+				"dex": "+15",
+				"con": "+13",
+				"int": "+11",
+				"wis": "+12",
+				"cha": "+17"
+			},
+			"skill": {
+				"acrobatics": "+8",
+				"animal handling": "+2",
+				"arcana": "+1",
+				"athletics": "+13",
+				"deception": "+7",
+				"history": "+6",
+				"insight": "+7",
+				"intimidation": "+12",
+				"investigation": "+1",
+				"medicine": "+2",
+				"nature": "+1",
+				"perception": "+7",
+				"performance": "+7",
+				"persuasion": "+17",
+				"religion": "+6",
+				"sleight of hand": "+3",
+				"stealth": "+8",
+				"survival": "+2"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Perran is an 12th-level spellcaster. His spellcasting ability is Charisma (Spell save {@dc 18}, +10 to hit with spell attacks). He has the following paladin spells prepared:",
+						"Perran can cast Chain Lightning, Lightning Bolt and Thunder Step once a day from his sword Tempest Heir. "
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell bless}",
+								"{@spell ceremony|XGE}",
+								"{@spell command}",
+								"{@spell cure wounds}",
+								"{@spell detect evil and good}",
+								"{@spell protection from evil and good}",
+								"{@spell sanctuary}",
+								"{@spell shield of faith}",
+								"{@spell thunderous smite}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration}",
+								"{@spell locate object}",
+								"{@spell misty step}",
+								"{@spell zone of truth}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell beacon of hope}",
+								"{@spell dispel magic}",
+								"{@spell revivify}",
+								"{@spell spirit shroud|TCE}"
+							],
+							"slots": 2
+						}
+					},
+					"daily": {
+						"1e": [
+							"{@spell chain lightning}",
+							"{@spell lightning bolt}",
+							"{@spell thunder step|XGE}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"trait": [
+				{
+					"name": "Aura of Protection",
+					"entries": [
+						"Perran surrounds himself with an Aura of Protection that adds a +5 to his own saving throw as well as any friendly creatures within 10ft. Additionally individuals affected by the aura cannot be {@condition charmed}. (Included)"
+					]
+				},
+				{
+					"name": "Divine Smite",
+					"entries": [
+						"When Perran hits a creature with a melee weapon attack, he can expend a spell slot to deal radiant damage. ",
+						"The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st.",
+						"Additionally whenever Perran hits a creature with a melee weapon, the creature takes an extra {@damage 1d8} radiant damage. (Included)"
+					]
+				},
+				{
+					"name": "Equipment",
+					"entries": [
+						"Perran has the following items on his person at all times : Tempest Heir, Dragonslayer Pike, Cursed Mirror, Guardian Emblem and most important SOLS aka \"Secata.Ordanance.Light.Strider 214th Battalion | BlackBox\""
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Extra Attack",
+					"entries": [
+						"Perran can attack twice per turn with his weapons. "
+					]
+				},
+				{
+					"name": "Tempest Heir +3",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}26 ({@damage 1d8 + 10}) slashing damage plus {@damage 1d12} lightning damage plus {@damage 1d8} radiant damage. "
+					]
+				},
+				{
+					"name": "Energy Blade",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 7}) radiant damage plus {@damage 1d8} radiant damage. "
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/441091471_1135027107737621_5237059982225861692_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Bk1PsPZfLt4Q7kNvgFX7yG3&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1QGEQIWsJl1cSFGzxcgKkhPaSJF4kDykzhJAB0f9PvRNEQ&oe=666EF331"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"R",
+				"S"
+			],
+			"damageTagsSpell": [
+				"C",
+				"L",
+				"N",
+				"R",
+				"T"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Geisha Kiriyami",
+			"size": [
+				"M"
+			],
+			"type": "Vampire",
+			"source": "ToL",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Mage Armor",
+						"{@item ring of protection}"
+					]
+				}
+			],
+			"hp": {
+				"special": "162"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 6,
+			"dex": 16,
+			"con": 19,
+			"int": 24,
+			"wis": 10,
+			"cha": 10,
+			"passive": 16,
+			"cr": "13",
+			"shortName": "Geisha",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Dark Speech",
+				"Abyssal",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"AB",
+				"I"
+			],
+			"save": {
+				"str": "+0",
+				"dex": "+7",
+				"con": "+11",
+				"int": "+14",
+				"wis": "+7",
+				"cha": "+2"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"animal handling": "+1",
+				"arcana": "+18",
+				"athletics": "-1",
+				"deception": "+6",
+				"history": "+13",
+				"insight": "+6",
+				"intimidation": "+10",
+				"investigation": "+13",
+				"medicine": "+6",
+				"nature": "+13",
+				"perception": "+6",
+				"performance": "+1",
+				"persuasion": "+1",
+				"religion": "+13",
+				"sleight of hand": "+9",
+				"stealth": "+9",
+				"survival": "+1"
+			},
+			"resist": [
+				"necrotic"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Geisha is a 13th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 21}, +13 to hit with spell attacks). Geisha has the following wizard spells prepared: "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch}",
+								"{@spell fire bolt}",
+								"{@spell lightning lure|TCE}",
+								"{@spell mage hand}",
+								"{@spell mending}",
+								"{@spell prestidigitation}",
+								"{@spell shocking grasp}",
+								"{@spell toll the dead|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell catapult|XGE}",
+								"{@spell detect magic}",
+								"{@spell feather fall}",
+								"{@spell inflict wounds}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell gust of wind}",
+								"{@spell hold person}",
+								"{@spell invisibility}",
+								"{@spell misty step}",
+								"{@spell scorching ray}",
+								"{@spell shatter}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell lightning bolt}",
+								"{@spell summon undead|TCE}",
+								"{@spell vampiric touch}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell ice storm}",
+								"{@spell polymorph}",
+								"{@spell raulothim's psychic lance|FTD}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell danse macabre|XGE}",
+								"{@spell dominate person}",
+								"{@spell negative energy flood|XGE}",
+								"{@spell summon draconic spirit|FTD}",
+								"{@spell wall of force}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell circle of death}",
+								"{@spell create undead}",
+								"{@spell disintegrate}",
+								"{@spell Tasha's otherworldly guise|TCE}"
+							],
+							"slots": 1
+						},
+						"7": {
+							"spells": [
+								"{@spell crown of stars|XGE}",
+								"{@spell finger of death}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"trait": [
+				{
+					"name": "Equipment",
+					"entries": [
+						"Geisha has the following items on her person at all times : Reaper's Bracelet, Reactive Field Emitter, Mask of Awareness and Frostclaw Pin."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Vampiric Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage. Geisha regains an amount of hit points equal to the damage dealt. If Geisha has less than half of her hit points, she has advantage on any attack roll she makes with her bite.",
+						"When she damages a creature with her Vampiric Bite, she gains a bonus to the next attack roll or ability check she makes equal to the piercing damage dealt."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Telekinetic Shove/Pull",
+					"entries": [
+						"60 ft. range, one target. Geisha attempts to either shove or pull a creature telekinetically. The target makes a Strength saving throw ({@dc 21}). On a failure, the target is moved 5 feet closer or further away from Geisha."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/441283017_409441018581558_3738574502855791093_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=l7Z7UC3DwuIQ7kNvgFlevwU&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1QEdgjz7nuCmTjcMheS18QyPdZ_v0Mt-rHyCKfonrpyRhg&oe=666EEEA4"
+						}
+					}
+				]
+			},
+			"level": 13,
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"L",
+				"N",
+				"O",
+				"R",
+				"T",
+				"Y"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Benard \"Berny\" Groaucer",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 23,
+					"from": [
+						"{@item +1 chain shirt}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"special": "168"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 20,
+			"con": 12,
+			"int": 20,
+			"wis": 11,
+			"cha": 8,
+			"passive": 18,
+			"cr": "13",
+			"level": 13,
+			"shortName": "Berny",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/441885530_1497488797506059_2003194477944963967_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h4nS9zPykC0Q7kNvgFqlZcR&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1QHsC1PqdHeXBnseVPJqwi9G6-xpT4wi5_WDBAJ57r-MeQ&oe=666EE84B"
+						}
+					}
+				]
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Elvish",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"E",
+				"S"
+			],
+			"skill": {
+				"acrobatics": "+6",
+				"animal handling": "+1",
+				"arcana": "+11",
+				"athletics": "+6",
+				"deception": "+0",
+				"history": "+11",
+				"insight": "+1",
+				"intimidation": "+0",
+				"investigation": "+11",
+				"medicine": "+6",
+				"nature": "+11",
+				"perception": "+6",
+				"performance": "+0",
+				"persuasion": "+0",
+				"religion": "+11",
+				"sleight of hand": "+16",
+				"stealth": "+6",
+				"survival": "+6"
+			},
+			"save": {
+				"str": "+7",
+				"dex": "+9",
+				"con": "+8",
+				"int": "+12",
+				"wis": "+2",
+				"cha": "+1"
+			},
+			"resist": [
+				"acid",
+				"fire",
+				"force"
+			],
+			"trait": [
+				{
+					"name": "Equipment",
+					"entries": [
+						"Berny has the following items on his person at all times : Amulet of Guardian, Misty Mug, Tattoo of Blur and Spell Refueling Ring"
+					]
+				},
+				{
+					"name": "Scrubbin Time",
+					"entries": [
+						"Berny commands {@creature Scrub Guardian|ToL} "
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Berny is a 13th-level Artificer. His spellcasting ability is Intelligence (spell save {@dc 19}, +11 to hit with spell attacks). He has the following artificer spells prepared: "
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell acid splash}",
+								"{@spell fire bolt}",
+								"{@spell guidance}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell detect magic}",
+								"{@spell expeditious retreat}",
+								"{@spell healing word}",
+								"{@spell identify}",
+								"{@spell ray of sickness}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell aid}",
+								"{@spell blur}",
+								"{@spell flaming sphere}",
+								"{@spell Melf's acid arrow}",
+								"{@spell see invisibility}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell gaseous form}",
+								"{@spell haste}",
+								"{@spell intellect fortress|TCE}",
+								"{@spell mass healing word}",
+								"{@spell protection from energy}",
+								"{@spell revivify}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell Otiluke's resilient sphere}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CA"
+			],
+			"action": [
+				{
+					"name": "Anti Matter Rifle",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 300/900 ft., one target. {@h}60 ({@damage 10d10 + 5}) necrotic damage. If the target is reduced to 0 hit points, they do not roll death saves, they are instead affected by the {@spell disintegrate} spell as they are turned to dust. "
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"damageTags": [
+				"N"
+			],
+			"damageTagsSpell": [
+				"A",
+				"F",
+				"I"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Scrub Guardian",
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"source": "ToL",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"special": "200"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 8,
+			"con": 18,
+			"int": 7,
+			"wis": 10,
+			"cha": 3,
+			"passive": 10,
+			"cr": "7",
+			"languages": [
+				"understands commands given in any language but can't speak"
+			],
+			"languageTags": [
+				"CS",
+				"X"
+			],
+			"shortName": "Scrub",
+			"senses": [
+				"blindsight 10 ft.",
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned",
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Bound",
+					"entries": [
+						"Scrub Guardian is magically bound to an amulet that {@creature Benard \"Berny\" Groaucer|ToL} carries. As long as Scrub guardian and Berny are on the same plane of existence, Berny can telepathically call the guardian to travel to it, and Scrub guardian knows the distance and direction to the amulet. If Scrub guardian is within 60 feet of Berny, half of any damage Berny takes (rounded up) is transferred to Scrub guardian."
+					]
+				},
+				{
+					"name": "Spell Storing",
+					"entries": [
+						"Berny who wears Scrub Guardian's amulet can cause Scrub guardian to store on spell of 4th level or lower. To do so, Berny must cast the spell on Scrub guardian. The spell has no effect but is stored within scrub guardian. When commanded to do so by Berny or when a situation arises that was predefined by Berny, Scrub guardian casts the stored spell with any parameters set by Berny, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Scrub guardian makes two fist attacks. "
+					]
+				},
+				{
+					"name": "Fist",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Lightning Launcher {@recharge 5}",
+					"entries": [
+						"Scrub Guardian fires his lightning Launcher in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 15} Dexterity saving throw, taking 36 ({@damage 8d8}) lightning damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Poison Smoke Screen (1/Day)",
+					"entries": [
+						"Scrub Guardian pierces himself with his Poison stinger, as his poison immunity disperses the poison out through his scales, as a poison cloud. Any creature within 10ft of Scrub Guardian, must make a {@dc 15} Constitution saving throw, taking 42 ({@damage 12d6}) poison damage on a failed save, or half as much damage on a successful one. "
+					]
+				},
+				{
+					"name": "Fear Ray Stalk {@recharge}",
+					"entries": [
+						"Scrub Guardian points his Fear Ray from a Beholder and targets a creature within 120ft.",
+						"The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"reaction": [
+				{
+					"name": "Shield",
+					"entries": [
+						"When a creature makes an attack against Berny, Scrub guardian grants a +2 bonus to Berny's AC if Scrub guardian is within 5 feet of Berny."
+					]
+				}
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/BR9ghZa.png"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"B",
+				"I",
+				"L"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		}
   ]
 }
