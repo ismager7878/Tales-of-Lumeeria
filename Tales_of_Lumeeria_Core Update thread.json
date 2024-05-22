@@ -13,6 +13,972 @@
       }
     ]
   },
+  "race": [
+    {
+      "name": "Steelborn (Warforged)",
+      "source": "ToL",
+      "lineage": "VRGR",
+      "speed": 30,
+      "size": ["M"],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "any": true
+        }
+      ],
+      "entries": [
+        "{@bold Age.} The maximum Steelborn lifespan remains a mystery; so far, Steelborn have shown no signs of deterioration due to age. You are immune to magical aging effects.",
+        "{@bold Alignment.} Most Steelborn take comfort in order and discipline, tending toward law and neutrality. But some have absorbed the morality, or lack thereof, of the beings with which they served.",
+        "{@bold Constructed Resilience.} You were created to have remarkable fortitude, represented by the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "You have advantage on saving throws against being {@condition poisoned}, and you have resistance to poison damage.",
+            "You don't need to eat, drink, or breathe.",
+            "You are immune to drugs of any kind.",
+            "You are immune to disease.",
+            "You don't need to sleep, and magic can't put you to sleep.",
+            "You cannot be made undead."
+          ]
+        },
+        "{@bold Sentry's Rest.} When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn't render you unconscious, and you can see and hear as normal.",
+        "{@bold Integrated Protection.} Your body has built-in defensive layers, which can be enhanced with armor:",
+        {
+          "type": "list",
+          "items": [
+            "You gain a +1 bonus to Armor Class.",
+            "You can don only armor with which you have proficiency. To don armor other than a shield, you must incorporate it into your body over the course of 1 hour, during which you remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way.",
+            "While you live, the armor incorporated into your body can't be removed against your will."
+          ]
+        },
+        "{@bold Specialized Design.} You gain one skill proficiency and one tool proficiency of your choice.",
+        "{@bold Steel Build.} You are considered heavy for any mechanical rulings that require it."
+      ],
+      "fluff": {
+        "entries": [
+          "Steelborn are physically impressive humanoids made up of magically enchanted materials. The 'Skin' of a Steelborn are made of hardened materials such as metal. Beneath this lay the skeleton, made up of similar materials, and the 'musculature' of the Steelborn, are made up of different kinds of metal like materials. Throughout the body of the Steelborn are vessels resembling the circulatory system of organic creatures, complete with a green blood-like fluid. The arms of a Steelborn end in hands with four fingers and a thumb, just like their human counterparts. And the feet of the constructs end in a two-toed form.",
+          "Steelborn are a rare race of humanoid constructs. While the creation of these creatures are still unknown in the world of Lumeeria, it's been theorized that capable engineers of the arcane, that reside among the stars, created them. At the year 629 ATL Arcane engineers and Artificers have still not been successful in the recreation of a Steelborn",
+          "Steelborn average everywhere from 4-8ft tall, all depending on their design and are made up of bulky (albeit resilient) metallic or stone bodies that weigh roughly 200-300lb (90-140kg) Extremely powerful and durable, Steelborn are able fighters. Unlike most constructs, Steelborn are fully self-aware and maintain mental faculties on par with elves, humans or similar races. The natural lifespan for Steelborn are still unknown.",
+          {
+            "type": "entries",
+            "name": "Internal Workings",
+            "entries": [
+              "The Internal Workings of the Steelborn are still do this day is a unknown subject for most.",
+              "{@italic Further research is needed for a clear description}",
+              {
+                "type": "list",
+                "items": [
+                  "{@bold Core}",
+                  "{@bold Crystaline}",
+                  "{@bold Soul}",
+                  "{@bold Repairs}"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Common Personalities",
+            "entries": [
+              "Steelborn as a whole have a strong work ethic and share an aversion to failure. Steelborn are capable of fear, often of death or pain, as much as other races and can come to hate the sources of these fears just as easily. Steelborn are also capable of loyalty and joy, particularly in relations to friends and allies and can be driven to anger when their loves or goals were threatened.",
+              "Quirks. Steelborn sometimes display an odd personality trait or two. The Steelborn Quirks table contains example quirks.",
+              {
+                "type": "table",
+                "colLabels": ["D8", "Quirk"],
+                "colStyles": ["col-1 text-center", "col-10"],
+                "rows": [
+                  [
+                    "1",
+                    "You analyze—out loud—the potential threat posed by every creature you meet."
+                  ],
+                  ["2", "You often misread emotional cues."],
+                  ["3", "You are fiercely protective of your friends."],
+                  [
+                    "4",
+                    "You try to apply wartime discipline to every situation. "
+                  ],
+                  [
+                    "5",
+                    "You don't know how to filter your feelings and are prone to dramatic emotional outbursts."
+                  ],
+                  [
+                    "6",
+                    "You don't understand clothing beyond its utility and assume it denotes a person's function."
+                  ],
+                  [
+                    "7",
+                    "You are obsessed with your appearance and constantly polish and buff yourself. "
+                  ],
+                  [
+                    "8",
+                    "War is the only thing that makes sense to you, and you're always looking for a fight. "
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valtarians",
+      "source": "ToL",
+      "lineage": "VRGR",
+      "speed": 30,
+      "size": ["M"],
+      "languageProficiencies": [
+        {
+          "Common": true,
+          "Yeinnen": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Creature Type",
+          "entries": [
+            "You are a Humanoid. You are also considered an elf for any prerequisite or effect that requires you to be an elf."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries": [
+            "Valtarians mature very slowly, only reaching physical and mental maturity at the age of 100 and they can live to be 1000 years."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Arctic Resistance",
+          "entries": ["You have resistance to cold damage"]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries": [
+            "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You discern colors in that darkness only as shades of gray."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Fey Ancestry",
+          "entries": [
+            "You have advantage on saving throws you make to avoid or end the charmed condition on yourself."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Trance",
+          "entries": [
+            "Valtarians don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is 'trance'.) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries": [
+            "You can speak, read, and write Common and Sylvan"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Subrace",
+          "entries": ["Choose between Frostweavers or Glacial Wardens"]
+        },
+        {
+          "type": "section",
+          "entries": [
+            {
+              "type": "entries",
+              "entries":[
+                {
+                  "type": "entries",
+                  "name": "Frostweaver",
+                  "entries": [
+                    {
+                      "type": "entries",
+                      "entries": [
+                        {
+                          "type": "entries",
+                          "name": "Size",
+                          "entries": [
+                            "Frostweavers range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "entries",
+                      "entries": [
+                        {
+                          "type": "entries",
+                          "name": "Blessings of the Frost Queen",
+                          "entries": [
+                            "You know the {@spell Frostbite|xge} and {@spell Ray of Frost} cantrip. Starting at 3rd level, you can cast the {@spell Frost Fingers|idrotf} spell with this trait.  Starting at 5th level, you can also cast the {@spell Sleet storm} spell with this trait. Once you cast {@spell Frost Fingers|idrotf} or {@spell Sleet Storm} with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level. Intelligence is your spellcasting ability for these spells when you cast them with this trait."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "entries",
+                      "entries": [
+                        {
+                          "type": "entries",
+                          "name": "Arcane Connection",
+                          "entries": ["You have proficiency in the Arcana skill"]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "entries",
+              "entries": [
+                {
+                  "type": "entries",
+                  "name": "Glacial Wardens",
+                  "entries": [
+                    {
+                      "type": "entries",
+                      "entries": [
+                        {
+                          "type": "entries",
+                          "name": "Size",
+                          "entries": [
+                            "Glacial Wardens range from under 6 to 8 feet tall and have bulky builds. Your size is Medium."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "entries",
+                      "entries": [
+                        {
+                          "type": "entries",
+                          "name": "Natural Defender",
+                          "entries": [
+                            "Your body is extremely robust and even the sharpest of weapons have a hard time piercing your skin at times. You gain a +1 bonus to armor class. As well as your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "entries",
+                      "entries": [
+                        {
+                          "type": "entries",
+                          "name": "Born Athlete",
+                          "entries": [
+                            "You have proficiency in the Athletics skill"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fluff": {
+        "entries": [
+          "The Valtarians are a striking and enigmatic race of fey humanoids that dwell in the North Eastern region of the continent of Karuun. Their appearance is reminiscent of elves but with distinct features that set them apart:",
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Skin Tones",
+                    "entries":[
+                      "Valtarians possess a range of cool, ethereal skin tones that reflect their affinity with the northern reaches of Karuun. These hues can vary from deep, rich blues to lighter bluish-grays, creating an otherworldly and mesmerizing effect. The skin seems to shimmer softly in the right light, giving them an almost otherworldly glow."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Eye Colors",
+                    "entries":[
+                      "Their eyes are equally captivating, with shades of blue, violet, and silver being the most common. These eye colors can change in intensity based on their emotions and surroundings, creating an alluring and mysterious gaze."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Hair",
+                    "entries":[
+                      "Valtarian hair is often strikingly beautiful. It typically appears as a radiant white, but with subtle undertones of blue, violet, or black, adding to their unique charm. Their hair has a flowing and almost weightless quality, as if it were spun from moonlight."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Fur Patches",
+                    "entries":[
+                      "One of the most distinctive features of Valtarians is the presence of scattered fur patches on their bodies. These patches are strategically placed, enhancing their natural allure. Fur can be found on the front of their thighs, on the back of their calves, along a line running from their waist to their ribcage on each side, and on the top of their biceps. These patches of fur have a soft, velvety texture and usually share the same blue or violet hues as their skin. For Glacial Wardens, these fur patches are even more pronounced and often possess an almost frosty, iridescent quality."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Elven Elegance",
+                    "entries":[
+                      "Valtarians share the graceful and elegant physique commonly associated with elves. They tend to have tall, slender frames with long, lithe limbs. Their movements are fluid and precise, reflecting their natural agility and grace."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Clothing",
+                    "entries":[
+                      "Valtarian attire is often tailored to highlight their unique features. They favor flowing, ethereal fabrics in shades that complement their skin and hair tones. They may wear robes, tunics, or dresses that incorporate intricate patterns and designs inspired by their connection to the icy landscapes of their homeland."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Jewelry and Adornments",
+                    "entries":[
+                      "Valtarians often adorn themselves with jewelry made from precious stones and metals that mirror the colors of their eyes, skin, and fur. These adornments may include intricate necklaces, bracelets, and circlets, all designed to enhance their natural beauty."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Description of the Valtarians:",
+            "entries": [
+              "The Valtarians are a remarkable and enigmatic race, bearing both physical and cultural distinctions that set them apart in the icy domains of the North Eastern Karuun. Here's a detailed description of these unique beings:",
+              {
+                "type": "entries",
+                "name": "Physical Characteristics",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Longevity",
+                    "entries":[
+                      "Valtarians are known for their exceptional longevity, surpassing even the most ancient of elves. They are considered adults at the remarkable age of 100 and can live up to an astonishing 1000 years, making their existence a testament to the enduring power of their creator, the Frost Queen."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Distinct Skin and Hair",
+                    "entries":[
+                      "Valtarians boast cool, ethereal skin tones, ranging from deep, rich blues to lighter bluish-grays. Their skin seems to shimmer with an otherworldly glow, reflecting their connection to the icy landscapes they inhabit. Their hair is equally captivating, often appearing as radiant white with subtle undertones of blue, violet, or black, evoking the beauty of the frozen landscapes they call home."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Fur Patches",
+                    "entries":[
+                      "One of their most distinctive physical features is the presence of scattered fur patches on specific areas of their bodies. These velvety fur patches share the same hues as their skin and add to their unique charm. Fur can be found on the front of their thighs, on the back of their calves, along a line running from their waist to their ribcage on each side, and on the top of their biceps. For Glacial Wardens, these fur patches are even more pronounced and often possess an almost frosty, iridescent quality."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "name": "Cultural Characteristics",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Social Way of Life",
+                    "entries":[
+                      "Valtarians are inherently social beings, cherishing connections and relationships with their kin. They hold gatherings and celebrations with great enthusiasm, especially when a new Valtarian child is born into their world. These festivities are marked by storytelling, music, and dancing, with each event serving as a reminder of their enduring bonds as a community."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Rich History and Culture",
+                    "entries":[
+                      "Valtarian culture is steeped in noble stories and traditions. They possess a deep reverence for their creator, the Frost Queen, and their history is filled with tales of resilience, transformation, and unwavering loyalty to their queen."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Matriarchal Society",
+                    "entries":[
+                      "The Valtarian Kingdom is a matriarchy, and the Frost Queen reigns without question as their revered leader. This arrangement reflects their profound belief in the Frost Queen as their Creator and the source of their existence."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "entries",
+            "name": "Subrace",
+            "entries": [
+              "Over countless millennia spent in the Material Plane, the Valtarians evolved under the watchful eye of their creator. Choose between Frostweavers and Glacial Wardens",
+              {
+                "type": "entries",
+                "name": "Frostweavers",
+                "entries": [
+                  {
+                    "type": "list",
+                    "items": [
+                      "Frostweavers are Valtarians with an elegant and scholarly appearance, often seen in flowing robes of icy blues and silvers. They are known for their intellect and mastery of ice magic, wielding it with precision.",
+                      "Within Valtarian society, they hold a prominent role as the creators and controllers of the kingdom's magical constructs. Highly respected for their wisdom, they are often found in leadership positions.",
+                      "In Valtarian society, Frostweavers are valued for their intellectual contributions, and they often advise the Frost Queen. They hold a position of respect, guiding the kingdom's magical endeavors."
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "entries",
+                "name": "Glacial Wardens",
+                "entries": [
+                  {
+                    "type": "list",
+                    "items": [
+                      "Glacial Wardens are Valtarians with a robust and formidable presence, their bodies adorned with pronounced fur patches. They are often seen in armor, their physical prowess evident.",
+                      "Their key role is protection; they serve as the guardians of the Frostweavers, the kingdom, and its inhabitants. They possess physical strength and combat skills.",
+                      "In Valtarian society, Glacial Wardens are highly regarded as the stalwart defenders of their kin. While they may have a lower intellect compared to Frostweavers, their dedication to safeguarding their society is unwavering."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fangborn",
+      "source": "ToL",
+      "lineage": "VRGR",
+      "speed": 30,
+      "size": ["M"],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "any": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name":"Age",
+          "entries":[
+            "Fangborn are quick to mature both physically and emotionally, reaching young adulthood at age 15. They can live up to 120 years."
+          ]
+        },
+        {
+          "type": "entries",
+          "name":"Darkvision",
+          "entries":[
+            "You can see in dim light within 60 feet of you as if it were bright light and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+          ]
+        },
+        {
+          "type": "entries",
+          "name":"Claws",
+          "entries":[
+            "Your claws are natural weapons, which you can use to make unarmed strikes as a bonus action. If you hit with them, you can deal slashing damage equal to 1d6 + your Strength modifier or Dexterity modifier, instead of the bludgeoning damage normal for an unarmed strike."
+          ]
+        },
+        {
+          "type": "entries",
+          "name":"Primal Intuition",
+          "entries":[
+            " You have proficiency in three of the following skills of your choice: Animal Handling, Athletics, Intimidation, Medicine, Nature, Perception, and Survival."
+          ]
+        },
+        {
+          "type": "entries",
+          "name":"Thickhide",
+          "entries":[
+            "You have a +1 bonus to your Armor Class"
+          ]
+        }
+      ],
+      "fluff": {
+        "entries":[
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "name": "Fangborn in Lumeeria",
+                "entries":[
+                  "Fangborn can be found in various parts of Lumeeria, with some of the most well-known locations being islands surrounding the mainland. They typically reside in untamed natural environments, living in simple tribal conditions and maintaining hunting traditions. Despite this, Fangborn occasionally integrate into different parts of society.",
+                  "According to the legends recorded in their tribes, Fangborn were created by Ragnath the Bloodthirster. After observing the world, Ragnath felt it lacked his untamed and bloodthirsty creations. Consequently, Fangborn take pride in their primitive lifestyle, believing it aligns with their creator's vision."
+                ]
+              },
+              {
+                "type": "entries",
+                "name": "Fangborn in Lumeeria",
+                "entries":[
+                  "Fangborn exhibit a distinctive and primal appearance, reflecting their connection to nature. While their exact features may vary, they share common characteristics:",
+                  {
+                    "type": "entries",
+                    "name": "Bestial Features",
+                    "entries":[
+                      "Fangborn have pronounced fangs, sharp claws, and often possess animalistic attributes such as pointed ears, wild hair, and glowing eyes. These features highlight their primal nature and give them an intimidating presence."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Feral Physique",
+                    "entries":[
+                      "They have a more robust and muscular build compared to humans, emphasizing their physical prowess and strength. Their bodies are often covered in tribal tattoos or intricate markings, symbolizing their connection to their deity and their tribal identity."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Wild Attire",
+                    "entries":[
+                      "Fangborn typically wear minimalistic clothing made from animal skins, furs, and natural materials. They prioritize practicality over extravagance, with their attire often adorned with teeth, bones, and feathers as symbols of their hunting prowess."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Tribal Decorations",
+                    "entries":[
+                      "Tribal ornaments and jewelry made from bones, claws, and natural elements are common among the Fangborn. These adornments serve as status symbols, reflecting their achievements and sometimes carrying spiritual significance."
+                    ]
+                  },
+                  "Overall, the appearance of the Fangborn blends their primal nature with their connection to the untamed wilderness. They embody a fierce and untamed aesthetic, reflecting their dedication to the primal forces they revere and their unwavering commitment to protecting their island home."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Yeinnen",
+      "source": "ToL",
+      "ability": [
+				{
+					"cha": 1,
+					"dex": 2
+				}
+			],
+      "speed": 30,
+      "size": ["M"],
+      "languageProficiencies": [
+        {
+          "Common": true,
+          "Yeinnen": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries":[
+            "Yeinnen have lifespans similar to humans."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Alignment",
+          "entries":[
+            "Yeinnen are often drawn toward neutral and chaotic alignments, reflecting their inherent inclination toward malicious intentions."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries":[
+            "Yeinnen have the same size and build as humans. Your size is Medium"
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Poison Resistance",
+          "entries":[
+            "ou have advantage on saving throws against poison, and you have resistance against poison damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Hidden in plain sight",
+          "entries":[
+            "You have proficiency in two of the following skills: Deception, Performance, Stealth or intimidation."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Forked Tongue",
+          "entries":[
+            "As an action, you can extend your forked tongue to attempt to kiss a creature within 5 feet of you. The target must make a Dexterity saving throw against a DC of 8 + your proficiency bonus + your Charisma modifier. On a failed save, the creature is injected with poison, taking PB times d10 poison damage. Once you use this ability, you can't use it again until you finish a short or long rest."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries":[
+            "You can speak, read, and write in Yeinnen and Common."
+          ]
+        }
+      ],
+      "fluff": {
+          "entries":[
+            {
+              "type": "entries",
+              "entries":[
+                {
+                  "type": "entries",
+                  "name":"Forked Tongue with Venomous Webbing",
+                  "entries":[
+                    "One of the most distinguishing features of the Yeinnen is their forked tongue, split into three sections with webbing between each part. This seemingly innocuous trait conceals a deadly secret— a potent venom capable of causing swift demise to any race except their own. However, when shared among Yeinnen, the venom takes on a different nature, acting as a powerful aphrodisiac that enhances their connection and bonds."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Cold-Blooded Nature",
+                  "entries":[
+                    "Despite outwardly appearing warm-blooded, the Yeinnen are, in fact, cold-blooded like reptiles. This internal coldness remains hidden beneath their human-like exterior, allowing them to seamlessly integrate into human society. However, this characteristic influences their behaviors and preferences, causing them to thrive in warmer environments."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Innate Malicious Intentions",
+                  "entries":[
+                    "A darker aspect of the Yeinnen is their inherent inclination towards malicious intentions. Whether born of their unique physiology or an ancient curse, the Yeinnen often find themselves drawn to deceit, manipulation, and darker pursuits. This predisposition does not necessarily mean every Yeinnen is malevolent, but it is an inherent aspect of their nature."                    
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name": "Population and Birthrate",
+                  "entries":[
+                    "The population of the Yeinnen remains exceptionally low, and they prefer to live concealed among the bustling crowds of large cities, where their unique traits are less likely to draw attention. Their birthrate, especially between a human and a Yeinnen, is remarkably low. However, when two Yeinnen come together, their reproductive abilities return to normal levels."
+                  ]
+                },
+                {
+                  "type": "entries",
+                  "name":"Origin",
+                  "entries":[
+                    "The origins of the Yeinnen trace back to the millennium of the lost, a mysterious period in Lumeeria's history shrouded in the annals of time. The first appearance of the Yeinnen remains a puzzle, and their scarce population contributes to the air of mystery that surrounds their enigmatic race.",
+                    "In the intricate tapestry of Lumeeria, the Yeinnen exist as elusive figures, navigating the delicate balance between blending into human society and embracing the peculiarities that define their true nature. The Yeinnen move through the shadows, their secrets known to only a few, as they continue to leave an indelible mark on the world they inhabit."
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+    },
+    {
+      "name": "Boyak",
+      "source": "ToL",
+      "lineage": "VRGR",
+      "speed": {
+        "walk": 30,
+        "climb": true
+      },
+      "size": ["S"],
+      "languageProficiencies": [
+        {
+          "Common": true,
+          "Yeinnen": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries":[
+            "Boyaks mature quickly, reaching adulthood by the age of 12. They commonly live to be around 150 years old."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Alignment",
+          "entries":[
+            "Boyaks lean towards chaotic good alignments, embodying a free-spirited and benevolent nature."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Dexterous Feet",
+          "entries":[
+            "As a bonus action, you can use your feet with remarkable dexterity. You can manipulate objects, open or close doors or containers, and pick up or set down tiny objects using your feet. This ability allows you to perform simple tasks without using your hands, leaving them free for more complex actions."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Prehensile Tail",
+          "entries":[
+            "Your long, prehensile tail is a versatile tool. While you cannot wield weapons with it, your tail allows you to retrieve a small, stowed object carried on your person as a bonus action. The tail has a reach of 15 feet, providing you with an extended range for interacting with objects. The Tail cannot be used for attacking."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Sticking the landing",
+          "entries":[
+            "Whenever you take falling damage from a height no greater than 10 x your proficiency bonus. You halve the damage you take."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries":[
+            "Accustomed to the dimly lit jungles, you can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries":[
+            "You can speak, read, and write in Common and Boyak. Boyak is a unique language, rich in expressive body language and intricate hand signals, allowing for silent communication in the treetops."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries":[
+          {
+            "type": "entries",
+            "name": "Boyak: The Primal Tricksters",
+            "entries":[
+              {
+                "type": "entries",
+                "name": "Description",
+                "entries":[
+                   "Boyaks, the agile and intelligent monkey-like humanoids, thrive in the heart of deep, warm forests and lush jungles. Their bodies are covered in a thin coat of soft fur that comes in a variety of colors, including chestnut, ivory, and even golden hues. Despite their fur, Boyaks grow lengthy hair on their heads, mimicking the diverse hairstyles that humans sport. Male and female Boyaks alike take pride in elaborate hairstyles, especially for important social functions, with the hair matching the color of their fur. With long, prehensile tails and hand-like feet capable of articulate movements, Boyaks have adapted seamlessly to their arboreal environments.",
+                   "Standing at a height ranging from 3'3 to 3'11 feet and weighing around 100 pounds, Boyaks are considered small creatures. One of their most distinctive features is their considerably long arms, a trait that aids them in traversing the dense canopies of their lush habitats."
+                  ]
+              },
+              {
+                "type": "entries",
+                "name": "Culture",
+                "entries":[
+                  "Boyak culture revolves around their deep connection to the primal rhythms of the forests they call home. They live in close-knit communities within the trees, crafting simple yet efficient treehouses woven from vines and branches. Boyaks possess a profound respect for the natural world and maintain a delicate balance with their surroundings.",
+                  {
+                    "type": "entries",
+                    "name": "Social Structure",
+                    "entries":[
+                      "Boyak communities are led by wise elders who hold extensive knowledge about the jungles and maintain the spiritual traditions of their people. Despite a structured leadership, Boyak society thrives on communal living, with shared responsibilities and a strong sense of cooperation. They engage in communal activities, such as shared meals and intricate grooming rituals, strengthening the bonds within the community."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Adornments and Hairstyles",
+                    "entries":[
+                      "Boyaks express their individuality through elaborate hairstyles adorned with natural ornaments like vibrant flowers, feathers, and beads. The intricate hairstyles serve not only as a form of personal expression but also convey the individual's role and status within the community."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Ceremonial Practice",
+                    "entries":[
+                     "Boyaks celebrate important life events and natural occurrences with vibrant ceremonies. Births, coming-of-age rituals, and even significant celestial events are marked with dance, song, and communal feasts. These ceremonies are seen as a way to connect with the spirits of the forest and express gratitude for the bounty it provides." 
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Art and Craftsmanship",
+                    "entries":[
+                      "Boyaks are skilled artisans, creating simple yet elegant tools and crafts from materials found in the jungle. Intricately woven baskets, carved wooden utensils, and natural-fiber clothing reflect their practical yet artistic approach to craftsmanship."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Communication",
+                    "entries":[
+                      "Boyaks communicate not only through spoken language but also through a sophisticated system of hand signals and expressive body language. This silent communication is particularly crucial when traversing the treetops, where vocal communication might alert potential threats."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Primal Spirituality",
+                    "entries":[
+                      "Boyaks possess a deep spiritual connection to the natural world. They revere the spirits of the forest, rivers, and sky, believing in a harmonious balance that must be maintained. Rituals and offerings are made to appease these spirits, seeking their guidance and protection."
+                    ]
+                  },
+                  "In the heart of the dense jungles, Boyaks thrive as the guardians of the ancient trees, the tricksters of the treetops, and the keepers of the primal secrets that echo through the foliage. Their culture, intertwined with the vibrant pulse of the natural world, is a testament to their harmonious existence with the jungles they call home."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vepus",
+      "source": "ToL",
+      "ability": [
+				{
+					"int": 1,
+					"dex": 2
+				}
+			],
+      "speed": 35,
+      "size": ["M"],
+      "languageProficiencies": [
+        {
+          "Common": true,
+          "Vepus": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries":[
+            "Ratfolk commonly live a little over 50 years, reaching adulthood at age 15. Their fur turns grey after about 30 years."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Size",
+          "entries":[
+            "Ratfolk stand about 5'3” to 5'6” and weigh around 110–120 lbs. Your size is Medium."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Alignment",
+          "entries":[
+            "Ratfolk are strongly inclined to follow their own path, preferring freedom over all else, making them strongly chaotic. Most are morally neutral."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Darkvision",
+          "entries":[
+            "You can see in dim light within 60 feet of you as if it were bright light, and darkness as if it were dim light. You can't discern color in darkness, only shades of grey."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Sneaky",
+          "entries":[
+            "You have proficiency in the Stealth skill."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Thin Frame",
+          "entries":[
+            "You can squeeze through spaces as if you were a Small creature."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Nimble Hands",
+          "entries":[
+            "You have proficiency in Tinker's Tools, Alchemist's supplies and Cartographer's tools."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Toxic Resilience",
+          "entries":[
+            "You have advantage on saving throws against being poisoned, and you have resistance to poison damage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries":[
+            "You can speak, read, and write Common and Vepus."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries":[
+          "The Vepus look like a hybrid of a thin human and a rat. They are shorter than humans. and appear almost frail. They have heads shaped like rats, with an elongated skull, thin lips, a Rat's snout, and black, or red orbs for eyes, but no cleft in the mouth. The fur that grows on their bodies is thin, but dark, giving them an obscured appearance in dark conditions, though ratfolk commonly have fur colors ranging from light browns to dark gray and black. Unlike all beastfolk, ratfolk walk on rat-shaped feet, not human-like feet. They have short, thin tails.",
+          "Vepus prefers simple clothing with dark hues, preferring black with dark blues, greens, and browns. Most of their clothing is a bit loose fitting for comfort with little in the way of elaborate features or ornamentation. They especially try to keep anything metal covered so nothing shines.",
+          "The Vepus are accustomed to hard lives throughout Lumeeria. Most places they are treated only slightly better than Goblins. They are generally only accepted into cities and in society because of their commonly neutral alignment. They can be found all around Lumeeria, in Kudan's Maze, in the sewers of large cities, and in abandoned possibly poisonous areas. Or even some extremely rare cases where a Vepus has risen from the norm and gotten an important social standing.",
+          "The Vepus can live anywhere and everywhere. That is why they mostly live in areas where it would be impossible for other races to live as they like to keep to themselves.",
+          "The Vepus are naturally introverted and inwardly drawn. They prefer to spend their time on their own and, even in large crowds, try to make it clear they wish to be on their own. This gives them an insightful attitude and they will always speak carefully, with few words and cautious thought. This, by extension, gives Vepus a disdain for authority figures and those in high standing. Many Vepus have little respect for such people as they believe in protecting themselves and righting wrongs done to them on their own",
+          "The Vepus are commonly looked down upon all around the world as they are seen as a dirty race by others such as Elves or humans.",
+          "A Vepus' adventurer is one who seeks a place in a world where acceptance and acknowledgment for their kind don't come easy. Though Vepuses are cautious, they are neither fearful nor stupid, and the opportunity to face enemies and beat traps give them a sense of challenge. For the Vepus, the chance to complete a task no one else can is exhilarating.  The Vepuses dislike the norms placed on them, but while they don't seek to affect such change in attitude on a large scale, they place great value on the opinions of those few they come to trust. This trust comes with time and much effort and can be lost easily if abused."
+        ]
+      }
+    },
+    {
+      "name": "Kizean",
+      "source": "ToL",
+      "lineage": "VRGR",
+      "speed": 30,
+      "size": ["M"],
+      "languageProficiencies": [
+        {
+          "common": true,
+          "any": true
+        }
+      ],
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Age",
+          "entries":[
+            "Kizean mature at a rate similar to humans, reaching adulthood in their late teens. They have an average lifespan of about 400 years."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Born of Ice",
+          "entries":[
+            "Due to their icy origins, Kizean have resistance to cold damage and advantage against any natural or magical effects related to cold damage, such as the breath attack of a white dragon or spells like Cone of Cold."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "One with the Snow",
+          "entries":[
+            "As a bonus action, Kizean can attempt to hide in snow, granting them advantage on any Dexterity (Stealth) checks related to snow. Additionally, they can move up to half their movement while hidden in snow without needing to make a new Dexterity (Stealth) check."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Natural Wanderers",
+          "entries":[
+            "Kizean are adept at traversing arctic terrain and ignore difficult terrain caused by snow, ice, or any other effects of arctic climates, including magical effects."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Natural Tamers",
+          "entries":[
+            "Kizean have proficiency in the Animal Handling skill, and they gain advantage on Wisdom (Animal Handling) checks related to taming beasts of the arctic climate. Once a Kizean has tamed an arctic beast, a strong bond forms between them, requiring significant effort to break."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Languages",
+          "entries":[
+            "Kizean can speak, read, and write Common and Kizean."
+          ]
+        }
+      ],
+      "fluff": {
+        "entries":[
+          {
+            "type":"entries",
+            "entries":[
+              {
+                "type":"entries",
+                "name":"Physical Description",
+                "entries":[
+                  "The Kizean are a hardy race, born and bred in the unforgiving arctic climates of Akihala, Athula, and Navaro. Ranging from 5 to 9 feet in height, they exhibit a wide spectrum of builds, from lean and agile to burly and robust. Their distinctive feature is their four-fingered hands, a characteristic shared among all Kizean. Their skin spans shades of light blue to dark blue, reflecting the icy landscapes they call home. Hair colors vary from shimmering silver to snowy white, with occasional hints of grey or rare flashes of crimson. Their eyes, deep and dark, hold orbs of blackness adorned with irises of light blue, silver, or purple. "
+                ]
+              },
+              {
+                "type":"entries",
+                "name":"Society",
+                "entries":[
+                  "Kizean society is as diverse as the icy lands they inhabit, with various tribes and kingdoms dotting the frozen landscapes. Some Kizean live nomadic lives, constantly traversing the tundra and setting up temporary camps as they follow the rhythms of the land. These tribes are deeply connected to nature and rely heavily on their innate ability to tame and communicate with beasts.",
+                  "Others embrace a matriarchal rule, where powerful Frostbringers—those blessed with the magic of Netia, the Snowbringer—lead their people in the construction of grand icy kingdoms. Within these societies, the Frostbringers hold positions of reverence and authority, guiding their people with wisdom and magic. While they still maintain a connection to the natural world, they rely less on beast-taming and instead focus on building formidable structures and harnessing the power of their deity."
+                ]
+              },
+              {
+                "type":"entries",
+                "name":"Religion",
+                "entries":[
+                  "The Kizean hold a deep reverence for Netia, the Snowbringer, whom they view as their creator and true mother. Netia embodies the essence of the icy wilderness, bringing both beauty and harshness to their world. Known as the Frostbringers, Kizean shamans who have been blessed with Netia's power wield formidable magic, channeling the frost and snow to protect and sustain their people. While both males and females can become Frostbringers, it is often the females who display a stronger affinity for the Snowbringer's magic, earning them greater respect and authority within Kizean society. The religion of the Kizean is deeply intertwined with their daily lives, guiding their actions, traditions, and rituals as they navigate the frozen expanses of their homeland."
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
   "feat": [
     {
       "name": "Firearms Expert",
@@ -27,11 +993,8 @@
       ],
       "ability": [
         {
-          "choose": {
-            "from": ["dex"],
-            "amount": 1
-          }
-        }
+					"dex": 1
+				}
       ],
       "entries": [
         "Thanks to extensive practice with firearms, you gain the following benefits:",
@@ -64,6 +1027,25 @@
           ]
         },
         "This feat enhances the character's durability over time, granting them additional hit points with each level gained. It builds upon the foundation laid by the Tough feat, further solidifying the character's resilience in the face of adversity."
+      ]
+    },
+    {
+      "name": "Dagger Dance",
+      "source": "ToL",
+      "ability": [
+        {
+					"dex": 1
+				}
+      ],
+      "entries": [
+        "Thanks to extensive practice with daggers and agility, you gain the following benefits",
+        {
+          "type": "list",
+          "items": [
+            "Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack roles with thrown weapons.",
+            "When you use the Dash action, difficult terrain doesn't cost you extra movement on that turn."
+          ]
+        }
       ]
     },
     {
@@ -2315,9 +3297,314 @@
       "entries": [
         "Upon reaching 18th level, whenever you score a critical hit on an attack with a firearm, the target additionally suffers half of the damage from the attack at the end of its next turn."
       ]
+    },
+    {
+      "name": "Way of the Soul Guide",
+      "source": "ToL",
+      "className": "Monk",
+      "classSource": "phb",
+      "subclassShortName": "Soul Guide",
+      "subclassSource": "ToL",
+      "level": 3,
+      "entries": [
+        "{@italic Reflavor of Long Death Monk to fit the narrative of Dangur}",
+        "Monks of the Way of the Soul Guide, are beings that are touched by the Retriever of Evildoers. The few that Kalin, The Black Angel chooses, are destined to look over the transition between life and death for the most wicked of souls. Soul Guides are a sacred people, that is deeply respected by the few that know of them. Soul Guides help uphold the divine balance that keeps the world of Lumeeria from descending into chaos."
+      ]
+    },
+    {
+      "name": "Touch of Death",
+      "source": "ToL",
+      "className": "Monk",
+      "classSource": "phb",
+      "subclassShortName": "Soul Guide",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "Starting when you choose this tradition at 3rd level, your connection to death allows you to extract vitality from another creature as it nears its demise. When you reduce a creature within 5 feet of you to 0 hit points, you gain temporary hit points equal to your Wisdom modifier + your monk level (minimum of 1 temporary hit point)."
+      ]
+    },
+    {
+      "name": "Guide of the Corrupt",
+      "source": "ToL",
+      "className": "Monk",
+      "classSource": "phb",
+      "subclassShortName": "Soul Guide",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "Starting when you choose this tradition at 3rd level, you gain the ability to guide the corrupt souls to the plane of Judgement, Uzelon.",
+        "You can spend a minute to collect the soul from a humanoid corpse. This ritual can fail for various reasons, whereas some examples for the reasons are as follows. If the soul is no longer there, if the humanoid was not of the evil alignment or if you already hold a corrupt soul in your body.",
+        "Successfully performing the sacred ritual, you now carry with you the corrupt soul in your body. This can lead to various experiences and dangers, such as hearing persuasive whispers, catching glimps of memories or even becoming possessed. But it all depends on the soul.",
+        "When you are located at a temple of Kalin, The Black Angel, you can spend an hour performing a ritual where you implore Kalin to appear and receive the corrupt soul, so that she can lead it to Uzelon. For each corrupt soul that you guide to Kalin, you grow stronger, as shown on the Guide of the Corrupt Table.",
+        "After Guide of the corrupt has been used, and the corrupt soul is gone from your body. You must take a long rest before using this feature again.",
+        {
+          "type": "table",
+          "caption": "Guide of the Corrupt table",
+          "colLabels": ["Amount of Guided Souls", "Benefit"],
+          "colStyles": ["col-1  text-center", "col-8"],
+          "rows": [
+            [
+              "3",
+              {
+                "type": "list",
+                "items": [
+                  "You have advantage on initiative rolls.",
+                  "By spending an bonus action observing a humanoid, you can make an insight check against their deception check. If you succeed, you learn if the target is of the evil alignment or not.",
+                  "You gain a dragonfly spirit, as per the spell {@spell Find Familiar}, requiring no material component."
+                ]
+              }
+            ],
+            [
+              "6",
+              {
+                "type": "list",
+                "items": [
+                  "You can as a bonus action manifest black ethereal feathered wings on your back that give you a flying speed equal to half your speed. After a minute the wings dissapear.",
+                  "You no longer need to be located at an temple of Kalin, to implore her to appear."
+                ]
+              }
+            ],
+            [
+              "9",
+              {
+                "type": "list",
+                "items": [
+                  "    You now deal 1d(Martial Die) extra necrotic damage on all your Melee Strikes"
+                ]
+              }
+            ],
+            [
+              "15",
+              {
+                "type": "list",
+                "items": [
+                  "You can now cast the spell {@spell Plane Shift} requiring no material component, once per day."
+                ]
+              }
+            ],
+            [
+              "21",
+              {
+                "type": "list",
+                "items": [
+                  {
+                    "type": "entries",
+                    "name": "Keeper of The Corrupt",
+                    "entries": [
+                      "You attempt to banish yourself and a creature to an endless demiplane. You touch a creature and the target must suceed on a Wisdom Saving throw against your Ki Save DC. On a fail, both you and the target are transferred to a realm of infinite emptiness removed from all other planes.",
+                      "Within this realm, neither you or the creature age or need to breathe, eat, drink or sleep and are functionally immortal. You cannot be reduced below 1 hit point.",
+                      "Time flow feels normal for you, but in truth it is a 100 times slower. Escape through conventional magical means, including teleportation or planat travel, is impossible.",
+                      "You can end this effect as an action.",
+                      "Alternatively, the target of this feature, can make a Wisdom check against your Ki Save DC, this can be done after 1 minute since arrival. On a success the effect ends.",
+                      "Each failure increases the waiting period before another attempt can be made, from 1 minute to 1 hour, 1 day, 1 year, 1 decade, 1 century and ultimately capping at 1 millenium.",
+                      "Upon conclusion of the effect, both you and the target are returned to your original locations or to the nearest unoccupid space, with your original hit points from when the Keeper of the Corrupt was initially activated.",
+                      "Keeper of the Corrupt can be done once every 7 days.",
+                      "{@italic Keeper of the Corrupt is greatly inspired by AdramastesGM on Instagram}"
+                    ]
+                  }
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hour of Reaping",
+      "source": "ToL",
+      "className": "Monk",
+      "classSource": "phb",
+      "subclassShortName": "Soul Guide",
+      "subclassSource": "ToL",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "At 6th level, you gain the ability to unsettle or terrify those around you as an action, for your soul has been touched by death. When you take this action, each non-friendly creature within 30 feet of you that can see you must succeed on a Wisdom saving throw or be {@condition frightened} of you until the end of your next turn."
+      ]
+    },
+    {
+      "name": "Mastery of Death",
+      "source": "ToL",
+      "className": "Monk",
+      "classSource": "phb",
+      "subclassShortName": "Soul Guide",
+      "subclassSource": "ToL",
+      "level": 11,
+      "header": 2,
+      "entries": [
+        "Beginning at 11th level, you use your connection with death to escape its grasp. When you are reduced to 0 hit points, you can expend 1 ki point (no action required) to have 1 hit point instead."
+      ]
+    },
+    {
+      "name": "Touch of the Wicked",
+      "source": "ToL",
+      "className": "Monk",
+      "classSource": "phb",
+      "subclassShortName": "Soul Guide",
+      "subclassSource": "ToL",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "Starting at 17th level, your touch can channel the energy of death into a creature. As an action, you touch one creature within 5 feet of you, and you expend 1 to 10 ki points. The target must make a Constitution saving throw, and it takes {@dice 2d12} necrotic damage per ki point spent on a failed save, or half as much damage on a successful one."
+      ]
+    },
+    {
+      "name": "Steward of Balance",
+      "source": "ToL",
+      "className": "Rogue",
+      "classSource": "phb",
+      "subclassShortName": "Steward",
+      "subclassSource": "ToL",
+      "level": 3,
+      "entries": [
+        "Stewards of Balance is a secret global organization that self-proclaim themselves as the stewards of Zybris, The Judge of Souls.",
+        "This organization is infamous for being Neutral to the affairs of the world, only venturing out of their hidden temples if a name has been fated.",
+        "Stewards of Balance have the ability to essentially become anyone, where they use their manipulative abilities for the greater good of the cosmic balance."
+      ]
+    },
+    {
+      "name": "Stewards of the many faces",
+      "source": "ToL",
+      "className": "Rogue",
+      "classSource": "phb",
+      "subclassShortName": "Steward",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "Stewards have the ability to become anyone.",
+        "When a humanoid dies near you, you have 12 hours to attempt to extract their persona. When extracting a persona you spend an hour attempting to surgically remove their face along with their personality, memories and mannerism. You must succeed on a Intelligence check to successfully collect their persona",
+        "You can spend a minute to put on a face. You can have an amount of faces equal to your Intelligence Modifier plus your Proficiency Bonus.",
+        "You can remove one face from your collection whenever you short rest."
+      ]
+    },
+    {
+      "name": "Socially Intelligent",
+      "source": "ToL",
+      "className": "Rogue",
+      "classSource": "phb",
+      "subclassShortName": "Steward",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "Starting at 3rd level, your intellect gives you confidence in social situations. You add your intelligence modifier to all charisma skills checks."
+      ]
+    },
+    {
+      "name": "Quick Mind",
+      "source": "ToL",
+      "className": "Rogue",
+      "classSource": "phb",
+      "subclassShortName": "Steward",
+      "subclassSource": "ToL",
+      "level": 3,
+      "header": 2,
+      "entries": [
+        "Starting at 3rd level, your quick thinking lets you act quicker. You can give yourself a bonus to your initiative rolls equal to your Intelligence Modifier."
+      ]
+    },
+    {
+      "name": "Undoubtable Trust",
+      "source": "ToL",
+      "className": "Rogue",
+      "classSource": "phb",
+      "subclassShortName": "Steward",
+      "subclassSource": "ToL",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "Starting at 9th level, you can use the trust of others to your advantage. While wearing a face of someone and you are conversing with an individual who undoubtably trusts the face. You can choose to auto succeed any Charisma Skill Check against the individual.",
+        "You can use Undoubtable Trust an amount of times equal to your Intelligence Modifier per long rest."
+      ]
+    },
+    {
+      "name": "Deceptive Confusion",
+      "source": "ToL",
+      "className": "Rogue",
+      "classSource": "phb",
+      "subclassShortName": "Steward",
+      "subclassSource": "ToL",
+      "level": 9,
+      "header": 2,
+      "entries": [
+        "Starting at 9th level, you can for a short time cause a target to become confused and charmed by you.",
+        "You can as a bonus action, target a humanoid creature within 30ft. Your face flickers momentarily in that creatures vision and they see their loved ones instead of you. The target must succeed on an Wisdom (insight) check against your deception. If they fail, they are charmed by you until the end of your next turn. While they are charmed by you in this way, you have advantage on the attack rolls against them.",
+        "You can use Deceptive Confusion an amount of times equal to your Proficiency Bonus per long rest."
+      ]
+    },
+    {
+      "name": "Insightful Technique",
+      "source": "ToL",
+      "className": "Rogue",
+      "classSource": "phb",
+      "subclassShortName": "Steward",
+      "subclassSource": "ToL",
+      "level": 13,
+      "header": 2,
+      "entries": [
+        "Starting at 13th level, you can use your insight about your enemies to your advantage.",
+        "Whenever you are fighting an individual that is associated with a face from your collection. You can on the first attack made on each of your turns, add your intelligence modifier to your attack and damage rolls. You do not need to be wearing the face to gain this benefit.",
+        "Examples of association can be. Same Guild, Same Cult, Same Party, Same Clan."
+      ]
+    },
+    {
+      "name": "Insightful Precision",
+      "source": "ToL",
+      "className": "Rogue",
+      "classSource": "phb",
+      "subclassShortName": "Steward",
+      "subclassSource": "ToL",
+      "level": 17,
+      "header": 2,
+      "entries": [
+        "Starting at 17th level, you gain the ability to strike at your enemies with a deadly precision",
+        "Whenever you are fighting an individual that is associated with a face from your collection. You gain the following benefits.",
+        {
+          "type": "list",
+          "items": [
+            "You attacks score a critical hit on a roll of 19 or 20.",
+            "You ignore the previous requirements for gaining sneak attack. However, if you have disadvantage on the attack roll, you still cannot gain sneak attack."
+          ]
+        }
+      ]
     }
   ],
   "subclass": [
+    {
+      "name": "Steward of Balance",
+      "subclassFeatures": [
+        "Steward of Balance|Rogue||Steward|ToL|3",
+        "Stewards of the many faces|Rogue||Steward|ToL|3",
+        "Socially Intelligent|Rogue||Steward|ToL|3",
+        "Quick Mind|Rogue||Steward|ToL|3",
+        "Undoubtable Trust|Rogue||Steward|ToL|9",
+        "Deceptive Confusion|Rogue||Steward|ToL|9",
+        "Insightful Technique|Rogue||Steward|ToL|13",
+        "Insightful Precision|Rogue||Steward|ToL|17"
+      ],
+      "source": "ToL",
+      "shortName": "Steward",
+      "className": "Rogue",
+      "classSource": "phb"
+    },
+    {
+      "name": "Way of the Soul Guide",
+      "subclassFeatures": [
+        "Way of the Soul Guide|Monk||Soul Guide|ToL|3",
+        "Touch of Death|Monk||Soul Guide|ToL|3",
+        "Guide of the Corrupt|Monk||Soul Guide|ToL|3",
+        "Hour of Reaping|Monk||Soul Guide|ToL|6",
+        "Mastery of Death|Monk||Soul Guide|ToL|11",
+        "Touch of the Wicked|Monk||Soul Guide|ToL|17"
+      ],
+      "source": "ToL",
+      "shortName": "Soul Guide",
+      "className": "Monk",
+      "classSource": "phb"
+    },
     {
       "name": "Lumeerian Gunslinger",
       "subclassFeatures": [
@@ -5196,110 +6483,111 @@
         "s": true,
         "m": "A ruby in the form of a hand worth at least 300 Gold, Consumed"
       }
-    },{
-			"name": "Nightshade's Moon Fall",
-			"level": 9,
-			"school": "V",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "miles",
-					"amount": 1
-				}
-			},
-			"duration": [
-				{
-					"type": "instant"
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					}
-				]
-			},
-			"entries": [
-				"You stretch out your arm, reaching for something, as you manifest a piece of the Red Moon Lotoza as it comes plummeting down to the ground.",
-				"Choose a point within range. A shimmering portal opens in the sky above that point, revealing a fragment of the Red Moon Lotoza hurtling towards the ground. You can adjust the size of the resulting sphere upon casting, ranging from 50 feet to 120 feet in radius.",
-				"Each creature within the chosen sphere must make a Dexterity saving throw for each damage type from the spell. The sphere spreads around corners. On a failed save, a creature takes {@damage 10d10} bludgeoning damage, {@damage 10d10} fire damage, {@damage 10d10} radiant damage, {@damage 10d10} cold damage, and {@damage 10d10} force damage. On a successful save, the damage is halved.",
-				"The spell also damages objects in the area, shattering and incinerating them. Additionally, upon impact, the spell leaves behind a permanent crater with 20-foot-tall walls surrounding the area."
-			],
-			"source": "ToL",
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a piece of the Red Moon Lotoza, not consumed"
-			}
-		},
-		{
-			"name": "Nightshade's Wolven Aspect",
-			"level": 7,
-			"school": "T",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 1
-					},
-					"concentration": true
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					}
-				]
-			},
-			"entries": [
-				"As you cast this spell, a gigantic spectral and translucent wolf, emanating a protective aura, materializes around you, symbolizing your connection with the spirit of the wolf. ",
-				"The wolf takes on a specific elemental aspect, chosen from acid, cold, fire, lightning, or poison, which manifests visibly within its form",
-				"Your body undergoes a transformation and you gain the following benefits until the spell ends.",
-				"{@bold Fur}. Your body becomes covered in fur that aligns with the appearance of the wolf, increasing your armor class by 3. Additionally you become immune to damage of the chosen element.",
-				"{@bold Movement}. You gain an additional 30 feet of movement speed. ",
-				"{@bold Spectral Wolf}. During your turn and on each subsequent turn for the duration, the wolf can make a swipe attack as a bonus action, unleashing a powerful force in a 60-foot cone. Each creature in that area must make a Dexterity saving throw, suffering {@damage 6d8} force damage on a failed save, or half as much damage on a successful one."
-			],
-			"source": "ToL",
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "a statuette of a wolf, worth at least 500 gp, consumed"
-			}
-		}
+    },
+    {
+      "name": "Nightshade's Moon Fall",
+      "level": 9,
+      "school": "V",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "miles",
+          "amount": 1
+        }
+      },
+      "duration": [
+        {
+          "type": "instant"
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You stretch out your arm, reaching for something, as you manifest a piece of the Red Moon Lotoza as it comes plummeting down to the ground.",
+        "Choose a point within range. A shimmering portal opens in the sky above that point, revealing a fragment of the Red Moon Lotoza hurtling towards the ground. You can adjust the size of the resulting sphere upon casting, ranging from 50 feet to 120 feet in radius.",
+        "Each creature within the chosen sphere must make a Dexterity saving throw for each damage type from the spell. The sphere spreads around corners. On a failed save, a creature takes {@damage 10d10} bludgeoning damage, {@damage 10d10} fire damage, {@damage 10d10} radiant damage, {@damage 10d10} cold damage, and {@damage 10d10} force damage. On a successful save, the damage is halved.",
+        "The spell also damages objects in the area, shattering and incinerating them. Additionally, upon impact, the spell leaves behind a permanent crater with 20-foot-tall walls surrounding the area."
+      ],
+      "source": "ToL",
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a piece of the Red Moon Lotoza, not consumed"
+      }
+    },
+    {
+      "name": "Nightshade's Wolven Aspect",
+      "level": 7,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 1
+          },
+          "concentration": true
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "As you cast this spell, a gigantic spectral and translucent wolf, emanating a protective aura, materializes around you, symbolizing your connection with the spirit of the wolf. ",
+        "The wolf takes on a specific elemental aspect, chosen from acid, cold, fire, lightning, or poison, which manifests visibly within its form",
+        "Your body undergoes a transformation and you gain the following benefits until the spell ends.",
+        "{@bold Fur}. Your body becomes covered in fur that aligns with the appearance of the wolf, increasing your armor class by 3. Additionally you become immune to damage of the chosen element.",
+        "{@bold Movement}. You gain an additional 30 feet of movement speed. ",
+        "{@bold Spectral Wolf}. During your turn and on each subsequent turn for the duration, the wolf can make a swipe attack as a bonus action, unleashing a powerful force in a 60-foot cone. Each creature in that area must make a Dexterity saving throw, suffering {@damage 6d8} force damage on a failed save, or half as much damage on a successful one."
+      ],
+      "source": "ToL",
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "a statuette of a wolf, worth at least 500 gp, consumed"
+      }
+    }
   ],
 
   "monster": [
@@ -6303,353 +7591,279 @@
       "damageTags": ["B"]
     },
     {
-			"name": "Winged Guard",
-			"size": [
-				"M"
-			],
-			"type": "humanoid",
-			"source": "ToL",
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"special": "22 (Dwarven Plate, Shield)"
-				}
-			],
-			"hp": {
-				"formula": "15d8 + 45",
-				"average": 112
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 22,
-			"dex": 15,
-			"con": 16,
-			"int": 10,
-			"wis": 12,
-			"cha": 15,
-			"passive": 11,
-			"cr": "9",
-			"languages": [
-				"Common"
-			],
-			"languageTags": [
-				"C"
-			],
-			"save": {
-				"str": "+10",
-				"dex": "+6",
-				"con": "+7"
-			},
-			"skill": {
-				"athletics": "+14",
-				"intimidation": "+6"
-			},
-			"trait": [
-				{
-					"name": "Brave",
-					"entries": [
-						"The winged guard has advantage on saving throws against being {@condition frightened}."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"A melee weapon deals one extra die of its damage when the winged guard hits with it."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The Winged Guard makes two attacks. "
-					]
-				},
-				{
-					"name": "Spear",
-					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 10 ft. or range 20/60ft., one target. {@h}20 ({@damage 3d6 + 6}) piercing damage plus ({@damage 1d10}) radiant damage."
-					]
-				},
-				{
-					"name": "Shield Bash",
-					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 6}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 17} Strength Saving Throw or be knocked Prone"
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack",
-				"Parry"
-			],
-			"miscTags": [
-				"MW",
-				"RCH",
-				"MLW"
-			],
-			"attachedItems": [
-				"spear|phb"
-			],
-			"reaction": [
-				{
-					"name": "Parry",
-					"entries": [
-						"The Winged Guard Adds 3 to its AC against one melee attack that would hit it. TO do so, the winged Guard must see the attacker and be wielding a melee weapon"
-					]
-				}
-			],
-			"damageTags": [
-				"B",
-				"P"
-			],
-			"savingThrowForced": [
-				"strength"
-			]
-		},
+      "name": "Winged Guard",
+      "size": ["M"],
+      "type": "humanoid",
+      "source": "ToL",
+      "alignment": ["A"],
+      "ac": [
+        {
+          "special": "22 (Dwarven Plate, Shield)"
+        }
+      ],
+      "hp": {
+        "formula": "15d8 + 45",
+        "average": 112
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 22,
+      "dex": 15,
+      "con": 16,
+      "int": 10,
+      "wis": 12,
+      "cha": 15,
+      "passive": 11,
+      "cr": "9",
+      "languages": ["Common"],
+      "languageTags": ["C"],
+      "save": {
+        "str": "+10",
+        "dex": "+6",
+        "con": "+7"
+      },
+      "skill": {
+        "athletics": "+14",
+        "intimidation": "+6"
+      },
+      "trait": [
+        {
+          "name": "Brave",
+          "entries": [
+            "The winged guard has advantage on saving throws against being {@condition frightened}."
+          ]
+        },
+        {
+          "name": "Brute",
+          "entries": [
+            "A melee weapon deals one extra die of its damage when the winged guard hits with it."
+          ]
+        }
+      ],
+      "traitTags": ["Brute"],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": ["The Winged Guard makes two attacks. "]
+        },
+        {
+          "name": "Spear",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 10 ft. or range 20/60ft., one target. {@h}20 ({@damage 3d6 + 6}) piercing damage plus ({@damage 1d10}) radiant damage."
+          ]
+        },
+        {
+          "name": "Shield Bash",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d4 + 6}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 17} Strength Saving Throw or be knocked Prone"
+          ]
+        }
+      ],
+      "actionTags": ["Multiattack", "Parry"],
+      "miscTags": ["MW", "RCH", "MLW"],
+      "attachedItems": ["spear|phb"],
+      "reaction": [
+        {
+          "name": "Parry",
+          "entries": [
+            "The Winged Guard Adds 3 to its AC against one melee attack that would hit it. TO do so, the winged Guard must see the attacker and be wielding a melee weapon"
+          ]
+        }
+      ],
+      "damageTags": ["B", "P"],
+      "savingThrowForced": ["strength"]
+    },
     {
-			"name": "Scriber of Lies",
-			"size": [
-				"M",
-				"L"
-			],
-			"type": {
-				"type": "fiend",
-				"tags": [
-					"Devil"
-				]
-			},
-			"source": "ToL",
-			"alignment": [
-				"L",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "20d10 + 100",
-				"average": 210
-			},
-			"speed": {
-				"walk": 30,
-				"fly": 60
-			},
-			"str": 16,
-			"dex": 18,
-			"con": 20,
-			"int": 28,
-			"wis": 18,
-			"cha": 19,
-			"passive": 20,
-			"cr": "20",
-			"senses": [
-				"truesight 120 ft."
-			],
-			"senseTags": [
-				"U"
-			],
-			"languages": [
-				"Common",
-				"Draconic",
-				"Infernal"
-			],
-			"languageTags": [
-				"C",
-				"DR",
-				"I"
-			],
-			"save": {
-				"int": "+15",
-				"con": "+11",
-				"dex": "+10"
-			},
-			"skill": {
-				"arcana": "+21",
-				"history": "+21",
-				"insight": "+10",
-				"investigation": "+21",
-				"perception": "+10",
-				"religion": "+21"
-			},
-			"resist": [
-				"cold",
-				"force",
-				"lightning",
-				"psychic",
-				{
-					"special": "bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered"
-				}
-			],
-			"immune": [
-				"fire",
-				"poison"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"poisoned"
-			],
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Scriber of Lies is a 20th-level spellcaster. Their Spellcasting Ability is Intelligence (spell save {@dc 23}, {@hit 15} to hit with spell attacks). The Scriber of Lies has the following wizard spells prepared:"
-					],
-					"footerEntries": [
-						"{@b Equipment: Headband of Dual Consciousness}. The wearer of this headband gains the ability to concentrate on two spells simultaneously. Whenever they take damage, they need to make concentration checks as normal, but failing this check results in losing both spells.  "
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell fire bolt}",
-								"{@spell mage hand}",
-								"{@spell prestidigitation}",
-								"{@spell spectral blast|ToL}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell comprehend languages}",
-								"{@spell detect magic}",
-								"{@spell identify}",
-								"{@spell magic missile}",
-								"{@spell shield}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell detect thoughts}",
-								"{@spell mirror image}",
-								"{@spell misty step}",
-								"{@spell rivel's ignite|ToL}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell counterspell}",
-								"{@spell dispel magic}",
-								"{@spell evermoor's lightning shackles|ToL}",
-								"{@spell fireball}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell banishment}",
-								"{@spell dimension door}",
-								"{@spell shadow trace|ToL}",
-								"{@spell wall of fire}"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell hold monster}",
-								"{@spell scrying}",
-								"{@spell wall of force}"
-							],
-							"slots": 3
-						},
-						"6": {
-							"spells": [
-								"{@spell disintegrate}",
-								"{@spell evermoor's gigantification|ToL}",
-								"{@spell sova's deathly hand|ToL}"
-							],
-							"slots": 2
-						},
-						"7": {
-							"spells": [
-								"{@spell finger of death}",
-								"{@spell greater haste|ToL}",
-								"{@spell rivel's red star|ToL}",
-								"{@spell teleport}"
-							],
-							"slots": 2
-						},
-						"8": {
-							"spells": [
-								"{@spell dominate monster}",
-								"{@spell feeblemind}"
-							],
-							"slots": 1
-						},
-						"9": {
-							"spells": [
-								"{@spell obliteration|ToL}",
-								"{@spell power word kill}"
-							],
-							"slots": 1
-						}
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The scriber of lies has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Trained Thinker",
-					"entries": [
-						"The Scriber of Lies has advantage on Constitution saving throws that you make to maintain your {@status concentration} on a spell when you take damage."
-					]
-				}
-			],
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"action": [
-				{
-					"name": "Whip",
-					"entries": [
-						"{@atk mw} {@hit +10} to hit, reach 10 ft., one target. {@h}18 ({@damage 4d6 + 4}) Fire damage."
-					]
-				}
-			],
-			"miscTags": [
-				"MW",
-				"RCH",
-				"MLW"
-			],
-			"attachedItems": [
-				"whip|phb"
-			],
-			"damageTagsSpell": [
-				"F",
-				"N",
-				"O",
-				"Y"
-			],
-			"savingThrowForcedSpell": [
-				"charisma",
-				"constitution",
-				"dexterity",
-				"intelligence",
-				"wisdom"
-			]
-		},
+      "name": "Scriber of Lies",
+      "size": ["M", "L"],
+      "type": {
+        "type": "fiend",
+        "tags": ["Devil"]
+      },
+      "source": "ToL",
+      "alignment": ["L", "E"],
+      "ac": [
+        {
+          "ac": 18,
+          "from": ["natural armor"]
+        }
+      ],
+      "hp": {
+        "formula": "20d10 + 100",
+        "average": 210
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 60
+      },
+      "str": 16,
+      "dex": 18,
+      "con": 20,
+      "int": 28,
+      "wis": 18,
+      "cha": 19,
+      "passive": 20,
+      "cr": "20",
+      "senses": ["truesight 120 ft."],
+      "senseTags": ["U"],
+      "languages": ["Common", "Draconic", "Infernal"],
+      "languageTags": ["C", "DR", "I"],
+      "save": {
+        "int": "+15",
+        "con": "+11",
+        "dex": "+10"
+      },
+      "skill": {
+        "arcana": "+21",
+        "history": "+21",
+        "insight": "+10",
+        "investigation": "+21",
+        "perception": "+10",
+        "religion": "+21"
+      },
+      "resist": [
+        "cold",
+        "force",
+        "lightning",
+        "psychic",
+        {
+          "special": "bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered"
+        }
+      ],
+      "immune": ["fire", "poison"],
+      "conditionImmune": ["charmed", "exhaustion", "frightened", "poisoned"],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The Scriber of Lies is a 20th-level spellcaster. Their Spellcasting Ability is Intelligence (spell save {@dc 23}, {@hit 15} to hit with spell attacks). The Scriber of Lies has the following wizard spells prepared:"
+          ],
+          "footerEntries": [
+            "{@b Equipment: Headband of Dual Consciousness}. The wearer of this headband gains the ability to concentrate on two spells simultaneously. Whenever they take damage, they need to make concentration checks as normal, but failing this check results in losing both spells.  "
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell fire bolt}",
+                "{@spell mage hand}",
+                "{@spell prestidigitation}",
+                "{@spell spectral blast|ToL}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell comprehend languages}",
+                "{@spell detect magic}",
+                "{@spell identify}",
+                "{@spell magic missile}",
+                "{@spell shield}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell detect thoughts}",
+                "{@spell mirror image}",
+                "{@spell misty step}",
+                "{@spell rivel's ignite|ToL}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell counterspell}",
+                "{@spell dispel magic}",
+                "{@spell evermoor's lightning shackles|ToL}",
+                "{@spell fireball}"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": [
+                "{@spell banishment}",
+                "{@spell dimension door}",
+                "{@spell shadow trace|ToL}",
+                "{@spell wall of fire}"
+              ],
+              "slots": 3
+            },
+            "5": {
+              "spells": [
+                "{@spell hold monster}",
+                "{@spell scrying}",
+                "{@spell wall of force}"
+              ],
+              "slots": 3
+            },
+            "6": {
+              "spells": [
+                "{@spell disintegrate}",
+                "{@spell evermoor's gigantification|ToL}",
+                "{@spell sova's deathly hand|ToL}"
+              ],
+              "slots": 2
+            },
+            "7": {
+              "spells": [
+                "{@spell finger of death}",
+                "{@spell greater haste|ToL}",
+                "{@spell rivel's red star|ToL}",
+                "{@spell teleport}"
+              ],
+              "slots": 2
+            },
+            "8": {
+              "spells": ["{@spell dominate monster}", "{@spell feeblemind}"],
+              "slots": 1
+            },
+            "9": {
+              "spells": [
+                "{@spell obliteration|ToL}",
+                "{@spell power word kill}"
+              ],
+              "slots": 1
+            }
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": ["CW"],
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The scriber of lies has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Trained Thinker",
+          "entries": [
+            "The Scriber of Lies has advantage on Constitution saving throws that you make to maintain your {@status concentration} on a spell when you take damage."
+          ]
+        }
+      ],
+      "traitTags": ["Magic Resistance"],
+      "action": [
+        {
+          "name": "Whip",
+          "entries": [
+            "{@atk mw} {@hit +10} to hit, reach 10 ft., one target. {@h}18 ({@damage 4d6 + 4}) Fire damage."
+          ]
+        }
+      ],
+      "miscTags": ["MW", "RCH", "MLW"],
+      "attachedItems": ["whip|phb"],
+      "damageTagsSpell": ["F", "N", "O", "Y"],
+      "savingThrowForcedSpell": [
+        "charisma",
+        "constitution",
+        "dexterity",
+        "intelligence",
+        "wisdom"
+      ]
+    },
     {
       "name": "Kaleehn (No looking)",
       "isNamedCreature": true,
@@ -6849,1174 +8063,939 @@
       ]
     },
     {
-			"name": "Greater Succubus",
-			"source": "ToL",
-			"page": 285,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "fiend",
-				"tags": [
-					"shapechanger"
-				]
-			},
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "20d8 + 100",
-				"average": 190
-			},
-			"speed": {
-				"walk": 30,
-				"fly": 60
-			},
-			"str": 12,
-			"dex": 22,
-			"con": 20,
-			"int": 20,
-			"wis": 20,
-			"cha": 24,
-			"skill": {
-				"perception": "+10",
-				"persuasion": "+12",
-				"stealth": "+11",
-				"deception": "+12",
-				"insight": "+10"
-			},
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"passive": 20,
-			"resist": [
-				"cold",
-				"fire",
-				"lightning",
-				"poison",
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"languages": [
-				"Abyssal",
-				"Common",
-				"Infernal",
-				"telepathy 120 ft."
-			],
-			"cr": "13",
-			"trait": [
-				{
-					"name": "Telepathic Bond",
-					"entries": [
-						"The fiend ignores the range restriction on its telepathy when communicating with a creature it has {@condition charmed}. The two don't even need to be on the same plane of existence."
-					]
-				},
-				{
-					"name": "Shapechanger",
-					"entries": [
-						"The fiend can use its action to polymorph into a Small, Medium or Large humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The Greater Succubus makes 3 claw attacks"
-					]
-				},
-				{
-					"name": "Claw (Fiend Form Only)",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}26 ({@damage 3d6 + 6}) slashing damage plus ({@damage 2d10}) psychic damage. "
-					]
-				},
-				{
-					"name": "Charm",
-					"entries": [
-						"One creature the fiend can see within 60 feet of it must succeed on a {@dc 22} Wisdom saving throw or be magically {@condition charmed} for 1 day. The {@condition charmed} target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Charm for the next 24 hours.",
-						"The fiend can have only one target {@condition charmed} at a time. If it charms another, the effect on the previous target ends."
-					]
-				},
-				{
-					"name": "Draining Kiss",
-					"entries": [
-						"The fiend kisses a creature {@condition charmed} by it or a willing creature. The target must make a {@dc 22} Constitution saving throw against this magic, taking 62 ({@damage 10d10 + 7}) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
-					]
-				},
-				{
-					"name": "Etherealness",
-					"entries": [
-						"The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa."
-					]
-				}
-			],
-			"environment": [
-				"urban"
-			],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/succubus-incubus.mp3"
-			},
-			"traitTags": [
-				"Shapechanger"
-			],
-			"senseTags": [
-				"SD"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"I",
-				"TP"
-			],
-			"miscTags": [
-				"MW",
-				"HPR"
-			],
-			"conditionInflict": [
-				"charmed"
-			],
-			"hasFluff": true,
-			"hasFluffImages": true,
-			"token": {
-				"name": "Succubus",
-				"source": "MM"
-			},
-			"fluff": {
-				"name": "Succubus",
-				"source": "MM",
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "internal",
-							"path": "bestiary/MM/Succubus.webp"
-						}
-					}
-				],
-				"entries": [
-					{
-						"type": "entries",
-						"entries": [
-							{
-								"type": "entries",
-								"entries": [
-									"Succubi and incubi inhabit all of the Lower Planes, and the lascivious dark-winged fiends can be found in service to devils, demons, night hags, rakshasas, and yugoloths. Asmodeus, ruler of the Nine Hells, uses these fiends to tempt mortals to perform evil acts. The demon lord Graz'zt keeps succubi and incubi as advisers and consorts.",
-									"Though legend speaks of them separately, any succubus can become an incubus, and vice versa. Most of these fiends do have a preference for one form or the other. Mortals only rarely see a succubus or incubus in its true form, however, for the fiend typically begins its corruption in veiled, insidious ways.",
-									{
-										"name": "Beautiful Corrupters",
-										"type": "entries",
-										"entries": [
-											"A succubus or incubus first appears in ethereal form, passing through walls like a ghost to lurk next to a mortal's bedside and whisper forbidden pleasures. Sleeping victims are tempted to give in to their darkest desires, indulge in taboos, and feed forbidden appetites. As the fiend fills the victim's dreams with debauched images, the victim becomes more susceptible to temptation in everyday life.",
-											"Inevitably, the fiend enters the mortal realm in tempting form to directly influence a creature's actions. Appearing in the guise of a humanoid who has previously appeared only in the victim's dreams, the succubus or incubus seduces or befriends its victim, indulging all its desires so that it performs evil acts of its own free will.",
-											"A mortal bequeaths its soul to the fiend not by formal pledge or contract. Instead, when a succubus or incubus has corrupted a creature completely-some say by causing the victim to commit the three betrayals of thought, word, and deed-the victim's soul belongs to the fiend. The more virtuous the fiend's prey, the longer the corruption takes, but the more rewarding the downfall. After successfully corrupting a victim, the succubus or incubus kills it, and the tainted soul descends into the Lower Planes.",
-											"The succubus or incubus resorts to charming a victim magically only when necessary, usually as a form of self-defense. A {@condition charmed} creature isn't responsible for its actions, so forcing it to behave against its will won't bring the fiend closer to the ultimate prize: the victim's soul."
-										]
-									},
-									{
-										"name": "Deadly Kiss",
-										"type": "entries",
-										"entries": [
-											"The kiss of a succubus or incubus is an echo of the emptiness that is the fiend's longing for a corrupted soul. Likewise, the recipient of the fiend's kiss gains no satisfaction from it, experiencing only pain and the profound emptiness that the fiend imparts. The kiss is nothing short of an attack, usually delivered as a final farewell before the fiend escapes."
-										]
-									},
-									{
-										"name": "Fiendish Offspring",
-										"type": "entries",
-										"entries": [
-											"Succubi and incubi can reproduce with one another to spawn more of their kind. Less commonly, a succubus or incubus reproduces with a humanoid. From this unholy union, a {@creature cambion} child is conceived. Invariably, the fiendish offspring is as wicked as its fiendish parent."
-										]
-									}
-								]
-							}
-						]
-					}
-				]
-			},
-			"save": {
-				"con": "+10",
-				"cha": "+12",
-				"wis": "+10"
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"The Greater Succubus casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (Spell Save {@dc 22})"
-					],
-					"daily": {
-						"1": [
-							"{@spell greater haste|ToL}"
-						],
-						"3": [
-							"{@spell banishment}",
-							"{@spell hold monster}",
-							"{@spell modify memory}",
-							"{@spell nondetection}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"O"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"damageTags": [
-				"S",
-				"Y"
-			],
-			"savingThrowForced": [
-				"constitution",
-				"wisdom"
-			],
-			"savingThrowForcedSpell": [
-				"charisma",
-				"wisdom"
-			]
-		},
-		{
-			"name": "Student of the Spellbreaker Arts",
-			"size": [
-				"M"
-			],
-			"type": "humanoid",
-			"source": "ToL",
-			"alignment": [
-				"A"
-			],
-			"ac": [
-				{
-					"ac": 19,
-					"from": [
-						"{@item half plate armor|phb}",
-						"{@item shield|phb}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "17d8 + 85",
-				"average": 161
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 22,
-			"dex": 18,
-			"con": 20,
-			"int": 16,
-			"wis": 18,
-			"cha": 15,
-			"passive": 22,
-			"cr": "9",
-			"languages": [
-				"Common"
-			],
-			"languageTags": [
-				"C"
-			],
-			"resist": [
-				"force",
-				"psychic"
-			],
-			"conditionImmune": [
-				"charmed"
-			],
-			"save": {
-				"wis": "+8",
-				"con": "+9",
-				"cha": "+6"
-			},
-			"skill": {
-				"acrobatics": "+8",
-				"arcana": "+11",
-				"insight": "+8",
-				"perception": "+12",
-				"investigation": "+7"
-			},
-			"trait": [
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The student of the spellbreaker arts has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Brute",
-					"entries": [
-						"A melee weapon deals one extra die of its damage when the student of the spellbreaker arts hits with it."
-					]
-				},
-				{
-					"name": "Indomitable (2/Day).",
-					"entries": [
-						"The student of the spellbreaker rerolls a failed saving throw. "
-					]
-				},
-				{
-					"name": "Mage Slayer",
-					"entries": [
-						"When the student of the spellbreaker arts damage a creature that is {@status concentration||concentrating} on a spell, that creature has disadvantage on the saving throw it makes to maintain its {@status concentration}."
-					]
-				}
-			],
-			"traitTags": [
-				"Brute",
-				"Magic Resistance"
-			],
-			"reaction": [
-				{
-					"name": "Striker the Caster",
-					"entries": [
-						"When a creature within 20 feet of the student of the spellbreaker arts casts a spell, they can use their reaction to make a melee weapon attack against that creature."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Longsword",
-					"entries": [
-						"{@atk mw} {@hit +10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."
-					]
-				},
-				{
-					"name": "Heavy Crossbow",
-					"entries": [
-						"{@atk rw} {@hit +8} to hit, range 100/400 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
-					]
-				}
-			],
-			"miscTags": [
-				"MW",
-				"MLW",
-				"RW"
-			],
-			"attachedItems": [
-				"heavy crossbow|phb",
-				"longsword|phb"
-			],
-			"bonus": [
-				{
-					"name": "Bracelet of Misty Step (3/Day)",
-					"entries": [
-						"The student of the spellbreaker arts can as a bonus action {@spell misty step} using its Bracelet of Misty Step. "
-					]
-				}
-			],
-			"damageTags": [
-				"P",
-				"S"
-			]
+      "name": "Greater Succubus",
+      "source": "ToL",
+      "page": 285,
+      "size": ["M"],
+      "type": {
+        "type": "fiend",
+        "tags": ["shapechanger"]
+      },
+      "alignment": ["N", "E"],
+      "ac": [
+        {
+          "ac": 18,
+          "from": ["natural armor"]
+        }
+      ],
+      "hp": {
+        "formula": "20d8 + 100",
+        "average": 190
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 60
+      },
+      "str": 12,
+      "dex": 22,
+      "con": 20,
+      "int": 20,
+      "wis": 20,
+      "cha": 24,
+      "skill": {
+        "perception": "+10",
+        "persuasion": "+12",
+        "stealth": "+11",
+        "deception": "+12",
+        "insight": "+10"
+      },
+      "senses": ["darkvision 120 ft."],
+      "passive": 20,
+      "resist": [
+        "cold",
+        "fire",
+        "lightning",
+        "poison",
+        {
+          "resist": ["bludgeoning", "piercing", "slashing"],
+          "note": "from nonmagical attacks",
+          "cond": true
+        }
+      ],
+      "languages": ["Abyssal", "Common", "Infernal", "telepathy 120 ft."],
+      "cr": "13",
+      "trait": [
+        {
+          "name": "Telepathic Bond",
+          "entries": [
+            "The fiend ignores the range restriction on its telepathy when communicating with a creature it has {@condition charmed}. The two don't even need to be on the same plane of existence."
+          ]
+        },
+        {
+          "name": "Shapechanger",
+          "entries": [
+            "The fiend can use its action to polymorph into a Small, Medium or Large humanoid, or back into its true form. Without wings, the fiend loses its flying speed. Other than its size and speed, its statistics are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": ["The Greater Succubus makes 3 claw attacks"]
+        },
+        {
+          "name": "Claw (Fiend Form Only)",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}26 ({@damage 3d6 + 6}) slashing damage plus ({@damage 2d10}) psychic damage. "
+          ]
+        },
+        {
+          "name": "Charm",
+          "entries": [
+            "One creature the fiend can see within 60 feet of it must succeed on a {@dc 22} Wisdom saving throw or be magically {@condition charmed} for 1 day. The {@condition charmed} target obeys the fiend's verbal or telepathic commands. If the target suffers any harm or receives a suicidal command, it can repeat the saving throw, ending the effect on a success. If the target successfully saves against the effect, or if the effect on it ends, the target is immune to this fiend's Charm for the next 24 hours.",
+            "The fiend can have only one target {@condition charmed} at a time. If it charms another, the effect on the previous target ends."
+          ]
+        },
+        {
+          "name": "Draining Kiss",
+          "entries": [
+            "The fiend kisses a creature {@condition charmed} by it or a willing creature. The target must make a {@dc 22} Constitution saving throw against this magic, taking 62 ({@damage 10d10 + 7}) psychic damage on a failed save, or half as much damage on a successful one. The target's hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+          ]
+        },
+        {
+          "name": "Etherealness",
+          "entries": [
+            "The fiend magically enters the Ethereal Plane from the Material Plane, or vice versa."
+          ]
+        }
+      ],
+      "environment": ["urban"],
+      "soundClip": {
+        "type": "external",
+        "url": "https://5e.tools/audio/bestiary/succubus-incubus.mp3"
+      },
+      "traitTags": ["Shapechanger"],
+      "senseTags": ["SD"],
+      "languageTags": ["AB", "C", "I", "TP"],
+      "miscTags": ["MW", "HPR"],
+      "conditionInflict": ["charmed"],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "token": {
+        "name": "Succubus",
+        "source": "MM"
+      },
+      "fluff": {
+        "name": "Succubus",
+        "source": "MM",
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/MM/Succubus.webp"
+            }
+          }
+        ],
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "Succubi and incubi inhabit all of the Lower Planes, and the lascivious dark-winged fiends can be found in service to devils, demons, night hags, rakshasas, and yugoloths. Asmodeus, ruler of the Nine Hells, uses these fiends to tempt mortals to perform evil acts. The demon lord Graz'zt keeps succubi and incubi as advisers and consorts.",
+                  "Though legend speaks of them separately, any succubus can become an incubus, and vice versa. Most of these fiends do have a preference for one form or the other. Mortals only rarely see a succubus or incubus in its true form, however, for the fiend typically begins its corruption in veiled, insidious ways.",
+                  {
+                    "name": "Beautiful Corrupters",
+                    "type": "entries",
+                    "entries": [
+                      "A succubus or incubus first appears in ethereal form, passing through walls like a ghost to lurk next to a mortal's bedside and whisper forbidden pleasures. Sleeping victims are tempted to give in to their darkest desires, indulge in taboos, and feed forbidden appetites. As the fiend fills the victim's dreams with debauched images, the victim becomes more susceptible to temptation in everyday life.",
+                      "Inevitably, the fiend enters the mortal realm in tempting form to directly influence a creature's actions. Appearing in the guise of a humanoid who has previously appeared only in the victim's dreams, the succubus or incubus seduces or befriends its victim, indulging all its desires so that it performs evil acts of its own free will.",
+                      "A mortal bequeaths its soul to the fiend not by formal pledge or contract. Instead, when a succubus or incubus has corrupted a creature completely-some say by causing the victim to commit the three betrayals of thought, word, and deed-the victim's soul belongs to the fiend. The more virtuous the fiend's prey, the longer the corruption takes, but the more rewarding the downfall. After successfully corrupting a victim, the succubus or incubus kills it, and the tainted soul descends into the Lower Planes.",
+                      "The succubus or incubus resorts to charming a victim magically only when necessary, usually as a form of self-defense. A {@condition charmed} creature isn't responsible for its actions, so forcing it to behave against its will won't bring the fiend closer to the ultimate prize: the victim's soul."
+                    ]
+                  },
+                  {
+                    "name": "Deadly Kiss",
+                    "type": "entries",
+                    "entries": [
+                      "The kiss of a succubus or incubus is an echo of the emptiness that is the fiend's longing for a corrupted soul. Likewise, the recipient of the fiend's kiss gains no satisfaction from it, experiencing only pain and the profound emptiness that the fiend imparts. The kiss is nothing short of an attack, usually delivered as a final farewell before the fiend escapes."
+                    ]
+                  },
+                  {
+                    "name": "Fiendish Offspring",
+                    "type": "entries",
+                    "entries": [
+                      "Succubi and incubi can reproduce with one another to spawn more of their kind. Less commonly, a succubus or incubus reproduces with a humanoid. From this unholy union, a {@creature cambion} child is conceived. Invariably, the fiendish offspring is as wicked as its fiendish parent."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "save": {
+        "con": "+10",
+        "cha": "+12",
+        "wis": "+10"
+      },
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The Greater Succubus casts one of the following spells, requiring no material components and using Charisma as the spellcasting ability (Spell Save {@dc 22})"
+          ],
+          "daily": {
+            "1": ["{@spell greater haste|ToL}"],
+            "3": [
+              "{@spell banishment}",
+              "{@spell hold monster}",
+              "{@spell modify memory}",
+              "{@spell nondetection}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": ["O"],
+      "actionTags": ["Multiattack"],
+      "damageTags": ["S", "Y"],
+      "savingThrowForced": ["constitution", "wisdom"],
+      "savingThrowForcedSpell": ["charisma", "wisdom"]
     },
-		{
-			"name": "Perran Eldergaze (Perran Stormcaller)",
-			"size": [
-				"M"
-			],
-			"type": "humanoid",
-			"source": "ToL",
-			"alignment": [
-				"C",
-				"G"
-			],
-			"ac": [
-				{
-					"ac": 22,
-					"from": [
-						"{@item +1 plate armor}",
-						"{@item sentinel shield}"
-					]
-				}
-			],
-			"hp": {
-				"special": "215"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 22,
-			"dex": 12,
-			"con": 22,
-			"int": 9,
-			"wis": 10,
-			"cha": 20,
-			"passive": 22,
-			"cr": "13",
-			"shortName": "Perran",
-			"level": 13,
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"senseTags": [
-				"D"
-			],
-			"languages": [
-				"Common",
-				"Elvish",
-				"Sylvan",
-				"Dwarvish",
-				"Celestial"
-			],
-			"languageTags": [
-				"C",
-				"E",
-				"S",
-				"D",
-				"CE"
-			],
-			"save": {
-				"str": "+13",
-				"dex": "+15",
-				"con": "+13",
-				"int": "+11",
-				"wis": "+12",
-				"cha": "+17"
-			},
-			"skill": {
-				"acrobatics": "+8",
-				"animal handling": "+2",
-				"arcana": "+1",
-				"athletics": "+13",
-				"deception": "+7",
-				"history": "+6",
-				"insight": "+7",
-				"intimidation": "+12",
-				"investigation": "+1",
-				"medicine": "+2",
-				"nature": "+1",
-				"perception": "+7",
-				"performance": "+7",
-				"persuasion": "+17",
-				"religion": "+6",
-				"sleight of hand": "+3",
-				"stealth": "+8",
-				"survival": "+2"
-			},
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Perran is an 12th-level spellcaster. His spellcasting ability is Charisma (Spell save {@dc 18}, +10 to hit with spell attacks). He has the following paladin spells prepared:",
-						"Perran can cast Chain Lightning, Lightning Bolt and Thunder Step once a day from his sword Tempest Heir. "
-					],
-					"spells": {
-						"1": {
-							"spells": [
-								"{@spell bless}",
-								"{@spell ceremony|XGE}",
-								"{@spell command}",
-								"{@spell cure wounds}",
-								"{@spell detect evil and good}",
-								"{@spell protection from evil and good}",
-								"{@spell sanctuary}",
-								"{@spell shield of faith}",
-								"{@spell thunderous smite}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell lesser restoration}",
-								"{@spell locate object}",
-								"{@spell misty step}",
-								"{@spell zone of truth}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell beacon of hope}",
-								"{@spell dispel magic}",
-								"{@spell revivify}",
-								"{@spell spirit shroud|TCE}"
-							],
-							"slots": 2
-						}
-					},
-					"daily": {
-						"1e": [
-							"{@spell chain lightning}",
-							"{@spell lightning bolt}",
-							"{@spell thunder step|XGE}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"CP"
-			],
-			"trait": [
-				{
-					"name": "Aura of Protection",
-					"entries": [
-						"Perran surrounds himself with an Aura of Protection that adds a +5 to his own saving throw as well as any friendly creatures within 10ft. Additionally individuals affected by the aura cannot be {@condition charmed}. (Included)"
-					]
-				},
-				{
-					"name": "Divine Smite",
-					"entries": [
-						"When Perran hits a creature with a melee weapon attack, he can expend a spell slot to deal radiant damage. ",
-						"The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st.",
-						"Additionally whenever Perran hits a creature with a melee weapon, the creature takes an extra {@damage 1d8} radiant damage. (Included)"
-					]
-				},
-				{
-					"name": "Equipment",
-					"entries": [
-						"Perran has the following items on his person at all times : Tempest Heir, Dragonslayer Pike, Cursed Mirror, Guardian Emblem and most important SOLS aka \"Secata.Ordanance.Light.Strider 214th Battalion | BlackBox\""
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Extra Attack",
-					"entries": [
-						"Perran can attack twice per turn with his weapons. "
-					]
-				},
-				{
-					"name": "Tempest Heir +3",
-					"entries": [
-						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}26 ({@damage 1d8 + 10}) slashing damage plus {@damage 1d12} lightning damage plus {@damage 1d8} radiant damage. "
-					]
-				},
-				{
-					"name": "Energy Blade",
-					"entries": [
-						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 7}) radiant damage plus {@damage 1d8} radiant damage. "
-					]
-				}
-			],
-			"miscTags": [
-				"MW"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/441091471_1135027107737621_5237059982225861692_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Bk1PsPZfLt4Q7kNvgFX7yG3&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1QGEQIWsJl1cSFGzxcgKkhPaSJF4kDykzhJAB0f9PvRNEQ&oe=666EF331"
-						}
-					}
-				]
-			},
-			"damageTags": [
-				"R",
-				"S"
-			],
-			"damageTagsSpell": [
-				"C",
-				"L",
-				"N",
-				"R",
-				"T"
-			],
-			"savingThrowForcedSpell": [
-				"charisma",
-				"constitution",
-				"dexterity",
-				"strength",
-				"wisdom"
-			]
-		},
-		{
-			"name": "Geisha Kiriyami",
-			"size": [
-				"M"
-			],
-			"type": "Vampire",
-			"source": "ToL",
-			"alignment": [
-				"N",
-				"G"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"Mage Armor",
-						"{@item ring of protection}"
-					]
-				}
-			],
-			"hp": {
-				"special": "162"
-			},
-			"speed": {
-				"walk": 45
-			},
-			"str": 6,
-			"dex": 16,
-			"con": 19,
-			"int": 24,
-			"wis": 10,
-			"cha": 10,
-			"passive": 16,
-			"cr": "13",
-			"shortName": "Geisha",
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"senseTags": [
-				"D"
-			],
-			"languages": [
-				"Common",
-				"Dark Speech",
-				"Abyssal",
-				"Infernal"
-			],
-			"languageTags": [
-				"C",
-				"AB",
-				"I"
-			],
-			"save": {
-				"str": "+0",
-				"dex": "+7",
-				"con": "+11",
-				"int": "+14",
-				"wis": "+7",
-				"cha": "+2"
-			},
-			"skill": {
-				"acrobatics": "+9",
-				"animal handling": "+1",
-				"arcana": "+18",
-				"athletics": "-1",
-				"deception": "+6",
-				"history": "+13",
-				"insight": "+6",
-				"intimidation": "+10",
-				"investigation": "+13",
-				"medicine": "+6",
-				"nature": "+13",
-				"perception": "+6",
-				"performance": "+1",
-				"persuasion": "+1",
-				"religion": "+13",
-				"sleight of hand": "+9",
-				"stealth": "+9",
-				"survival": "+1"
-			},
-			"resist": [
-				"necrotic"
-			],
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Geisha is a 13th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 21}, +13 to hit with spell attacks). Geisha has the following wizard spells prepared: "
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell chill touch}",
-								"{@spell fire bolt}",
-								"{@spell lightning lure|TCE}",
-								"{@spell mage hand}",
-								"{@spell mending}",
-								"{@spell prestidigitation}",
-								"{@spell shocking grasp}",
-								"{@spell toll the dead|XGE}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell catapult|XGE}",
-								"{@spell detect magic}",
-								"{@spell feather fall}",
-								"{@spell inflict wounds}",
-								"{@spell magic missile}",
-								"{@spell shield}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell gust of wind}",
-								"{@spell hold person}",
-								"{@spell invisibility}",
-								"{@spell misty step}",
-								"{@spell scorching ray}",
-								"{@spell shatter}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell animate dead}",
-								"{@spell counterspell}",
-								"{@spell fireball}",
-								"{@spell lightning bolt}",
-								"{@spell summon undead|TCE}",
-								"{@spell vampiric touch}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell blight}",
-								"{@spell ice storm}",
-								"{@spell polymorph}",
-								"{@spell raulothim's psychic lance|FTD}"
-							],
-							"slots": 3
-						},
-						"5": {
-							"spells": [
-								"{@spell cone of cold}",
-								"{@spell danse macabre|XGE}",
-								"{@spell dominate person}",
-								"{@spell negative energy flood|XGE}",
-								"{@spell summon draconic spirit|FTD}",
-								"{@spell wall of force}"
-							],
-							"slots": 2
-						},
-						"6": {
-							"spells": [
-								"{@spell circle of death}",
-								"{@spell create undead}",
-								"{@spell disintegrate}",
-								"{@spell Tasha's otherworldly guise|TCE}"
-							],
-							"slots": 1
-						},
-						"7": {
-							"spells": [
-								"{@spell crown of stars|XGE}",
-								"{@spell finger of death}"
-							],
-							"slots": 1
-						}
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"CW"
-			],
-			"trait": [
-				{
-					"name": "Equipment",
-					"entries": [
-						"Geisha has the following items on her person at all times : Reaper's Bracelet, Reactive Field Emitter, Mask of Awareness and Frostclaw Pin."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Vampiric Bite",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage. Geisha regains an amount of hit points equal to the damage dealt. If Geisha has less than half of her hit points, she has advantage on any attack roll she makes with her bite.",
-						"When she damages a creature with her Vampiric Bite, she gains a bonus to the next attack roll or ability check she makes equal to the piercing damage dealt."
-					]
-				}
-			],
-			"miscTags": [
-				"MW"
-			],
-			"bonus": [
-				{
-					"name": "Telekinetic Shove/Pull",
-					"entries": [
-						"60 ft. range, one target. Geisha attempts to either shove or pull a creature telekinetically. The target makes a Strength saving throw ({@dc 21}). On a failure, the target is moved 5 feet closer or further away from Geisha."
-					]
-				}
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/441283017_409441018581558_3738574502855791093_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=l7Z7UC3DwuIQ7kNvgFlevwU&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1QEdgjz7nuCmTjcMheS18QyPdZ_v0Mt-rHyCKfonrpyRhg&oe=666EEEA4"
-						}
-					}
-				]
-			},
-			"level": 13,
-			"damageTags": [
-				"P"
-			],
-			"damageTagsSpell": [
-				"B",
-				"C",
-				"F",
-				"L",
-				"N",
-				"O",
-				"R",
-				"T",
-				"Y"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"dexterity",
-				"intelligence",
-				"strength",
-				"wisdom"
-			]
-		},
-		{
-			"name": "Benard \"Berny\" Groaucer",
-			"size": [
-				"M"
-			],
-			"type": "humanoid",
-			"source": "ToL",
-			"alignment": [
-				"C",
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 23,
-					"from": [
-						"{@item +1 chain shirt}",
-						"{@item shield|phb}"
-					]
-				}
-			],
-			"hp": {
-				"special": "168"
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 21,
-			"dex": 20,
-			"con": 12,
-			"int": 20,
-			"wis": 11,
-			"cha": 8,
-			"passive": 18,
-			"cr": "13",
-			"level": 13,
-			"shortName": "Berny",
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/441885530_1497488797506059_2003194477944963967_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h4nS9zPykC0Q7kNvgFqlZcR&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1QHsC1PqdHeXBnseVPJqwi9G6-xpT4wi5_WDBAJ57r-MeQ&oe=666EE84B"
-						}
-					}
-				]
-			},
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"senseTags": [
-				"D"
-			],
-			"languages": [
-				"Common",
-				"Elvish",
-				"Sylvan"
-			],
-			"languageTags": [
-				"C",
-				"E",
-				"S"
-			],
-			"skill": {
-				"acrobatics": "+6",
-				"animal handling": "+1",
-				"arcana": "+11",
-				"athletics": "+6",
-				"deception": "+0",
-				"history": "+11",
-				"insight": "+1",
-				"intimidation": "+0",
-				"investigation": "+11",
-				"medicine": "+6",
-				"nature": "+11",
-				"perception": "+6",
-				"performance": "+0",
-				"persuasion": "+0",
-				"religion": "+11",
-				"sleight of hand": "+16",
-				"stealth": "+6",
-				"survival": "+6"
-			},
-			"save": {
-				"str": "+7",
-				"dex": "+9",
-				"con": "+8",
-				"int": "+12",
-				"wis": "+2",
-				"cha": "+1"
-			},
-			"resist": [
-				"acid",
-				"fire",
-				"force"
-			],
-			"trait": [
-				{
-					"name": "Equipment",
-					"entries": [
-						"Berny has the following items on his person at all times : Amulet of Guardian, Misty Mug, Tattoo of Blur and Spell Refueling Ring"
-					]
-				},
-				{
-					"name": "Scrubbin Time",
-					"entries": [
-						"Berny commands {@creature Scrub Guardian|ToL} "
-					]
-				}
-			],
-			"spellcasting": [
-				{
-					"name": "Spellcasting",
-					"headerEntries": [
-						"Berny is a 13th-level Artificer. His spellcasting ability is Intelligence (spell save {@dc 19}, +11 to hit with spell attacks). He has the following artificer spells prepared: "
-					],
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell acid splash}",
-								"{@spell fire bolt}",
-								"{@spell guidance}"
-							]
-						},
-						"1": {
-							"spells": [
-								"{@spell cure wounds}",
-								"{@spell detect magic}",
-								"{@spell expeditious retreat}",
-								"{@spell healing word}",
-								"{@spell identify}",
-								"{@spell ray of sickness}"
-							],
-							"slots": 4
-						},
-						"2": {
-							"spells": [
-								"{@spell aid}",
-								"{@spell blur}",
-								"{@spell flaming sphere}",
-								"{@spell Melf's acid arrow}",
-								"{@spell see invisibility}"
-							],
-							"slots": 3
-						},
-						"3": {
-							"spells": [
-								"{@spell gaseous form}",
-								"{@spell haste}",
-								"{@spell intellect fortress|TCE}",
-								"{@spell mass healing word}",
-								"{@spell protection from energy}",
-								"{@spell revivify}"
-							],
-							"slots": 3
-						},
-						"4": {
-							"spells": [
-								"{@spell Otiluke's resilient sphere}"
-							],
-							"slots": 1
-						}
-					},
-					"ability": "int",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"CA"
-			],
-			"action": [
-				{
-					"name": "Anti Matter Rifle",
-					"entries": [
-						"{@atk rw} {@hit 10} to hit, range 300/900 ft., one target. {@h}60 ({@damage 10d10 + 5}) necrotic damage. If the target is reduced to 0 hit points, they do not roll death saves, they are instead affected by the {@spell disintegrate} spell as they are turned to dust. "
-					]
-				}
-			],
-			"miscTags": [
-				"RW"
-			],
-			"damageTags": [
-				"N"
-			],
-			"damageTagsSpell": [
-				"A",
-				"F",
-				"I"
-			],
-			"savingThrowForcedSpell": [
-				"constitution",
-				"dexterity"
-			]
-		},
-		{
-			"name": "Scrub Guardian",
-			"size": [
-				"L"
-			],
-			"type": "construct",
-			"source": "ToL",
-			"alignment": [
-				"U"
-			],
-			"ac": [
-				17
-			],
-			"hp": {
-				"special": "200"
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 18,
-			"dex": 8,
-			"con": 18,
-			"int": 7,
-			"wis": 10,
-			"cha": 3,
-			"passive": 10,
-			"cr": "7",
-			"languages": [
-				"understands commands given in any language but can't speak"
-			],
-			"languageTags": [
-				"CS",
-				"X"
-			],
-			"shortName": "Scrub",
-			"senses": [
-				"blindsight 10 ft.",
-				"darkvision 60 ft."
-			],
-			"senseTags": [
-				"B",
-				"D"
-			],
-			"immune": [
-				"poison"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"paralyzed",
-				"poisoned",
-				"prone"
-			],
-			"trait": [
-				{
-					"name": "Bound",
-					"entries": [
-						"Scrub Guardian is magically bound to an amulet that {@creature Benard \"Berny\" Groaucer|ToL} carries. As long as Scrub guardian and Berny are on the same plane of existence, Berny can telepathically call the guardian to travel to it, and Scrub guardian knows the distance and direction to the amulet. If Scrub guardian is within 60 feet of Berny, half of any damage Berny takes (rounded up) is transferred to Scrub guardian."
-					]
-				},
-				{
-					"name": "Spell Storing",
-					"entries": [
-						"Berny who wears Scrub Guardian's amulet can cause Scrub guardian to store on spell of 4th level or lower. To do so, Berny must cast the spell on Scrub guardian. The spell has no effect but is stored within scrub guardian. When commanded to do so by Berny or when a situation arises that was predefined by Berny, Scrub guardian casts the stored spell with any parameters set by Berny, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost."
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"Scrub guardian makes two fist attacks. "
-					]
-				},
-				{
-					"name": "Fist",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
-					]
-				},
-				{
-					"name": "Lightning Launcher {@recharge 5}",
-					"entries": [
-						"Scrub Guardian fires his lightning Launcher in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 15} Dexterity saving throw, taking 36 ({@damage 8d8}) lightning damage on a failed save, or half as much damage on a successful one."
-					]
-				},
-				{
-					"name": "Poison Smoke Screen (1/Day)",
-					"entries": [
-						"Scrub Guardian pierces himself with his Poison stinger, as his poison immunity disperses the poison out through his scales, as a poison cloud. Any creature within 10ft of Scrub Guardian, must make a {@dc 15} Constitution saving throw, taking 42 ({@damage 12d6}) poison damage on a failed save, or half as much damage on a successful one. "
-					]
-				},
-				{
-					"name": "Fear Ray Stalk {@recharge}",
-					"entries": [
-						"Scrub Guardian points his Fear Ray from a Beholder and targets a creature within 120ft.",
-						"The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MW",
-				"AOE"
-			],
-			"reaction": [
-				{
-					"name": "Shield",
-					"entries": [
-						"When a creature makes an attack against Berny, Scrub guardian grants a +2 bonus to Berny's AC if Scrub guardian is within 5 feet of Berny."
-					]
-				}
-			],
-			"conditionInflict": [
-				"frightened"
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://i.imgur.com/BR9ghZa.png"
-						}
-					}
-				]
-			},
-			"damageTags": [
-				"B",
-				"I",
-				"L"
-			],
-			"savingThrowForced": [
-				"constitution",
-				"dexterity",
-				"wisdom"
-			]
-		}
+    {
+      "name": "Student of the Spellbreaker Arts",
+      "size": ["M"],
+      "type": "humanoid",
+      "source": "ToL",
+      "alignment": ["A"],
+      "ac": [
+        {
+          "ac": 19,
+          "from": ["{@item half plate armor|phb}", "{@item shield|phb}"]
+        }
+      ],
+      "hp": {
+        "formula": "17d8 + 85",
+        "average": 161
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 22,
+      "dex": 18,
+      "con": 20,
+      "int": 16,
+      "wis": 18,
+      "cha": 15,
+      "passive": 22,
+      "cr": "9",
+      "languages": ["Common"],
+      "languageTags": ["C"],
+      "resist": ["force", "psychic"],
+      "conditionImmune": ["charmed"],
+      "save": {
+        "wis": "+8",
+        "con": "+9",
+        "cha": "+6"
+      },
+      "skill": {
+        "acrobatics": "+8",
+        "arcana": "+11",
+        "insight": "+8",
+        "perception": "+12",
+        "investigation": "+7"
+      },
+      "trait": [
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The student of the spellbreaker arts has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Brute",
+          "entries": [
+            "A melee weapon deals one extra die of its damage when the student of the spellbreaker arts hits with it."
+          ]
+        },
+        {
+          "name": "Indomitable (2/Day).",
+          "entries": [
+            "The student of the spellbreaker rerolls a failed saving throw. "
+          ]
+        },
+        {
+          "name": "Mage Slayer",
+          "entries": [
+            "When the student of the spellbreaker arts damage a creature that is {@status concentration||concentrating} on a spell, that creature has disadvantage on the saving throw it makes to maintain its {@status concentration}."
+          ]
+        }
+      ],
+      "traitTags": ["Brute", "Magic Resistance"],
+      "reaction": [
+        {
+          "name": "Striker the Caster",
+          "entries": [
+            "When a creature within 20 feet of the student of the spellbreaker arts casts a spell, they can use their reaction to make a melee weapon attack against that creature."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit +10} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."
+          ]
+        },
+        {
+          "name": "Heavy Crossbow",
+          "entries": [
+            "{@atk rw} {@hit +8} to hit, range 100/400 ft., one target. {@h}9 ({@damage 1d10 + 4}) piercing damage."
+          ]
+        }
+      ],
+      "miscTags": ["MW", "MLW", "RW"],
+      "attachedItems": ["heavy crossbow|phb", "longsword|phb"],
+      "bonus": [
+        {
+          "name": "Bracelet of Misty Step (3/Day)",
+          "entries": [
+            "The student of the spellbreaker arts can as a bonus action {@spell misty step} using its Bracelet of Misty Step. "
+          ]
+        }
+      ],
+      "damageTags": ["P", "S"]
+    },
+    {
+      "name": "Perran Eldergaze (Perran Stormcaller)",
+      "size": ["M"],
+      "type": "humanoid",
+      "source": "ToL",
+      "alignment": ["C", "G"],
+      "ac": [
+        {
+          "ac": 22,
+          "from": ["{@item +1 plate armor}", "{@item sentinel shield}"]
+        }
+      ],
+      "hp": {
+        "special": "215"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 22,
+      "dex": 12,
+      "con": 22,
+      "int": 9,
+      "wis": 10,
+      "cha": 20,
+      "passive": 22,
+      "cr": "13",
+      "shortName": "Perran",
+      "level": 13,
+      "senses": ["darkvision 60 ft."],
+      "senseTags": ["D"],
+      "languages": ["Common", "Elvish", "Sylvan", "Dwarvish", "Celestial"],
+      "languageTags": ["C", "E", "S", "D", "CE"],
+      "save": {
+        "str": "+13",
+        "dex": "+15",
+        "con": "+13",
+        "int": "+11",
+        "wis": "+12",
+        "cha": "+17"
+      },
+      "skill": {
+        "acrobatics": "+8",
+        "animal handling": "+2",
+        "arcana": "+1",
+        "athletics": "+13",
+        "deception": "+7",
+        "history": "+6",
+        "insight": "+7",
+        "intimidation": "+12",
+        "investigation": "+1",
+        "medicine": "+2",
+        "nature": "+1",
+        "perception": "+7",
+        "performance": "+7",
+        "persuasion": "+17",
+        "religion": "+6",
+        "sleight of hand": "+3",
+        "stealth": "+8",
+        "survival": "+2"
+      },
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Perran is an 12th-level spellcaster. His spellcasting ability is Charisma (Spell save {@dc 18}, +10 to hit with spell attacks). He has the following paladin spells prepared:",
+            "Perran can cast Chain Lightning, Lightning Bolt and Thunder Step once a day from his sword Tempest Heir. "
+          ],
+          "spells": {
+            "1": {
+              "spells": [
+                "{@spell bless}",
+                "{@spell ceremony|XGE}",
+                "{@spell command}",
+                "{@spell cure wounds}",
+                "{@spell detect evil and good}",
+                "{@spell protection from evil and good}",
+                "{@spell sanctuary}",
+                "{@spell shield of faith}",
+                "{@spell thunderous smite}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell lesser restoration}",
+                "{@spell locate object}",
+                "{@spell misty step}",
+                "{@spell zone of truth}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell beacon of hope}",
+                "{@spell dispel magic}",
+                "{@spell revivify}",
+                "{@spell spirit shroud|TCE}"
+              ],
+              "slots": 2
+            }
+          },
+          "daily": {
+            "1e": [
+              "{@spell chain lightning}",
+              "{@spell lightning bolt}",
+              "{@spell thunder step|XGE}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": ["CP"],
+      "trait": [
+        {
+          "name": "Aura of Protection",
+          "entries": [
+            "Perran surrounds himself with an Aura of Protection that adds a +5 to his own saving throw as well as any friendly creatures within 10ft. Additionally individuals affected by the aura cannot be {@condition charmed}. (Included)"
+          ]
+        },
+        {
+          "name": "Divine Smite",
+          "entries": [
+            "When Perran hits a creature with a melee weapon attack, he can expend a spell slot to deal radiant damage. ",
+            "The extra damage is {@dice 2d8} for a 1st-level spell slot, plus {@dice 1d8} for each spell level higher than 1st.",
+            "Additionally whenever Perran hits a creature with a melee weapon, the creature takes an extra {@damage 1d8} radiant damage. (Included)"
+          ]
+        },
+        {
+          "name": "Equipment",
+          "entries": [
+            "Perran has the following items on his person at all times : Tempest Heir, Dragonslayer Pike, Cursed Mirror, Guardian Emblem and most important SOLS aka \"Secata.Ordanance.Light.Strider 214th Battalion | BlackBox\""
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Extra Attack",
+          "entries": ["Perran can attack twice per turn with his weapons. "]
+        },
+        {
+          "name": "Tempest Heir +3",
+          "entries": [
+            "{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}26 ({@damage 1d8 + 10}) slashing damage plus {@damage 1d12} lightning damage plus {@damage 1d8} radiant damage. "
+          ]
+        },
+        {
+          "name": "Energy Blade",
+          "entries": [
+            "{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}22 ({@damage 3d10 + 7}) radiant damage plus {@damage 1d8} radiant damage. "
+          ]
+        }
+      ],
+      "miscTags": ["MW"],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/441091471_1135027107737621_5237059982225861692_n.png?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Bk1PsPZfLt4Q7kNvgFX7yG3&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1QGEQIWsJl1cSFGzxcgKkhPaSJF4kDykzhJAB0f9PvRNEQ&oe=666EF331"
+            }
+          }
+        ]
+      },
+      "damageTags": ["R", "S"],
+      "damageTagsSpell": ["C", "L", "N", "R", "T"],
+      "savingThrowForcedSpell": [
+        "charisma",
+        "constitution",
+        "dexterity",
+        "strength",
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Geisha Kiriyami",
+      "size": ["M"],
+      "type": "Vampire",
+      "source": "ToL",
+      "alignment": ["N", "G"],
+      "ac": [
+        {
+          "ac": 17,
+          "from": ["Mage Armor", "{@item ring of protection}"]
+        }
+      ],
+      "hp": {
+        "special": "162"
+      },
+      "speed": {
+        "walk": 45
+      },
+      "str": 6,
+      "dex": 16,
+      "con": 19,
+      "int": 24,
+      "wis": 10,
+      "cha": 10,
+      "passive": 16,
+      "cr": "13",
+      "shortName": "Geisha",
+      "senses": ["darkvision 60 ft."],
+      "senseTags": ["D"],
+      "languages": ["Common", "Dark Speech", "Abyssal", "Infernal"],
+      "languageTags": ["C", "AB", "I"],
+      "save": {
+        "str": "+0",
+        "dex": "+7",
+        "con": "+11",
+        "int": "+14",
+        "wis": "+7",
+        "cha": "+2"
+      },
+      "skill": {
+        "acrobatics": "+9",
+        "animal handling": "+1",
+        "arcana": "+18",
+        "athletics": "-1",
+        "deception": "+6",
+        "history": "+13",
+        "insight": "+6",
+        "intimidation": "+10",
+        "investigation": "+13",
+        "medicine": "+6",
+        "nature": "+13",
+        "perception": "+6",
+        "performance": "+1",
+        "persuasion": "+1",
+        "religion": "+13",
+        "sleight of hand": "+9",
+        "stealth": "+9",
+        "survival": "+1"
+      },
+      "resist": ["necrotic"],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Geisha is a 13th-level spellcaster. Her spellcasting ability is Intelligence (spell save {@dc 21}, +13 to hit with spell attacks). Geisha has the following wizard spells prepared: "
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell chill touch}",
+                "{@spell fire bolt}",
+                "{@spell lightning lure|TCE}",
+                "{@spell mage hand}",
+                "{@spell mending}",
+                "{@spell prestidigitation}",
+                "{@spell shocking grasp}",
+                "{@spell toll the dead|XGE}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell catapult|XGE}",
+                "{@spell detect magic}",
+                "{@spell feather fall}",
+                "{@spell inflict wounds}",
+                "{@spell magic missile}",
+                "{@spell shield}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell gust of wind}",
+                "{@spell hold person}",
+                "{@spell invisibility}",
+                "{@spell misty step}",
+                "{@spell scorching ray}",
+                "{@spell shatter}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell animate dead}",
+                "{@spell counterspell}",
+                "{@spell fireball}",
+                "{@spell lightning bolt}",
+                "{@spell summon undead|TCE}",
+                "{@spell vampiric touch}"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": [
+                "{@spell blight}",
+                "{@spell ice storm}",
+                "{@spell polymorph}",
+                "{@spell raulothim's psychic lance|FTD}"
+              ],
+              "slots": 3
+            },
+            "5": {
+              "spells": [
+                "{@spell cone of cold}",
+                "{@spell danse macabre|XGE}",
+                "{@spell dominate person}",
+                "{@spell negative energy flood|XGE}",
+                "{@spell summon draconic spirit|FTD}",
+                "{@spell wall of force}"
+              ],
+              "slots": 2
+            },
+            "6": {
+              "spells": [
+                "{@spell circle of death}",
+                "{@spell create undead}",
+                "{@spell disintegrate}",
+                "{@spell Tasha's otherworldly guise|TCE}"
+              ],
+              "slots": 1
+            },
+            "7": {
+              "spells": [
+                "{@spell crown of stars|XGE}",
+                "{@spell finger of death}"
+              ],
+              "slots": 1
+            }
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": ["CW"],
+      "trait": [
+        {
+          "name": "Equipment",
+          "entries": [
+            "Geisha has the following items on her person at all times : Reaper's Bracelet, Reactive Field Emitter, Mask of Awareness and Frostclaw Pin."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Vampiric Bite",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 4}) piercing damage. Geisha regains an amount of hit points equal to the damage dealt. If Geisha has less than half of her hit points, she has advantage on any attack roll she makes with her bite.",
+            "When she damages a creature with her Vampiric Bite, she gains a bonus to the next attack roll or ability check she makes equal to the piercing damage dealt."
+          ]
+        }
+      ],
+      "miscTags": ["MW"],
+      "bonus": [
+        {
+          "name": "Telekinetic Shove/Pull",
+          "entries": [
+            "60 ft. range, one target. Geisha attempts to either shove or pull a creature telekinetically. The target makes a Strength saving throw ({@dc 21}). On a failure, the target is moved 5 feet closer or further away from Geisha."
+          ]
+        }
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/441283017_409441018581558_3738574502855791093_n.png?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=l7Z7UC3DwuIQ7kNvgFlevwU&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1QEdgjz7nuCmTjcMheS18QyPdZ_v0Mt-rHyCKfonrpyRhg&oe=666EEEA4"
+            }
+          }
+        ]
+      },
+      "level": 13,
+      "damageTags": ["P"],
+      "damageTagsSpell": ["B", "C", "F", "L", "N", "O", "R", "T", "Y"],
+      "savingThrowForcedSpell": [
+        "constitution",
+        "dexterity",
+        "intelligence",
+        "strength",
+        "wisdom"
+      ]
+    },
+    {
+      "name": "Benard \"Berny\" Groaucer",
+      "size": ["M"],
+      "type": "humanoid",
+      "source": "ToL",
+      "alignment": ["C", "N"],
+      "ac": [
+        {
+          "ac": 23,
+          "from": ["{@item +1 chain shirt}", "{@item shield|phb}"]
+        }
+      ],
+      "hp": {
+        "special": "168"
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 21,
+      "dex": 20,
+      "con": 12,
+      "int": 20,
+      "wis": 11,
+      "cha": 8,
+      "passive": 18,
+      "cr": "13",
+      "level": 13,
+      "shortName": "Berny",
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.15752-9/441885530_1497488797506059_2003194477944963967_n.png?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h4nS9zPykC0Q7kNvgFqlZcR&_nc_ht=scontent-cph2-1.xx&oh=03_Q7cD1QHsC1PqdHeXBnseVPJqwi9G6-xpT4wi5_WDBAJ57r-MeQ&oe=666EE84B"
+            }
+          }
+        ]
+      },
+      "senses": ["darkvision 60 ft."],
+      "senseTags": ["D"],
+      "languages": ["Common", "Elvish", "Sylvan"],
+      "languageTags": ["C", "E", "S"],
+      "skill": {
+        "acrobatics": "+6",
+        "animal handling": "+1",
+        "arcana": "+11",
+        "athletics": "+6",
+        "deception": "+0",
+        "history": "+11",
+        "insight": "+1",
+        "intimidation": "+0",
+        "investigation": "+11",
+        "medicine": "+6",
+        "nature": "+11",
+        "perception": "+6",
+        "performance": "+0",
+        "persuasion": "+0",
+        "religion": "+11",
+        "sleight of hand": "+16",
+        "stealth": "+6",
+        "survival": "+6"
+      },
+      "save": {
+        "str": "+7",
+        "dex": "+9",
+        "con": "+8",
+        "int": "+12",
+        "wis": "+2",
+        "cha": "+1"
+      },
+      "resist": ["acid", "fire", "force"],
+      "trait": [
+        {
+          "name": "Equipment",
+          "entries": [
+            "Berny has the following items on his person at all times : Amulet of Guardian, Misty Mug, Tattoo of Blur and Spell Refueling Ring"
+          ]
+        },
+        {
+          "name": "Scrubbin Time",
+          "entries": ["Berny commands {@creature Scrub Guardian|ToL} "]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Berny is a 13th-level Artificer. His spellcasting ability is Intelligence (spell save {@dc 19}, +11 to hit with spell attacks). He has the following artificer spells prepared: "
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell acid splash}",
+                "{@spell fire bolt}",
+                "{@spell guidance}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell cure wounds}",
+                "{@spell detect magic}",
+                "{@spell expeditious retreat}",
+                "{@spell healing word}",
+                "{@spell identify}",
+                "{@spell ray of sickness}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell aid}",
+                "{@spell blur}",
+                "{@spell flaming sphere}",
+                "{@spell Melf's acid arrow}",
+                "{@spell see invisibility}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell gaseous form}",
+                "{@spell haste}",
+                "{@spell intellect fortress|TCE}",
+                "{@spell mass healing word}",
+                "{@spell protection from energy}",
+                "{@spell revivify}"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": ["{@spell Otiluke's resilient sphere}"],
+              "slots": 1
+            }
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": ["CA"],
+      "action": [
+        {
+          "name": "Anti Matter Rifle",
+          "entries": [
+            "{@atk rw} {@hit 10} to hit, range 300/900 ft., one target. {@h}60 ({@damage 10d10 + 5}) necrotic damage. If the target is reduced to 0 hit points, they do not roll death saves, they are instead affected by the {@spell disintegrate} spell as they are turned to dust. "
+          ]
+        }
+      ],
+      "miscTags": ["RW"],
+      "damageTags": ["N"],
+      "damageTagsSpell": ["A", "F", "I"],
+      "savingThrowForcedSpell": ["constitution", "dexterity"]
+    },
+    {
+      "name": "Scrub Guardian",
+      "size": ["L"],
+      "type": "construct",
+      "source": "ToL",
+      "alignment": ["U"],
+      "ac": [17],
+      "hp": {
+        "special": "200"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 18,
+      "dex": 8,
+      "con": 18,
+      "int": 7,
+      "wis": 10,
+      "cha": 3,
+      "passive": 10,
+      "cr": "7",
+      "languages": [
+        "understands commands given in any language but can't speak"
+      ],
+      "languageTags": ["CS", "X"],
+      "shortName": "Scrub",
+      "senses": ["blindsight 10 ft.", "darkvision 60 ft."],
+      "senseTags": ["B", "D"],
+      "immune": ["poison"],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned",
+        "prone"
+      ],
+      "trait": [
+        {
+          "name": "Bound",
+          "entries": [
+            "Scrub Guardian is magically bound to an amulet that {@creature Benard \"Berny\" Groaucer|ToL} carries. As long as Scrub guardian and Berny are on the same plane of existence, Berny can telepathically call the guardian to travel to it, and Scrub guardian knows the distance and direction to the amulet. If Scrub guardian is within 60 feet of Berny, half of any damage Berny takes (rounded up) is transferred to Scrub guardian."
+          ]
+        },
+        {
+          "name": "Spell Storing",
+          "entries": [
+            "Berny who wears Scrub Guardian's amulet can cause Scrub guardian to store on spell of 4th level or lower. To do so, Berny must cast the spell on Scrub guardian. The spell has no effect but is stored within scrub guardian. When commanded to do so by Berny or when a situation arises that was predefined by Berny, Scrub guardian casts the stored spell with any parameters set by Berny, requiring no components. When the spell is cast or a new spell is stored, any previously stored spell is lost."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": ["Scrub guardian makes two fist attacks. "]
+        },
+        {
+          "name": "Fist",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Lightning Launcher {@recharge 5}",
+          "entries": [
+            "Scrub Guardian fires his lightning Launcher in a 60-foot line that is 5 feet wide. Each creature in that line must make a {@dc 15} Dexterity saving throw, taking 36 ({@damage 8d8}) lightning damage on a failed save, or half as much damage on a successful one."
+          ]
+        },
+        {
+          "name": "Poison Smoke Screen (1/Day)",
+          "entries": [
+            "Scrub Guardian pierces himself with his Poison stinger, as his poison immunity disperses the poison out through his scales, as a poison cloud. Any creature within 10ft of Scrub Guardian, must make a {@dc 15} Constitution saving throw, taking 42 ({@damage 12d6}) poison damage on a failed save, or half as much damage on a successful one. "
+          ]
+        },
+        {
+          "name": "Fear Ray Stalk {@recharge}",
+          "entries": [
+            "Scrub Guardian points his Fear Ray from a Beholder and targets a creature within 120ft.",
+            "The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "actionTags": ["Multiattack"],
+      "miscTags": ["MW", "AOE"],
+      "reaction": [
+        {
+          "name": "Shield",
+          "entries": [
+            "When a creature makes an attack against Berny, Scrub guardian grants a +2 bonus to Berny's AC if Scrub guardian is within 5 feet of Berny."
+          ]
+        }
+      ],
+      "conditionInflict": ["frightened"],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://i.imgur.com/BR9ghZa.png"
+            }
+          }
+        ]
+      },
+      "damageTags": ["B", "I", "L"],
+      "savingThrowForced": ["constitution", "dexterity", "wisdom"]
+    }
   ]
 }
