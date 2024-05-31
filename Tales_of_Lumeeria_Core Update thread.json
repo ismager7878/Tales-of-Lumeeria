@@ -8996,6 +8996,1803 @@
       },
       "damageTags": ["B", "I", "L"],
       "savingThrowForced": ["constitution", "dexterity", "wisdom"]
-    }
+    },
+		{
+			"name": "Marauder v1",
+			"source": "ToL",
+			"page": 170,
+			"size": [
+				"L"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 60",
+				"average": 126
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 14,
+			"con": 20,
+			"int": 3,
+			"wis": 12,
+			"cha": 4,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"fire",
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "12",
+			"trait": [
+				{
+					"name": "Fire Absorption",
+					"entries": [
+						"Whenever the golem is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes three attacks."
+					]
+				},
+				{
+					"name": "Scorching Cannon",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 120 ft., one target. {@h}20 ({@damage 4d6 + 6}) Fire damage."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}19 ({@damage 3d8 + 6}) Bludgeoning damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"fluff": {
+				"entries": [
+					"The Marauder 1.0 is a menacing construct mounted on wheels, its large upper body dominated by two scorching cannons on each side. In its torso, a mechanical-looking red eye glows ominously. Swift and deadly, it's a formidable force on the battlefield, its purpose clear—to annihilate anything in its path."
+				]
+			},
+			"save": {
+				"str": "+10",
+				"con": "+9"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			}
+		},
+		{
+			"name": "Marauder v2",
+			"source": "ToL",
+			"page": 170,
+			"size": [
+				"G"
+			],
+			"type": "construct",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 27,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "24d20 + 168",
+				"average": 420
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 30,
+			"dex": 16,
+			"con": 24,
+			"int": 3,
+			"wis": 14,
+			"cha": 6,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 18,
+			"immune": [
+				"poison",
+				"psychic",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't adamantine",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone"
+			],
+			"languages": [
+				"understands the languages of its creator but can't speak"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The golem is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The golem has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The golem's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Metallic Grasp",
+					"entries": [
+						"The Marauder can switch out a claw attack to attempt to grapple one creature within 15 feet of it. The target must make a {@dc 24} Strength saving throw. On a failed save, the target is {@condition grappled} (escape {@dc 24}). Until this grapple ends, the target is {@condition restrained}, and the Marauder can't use this claw against other targets."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The golem makes Three attacks. Two with its claws and one with its stinger, or it can make one claw attack and Fire Beam"
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 15 ft., one target. {@h}32 ({@damage 4d10 + 10}) slashing damage"
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 20 ft., one target. {@h}38 ({@damage 4d12 + 10}) piercing damage, and the target must make a {@dc 24} Constitution saving throw, taking 28 ({@damage 8d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Fire Beam {@recharge 5}",
+					"entries": [
+						"The Marauder unleashes a powerful beam of fire from the orb atop its body. Each creature in a 120-foot line that is 10 feet wide must make a {@dc 24} Dexterity saving throw, taking 70 ({@damage 20d6}) fire damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/iron-golem.mp3"
+			},
+			"traitTags": [
+				"Damage Absorption",
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Iron Golem",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Iron Golem",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Iron Golem.webp"
+						}
+					}
+				],
+				"entries": [
+					"The mightiest of the golems, the iron golem is a massive, towering giant wrought of heavy metal. An iron golem's shape can be worked into any form, though most are fashioned to look like giant suits of armor. Its fist can destroy creatures with a single blow, and its clanging steps shake the earth beneath its feet. Iron golems wield enormous blades to extend their reach, and all can belch clouds of deadly poison.",
+					"An iron golem's body is smelted with rare tinctures and admixtures. Though other golems bear weaknesses inherent in their materials or the power of the elemental spirit bound within them, iron golems were designed to be nearly invulnerable. Their iron bodies imprison the spirits that drive them, and are susceptible only to weapons imbued with magic or the strength of adamantine.",
+					{
+						"type": "insetReadaloud",
+						"entries": [
+							{
+								"type": "quote",
+								"entries": [
+									"Beyond the unopenable doors lay a grand hall ending before a towering stone throne, upon which sat an iron statue taller and wider than two men. In one  and it clutched an iron sword, in the other, a feather whip. We should have turned back then."
+								],
+								"by": "Mordenkainen the Archmage",
+								"from": "chronicling his party's harrowing exploits in the dungeons below Maure Castle"
+							}
+						]
+					},
+					{
+						"type": "section",
+						"name": "Golems",
+						"entries": [
+							"Golems are made from humble materials-clay, flesh and bones, iron, or stone-but they possess astonishing power and durability. A golem has no ambitions, needs no sustenance, feels no pain, and knows no remorse. An unstoppable juggernaut, it exists to follow its creator's orders, and it protects or attacks as that creator demands.",
+							"To create a golem, one requires a {@item manual of golems}. The comprehensive illustrations and instructions in a manual detail the process for creating a golem of a particular type.",
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											{
+												"name": "Elemental Spirit in Material Form",
+												"entries": [
+													"The construction of a golem begins with the building of its body, requiring great command of the craft of sculpting, stonecutting, ironworking, or surgery. Sometimes a golem's creator is the master of the art, but often the individual who desires a golem must enlist master artisans to do the work.",
+													"After constructing the body from clay, flesh, iron, or stone, the golem's creator infuses it with a spirit from the Elemental Plane of Earth. This tiny spark of life has no memory, personality, or history. It is simply the impetus to move and obey. This process binds the spirit to the artificial body and subjects it to the will of the golem's creator.",
+													"A golem can be created with a special amulet or other item that allows the possessor of the item to control the golem. Golems whose creators are long dead can thus be harnessed to serve a new master.",
+													"A golem can't think or act for itself. Though it understands its commands perfectly, it has no grasp of language beyond that understanding, and can't be reasoned with or tricked with words."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Ageless Guardians",
+												"entries": [
+													"Golems can guard sacred sites, tombs, and treasure vaults long after the deaths of their creators, carrying out their appointed tasks for all eternity while brushing off physical damage and ignoring all but the most potent spells."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Blind Obedience",
+												"entries": [
+													"When its creator or possessor is on hand to command it, a golem performs flawlessly. If the golem is left without instructions or is {@condition incapacitated}, it continues to follow its last orders to the best of its ability. When it can't fulfill its orders, a golem might react violently-or stand and do nothing. A golem that has been given conflicting orders sometimes alternates between them."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Constructed Nature",
+												"entries": [
+													"A golem doesn't require air, food, drink, or sleep."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"save": {
+				"str": "+16",
+				"wis": "+8"
+			},
+			"skill": {
+				"athletics": "+16",
+				"perception": "+8"
+			},
+			"resist": [
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"vulnerable": [
+				"acid"
+			],
+			"conditionInflict": [
+				"grappled",
+				"prone",
+				"restrained"
+			],
+			"reaction": [
+				{
+					"name": "Reactive Pulse {@recharge 5}",
+					"entries": [
+						"When the Marauder takes damage from a creature within 30 feet of it, it can use its reaction to unleash a wave of kinetic energy from the orb atop its body. Each creature within 80 feet of the Marauder must succeed on a {@dc 24} Strength saving throw or be pushed back 20 feet and knocked {@condition prone}, taking 49 ({@damage 14d6}) force damage. On a successful save, the creature takes half damage and isn't knocked {@condition prone}."
+					]
+				}
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"O",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Karlaan",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d20 + 240",
+				"average": 555
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 24,
+			"dex": 16,
+			"con": 26,
+			"int": 6,
+			"wis": 6,
+			"cha": 6,
+			"passive": 14,
+			"cr": "20",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"str": "+13",
+				"dex": "+9",
+				"con": "+13"
+			},
+			"skill": {
+				"acrobatics": "+9",
+				"athletics": "+13",
+				"perception": "+4"
+			},
+			"resist": [
+				{
+					"resist": [],
+					"preNote": "Resistant to all, both non magical and magical"
+				}
+			],
+			"vulnerable": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"paralyzed"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The karlaan has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The karlaan's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Brutel",
+					"entries": [
+						"A melee weapon deals three extra die of its damage when karlaan hits with it."
+					]
+				},
+				{
+					"name": "Blood Sacrifice",
+					"entries": [
+						"Whenever Karlaan makes a saving throw, he can choose to take 50 psychic damage to succeed on the saving throw instead. (Damage already doubled)"
+					]
+				},
+				{
+					"name": "Reckless",
+					"entries": [
+						"At the start of its turn, the karlaan can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Reckless"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Karlaan makes three attacks with his Greataxe. He can choose to swap out either a reckless leap or frightful presence for a Greataxe attack. "
+					]
+				},
+				{
+					"name": "Greataxe +3",
+					"entries": [
+						"{@atk mw} {@hit 16} to hit, reach 5 ft., one target. {@h}36 ({@damage 4d12 + 10}) slashing damage."
+					]
+				},
+				{
+					"name": "Reckless Leap",
+					"entries": [
+						"Karlaan Leaps into the air and moves 60ft in the air. Afterwards he smashes into the ground sending the ground churning in a 20ft circle around where he landed. Each creature in the area must succeed on a {@dc 21} Dexterity saving throw or take {@damage 8d8} bludgeoning damage and fall {@condition prone}, or half ads much damage on a success and not fall {@condition prone}"
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each hostile creature within 120 feet of Karlaan must succeed on a {@dc 20} Wisdom saving throw or become {@condition frightened} for 1 minute. ",
+						"A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. "
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"+3 greataxe|dmg"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Celador Talis (Original)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"Mage armor + Enchantments",
+						"- 27 Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 200",
+				"average": 380
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 20,
+			"int": 28,
+			"wis": 22,
+			"cha": 22,
+			"passive": 32,
+			"cr": "26",
+			"languages": [
+				"All"
+			],
+			"save": {
+				"dex": "+13",
+				"con": "+13",
+				"int": "+17",
+				"wis": "+14",
+				"cha": "+14"
+			},
+			"skill": {
+				"arcana": "+25",
+				"history": "+25",
+				"perception": "+22",
+				"athletics": "+10"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The celador talis (original) has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Arcane Deflection",
+					"entries": [
+						"Whenever Celador Talis makes a saving throw, he can choose to spend a spell slot of 6th or above to succeed"
+					]
+				},
+				{
+					"name": "Spellfocus",
+					"entries": [
+						"Celador Talis has a +3 spellcasting focus on his finger, which is a ring enchanted with spatial magic. He vanishes if Celador dies and reappears on a newly awakened body of Celador Talis. "
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Celador Talis makes 2 arcane burst attacks and casts a spell"
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk rw} {@hit 20} to hit, range 5/300 ft., one target. {@h}36 ({@damage 5d10 + 9}) force damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"legendaryHeader": [
+				"Celador talis can take 5 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The celador talis regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Arcane Burst (Costs 1 Action)",
+					"entries": [
+						"Celador Talis Shoots an Arcane Burst Attack"
+					]
+				},
+				{
+					"name": "Cast Spell (Costs 2 Actions)",
+					"entries": [
+						"Celador Talis casts a spell of 4th level or lower. "
+					]
+				},
+				{
+					"name": "Activate Lair Object (Costs 1 Action)",
+					"entries": [
+						"Celador activates an Object in his Lair"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Celador Talis",
+				"source": "ToL"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Celador Talis is a 20-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 28}, +20 to hit with spell attacks). The Celador Talis has the following wizard spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell haste}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell blight}",
+								"{@spell dimension door}",
+								"{@spell greater invisibility}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell hold monster}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}",
+								"{@spell sova's deathly hand|ToL}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell forcecage}",
+								"{@spell greater haste|ToL}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell evermoor's power word fall|ToL}",
+								"{@spell maze}",
+								"{@spell power word stun}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell meteor swarm}",
+								"{@spell time stop}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"L",
+				"N",
+				"O"
+			],
+			"damageTagsLegendary": [
+				null
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Celador Talis (Clone 1)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"Mage armor + Enchantments",
+						"- 27 Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 200",
+				"average": 380
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 20,
+			"int": 28,
+			"wis": 22,
+			"cha": 22,
+			"passive": 32,
+			"cr": "26",
+			"languages": [
+				"All"
+			],
+			"save": {
+				"dex": "+13",
+				"con": "+13",
+				"int": "+17",
+				"wis": "+14",
+				"cha": "+14"
+			},
+			"skill": {
+				"arcana": "+25",
+				"history": "+25",
+				"perception": "+22",
+				"athletics": "+10"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The celador talis (original) has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Arcane Deflection",
+					"entries": [
+						"Whenever Celador Talis makes a saving throw, he can choose to spend a spell slot of 6th or above to succeed"
+					]
+				},
+				{
+					"name": "Spellfocus",
+					"entries": [
+						"Celador Talis has a +3 spellcasting focus on his finger, which is a ring enchanted with spatial magic. He vanishes if Celador dies and reappears on a newly awakened body of Celador Talis. "
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Celador Talis makes 2 arcane burst attacks and casts a spell"
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk rw} {@hit 20} to hit, range 5/300 ft., one target. {@h}36 ({@damage 5d10 + 9}) force damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"legendaryHeader": [
+				"Celador talis can take 5 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The celador talis regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Arcane Burst (Costs 1 Action)",
+					"entries": [
+						"Celador Talis Shoots an Arcane Burst Attack"
+					]
+				},
+				{
+					"name": "Cast Spell (Costs 2 Actions)",
+					"entries": [
+						"Celador Talis casts a spell of 4th level or lower. "
+					]
+				},
+				{
+					"name": "Activate Lair Object (Costs 1 Action)",
+					"entries": [
+						"Celador activates an Object in his Lair"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Celador Talis",
+				"source": "ToL"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Celador Talis is a 20-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 28}, +20 to hit with spell attacks). The Celador Talis has the following wizard spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell haste}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell blight}",
+								"{@spell dimension door}",
+								"{@spell greater invisibility}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell hold monster}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}",
+								"{@spell sova's deathly hand|ToL}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell forcecage}",
+								"{@spell greater haste|ToL}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell evermoor's power word fall|ToL}",
+								"{@spell maze}",
+								"{@spell power word stun}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell obliteration|ToL}",
+								"{@spell psychic scream|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
+			"damageTagsLegendary": [
+				null
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Celador Talis (Clone 2)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"Mage armor + Enchantments",
+						"- 27 Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 200",
+				"average": 380
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 20,
+			"int": 28,
+			"wis": 22,
+			"cha": 22,
+			"passive": 32,
+			"cr": "26",
+			"languages": [
+				"All"
+			],
+			"save": {
+				"dex": "+13",
+				"con": "+13",
+				"int": "+17",
+				"wis": "+14",
+				"cha": "+14"
+			},
+			"skill": {
+				"arcana": "+25",
+				"history": "+25",
+				"perception": "+22",
+				"athletics": "+10"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The celador talis (original) has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Arcane Deflection",
+					"entries": [
+						"Whenever Celador Talis makes a saving throw, he can choose to spend a spell slot of 6th or above to succeed"
+					]
+				},
+				{
+					"name": "Spellfocus",
+					"entries": [
+						"Celador Talis has a +3 spellcasting focus on his finger, which is a ring enchanted with spatial magic. He vanishes if Celador dies and reappears on a newly awakened body of Celador Talis. "
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Celador Talis makes 2 arcane burst attacks and casts a spell"
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk rw} {@hit 20} to hit, range 5/300 ft., one target. {@h}36 ({@damage 5d10 + 9}) force damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"legendaryHeader": [
+				"Celador talis can take 5 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The celador talis regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Arcane Burst (Costs 1 Action)",
+					"entries": [
+						"Celador Talis Shoots an Arcane Burst Attack"
+					]
+				},
+				{
+					"name": "Cast Spell (Costs 2 Actions)",
+					"entries": [
+						"Celador Talis casts a spell of 4th level or lower. "
+					]
+				},
+				{
+					"name": "Activate Lair Object (Costs 1 Action)",
+					"entries": [
+						"Celador activates an Object in his Lair"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Celador Talis",
+				"source": "ToL"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Celador Talis is a 20-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 28}, +20 to hit with spell attacks). The Celador Talis has the following wizard spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell haste}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell blight}",
+								"{@spell dimension door}",
+								"{@spell greater invisibility}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell hold monster}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}",
+								"{@spell sova's deathly hand|ToL}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell forcecage}",
+								"{@spell greater haste|ToL}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell evermoor's power word fall|ToL}",
+								"{@spell feeblemind}",
+								"{@spell power word stun}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell power word kill}",
+								"{@spell prismatic wall}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
+			"damageTagsLegendary": [
+				null
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Celador Talis (Clone 3)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"Mage armor + Enchantments",
+						"- 27 Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 200",
+				"average": 380
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 20,
+			"int": 28,
+			"wis": 22,
+			"cha": 22,
+			"passive": 32,
+			"cr": "26",
+			"languages": [
+				"All"
+			],
+			"save": {
+				"dex": "+13",
+				"con": "+13",
+				"int": "+17",
+				"wis": "+14",
+				"cha": "+14"
+			},
+			"skill": {
+				"arcana": "+25",
+				"history": "+25",
+				"perception": "+22",
+				"athletics": "+10"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The celador talis (original) has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Arcane Deflection",
+					"entries": [
+						"Whenever Celador Talis makes a saving throw, he can choose to spend a spell slot of 6th or above to succeed"
+					]
+				},
+				{
+					"name": "Spellfocus",
+					"entries": [
+						"Celador Talis has a +3 spellcasting focus on his finger, which is a ring enchanted with spatial magic. He vanishes if Celador dies and reappears on a newly awakened body of Celador Talis. "
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Celador Talis makes 2 arcane burst attacks and casts a spell"
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk rw} {@hit 20} to hit, range 5/300 ft., one target. {@h}36 ({@damage 5d10 + 9}) force damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"legendaryHeader": [
+				"Celador talis can take 5 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The celador talis regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Arcane Burst (Costs 1 Action)",
+					"entries": [
+						"Celador Talis Shoots an Arcane Burst Attack"
+					]
+				},
+				{
+					"name": "Cast Spell (Costs 2 Actions)",
+					"entries": [
+						"Celador Talis casts a spell of 4th level or lower. "
+					]
+				},
+				{
+					"name": "Activate Lair Object (Costs 1 Action)",
+					"entries": [
+						"Celador activates an Object in his Lair"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Celador Talis",
+				"source": "ToL"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Celador Talis is a 20-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 28}, +20 to hit with spell attacks). The Celador Talis has the following wizard spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell haste}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell blight}",
+								"{@spell dimension door}",
+								"{@spell greater invisibility}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell hold monster}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}",
+								"{@spell sova's deathly hand|ToL}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell forcecage}",
+								"{@spell greater haste|ToL}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell evermoor's power word fall|ToL}",
+								"{@spell maze}",
+								"{@spell power word stun}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell meteor swarm}",
+								"{@spell time stop}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"L",
+				"N",
+				"O"
+			],
+			"damageTagsLegendary": [
+				null
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Celador Talis (Clone 4)",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"Mage armor + Enchantments",
+						"- 27 Shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d8 + 200",
+				"average": 380
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 14,
+			"dex": 20,
+			"con": 20,
+			"int": 28,
+			"wis": 22,
+			"cha": 22,
+			"passive": 32,
+			"cr": "26",
+			"languages": [
+				"All"
+			],
+			"save": {
+				"dex": "+13",
+				"con": "+13",
+				"int": "+17",
+				"wis": "+14",
+				"cha": "+14"
+			},
+			"skill": {
+				"arcana": "+25",
+				"history": "+25",
+				"perception": "+22",
+				"athletics": "+10"
+			},
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The celador talis (original) has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Arcane Deflection",
+					"entries": [
+						"Whenever Celador Talis makes a saving throw, he can choose to spend a spell slot of 6th or above to succeed"
+					]
+				},
+				{
+					"name": "Spellfocus",
+					"entries": [
+						"Celador Talis has a +3 spellcasting focus on his finger, which is a ring enchanted with spatial magic. He vanishes if Celador dies and reappears on a newly awakened body of Celador Talis. "
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Celador Talis makes 2 arcane burst attacks and casts a spell"
+					]
+				},
+				{
+					"name": "Arcane Burst",
+					"entries": [
+						"{@atk rw} {@hit 20} to hit, range 5/300 ft., one target. {@h}36 ({@damage 5d10 + 9}) force damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"legendaryHeader": [
+				"Celador talis can take 5 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The celador talis regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Arcane Burst (Costs 1 Action)",
+					"entries": [
+						"Celador Talis Shoots an Arcane Burst Attack"
+					]
+				},
+				{
+					"name": "Cast Spell (Costs 2 Actions)",
+					"entries": [
+						"Celador Talis casts a spell of 4th level or lower. "
+					]
+				},
+				{
+					"name": "Activate Lair Object (Costs 1 Action)",
+					"entries": [
+						"Celador activates an Object in his Lair"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Celador Talis",
+				"source": "ToL"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Celador Talis is a 20-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 28}, +20 to hit with spell attacks). The Celador Talis has the following wizard spells prepared:"
+					],
+					"spells": {
+						"1": {
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 0
+						},
+						"2": {
+							"spells": [
+								"{@spell blur}",
+								"{@spell mirror image}",
+								"{@spell misty step}"
+							],
+							"slots": 0
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell haste}"
+							],
+							"slots": 0
+						},
+						"4": {
+							"spells": [
+								"{@spell banishment}",
+								"{@spell blight}",
+								"{@spell dimension door}",
+								"{@spell greater invisibility}",
+								"{@spell polymorph}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cone of cold}",
+								"{@spell hold monster}",
+								"{@spell wall of force}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell chain lightning}",
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}",
+								"{@spell sova's deathly hand|ToL}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell finger of death}",
+								"{@spell forcecage}",
+								"{@spell greater haste|ToL}"
+							],
+							"slots": 2
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell evermoor's power word fall|ToL}",
+								"{@spell maze}",
+								"{@spell power word stun}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell obliteration|ToL}",
+								"{@spell psychic scream|XGE}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"damageTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
+			"damageTagsLegendary": [
+				null
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
+		}
+	],
+	"legendaryGroup": [
+		{
+			"name": "Celador Talis",
+			"lairActions": [
+				"When fighting inside his lair, Celador talis can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), Celador talis can take one lair action to cause one of the following effects:",
+				"- Celador Talis rolls a d8 and regains a spell slot of that level or lower. If he has no spent spell slots of that level or lower, nothing happens.",
+				"- Celador Talis flicks his fingers and out from the walls come green motes of light. Everyone in the room can choose to regain hit points equal to 10d10. Choosing to regain it, in return makes your next 3 saving throws be at disadvantage.",
+				"- Celador Talis snaps his finger, and a enchanted rune appears in the ceiling. The hostile creature with the lowest amount of hit points within the lair is targeted by a Power Word Kill spell. ",
+				"- Celador Talis creates arcane arms to rise form the ground in a 20-foot square that he can see. The arcane arms last until the next initiative count 20. Each creature in that area when the arms appear must succeed on a DC 25 Strength saving throw or be restrained until the arms disappear or until Celador Talis releases them (no action required)",
+				"The celador talis can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
+			],
+			"regionalEffects": [
+				"Objects",
+				"\t\t○ Ray enhancer",
+				"\tCelador can shoot a ray or beam like spell or his Arcane Burst ability. If it passes through the ray enhancer, it doubles the damage and doubles the range aswell. ",
+				"Example; Disintegrate spell can be targeted as if the range was doubled if the ray will pass through the enhancer.   ",
+				"\t\t○ Stunning Wave (legendary Action)",
+				"\tCelador can spend a legendary action to trigger the stunning wave, As a wave of purple arcane energy pushes through the center of the lair. Any hostile creature caught in this energy must succeed on a DC 28 Intelligence saving throw or be stunned until the end of their next turn. ",
+				"\t\t○ Cold Wave (legendary Action)",
+				"\tCelador can spend a legendary action to trigger the Cold wave, as a wave of cold energy pushes through the center of the lair both from the top and bottom objects. Any hostile creature caught in this wave must succeed on a DC 28 constitution saving throw, taking 10d6 Cold damage or half as much damage on a successful save. ",
+				"\t\t○ Force field's",
+				"\tCelador can move to a golden platform and as a bonus action activate it. This will summon a force field that acts as a Wall of Force. The wall appears where the golden arcane energies exit. The back of the platform being completely open. ",
+				"When Celador moves off it, it disappears.",
+				"Other creatures can attempt to activate the Force Field as a bonus action by succeeding on a Arcana check DC 40. ",
+				"\t\t○ Displacement pillars",
+				"\tCelador can touch a pillar and teleport to another pillar in the lair. "
+			],
+			"mythicEncounter": [],
+			"source": "ToL"
+		}
   ]
 }
