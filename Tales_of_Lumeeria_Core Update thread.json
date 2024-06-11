@@ -10762,6 +10762,732 @@
 				"intelligence",
 				"wisdom"
 			]
+		},
+		{
+			"name": "Steel Wolf",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "ToL",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				19
+			],
+			"hp": {
+				"formula": "12d12 + 60",
+				"average": 138
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 20,
+			"int": 6,
+			"wis": 12,
+			"cha": 7,
+			"passive": 14,
+			"cr": "5",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Understands Common but can't speak"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"save": {
+				"con": "+8",
+				"wis": "+4"
+			},
+			"skill": {
+				"perception": "+4"
+			},
+			"conditionImmune": [
+				"petrified"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The steel wolf has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The steel wolf has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Steel Wolf makes three attacks: one with its bite and two with its claws. Alternatively, it can make one bite attack and use its Petrifying Breath."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d12 + 6}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Petrifying Breath (Recharge 5–6):",
+					"entries": [
+						"The Steel Wolf exhales petrifying gas in a 30-foot line that is 5 feet wide. Each creature in that line must succeed on a {@dc 16} Constitution saving throw. On a failed save, a creature begins to turn to stone and is {@condition restrained}. The {@condition restrained} creature must repeat the saving throw at the end of its next turn, becoming {@condition petrified} on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"fluff": {
+				"entries": [
+					"The Steel Wolf is thought to have deviated from a dire wolf while wandering the depths of Lumeeria's underground maze, Kudan's Maze. Here, the ominous energies that persist to this day caused a dire wolf to transform into a Steel Wolf. Steel Wolves have a thick outer hide with edges as sharp as steel, making them formidable predators and guardians of the dark. Their bodies have adapted to the harsh environment, gaining resilience and abilities that allow them to thrive in the underground labyrinths of Lumeeria."
+				]
+			},
+			"environment": [
+				"underdark"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Duke Alexander Nightshade",
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 25,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "40d12 + 280",
+				"average": 540
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 28,
+			"dex": 20,
+			"con": 24,
+			"int": 17,
+			"wis": 22,
+			"cha": 19,
+			"passive": 24,
+			"cr": "25",
+			"shortName": "Duke",
+			"senses": [
+				"blindsight 120 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"con": "+15",
+				"wis": "+14",
+				"str": "+17"
+			},
+			"skill": {
+				"insight": "+14",
+				"perception": "+14",
+				"athletics": "+17"
+			},
+			"vulnerable": [
+				{
+					"special": "bludgeoning, piercing, and slashing from Silvered weapons"
+				}
+			],
+			"resist": [
+				{
+					"special": "All"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the duke fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"The duke has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The duke has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The duke's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Pounce (The Duke)",
+					"entries": [
+						"If the duke moves at least 15 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 25} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the duke can make one bite attack against it as a bonus action."
+					]
+				},
+				{
+					"name": "Shapechanger (Werewolf)",
+					"entries": [
+						"The duke can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into its true form, which is humanoid. Its statistics, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Pounce",
+				"Shapechanger"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Duke makes 5 attacks. He can only do one bite attack per turn. He can forego two attacks to use Howl of Terror"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}41 ({@damage 5d12 + 9}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 10 ft., one target. {@h}22 ({@damage 3d8 + 9}) piercing damage."
+					]
+				},
+				{
+					"name": "Howl of Terror",
+					"entries": [
+						"The Duke emits a terrifying howl. Each creature of the Duke's choice within 120 feet and aware of it must succeed on a {@dc 23} Wisdom saving throw or be {@condition frightened} for 1 minute. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, with disadvantage if the Duke is within line of sight, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"frightened",
+				"prone"
+			],
+			"immune": [
+				"poison"
+			],
+			"legendaryActions": 5,
+			"legendary": [
+				{
+					"name": "Duke - Move & Attack (1)",
+					"entries": [
+						"The Duke moves up to its speed without provoking opportunity attacks, and does a Bite attack against a target within range"
+					]
+				},
+				{
+					"name": "Torodel - Cast spell (2)",
+					"entries": [
+						"Torodel Cast's a spell of 5th level or lower. "
+					]
+				},
+				{
+					"name": "Torodel - Paralyzing Touch (1)",
+					"entries": [
+						"Torodel uses his Paralyzing Touch "
+					]
+				},
+				{
+					"name": "Torodel and Duke - Claw and Despair (2)",
+					"entries": [
+						"Torodel and the Duke both do something, Torodel uses his Darkest Despair on a target within range, while Duke uses two claw attacks on a target within range."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Lich - Torodel Yelra",
+			"source": "ToL",
+			"page": 202,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 210",
+				"average": 345
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 11,
+			"dex": 20,
+			"con": 24,
+			"int": 26,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"int": "+16",
+				"wis": "+10",
+				"con": "+15"
+			},
+			"skill": {
+				"history": "+16",
+				"insight": "+10",
+				"perception": "+10",
+				"arcana": "+24"
+			},
+			"senses": [
+				"truesight 120 ft."
+			],
+			"passive": 20,
+			"resist": [
+				"cold",
+				"lightning",
+				"necrotic"
+			],
+			"immune": [
+				"poison",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"Common plus up to five other languages"
+			],
+			"cr": {
+				"cr": "25",
+				"lair": "27"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The lich is an 20th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 24}, {@hit 16} to hit with spell attacks). The lich has the following wizard spells prepared:"
+					],
+					"footerEntries": [
+						"Torodel Yelra has the Boon of High Magic"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}",
+								"{@spell spectral blast|ToL}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell thunderwave}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell invisibility}",
+								"{@spell Melf's acid arrow}",
+								"{@spell mirror image}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell animate dead}",
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell dimension door}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell scrying}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell disintegrate}",
+								"{@spell globe of invulnerability}",
+								"{@spell sova's deathly hand|ToL}"
+							],
+							"slots": 2
+						},
+						"7": {
+							"spells": [
+								"{@spell eruin's formless sword|ToL}",
+								"{@spell eruin's shadow spires|ToL}",
+								"{@spell finger of death}"
+							],
+							"slots": 1
+						},
+						"8": {
+							"spells": [
+								"{@spell dominate monster}",
+								"{@spell dominate monster}",
+								"{@spell power word stun}"
+							],
+							"slots": 1
+						},
+						"9": {
+							"spells": [
+								"{@spell obliteration|ToL}",
+								"{@spell power word kill}",
+								"{@spell psychic scream|XGE}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the lich fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If it has a phylactery, a destroyed lich gains a new body in {@dice 1d10} days, regaining all its hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"The lich has advantage on saving throws against any effect that turns undead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The lich - torodel yelra has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Paralyzing Touch",
+					"entries": [
+						"{@atk ms} {@hit 16} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 24} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/lich.mp3"
+			},
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"stunned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Lich",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Lich",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Liches are the remains of great wizards who embrace undeath as a means of preserving themselves. They further their own power at any cost, having no interest in the affairs of the living except where those affairs interfere with their own. Scheming and insane, they hunger for long-forgotten knowledge and the most terrible secrets. Because the shadow of death doesn't hang over them, they can conceive plans that take years, decades, or centuries to come to fruition.",
+									"A lich is a gaunt and skeletal humanoid with withered flesh stretched tight across its bones. Its eyes succumbed to decay long ago, but points of light burn in its empty sockets. It is often garbed in the moldering remains of fine clothing and jewelry worn and dulled by the passage of time.",
+									{
+										"name": "Secrets of Undeath",
+										"type": "entries",
+										"entries": [
+											"No wizard takes up the path to lichdom on a whim, and the process of becoming a lich is a well-guarded secret. Wizards that seek lichdom must make bargains with fiends, evil gods, or other foul entities. Many turn to Orcus, Demon Prince of Undeath, whose power has created countless liches. However, those that control the power of lichdom always demand fealty and service for their knowledge.",
+											"A lich is created by an arcane ritual that traps the wizard's soul within a phylactery. Doing so binds the soul to the mortal world, preventing it from traveling to the Outer Planes after death. A phylactery is traditionally an amulet in the shape of a small box, but it can take the form of any item possessing an interior space into which arcane sigils of naming, binding, immortality, and dark magic are scribed in silver.",
+											"With its phylactery prepared, the future lich drinks a potion of transformation-a vile concoction of poison mixed with the blood of a sentient creature whose soul is sacrificed to the phylactery. The wizard falls dead, then rises as a lich as its soul is drawn into the phylactery, where it forever remains."
+										]
+									},
+									{
+										"name": "Soul Sacrifices",
+										"type": "entries",
+										"entries": [
+											"A lich must periodically feed souls to its phylactery to sustain the magic preserving its body and consciousness. It does this using the {@spell imprisonment} spell. Instead of choosing one of the normal options of the spell, the lich uses the spell to magically trap the target's body and soul inside its phylactery. The phylactery must be on the same plane as the lich for the spell to work. A lich's phylactery can hold only one creature at a time, and a {@spell dispel magic} cast as a 9th-level spell upon the phylactery releases any creature imprisoned within it. A creature imprisoned in the phylactery for 24 hours is consumed and destroyed utterly, whereupon nothing short of divine intervention can restore it to life.",
+											"A lich that fails or forgets to maintain its body with sacrificed souls begins to physically fall apart, and might eventually become a demilich."
+										]
+									},
+									{
+										"name": "Death and Restoration",
+										"type": "entries",
+										"entries": [
+											"When a lich's body is broken by accident or assault, the will and mind of the lich drains from it, leaving only a lifeless corpse behind. Within days, a new body reforms next to the lich's phylactery, coalescing out of glowing smoke that issues from the device. Because the destruction of its phylactery means the possibility of eternal death, a lich usually keeps its phylactery in a hidden, well-guarded location.",
+											"Destroying a lich's phylactery is no easy task and often requires a special ritual, item, or weapon. Every phylactery is unique, and discovering the key to its destruction can be a quest in and of itself."
+										]
+									},
+									{
+										"name": "Lonely Existence",
+										"type": "entries",
+										"entries": [
+											"From time to time, a lich might be stirred from its single-minded pursuit of power to take an interest in the world around it, most often when some great event reminds it of the life it once led. It otherwise lives in isolation, engaging only with those creatures whose service helps secure its lair.",
+											"Few liches call themselves by their former names, instead adopting monikers such as the Black Hand or the Forgotten King."
+										]
+									},
+									{
+										"name": "Magic Collectors",
+										"type": "entries",
+										"entries": [
+											"Liches collect spells and magic items. In addition to its spell repertoire, a lich has ready access to potions, scrolls, libraries of spellbooks, one or more wands, and perhaps a staff or two. It has no qualms about putting these treasures to use whenever its lair comes under attack."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A lich doesn't require air, food, drink, or sleep."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Lich's Lair",
+										"entries": [
+											"A lich often haunts the abode it favored in life, such as a lonely tower, a haunted ruin, or an academy of black magic. Alternatively, some liches construct secret tombs filled with powerful guardians and traps. Everything about a lich's lair reflects its keen mind and wicked cunning, including the magic and mundane traps that secure it. Undead, constructs, and bound demons lurk in shadowy recesses, emerging to destroy those who dare to disturb the lich's work.",
+											"A lich encountered in its lair has a challenge rating of 22 (41,000 XP)."
+										]
+									}
+								]
+							}
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Lair Actions",
+								"entries": [
+									"On initiative count 20 (losing initiative ties), the lich can take a lair action to cause one of the following magical effects; the lich can't use the same effect two rounds in a row:",
+									{
+										"type": "list",
+										"items": [
+											"The lich rolls a {@dice d8} and regains a spell slot of that level or lower. If it has no spent spell slots of that level or lower, nothing happens.",
+											"The lich targets one creature it can see within 30 feet of it. A crackling cord of negative energy tethers the lich to the target. Whenever the lich takes damage, the target must make a {@dc 18} Constitution saving throw. On a failed save, the lich takes half the damage (rounded down), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until the lich or the target is no longer in the lich's lair.",
+											"The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a {@dc 18} Constitution saving throw, taking 52 ({@damage 15d6}) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Lich.webp"
+						}
+					}
+				]
+			},
+			"damageTagsLegendary": [
+				"N"
+			],
+			"savingThrowForcedLegendary": [
+				"constitution"
+			],
+			"legendaryActions": 5,
+			"bonus": [
+				{
+					"name": "Darkest Despair",
+					"entries": [
+						"{@atk rs} {@hit 16} to hit, unlimited range, one target. {@h}16 ({@damage 2d10 + 5}) necrotic damage. The target has disadvantage on the next saving throw they take within 1 minute of being hit by Darkest Despair. "
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Duke - Move & Attack (1)",
+					"entries": [
+						"The Duke moves up to its speed without provoking opportunity attacks, and does a Bite attack against a target within range"
+					]
+				},
+				{
+					"name": "Torodel - Cast spell (2)",
+					"entries": [
+						"Torodel Cast's a spell of 5th level or lower. "
+					]
+				},
+				{
+					"name": "Torodel - Paralyzing Touch (1)",
+					"entries": [
+						"Torodel uses his Paralyzing Touch "
+					]
+				},
+				{
+					"name": "Torodel and Duke - Claw and Despair (2)",
+					"entries": [
+						"Torodel and the Duke both do something, Torodel uses his Darkest Despair on a target within range, while Duke uses two claw attacks on a target within range."
+					]
+				}
+			],
+			"damageTags": [
+				"C",
+				"N"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"N",
+				"O",
+				"T",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			]
 		}
 	],
 	"legendaryGroup": [
