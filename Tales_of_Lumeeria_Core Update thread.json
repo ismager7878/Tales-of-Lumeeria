@@ -11927,7 +11927,184 @@
 				"dexterity",
 				"wisdom"
 			]
-    }    
+    },
+		{
+			"name": "Fey Whale",
+			"size": [
+				"G"
+			],
+			"type": "fey",
+			"source": "ToL",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d20 + 175",
+				"average": 437
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "Hover"
+				},
+				"canHover": true
+			},
+			"str": 24,
+			"dex": 10,
+			"con": 25,
+			"int": 22,
+			"wis": 24,
+			"cha": 28,
+			"passive": 25,
+			"cr": "25",
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Telepathy 1,000ft"
+			],
+			"save": {
+				"str": "+15",
+				"con": "+15",
+				"int": "+14",
+				"cha": "+17"
+			},
+			"skill": {
+				"insight": "+15",
+				"perception": "+15",
+				"arcana": "+14"
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"force",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"poisoned"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"will": [
+						"{@spell detect thoughts}",
+						"{@spell levitate}"
+					],
+					"daily": {
+						"1": [
+							"{@spell psychic scream|XGE}"
+						],
+						"3": [
+							"{@spell dominate monster}",
+							"{@spell mass suggestion}",
+							"{@spell teleport}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"The fey whale can't be affected or detected by spells of 6th level or lower unless it wishes to be. It has advantage on saving throws against all other spells and magical effects."
+					]
+				},
+				{
+					"name": "Psychic Flight",
+					"entries": [
+						"The fey whale's flight is powered by its psychic energy. It cannot be grounded by any non-psychic effect."
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The fey whale makes Three Tentacle attacks . It can swap out two Tentacle attacks and instead do  one Psychic Wave attack."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 40 ft., one target. {@h}27 ({@damage 4d8 + 7}) bludgeoning damage. If the target is a creature, it is {@condition grappled} (escape {@dc 23}). Until this grapple ends, the target is {@condition restrained} and follows the movement of the Fey whale, and the fey whale can’t use the same tentacle on another target.",
+						"The Fey whale can choose how far away or where to position the Tentacle when having a creature {@condition restrained}. It can also choose to end the {@condition restrained} condition by throwing the creature 30ft away. "
+					]
+				},
+				{
+					"name": "Psychic Wave.",
+					"entries": [
+						"The fey whale emits a powerful psychic wave. Each creature of the fey whale's choice within 60 feet of it must make a {@dc 22} Intelligence saving throw, taking 71 ({@damage 13d10}) psychic damage and being {@condition stunned} for 1 minute on a failed save, or half as much damage and not {@condition stunned} on a successful one. A {@condition stunned} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"bonus": [
+				{
+					"name": "Teleport",
+					"entries": [
+						"The Fey Whale magically teleports, along with any creatures it has {@condition grappled}, to an unoccupied space it can see within 120 feet of it."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"intelligence",
+				"wisdom"
+			]
+		}    
 	],
 	"legendaryGroup": [
 		{
