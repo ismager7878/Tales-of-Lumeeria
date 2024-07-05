@@ -11488,7 +11488,446 @@
 				"intelligence",
 				"wisdom"
 			]
-		}
+		},
+    {
+      "name": "Tempest Sword Practitioner",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"Wind Blessed Studded Leather Armor +1"
+					]
+				}
+			],
+			"hp": {
+				"formula": "25d8 + 125",
+				"average": 237
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 24,
+			"con": 20,
+			"int": 14,
+			"wis": 16,
+			"cha": 14,
+			"passive": 18,
+			"cr": "14",
+			"shortName": "Practitioner",
+			"languages": [
+				"Common",
+				"Auran"
+			],
+			"languageTags": [
+				"C",
+				"AU"
+			],
+			"save": {
+				"dex": "+12",
+				"con": "+10",
+				"wis": "+8"
+			},
+			"skill": {
+				"acrobatics": "+17",
+				"perception": "+8",
+				"stealth": "+12",
+				"insight": "+8"
+			},
+			"conditionImmune": [
+				"frightened"
+			],
+			"resist": [
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Lightning Reflexes",
+					"entries": [
+						"The Tempest Sword Practitioner has advantage on initiative rolls."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the Tempest Sword Practitioner is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The practitioner's weapon attacks are magical."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Tempest Sword Practitioner makes three attacks: Three Tempest Blade attacks or two Tempest Blade attacks and Wind Blade. "
+					]
+				},
+				{
+					"name": "Tempest Blade - Harkin Sword +1",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d10 + 8}) slashing damage, and the target must make a {@dc 20} Strength saving throw or be knocked {@condition prone} as wind pushes the target to the ground. "
+					]
+				},
+				{
+					"name": "Wind Blade {@recharge 5}",
+					"entries": [
+						"The Tempest Sword Practitioner can shoot out from its position a 10-foot-wide wind blade that damages all in a 60-foot line. Each creature in that line must make a {@dc 20} Dexterity saving throw, taking 45 ({@damage 10d8}) piercing damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"traitTags": [
+				"Magic Weapons"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"bonus": [
+				{
+					"name": "Wind Dash",
+					"entries": [
+						"The Tempest Sword Practitioner can move up to its speed without provoking opportunity attacks. If it moves at least 20 feet in a straight line toward a target, it can make one melee weapon attack against that target as part of this bonus action."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Tempest Parry",
+					"entries": [
+						"The Tempest Sword Practitioner adds 3 to its AC against one melee attack that would hit it. It can then make one melee weapon attack against the attacker "
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"dexterity",
+				"strength"
+			]
+		},
+		{
+			"name": "Blood Count",
+			"size": [
+				"M"
+			],
+			"type": "Legendary Vampire",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 26,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"special": "1500"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": 80,
+				"climb": 60
+			},
+			"str": 16,
+			"dex": 30,
+			"con": 22,
+			"int": 28,
+			"wis": 22,
+			"cha": 24,
+			"passive": 25,
+			"cr": "30",
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"All"
+			],
+			"save": {
+				"dex": "+19",
+				"con": "+15",
+				"int": "+18"
+			},
+			"skill": {
+				"arcana": "+18",
+				"deception": "+16",
+				"perception": "+15",
+				"religion": "+18",
+				"stealth": "+19"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				"cold",
+				"force",
+				"necrotic",
+				"psychic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"poisoned",
+				"stunned"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Count's innate spellcasting ability is Intelligence (spell save {@dc 26}, +18 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell banishment}",
+						"{@spell counterspell}",
+						"{@spell lightning bolt}",
+						"{@spell mirror image}"
+					],
+					"daily": {
+						"3": [
+							"{@spell obliteration|ToL}",
+							"{@spell power word kill}",
+							"{@spell power word stun}"
+						],
+						"8e": [
+							"{@spell blight}",
+							"{@spell disintegrate}",
+							"{@spell hold monster}",
+							"{@spell scrying}",
+							"{@spell sova's deathly hand|ToL}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Counts Wrath",
+					"entries": [
+						"if the Count would be reduced to 0 hit points, his current hit point total instead resets to 1500 hit points.",
+						"Additionally, the Count can now use the options in the Mythic Actions section for 1 hour."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The Blood Count regains 50 hit points at the start of its turn. If the Blood Count takes radiant damage, this trait doesn't function at the start of its next turn."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The Blood Count can at will polymorph into a bat, a wolf, or a cloud of mist, or back into its true form. Its statistics, other than its size, are the same in each form. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The blood count has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The blood count's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"The blood count is immune to any spell or effect that would alter its form."
+					]
+				}
+			],
+			"traitTags": [
+				"Immutable Form",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Regeneration",
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Count makes three attacks: one with his bite and two with his claws. Or One with his bite and casts a spell"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 19} to hit, reach 5 ft., one target. {@h}23 ({@damage 3d8 + 10}) piercing damage plus 44 ({@damage 8d10}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken. The reduction lasts until the target finishes a long rest, or is affected by the heal, mass heal, or greater restoration spell. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 19} to hit, reach 5 ft., one target. {@h}55 ({@damage 10d8 + 10}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"HPR",
+				"AOE"
+			],
+			"reactionHeader": [
+				"The count has 3 Reactions per turn."
+			],
+			"reaction": [
+				{
+					"name": "Imprisoning Coffin",
+					"entries": [
+						"As a reaction to being attacked, the Blood Count can summon an imprisoning coffin around the attacker. The Blood Count still takes the damage, but the targeted creature is now {@condition restrained}, {@condition blinded}, and {@condition deafened} while trapped within the coffin. The coffin has an AC of 13 and 50 hit points. Any creature can target the coffin. The coffin remains until destroyed or until the Blood Count uses another reaction to summon a new imprisoning coffin."
+					]
+				},
+				{
+					"name": "Spell Copy {@recharge}",
+					"entries": [
+						"When the Count is within 300ft of a creature casting a spell, the blood count can immediately copy the spell and cast it as part of the same reaction. "
+					]
+				}
+			],
+			"conditionInflict": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"poisoned",
+				"restrained"
+			],
+			"isNamedCreature": true,
+			"legendaryActions": 5,
+			"legendary": [
+				{
+					"name": "Legendary Resilience (Costs 3 actions)",
+					"entries": [
+						"The Count ends one spell or harmful effect currently affecting him."
+					]
+				},
+				{
+					"name": "Blooded Neck (Costs 1 Action)",
+					"entries": [
+						"The Count teleports behind one humanoid he can see within 120 feet of him. The Count makes one bite attack towards the humanoid. Additionally if the bite was successful, the targeted humanoid has disadvantage against the Count's Enslaving Charm Ability"
+					]
+				},
+				{
+					"name": "Enslaving Charm (Costs 2 Actions)",
+					"entries": [
+						"The Blood Count targets one humanoid he can see within 30 feet of him. The target must succeed on a {@dc 26} Wisdom saving throw or be magically {@condition charmed} by the Blood Count until the Blood Count dies or until he is on a different plane of existence from the target. The {@condition charmed} target is under the Blood Count's control and can't take reactions. The Blood Count can have only one target {@condition charmed} at a time. If the {@condition charmed} target takes any damage, the target can repeat the saving throw, ending the effect on itself on a success. If the target's saving throw is successful, or if the effect ends for it, the creature is immune to the Blood Count's Enslaving Charm for the next 24 hours."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"The blood count can take 5 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The blood count regains spent legendary actions at the start of its turn."
+			],
+			"mythicHeader": [
+				"If the blood count's mythic trait is active, it can use the options below as legendary actions for 1 hour after using Counts Wrath."
+			],
+			"mythic": [
+				{
+					"name": "Blood Burst (Costs 1 action)",
+					"entries": [
+						"The Blood Count targets one creature he can see within 120 feet of him. The target must succeed on a {@dc 26} Constitution saving throw or take 35 ({@damage 10d6}) necrotic damage and become {@condition poisoned} for 1 minute. A {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Blood Spears (Costs 1 Action)",
+					"entries": [
+						"The Blood Count summons blood-red spears from the ground in a 20-foot radius centered on a point it can see within 120 feet. Each creature in that area must make a {@dc 26} Dexterity saving throw, taking 30 ({@damage 6d10}) piercing damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Nightmare's Grasp (Costs 1 action)",
+					"entries": [
+						"The Blood Count targets one creature it can see within 60 feet. The target must succeed on a {@dc 26} Wisdom saving throw or take 35 ({@damage 10d6}) psychic damage and be {@condition frightened} of the Blood Count for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Blood Count",
+				"source": "ToL"
+			},
+			"damageTags": [
+				"N",
+				"P",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"L",
+				"N",
+				"O"
+			],
+			"damageTagsLegendary": [
+				"N"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+    }    
 	],
 	"legendaryGroup": [
 		{
@@ -11519,6 +11958,20 @@
 			],
 			"mythicEncounter": [],
 			"source": "ToL"
-		}
+		},
+    {
+      "name": "Blood Count",
+			"lairActions": [
+				"When fighting inside its lair, the blood count can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the blood count can take one lair action to cause one of the following effects:",
+				"- The walls of the chamber begin to ooze with dark, viscous bloody tendrils. Each creature within 60 feet of the Blood Count must make a DC 26 Dexterity saving throw or take 22 (4d10) slashing damage from the sharp tendrils of blood that slash those around their count. On a successful save, the creature takes half damage.",
+				"- The Blood Count calls forth 1d4 vampire spawn to aid it in battle. These vampire spawn appear in unoccupied spaces within 30 feet of the Blood Count and act immediately after him in the initiative order. They remain for 1 minute or until destroyed, after which they crumble to dust.",
+				"- Magical darkness spreads from a point the Blood Count chooses within 60 feet of it, filling a 20-foot-radius sphere until the Blood Count dismisses it as an action, uses this lair action again, or dies. The darkness spreads around corners, and any creature fully within it is blinded. A creature within the area when the darkness appears, or that enters it for the first time on a turn, must make a DC 26 Constitution saving throw, taking 44 (8d10) necrotic damage on a failed save, or half as much damage on a successful one. A creature that ends its turn in the darkness takes 22 (4d10) necrotic damage.",
+				"- The area becomes enveloped in deep shadows, dimming all light and creating an eerie atmosphere. Each creature within 60 feet of the Blood Count must make a DC 26 Constitution saving throw, taking 5d10 necrotic damage on a failed save, or half as much damage on a successful one. The Blood Count regains hit points equal to half the total damage dealt by this effect.",
+				"The blood count can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
+			],
+			"regionalEffects": [],
+			"mythicEncounter": [],
+			"source": "ToL"
+    }
   ]
 }
