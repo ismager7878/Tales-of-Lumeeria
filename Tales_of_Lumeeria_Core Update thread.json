@@ -1022,7 +1022,7 @@
         {
           "type": "list",
           "items": [
-            "Increase your maximum hit points by rolling a toughened die, which is a d4, and adding the result to your hit point total.",
+            "Increase your maximum hit points by rolling a toughened die, which is a d4, and adding the result to your hit point total. Roll a toughened die for all previous levels as well.",
             "Each time you gain a level, roll the toughened die and add the result to your hit point total."
           ]
         },
