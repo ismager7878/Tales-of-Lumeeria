@@ -6587,7 +6587,66 @@
         "s": true,
         "m": "a statuette of a wolf, worth at least 500 gp, consumed"
       }
-    }
+    },
+		{
+			"name": "Ecco's Shielding Song",
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				},
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You sing a protective song targeted towards a friendly creature within range. The creature receives a hovering ethereal shield that rotates around them, and remain there for 1 minute, or until used. ",
+				"Upon the creature successfully getting hit, by an enemy that is within, at least 30ft of them, they can used the ethereal shield. ",
+				"They roll a {@dice d6} and add that amount of their armor class for this one attack. If they are successful in blocking the attack, the attacker instead takes the amount rolled as psychic damage, as a wave of energy is expelled from the shield. "
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Gold covered Amber worth 20gp. Consumed"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this using a spell slot of 2nd level or higher, you can target an additional friendly creature for each slot level above 1st. "
+					]
+				}
+			]
+		}
   ],
 
   "monster": [
@@ -12104,6 +12163,1327 @@
 				"intelligence",
 				"wisdom"
 			]
+    },
+		{
+			"name": "Megapede",
+			"size": [
+				"G"
+			],
+			"type": "monstrosity",
+			"source": "ToL",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d20 + 84",
+				"average": 210
+			},
+			"speed": {
+				"walk": 60,
+				"burrow": 40
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 24,
+			"int": 2,
+			"wis": 12,
+			"cha": 4,
+			"passive": 16,
+			"cr": "15",
+			"senses": [
+				"blindsight 120 ft.",
+				"tremorsense 60 ft."
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"skill": {
+				"perception": "+6",
+				"athletics": "+11"
+			},
+			"save": {
+				"con": "+12",
+				"str": "+11"
+			},
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "From non-magical damage",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Poisonous Body",
+					"entries": [
+						"A creature that touches the Megapede or hits it with a melee attack while within 5 feet of it takes 13 ({@damage 3d8}) poison damage"
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The megapede can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
+					]
+				}
+			],
+			"traitTags": [
+				"Tunneler"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Megapede makes two attacks: One with its bite and one with its stinger. "
+					]
+				},
+				{
+					"name": "Bite.",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}22 ({@damage 3d10 + 6}) piercing damage plus 13 ({@damage 3d8}) poison damage. If the target is a creature, it is {@condition grappled} (escape {@dc 17}). Until this grapple ends, the target is {@condition restrained}, and the centipede can't bite another target.",
+						"The {@condition grappled} target takes 33 ({@damage 6d10}) poison damage at the start of each of the worm's turns"
+					]
+				},
+				{
+					"name": "Tail Stinger",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}16 ({@damage 3d6 + 6}) piercing damage and the target must make a {@dc 20} Constitution saving throw. On a failed save, a creature takes 45 ({@damage 10d8}) poison damage and is {@condition poisoned} for 1 minute. On a successful save, the creature takes half as much damage and isn't {@condition poisoned}. A {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned",
+				"restrained"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Kunat Scorpion",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"source": "ToL",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 11,
+			"dex": 15,
+			"con": 14,
+			"int": 1,
+			"wis": 8,
+			"cha": 2,
+			"passive": 11,
+			"cr": "3",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"stealth": "+4",
+				"perception": "+1"
+			},
+			"trait": [
+				{
+					"name": "Keen Scent",
+					"entries": [
+						"The scorpion can use its bonus action to detect the scent of creatures within 60 feet. The scorpion knows the location of creatures with a scent it can detect, though it can't discern individual creatures in a group."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Kunat Scorpion makes two attacks. one with its pincers and one with its stinger"
+					]
+				},
+				{
+					"name": "Pincer",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Stinger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d10 + 2}) piercing damage. The target must make a {@dc 12} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save or half as much on a successful one. If the saving throw fails, the target's Strength score increases by +4 for 24 hours. During this time, the target is considered {@condition poisoned}, and they are blind beyond 10 feet. The temporary Strength increase disappears if the poison is removed."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Depth Guardian",
+			"size": [
+				"L"
+			],
+			"type": "celestial",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d20 + 70",
+				"average": 217
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 30,
+				"swim": 60
+			},
+			"str": 22,
+			"dex": 18,
+			"con": 20,
+			"int": 14,
+			"wis": 18,
+			"cha": 16,
+			"passive": 24,
+			"cr": "13",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Celestial",
+				"Aquan"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"AQ"
+			],
+			"save": {
+				"str": "+11",
+				"con": "+10",
+				"wis": "+9"
+			},
+			"skill": {
+				"insight": "+9",
+				"perception": "+14"
+			},
+			"resist": [
+				"radiant",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"exhaustion",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The depth guardian can breathe air and water."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The depth guardian has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The depth guardian's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Destined Enemy",
+					"entries": [
+						"The Depth Guardian can sense if a Kraken is within a mile, and precisely where it is. ",
+						"Additionally, the Depth Guardian ignores any Immunities or features that make Restraining the Kraken impossible. "
+					]
+				},
+				{
+					"name": "Underwater Combat",
+					"entries": [
+						"The Depth Guardian ignores any disadvantages that fighting underwater gives. "
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Magic Resistance",
+				"Magic Weapons"
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"The Depth Guardian makes two attacks with its Chains of the Deep or one attack with Chains of the Deep and one attack with Radiant Javelin."
+					]
+				},
+				{
+					"name": "Chains of the Deep",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}19 ({@damage 3d6 + 6}) piercing damage and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained}, and the Depth Guardian can’t use its Chains of the Deep on another target."
+					]
+				},
+				{
+					"name": "Radiant Javelin",
+					"entries": [
+						"{@atk rs} {@hit 9} to hit, range 60 ft., one target. {@h}21 ({@damage 6d6}) radiant damage. If the target is a Kraken, it deals an additional 14 ({@damage 4d6}) radiant damage."
+					]
+				},
+				{
+					"name": "Plane Shift (3/day)",
+					"entries": [
+						"The Depth Guardian casts plane shift, requiring no material components and using Wisdom as the spellcasting ability. The Depth Guardian can cast the spell normally, or it can cast the spell on an unwilling creature it can see within 60 feet of it. If it uses the latter option, the targeted creature must succeed on a {@dc 17} Charisma saving throw or be banished to a Light chamber in the Divine Plane of The Celestial Ocean."
+					]
+				}
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"savingThrowForced": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Sar'oktul's Young Kraken",
+			"size": [
+				"H"
+			],
+			"type": "monstrosity",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d12 + 90",
+				"average": 207
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 60
+			},
+			"str": 24,
+			"dex": 11,
+			"con": 20,
+			"int": 20,
+			"wis": 16,
+			"cha": 18,
+			"passive": 23,
+			"cr": "15",
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"All",
+				"and telepathy 120 ft."
+			],
+			"languageTags": [
+				"TP"
+			],
+			"save": {
+				"str": "+12",
+				"con": "+10",
+				"wis": "+8",
+				"int": "+10"
+			},
+			"skill": {
+				"perception": "+13",
+				"insight": "+8",
+				"arcana": "+10",
+				"stealth": "+5"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The sar'oktul's Young Kraken's innate spellcasting ability is Intelligence (spell save {@dc 18}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell arcane eye}",
+						"{@spell control winds|XGE}",
+						"{@spell detect magic}",
+						"{@spell detect thoughts}",
+						"{@spell fear}",
+						"{@spell nondetection}"
+					],
+					"daily": {
+						"3": [
+							"{@spell geas}",
+							"{@spell scrying}",
+							"{@spell sending}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"resist": [
+				"cold",
+				"poison",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"stunned"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The sar'oktul's young kraken can breathe air and water."
+					]
+				},
+				{
+					"name": "Psychic Pressure.",
+					"entries": [
+						"At the start of each of the Young Kraken’s turns, each creature within 30 feet of it must succeed on a {@dc 17} Wisdom saving throw or take 10 ({@damage 3d6}) psychic damage and be {@condition frightened} until the end of its next turn. Creatures already once before affected by Psychic pressure have advantage on the Wisdom saving throw. "
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The sar'oktul's young kraken deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Multiple Tentacles",
+					"entries": [
+						"The sar'oktul's Young Kraken has eight tentacles, a creature can attempt to attack a tentacle instead of damaging sar'oktul's Young Kraken directly. If the creature deals 30 or more damage in a single turn to the tentacle, it is destroyed. ",
+						"If a creature does not manage to deal enough damage, the tentacle regenerates and heals off all damage dealt to it. ",
+						"A tentacle regrows on a long rest. "
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The sar'oktul's young kraken's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The sar'oktul's young kraken has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Freedom of Movement",
+					"entries": [
+						"The sar'oktul's young kraken is immune to forced movement, ignores difficult terrain, and magical effects can't reduce its speed or cause it to be {@condition restrained} or {@condition paralyzed}. Only the chains of a Depth Guardian ignores this feature"
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Siege Monster"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sar'oktul's Young Kraken makes Three tentacle attacks, or one tentacle attack, one bite attack and one Psychic Pulse attack."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 20 ft., one target. {@h}20 ({@damage 3d8 + 7}) bludgeoning damage. If the target is a creature, it is {@condition grappled} (escape {@dc 18}). Until this grapple ends, the target is {@condition restrained}. The Young Kraken has eight tentacles, each of which can grapple one target."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}23 ({@damage 3d10 + 7}) piercing damage. If the target is a Medium or smaller creature {@condition grappled} by the Young Kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the Young Kraken, and it takes 21 ({@damage 6d6}) psychic damage and 21 ({@damage 6d6}) acid damage at the start of each of the Young Kraken's turns. If the Young Kraken takes 30 damage or more on a single turn from a creature inside it, the Young Kraken must succeed on a {@dc 18} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 10 feet of the Young Kraken. If the Young Kraken dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 15 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the sar'oktul's young kraken's choice that is within 120 feet of the sar'oktul's young kraken and aware of it must succeed on a {@dc 18} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the sar'oktul's young kraken's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Psychic Pulse",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, range 120 ft., one target. {@h}27 ({@damage 6d8}) psychic damage, and the target must succeed on a {@dc 18} Intelligence saving throw or be {@condition stunned} until the end of the Young Kraken's next turn."
+					]
+				},
+				{
+					"name": "Horrifying Visions (Recharge 5-6).",
+					"entries": [
+						"The Young Kraken projects terrifying visions into the minds of all creatures within 60 feet. Each creature must make a {@dc 18} Wisdom saving throw, taking 45 ({@damage 10d8}) psychic damage and becoming {@condition frightened} for 1 minute on a failed save, or half as much damage and not {@condition frightened} on a successful one. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
+			],
+			"reaction": [
+				{
+					"name": "Three Reactions",
+					"entries": [
+						"The sar'oktul's Young Kraken can take three reactions per round. "
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"isNamedCreature": true,
+			"legendaryHeader": [
+				"The Young Kraken can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Young Kraken regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tentacle attack",
+					"entries": [
+						"The Young Kraken makes one Tentacle attack."
+					]
+				},
+				{
+					"name": "Mind Crush (Costs 2 Actions)",
+					"entries": [
+						"The Young Kraken targets one creature it can see within 60 feet. The target must succeed on a {@dc 18} Intelligence saving throw or take 18 ({@damage 4d8}) psychic damage and be {@condition paralyzed} until the end of the Young Kraken's next turn."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Fling",
+					"entries": [
+						"One object held or creature {@condition grappled} by the kraken is thrown up to {@dice 3d6 x 10} feet in a random direction and knocked {@condition prone}. If a thrown target strikes a solid surface, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a {@dc 18} Dexterity saving throw or take the same damage and be knocked {@condition prone}. "
+					]
+				},
+				{
+					"name": "Reel",
+					"entries": [
+						"The kraken pulls each creature {@condition grappled} or object held with its tentacles up to 30 feet to a different direction that it so wishes."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Sar'oktul's Krakens",
+				"source": "ToL"
+			},
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Sar'oktul's Adult Kraken",
+			"size": [
+				"G"
+			],
+			"type": "monstrosity",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "26d20 + 208",
+				"average": 481
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 90
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 26,
+			"int": 22,
+			"wis": 18,
+			"cha": 18,
+			"passive": 27,
+			"cr": "22",
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"All",
+				"and telepathy 120 ft."
+			],
+			"languageTags": [
+				"TP"
+			],
+			"save": {
+				"str": "+17",
+				"wis": "+11",
+				"int": "+13",
+				"con": "+15"
+			},
+			"skill": {
+				"insight": "+11",
+				"arcana": "+13",
+				"perception": "+18",
+				"stealth": "+9"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The sar'oktul's Adult Kraken's innate spellcasting ability is Intelligence (spell save {@dc 21}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell arcane eye}",
+						"{@spell control winds|XGE}",
+						"{@spell detect magic}",
+						"{@spell detect thoughts}",
+						"{@spell fear}",
+						"{@spell nondetection}"
+					],
+					"daily": {
+						"1": [
+							"{@spell feeblemind}",
+							"{@spell psychic scream|XGE}"
+						],
+						"3": [
+							"{@spell geas}",
+							"{@spell scrying}",
+							"{@spell sending}",
+							"{@spell tsunami}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"resist": [
+				"cold",
+				"poison",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"stunned"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The sar'oktul's Adult kraken can breathe air and water. "
+					]
+				},
+				{
+					"name": "Psychic Pressure.",
+					"entries": [
+						"At the start of each of the Adult Kraken’s turns, each creature within 60 feet of it must succeed on a {@dc 21} Wisdom saving throw or take 21 ({@damage 6d6}) psychic damage and be {@condition frightened} until the end of its next turn. Creatures already once before affected by Psychic pressure have advantage on the Wisdom saving throw. "
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The sar'oktul's Adult kraken deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Multiple Tentacles",
+					"entries": [
+						"The sar'oktul's Adult Kraken has eight tentacles, a creature can attempt to attack a tentacle instead of damaging sar'oktul's Adult Kraken directly. If the creature deals 50 or more damage in a single turn to the tentacle, it is destroyed. ",
+						"If a creature does not manage to deal enough damage, the tentacle regenerates and heals off all damage dealt to it. ",
+						"A tentacle regrows on a long rest. "
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The sar'oktul's Adult kraken's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The sar'oktul's Adult kraken has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Freedom of Movement",
+					"entries": [
+						"The sar'oktul's Adult kraken is immune to forced movement, ignores difficult terrain, and magical effects can't reduce its speed or cause it to be {@condition restrained} or {@condition paralyzed}. Only the chains of a Depth Guardian ignores this feature"
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Sar'oktul's is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Sar'oktul's Adult Kraken fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Immutable Form",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Siege Monster"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sar'oktul's Adult Kraken makes Five tentacle attacks, or two tentacle attacks, one bite attack and one Psychic Pulse attack."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 30 ft., one target. {@h}30 ({@damage 3d8 + 10}) bludgeoning damage. If the target is a creature, it is {@condition grappled} (escape {@dc 24}). Until this grapple ends, the target is {@condition restrained}. The Adult Kraken has eight tentacles, each of which can grapple one target."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h} 65 ({@damage 10d10 + 10}) piercing damage. If the target is a Large or smaller creature {@condition grappled} by the Adult Kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the Adult Kraken, and it takes 35 ({@damage 10d6}) psychic damage and 35 ({@damage 10d6}) acid damage at the start of each of the Adult Kraken's turns. If the Adult Kraken takes 30 damage or more on a single turn from a creature inside it, the Adult Kraken must succeed on a {@dc 25} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 10 feet of the Adult Kraken. If the Adult Kraken dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 25 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the sar'oktul's Adult kraken's choice that is within 120 feet of the sar'oktul's Adult kraken and aware of it must succeed on a {@dc 21} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the sar'oktul's Adult kraken's Frightful Presence for the next 24 hours."
+					]
+				},
+				{
+					"name": "Psychic Pulse",
+					"entries": [
+						"{@atk rs} {@hit 10} to hit, range 120 ft., one target. {@h} 45 ({@damage 10d8}) psychic damage, and the target must succeed on a {@dc 21} Intelligence saving throw or be {@condition stunned} until the end of the Adult Kraken's next turn."
+					]
+				},
+				{
+					"name": "Horrifying Visions (Recharge 5-6).",
+					"entries": [
+						"The Adult Kraken projects terrifying visions into the minds of all creatures within 90 feet. Each creature must make a {@dc 21} Wisdom saving throw, taking 54 ({@damage 12d8}) psychic damage and becoming {@condition frightened} for 1 minute on a failed save, or half as much damage and not {@condition frightened} on a successful one. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
+			],
+			"reaction": [
+				{
+					"name": "Three Reactions",
+					"entries": [
+						"The sar'oktul's Adult Kraken can take three reactions per round. "
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"isNamedCreature": true,
+			"legendaryHeader": [
+				"The Adult Kraken can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Adult Kraken regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tentacle attack",
+					"entries": [
+						"The Adult Kraken makes one Tentacle attack."
+					]
+				},
+				{
+					"name": "Mind Crush (Costs 2 Actions)",
+					"entries": [
+						"The Adult Kraken targets one creature it can see within 60 feet. The target must succeed on a {@dc 21} Intelligence saving throw or take 54 ({@damage 12d8}) psychic damage and be {@condition paralyzed} until the end of the Adult Kraken's next turn."
+					]
+				},
+				{
+					"name": "Horrifying Magic (Costs 2 Actions)",
+					"entries": [
+						"The Adult kraken casts one of its spells. "
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Fling",
+					"entries": [
+						"One object held or creature {@condition grappled} by the kraken is thrown up to {@dice 3d6 x 10} feet in a random direction and knocked {@condition prone}. If a thrown target strikes a solid surface, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a {@dc 18} Dexterity saving throw or take the same damage and be knocked {@condition prone}. "
+					]
+				},
+				{
+					"name": "Reel",
+					"entries": [
+						"The kraken pulls each creature {@condition grappled} or object held with its tentacles up to 30 feet to a different direction that it so wishes."
+					]
+				}
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"B",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Sar'oktul's Elder Kraken",
+			"size": [
+				"G"
+			],
+			"type": {
+				"type": "monstrosity",
+				"note": "(Titan)"
+			},
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 24,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d20 + 300",
+				"average": 615
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 90
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 30,
+			"int": 24,
+			"wis": 18,
+			"cha": 18,
+			"passive": 30,
+			"cr": "28",
+			"senses": [
+				"truesight 120 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"All",
+				"and telepathy 120 ft."
+			],
+			"languageTags": [
+				"TP"
+			],
+			"save": {
+				"str": "+18",
+				"wis": "+12",
+				"int": "+15",
+				"con": "+18"
+			},
+			"skill": {
+				"insight": "+12",
+				"arcana": "+15",
+				"perception": "+20",
+				"stealth": "+10",
+				"athletics": "+18"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The sar'oktul's Elder Kraken's innate spellcasting ability is Intelligence (spell save {@dc 23}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell arcane eye}",
+						"{@spell control winds|XGE}",
+						"{@spell detect magic}",
+						"{@spell detect thoughts}",
+						"{@spell fear}",
+						"{@spell nondetection}"
+					],
+					"daily": {
+						"1": [
+							"{@spell feeblemind}",
+							"{@spell psychic scream|XGE}"
+						],
+						"3": [
+							"{@spell geas}",
+							"{@spell scrying}",
+							"{@spell sending}",
+							"{@spell tsunami}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"resist": [
+				"cold",
+				"poison",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non magical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"stunned"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The sar'oktul's Elder kraken can breathe air and water. "
+					]
+				},
+				{
+					"name": "Psychic Pressure.",
+					"entries": [
+						"At the start of each of the Elder Kraken’s turns, each creature within 60 feet of it must succeed on a {@dc 21} Wisdom saving throw or take 21 ({@damage 6d6}) psychic damage and be {@condition frightened} until the end of its next turn. Creatures already once before affected by Psychic pressure have advantage on the Wisdom saving throw. "
+					]
+				},
+				{
+					"name": "Siege Monster",
+					"entries": [
+						"The sar'oktul's Elder kraken deals double damage to objects and structures."
+					]
+				},
+				{
+					"name": "Multiple Tentacles",
+					"entries": [
+						"The sar'oktul's Elder Kraken has eight tentacles, a creature can attempt to attack a tentacle instead of damaging sar'oktul's Elder Kraken directly. If the creature deals 75 or more damage in a single turn to the tentacle, it is destroyed. ",
+						"If a creature does not manage to deal enough damage, the tentacle regenerates and heals off all damage dealt to it. ",
+						"A tentacle regrows on a long rest. "
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"The sar'oktul's Elder kraken's weapon attacks are magical."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The sar'oktul's Elder kraken has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Freedom of Movement",
+					"entries": [
+						"The sar'oktul's Elder kraken is immune to forced movement, ignores difficult terrain, and magical effects can't reduce its speed or cause it to be {@condition restrained} or {@condition paralyzed}. Only the chains of a Depth Guardian ignores this feature"
+					]
+				},
+				{
+					"name": "Immutable Form",
+					"entries": [
+						"Sar'oktul's is immune to any spell or effect that would alter its form."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Sar'oktul's Elder Kraken fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Wrath of Sar'oktul",
+					"entries": [
+						"Whenever the Elder Kraken Surfaces, churning storm clouds form in the sky within 10 miles of it. gale-force winds howl, lightning flashes and thunder booms. The area becomes lightly obscured, any nonmagical flames are extinguished, ranged nonmagical weapons attacks have disadvantage and any fog, mists, and similar phenomena in the area, whether mundane or magical, are dispersed automatically. ",
+						"In addition, the becomes rough. The water within the area counts as difficult terrain. Characters might experience strong, unexpected currents and high waves, resulting in ships capsizing or breaking apart and other dangers. ",
+						"The effects disappear within 10 minutes after the kraken dives again or dies. "
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Immutable Form",
+				"Legendary Resistances",
+				"Magic Resistance",
+				"Magic Weapons",
+				"Siege Monster"
+			],
+			"conditionInflict": [
+				"blinded",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"prone",
+				"restrained",
+				"stunned"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The sar'oktul's Elder Kraken can use its Frightful presence. it then makes one attack with each of its eight tentacles. It can swap out a tentacle attack for a Psychic Pulse, and two tentacle attacks for a Bite attack. "
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 90 ft., one target. {@h}33 ({@damage 4d12 + 10}) bludgeoning damage. If the target is a creature, it is {@condition grappled} (escape {@dc 26}). Until this grapple ends, the target is {@condition restrained}. The Elder Kraken has eight tentacles, each of which can grapple one target."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 18} to hit, reach 10 ft., one target. {@h} 65 ({@damage 10d10 + 10}) piercing damage. If the target is a Large or smaller creature {@condition grappled} by the Elder Kraken, that creature is swallowed, and the grapple ends. While swallowed, the creature is {@condition blinded} and {@condition restrained}, it has total cover against attacks and other effects outside the Elder Kraken, and it takes 42 ({@damage 12d6}) psychic damage and 42 ({@damage 12d6}) acid damage at the start of each of the Elder Kraken's turns. If the Elder Kraken takes 60 damage or more on a single turn from a creature inside it, the Elder Kraken must succeed on a {@dc 25} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 10 feet of the Elder Kraken. If the Elder Kraken dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse using 40 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Frightful Presence",
+					"entries": [
+						"Each creature of the sar'oktul's Elder kraken's choice that is within 600 feet of the sar'oktul's Elder kraken and aware of it must succeed on a {@dc 23} Wisdom saving throw or become {@condition frightened} for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the sar'oktul's Elder kraken's Frightful Presence for the next 24 hours.",
+						"A creature that is captaining a ship within this area has disadvantage on the saving throw as it experiences visions of the kraken's enormous tentacles dragging down their beloved ship into the fathomless depth of the sea. "
+					]
+				},
+				{
+					"name": "Psychic Pulse",
+					"entries": [
+						"{@atk rs} {@hit 15} to hit, range 300 ft., one target. {@h} 45 ({@damage 10d8}) psychic damage, and the target must succeed on a {@dc 23} Intelligence saving throw or be {@condition stunned} until the end of the Elder Kraken's next turn."
+					]
+				},
+				{
+					"name": "Horrifying Visions (Recharge 5-6).",
+					"entries": [
+						"The Elder Kraken projects terrifying visions into the minds of all creatures within 120 feet. Each creature must make a {@dc 23} Wisdom saving throw, taking 54 ({@damage 12d8}) psychic damage and becoming {@condition frightened} for 1 minute on a failed save, or half as much damage and not {@condition frightened} on a successful one. A {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Frightful Presence",
+				"Multiattack",
+				"Swallow",
+				"Tentacles"
+			],
+			"reaction": [
+				{
+					"name": "Three Reactions",
+					"entries": [
+						"The sar'oktul's Elder Kraken can take five reactions per round. "
+					]
+				},
+				{
+					"name": "Deflect Siege Missiles",
+					"entries": [
+						"The kraken uses a tentacle that is not grappling anything to block a large projectile thrown or shot by a siege weapon. The kraken must make a Strength Athletics check contested by the attack roll. On a success, it takes no damage from the attack as it successfully deflects the projectile. "
+					]
+				},
+				{
+					"name": "Ship's Doom",
+					"entries": [
+						"When a ship leaves the kraken's reach, the kraken can use its reaction to make one tentacle grapple the ship, holding the ship in place but making one of its tentacles remain there. Every time the tentacle takes 40 or more damage, the kraken needs to succeed on a {@dc 28} constitution saving throw or let go of the ship. "
+					]
+				}
+			],
+			"legendaryActions": 5,
+			"legendaryHeader": [
+				"The Elder Kraken can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature’s turn. The Elder Kraken regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tentacle attack",
+					"entries": [
+						"The Elder Kraken makes one Tentacle attack."
+					]
+				},
+				{
+					"name": "Mind Crush (Costs 2 Actions)",
+					"entries": [
+						"The Elder Kraken targets one creature it can see within 60 feet. The target must succeed on a {@dc 23} Intelligence saving throw or take 54 ({@damage 12d8}) psychic damage and be {@condition paralyzed} until the end of the Elder Kraken's next turn."
+					]
+				},
+				{
+					"name": "Horrifying Magic (Costs 2 Actions)",
+					"entries": [
+						"The Elder kraken casts one of its spells."
+					]
+				},
+				{
+					"name": "Titan's Crush (Costs 2 Actions)",
+					"entries": [
+						"Each creature {@condition restrained} by the Elder kraken must make a {@dc 26} Constitution saving throw. On a failure, it takes 36 ({@damage 8d8}) bludgeoning damage and has disadvantage on any ability checks it makes to attempt to escape from being {@condition restrained} by the kraken until the end of its next turn. On a success, it takes half as much damage without any other effects.",
+						"Objects held by the kraken's tentacles take the damage automatically. If the kraken uses this ability to attempt to crush a ship held in its tentacles, everyone on board that ship must make a {@dc 18} dexterity saving throw or be knocked {@condition prone}. "
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Fling",
+					"entries": [
+						"One object held or creature {@condition grappled} by the kraken is thrown up to {@dice 3d6 x 10} feet in a random direction and knocked {@condition prone}. If a thrown target strikes a solid surface, the target takes 3 ({@damage 1d6}) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a {@dc 22} Dexterity saving throw or take the same damage and be knocked {@condition prone}. "
+					]
+				},
+				{
+					"name": "Reel",
+					"entries": [
+						"The kraken pulls each creature {@condition grappled} or object held with its tentacles up to 60 feet to a different direction that it so wishes."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Sar'oktul's Krakens",
+				"source": "ToL"
+			},
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"B",
+				"Y"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity",
+				"intelligence",
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"intelligence",
+				"strength",
+				"wisdom"
+			]
 		}    
 	],
 	"legendaryGroup": [
@@ -12149,6 +13529,28 @@
 			"regionalEffects": [],
 			"mythicEncounter": [],
 			"source": "ToL"
-    }
+    },
+		{
+			"name": "Sar'oktul's Krakens",
+			"lairActions": [
+				"Sar'oktul's krakens usually live in dark depths, such as sunken rifts or caverns filled with treasure and wrecked ships, while on the material plane. It's said that Kraken's while in their lair's get their strength from their creators divine plane Avathis: Sailor's Grave. ",
+				"Some say krakens hoard treasure just like dragons.",
+				"On Initiative count 20 (losing initiative ties), the kraken takes a lair action to cause one of the following magical effects: ",
+				"{@b Wild Current} The kraken creates a strong current in a 600-foot line that is 60 feet wide. All creatures caught in that current must make a DC 20 Strength saving throw. On a failure, they are pulled up to 3d8 x 100 closer to the kraken or pushed the same distance away (Kraken's choice) and are knocked prone. ",
+				"{@b Destructive Wrath} The Kraken, in its wrath, causes a part of its lair to crumble. Each creature within a 30-foot radius centered on a point the kraken can see within its lair must make a DC 20 Dexterity saving throw. On a failure, a creature takes 18 (4d8) bludgeoning damage and is knocked prone and restrained by debris, on a success it takes half as much damage without any other effects.",
+				"{@b Blasphemous Chants} Choral chants echo through the halls of the kraken's lair as if worshippers were praying to the kraken. Each creature other than the kraken that can hear these chorales must make a DC 20 wisdom saving throw, taking 9 (2d8) psychic damage on a failure or half as much on a success. In addition, on a failed save, a creature becomes frightened until the end of its next turn. Meanwhile, the kraken itself benefits from a {@i Heal} spell cast on it and has advantage on all saving throws until the next initiative count 20. "
+			],
+			"regionalEffects": [
+				"The region containing a kraken's lair is warped by the creature's presence, creating the following magical effects:",
+				"{@b Never ending Storms} The kraken can alter the weather at will in a 12-mile radius centered on its lair. The effect is identical to the control weather spell. ",
+				"{@b Repelling Currents} Strong currents try to push unwanted visitors away from the lair. These currents can be first encountered within 10 miles of the lair and become more common closer to the lair. ",
+				"{@b Cursed Waters} Rifts to the Divine Plane of Avathis: Sailor's Grave may open within 6 miles of the lair. ",
+				"{@b Titan's servants} Aquatic creatures within 6 miles of the lair that have an intelligence score of 2 or lower are charmed by the kraken and become aggressive toward intruders in the area. ",
+				"{@b Unholy Forbiddance} The area within 1 mile of the kraken's lair is under the effect of a forbiddance spell targeting celestials. Preventing Depth Guardian's from hunting the krakens in their lairs. "
+			],
+			"mythicEncounter": [],
+			"source": "ToL"
+		}
+    
   ]
 }
