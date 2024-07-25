@@ -13596,6 +13596,856 @@
 				"strength",
 				"wisdom"
 			]
+		},
+		{
+			"name": "Krakenborn Mage",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 64",
+				"average": 136
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 18,
+			"int": 20,
+			"wis": 14,
+			"cha": 12,
+			"passive": 15,
+			"cr": "7",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Usuni",
+				"Tide Tongue"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"int": "+8",
+				"wis": "+5",
+				"cha": "+4",
+				"con": "+7"
+			},
+			"skill": {
+				"arcana": "+8",
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"resist": [
+				"cold",
+				"lightning"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Krakenborn's innate spellcasting ability is Intelligence (spell save {@dc 16}, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell adran's ice spear|ToL}",
+						"{@spell mage hand}",
+						"{@spell shape water|XGE}"
+					],
+					"daily": {
+						"1": [
+							"{@spell cone of cold}",
+							"{@spell control water}",
+							"{@spell dominate monster} (Can only target aquatic creatures)"
+						],
+						"3": [
+							"{@spell counterspell}",
+							"{@spell detect magic}",
+							"{@spell hold person}",
+							"{@spell invisibility}",
+							"{@spell lightning bolt}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The krakenborn mage can breathe air and water."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Krakenborn Mage makes two Falchion attacks."
+					]
+				},
+				{
+					"name": "Falchion",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+					]
+				},
+				{
+					"name": "Summon Ethereal Tentacles (Recharge 5-6):",
+					"entries": [
+						"The Krakenborn Mage summons ethereal tentacles at a point it can see within 60 feet. Each creature within a 20-foot radius of that point must make a {@dc 16} Strength saving throw. On a failed save, a creature takes 27 ({@damage 6d8}) psychic damage and is {@condition restrained} by the tentacles. On a successful save, a creature takes half as much damage and is not {@condition restrained}. A {@condition restrained} creature can use its action to make a {@dc 16} Strength check, freeing itself on a success. The tentacles last for 1 minute or until the Krakenborn Mage dismisses them as a bonus action."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"L"
+			],
+			"savingThrowForced": [
+				"strength"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Krakenborn Warrior",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 40",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"passive": 14,
+			"cr": "5",
+			"languages": [
+				"Common",
+				"Usuni"
+			],
+			"languageTags": [
+				"C"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"skill": {
+				"athletics": "+8",
+				"perception": "+4"
+			},
+			"save": {
+				"str": "+8",
+				"con": "+7"
+			},
+			"resist": [
+				"cold"
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The krakenborn warrior can breathe air and water."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the krakenborn warrior hits with it."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The krakenborn warrior has advantage on an attack roll against a creature if at least one of the krakenborn warrior's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Swimming Leap",
+					"entries": [
+						"With a 10-foot swimming start, the Krakenborn can long jump out of or across the water up to 25 feet."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Brute",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Krakenborn makes three attacks with its falchion."
+					]
+				},
+				{
+					"name": "Falchion",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Tentacle Slam.",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}, and the Krakenborn can't use its tentacle slam on another target."
+					]
+				},
+				{
+					"name": "Ranged Attack: Harpoon",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"bonus": [
+				{
+					"name": "Whirlwind Attack (Recharge 5-6).",
+					"entries": [
+						"The Krakenborn makes a melee attack against all creatures within 5 feet of it. Each creature hit takes damage equal to the falchion's damage plus an additional 5 ({@damage 1d10}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Young Mist Hound",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 13,
+			"int": 4,
+			"wis": 14,
+			"cha": 7,
+			"passive": 14,
+			"cr": "1",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The mist hound has advantage on an attack roll against a creature if at least one of the mist hound's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The mist hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Cowardly Nature",
+					"entries": [
+						"The Mist Hound has disadvantage on saving throws against being {@condition frightened}"
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Misty Step {@recharge 4}",
+					"entries": [
+						"As a bonus action, the Mist Hound can teleport up to 30 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Mist Hounds are elusive creatures that dwell high in the mountains, far from human settlements. They are known for their ability to teleport short distances, which they use to evade predators and ambush prey. Mist Hounds live in packs and rely on their numbers to hunt, but they are inherently cowardly and will flee if faced with significant resistance. Their misty step ability makes them difficult to capture or corner, adding to their mystique and danger. When driven by hunger, these creatures will descend from their mountain homes and may pose a threat to livestock and unwary travelers."
+				]
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Adult Mist Hound",
+			"size": [
+				"L"
+			],
+			"type": "monstrosity",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 16,
+			"dex": 18,
+			"con": 15,
+			"int": 5,
+			"wis": 16,
+			"cha": 7,
+			"passive": 17,
+			"cr": "4",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"skill": {
+				"perception": "+7",
+				"stealth": "+8"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The mist hound has advantage on an attack roll against a creature if at least one of the mist hound's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The mist hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pounce (Panther)",
+					"entries": [
+						"If the adult mist hound moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a {@dc 12} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the adult mist hound can make one bite attack against it as a bonus action."
+					]
+				}
+			],
+			"traitTags": [
+				"Aggressive",
+				"Keen Senses",
+				"Pack Tactics",
+				"Pounce"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Mist hound can attack twice. Once with its bite and once with its claw"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 3d4 + 4}) slashing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"bonus": [
+				{
+					"name": "Misty Step {@recharge 4}",
+					"entries": [
+						"As a bonus action, the Mist Hound can teleport up to 30 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Mist Hounds are elusive creatures that dwell high in the mountains, far from human settlements. They are known for their ability to teleport short distances, which they use to evade predators and ambush prey. Mist Hounds live in packs and rely on their numbers to hunt, but they are inherently cowardly and will flee if faced with significant resistance. Their misty step ability makes them difficult to capture or corner, adding to their mystique and danger. When driven by hunger, these creatures will descend from their mountain homes and may pose a threat to livestock and unwary travelers."
+				]
+			},
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "From nonmagical damage",
+					"cond": true
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Krakenborn Slayer",
+			"size": [
+				"L"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 157
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 60
+			},
+			"str": 24,
+			"dex": 16,
+			"con": 20,
+			"int": 12,
+			"wis": 16,
+			"cha": 12,
+			"passive": 21,
+			"cr": "10",
+			"languages": [
+				"Common",
+				"Usuni"
+			],
+			"languageTags": [
+				"C"
+			],
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"skill": {
+				"athletics": "+11",
+				"perception": "+11"
+			},
+			"save": {
+				"str": "+11",
+				"con": "+9"
+			},
+			"resist": [
+				"cold",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The krakenborn warrior can breathe air and water."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the krakenborn warrior hits with it."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The krakenborn warrior has advantage on an attack roll against a creature if at least one of the krakenborn warrior's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Swimming Leap",
+					"entries": [
+						"With a 10-foot swimming start, the Krakenborn can long jump out of or across the water up to 25 feet."
+					]
+				},
+				{
+					"name": "Elite Resistance (1/Day)",
+					"entries": [
+						"If the Krakenborn Slayer fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"Brute",
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Krakenborn makes three attacks with its Falcion, Tentacle Slam and lastly Harpoon. "
+					]
+				},
+				{
+					"name": "Falchion",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d8 + 7}) slashing damage."
+					]
+				},
+				{
+					"name": "Tentacle Slam.",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 10 ft., one target. {@h}13 ({@damage 2d6 + 7}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 19}). Until this grapple ends, the target is {@condition restrained}, and the Krakenborn can't use its tentacle slam on another target."
+					]
+				},
+				{
+					"name": "Ranged Attack: Harpoon",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 20/60 ft., one target. {@h}11 ({@damage 2d6 + 7}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			],
+			"bonus": [
+				{
+					"name": "Whirlwind Attack (Recharge 5-6).",
+					"entries": [
+						"The Krakenborn makes a melee attack against all creatures within 5 feet of it. Each creature hit takes damage equal to the falchion's damage plus an additional 22 ({@damage 4d10}) slashing damage."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Falchion",
+					"entries": [
+						"The Krakenborn Slayer does a Falchion Attack"
+					]
+				},
+				{
+					"name": "Rallying Cry",
+					"entries": [
+						"The Krakenborn Slayer utters a powerful command. All allies within 30 feet that can hear it gain 10 temporary hit points."
+					]
+				},
+				{
+					"name": "Commanding Strike",
+					"entries": [
+						"The Krakenborn Slayer commands two allies within 30 feet to make one weapon attack."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Fey Penguin",
+			"size": [
+				"S"
+			],
+			"type": "fey",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "8d6 + 16",
+				"average": 44
+			},
+			"speed": {
+				"walk": {
+					"number": 15,
+					"condition": "(40 ft. When prone)"
+				},
+				"swim": 40
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 14,
+			"int": 20,
+			"wis": 12,
+			"cha": 12,
+			"passive": 13,
+			"cr": "3",
+			"senses": [
+				"truesight 60 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"languages": [
+				"Common",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"skill": {
+				"perception": "+3",
+				"arcana": "+7",
+				"history": "+7",
+				"investigation": "+7"
+			},
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The fey penguin has advantage on saving throws against being {@condition charmed}, and magic can't put the fey penguin to sleep."
+					]
+				},
+				{
+					"name": "Keen memory",
+					"entries": [
+						"Fey Penguin's can recall anything they have seen or heard within the last 100 years. "
+					]
+				},
+				{
+					"name": "Belly Side",
+					"entries": [
+						"While {@condition prone} on ice or a similarly slick surface, the penguin has a movement speed of 40 feet. In addition, it only requires 5 feet to stand up from {@condition prone} when using this movement. "
+					]
+				}
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The fey Penguin makes three Snowball attacks"
+					]
+				},
+				{
+					"name": "Snowball",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 60/120 ft., one target. {@h}12 ({@damage 3d4 + 5}) cold damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"resist": [
+				"cold",
+				"force"
+			],
+			"bonus": [
+				{
+					"name": "Fey Step {@recharge 4}",
+					"entries": [
+						"The Fey Penguin teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"will": [
+						"{@spell adran's ice spear|ToL}",
+						"{@spell comprehend languages}",
+						"{@spell detect thoughts}",
+						"{@spell invisibility}",
+						"{@spell mage hand}"
+					],
+					"daily": {
+						"1": [
+							"{@spell legend lore}",
+							"{@spell scrying}"
+						],
+						"3": [
+							"{@spell dispel magic}",
+							"{@spell fly}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"C"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
 		}    
 	],
 	"legendaryGroup": [
