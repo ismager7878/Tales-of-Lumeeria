@@ -41,7 +41,7 @@
             "You cannot be made undead."
           ]
         },
-        "{@bold Sentry's Rest.} When you take a long rest, you must spend at least six hours in an inactive, motionless state, rather than sleeping. In this state, you appear inert, but it doesn't render you unconscious, and you can see and hear as normal.",
+        "{@bold Sentry's Rest.} When you take a long rest, you must spend at least six hours in an inactive, motionless state, rAether than sleeping. In this state, you appear inert, but it doesn't render you unconscious, and you can see and hear as normal.",
         "{@bold Integrated Protection.} Your body has built-in defensive layers, which can be enhanced with armor:",
         {
           "type": "list",
@@ -385,7 +385,7 @@
                     "type": "entries",
                     "name": "Social Way of Life",
                     "entries":[
-                      "Valtarians are inherently social beings, cherishing connections and relationships with their kin. They hold gatherings and celebrations with great enthusiasm, especially when a new Valtarian child is born into their world. These festivities are marked by storytelling, music, and dancing, with each event serving as a reminder of their enduring bonds as a community."
+                      "Valtarians are inherently social beings, cherishing connections and relationships with their kin. They hold gAetherings and celebrations with great enthusiasm, especially when a new Valtarian child is born into their world. These festivities are marked by storytelling, music, and dancing, with each event serving as a reminder of their enduring bonds as a community."
                     ]
                   },
                   {
@@ -529,7 +529,7 @@
                     "type": "entries",
                     "name": "Wild Attire",
                     "entries":[
-                      "Fangborn typically wear minimalistic clothing made from animal skins, furs, and natural materials. They prioritize practicality over extravagance, with their attire often adorned with teeth, bones, and feathers as symbols of their hunting prowess."
+                      "Fangborn typically wear minimalistic clothing made from animal skins, furs, and natural materials. They prioritize practicality over extravagance, with their attire often adorned with teeth, bones, and feAethers as symbols of their hunting prowess."
                     ]
                   },
                   {
@@ -757,7 +757,7 @@
                     "type": "entries",
                     "name": "Adornments and Hairstyles",
                     "entries":[
-                      "Boyaks express their individuality through elaborate hairstyles adorned with natural ornaments like vibrant flowers, feathers, and beads. The intricate hairstyles serve not only as a form of personal expression but also convey the individual's role and status within the community."
+                      "Boyaks express their individuality through elaborate hairstyles adorned with natural ornaments like vibrant flowers, feAethers, and beads. The intricate hairstyles serve not only as a form of personal expression but also convey the individual's role and status within the community."
                     ]
                   },
                   {
@@ -1668,7 +1668,7 @@
       "name": "Lumeeria variant: Falling",
       "source": "ToL",
       "entries": [
-        "Falling from a great height is a significant risk for adventurers and their foes. At the end of the fall, you take {@dice 1d6} bludgeoning damage for every 10 feet you fell. There is no maximum height. You also land prone, unless you somehow avoid taking damage from the fall, such as with a special ability or the {@spell Feather Fall|phb} spell.",
+        "Falling from a great height is a significant risk for adventurers and their foes. At the end of the fall, you take {@dice 1d6} bludgeoning damage for every 10 feet you fell. There is no maximum height. You also land prone, unless you somehow avoid taking damage from the fall, such as with a special ability or the {@spell FeAether Fall|phb} spell.",
         "When you fall from a great height, you instantly descend up to 500 feet. If you're still falling on your next turn, you descend up to 500 feet at the end of that turn. This process continues until the fall ends, either because you hit the ground or the fall is otherwise halted."
       ]
     },
@@ -1787,7 +1787,7 @@
         "default": [
           "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} or (b) two {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
           "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) an {@item handaxe|phb|two handaxes}",
-          "(a) {@item studded leather armor|phb} and {@item scale mail|phb}",
+          "(a) {@item studded leAether armor|phb} and {@item scale mail|phb}",
           "An {@item explorer's pack|phb}"
         ]
       },
@@ -3027,7 +3027,7 @@
       "level": 3,
       "header": 2,
       "entries": [
-        "All firearms require specialized ammunition to function properly. Due to their rarity, finding ammunition for firearms can be challenging. However, with your proficiency in Tinker's Tools, you can craft your own ammunition at half the cost using gathered materials. Each type of firearm typically uses its own unique ammunition, which is often sold or crafted in batches to ensure compatibility with the weapon's design. As a Gunslinger, your ability to craft ammunition ensures that you're never caught unprepared when the bullets start flying."
+        "All firearms require specialized ammunition to function properly. Due to their rarity, finding ammunition for firearms can be challenging. However, with your proficiency in Tinker's Tools, you can craft your own ammunition at half the cost using gAethered materials. Each type of firearm typically uses its own unique ammunition, which is often sold or crafted in batches to ensure compatibility with the weapon's design. As a Gunslinger, your ability to craft ammunition ensures that you're never caught unprepared when the bullets start flying."
       ]
     },
     {
@@ -3361,7 +3361,7 @@
               {
                 "type": "list",
                 "items": [
-                  "You can as a bonus action manifest black ethereal feathered wings on your back that give you a flying speed equal to half your speed. After a minute the wings dissapear.",
+                  "You can as a bonus action manifest black ethereal feAethered wings on your back that give you a flying speed equal to half your speed. After a minute the wings dissapear.",
                   "You no longer need to be located at an temple of Kalin, to implore her to appear."
                 ]
               }
@@ -3572,11 +3572,11 @@
       ]
     },
     {
-      "name": "Ather Touched",
+      "name": "Aether Touched",
       "source": "ToL",
       "className": "Wizard",
       "classSource": "phb",
-      "subclassShortName": "Ather Touched",
+      "subclassShortName": "Aether Touched",
       "subclassSource": "ToL",
       "level": 2,
       "entries": [
@@ -3588,7 +3588,7 @@
       "source": "ToL",
       "className": "Wizard",
       "classSource": "phb",
-      "subclassShortName": "Ather Touched",
+      "subclassShortName": "Aether Touched",
       "subclassSource": "ToL",
       "level": 2,
       "header": 2,
@@ -3605,7 +3605,7 @@
       "source": "ToL",
       "className": "Wizard",
       "classSource": "phb",
-      "subclassShortName": "Ather Touched",
+      "subclassShortName": "Aether Touched",
       "subclassSource": "ToL",
       "level": 6,
       "header": 2,
@@ -3619,7 +3619,7 @@
       "source": "ToL",
       "className": "Wizard",
       "classSource": "phb",
-      "subclassShortName": "Ather Touched",
+      "subclassShortName": "Aether Touched",
       "subclassSource": "ToL",
       "level": 6,
       "header": 2,
@@ -3632,7 +3632,7 @@
       "source": "ToL",
       "className": "Wizard",
       "classSource": "phb",
-      "subclassShortName": "Ather Touched",
+      "subclassShortName": "Aether Touched",
       "subclassSource": "ToL",
       "level": 10,
       "header": 2,
@@ -3645,7 +3645,7 @@
       "source": "ToL",
       "className": "Wizard",
       "classSource": "phb",
-      "subclassShortName": "Ather Touched",
+      "subclassShortName": "Aether Touched",
       "subclassSource": "ToL",
       "level": 14,
       "header": 2,
@@ -3658,7 +3658,7 @@
       "source": "ToL",
       "className": "Wizard",
       "classSource": "phb",
-      "subclassShortName": "Ather Touched",
+      "subclassShortName": "Aether Touched",
       "subclassSource": "ToL",
       "level": 14,
       "header": 2,
@@ -3687,18 +3687,18 @@
       "classSource": "phb"
     },
     {
-      "name": "Ather Touched",
+      "name": "Aether Touched",
       "subclassFeatures": [
-        "Ather Touched|Wizard||Ather Touched|ToL|2",
-        "Aetheric Adaptability|Wizard||Ather Touched|ToL|2",
-        "Aetheric Manipulation|Wizard||Ather Touched|ToL|6",
-        "Aetheric Resilience|Wizard||Ather Touched|ToL|6",
-        "Aetheric Insight|Wizard||Ather Touched|ToL|10",
-        "Mastery of the Aether|Wizard||Ather Touched|ToL|14",
-        "Aetheric Shield|Wizard||Ather Touched|ToL|14"
+        "Aether Touched|Wizard||Aether Touched|ToL|2",
+        "Aetheric Adaptability|Wizard||Aether Touched|ToL|2",
+        "Aetheric Manipulation|Wizard||Aether Touched|ToL|6",
+        "Aetheric Resilience|Wizard||Aether Touched|ToL|6",
+        "Aetheric Insight|Wizard||Aether Touched|ToL|10",
+        "Mastery of the Aether|Wizard||Aether Touched|ToL|14",
+        "Aetheric Shield|Wizard||Aether Touched|ToL|14"
       ],
       "source": "ToL",
-      "shortName": "Ather Touched",
+      "shortName": "Aether Touched",
       "className": "Wizard",
       "classSource": "phb"
     },
@@ -4203,7 +4203,7 @@
         "You and up to 5 willing creatures you choose within range become enchanted with the magic of the desert, gaining the ability to traverse sandy landscapes with unprecedented speed.",
         "While under the effect of Sand Stepping, your movement speed increases to 60 feet while traversing sand. ",
         "If you are hit by an attack or offensive spell while the spell is active, its effect is immediately dispelled, and the enchantment is lost.",
-        "The spell provides protection against the abrasive forces of sandstorms. Sand Stepping ignores {@status concentration} checks caused by damage taken during such harsh weather conditions.",
+        "The spell provides protection against the abrasive forces of sandstorms. Sand Stepping ignores {@status concentration} checks caused by damage taken during such harsh weAether conditions.",
         "Dashing while under this spell has no effect. "
       ],
       "source": "ToL",
@@ -5163,7 +5163,7 @@
         ]
       },
       "entries": [
-        "Necrotic energies gather at your fingertips as you pull from the grounds two {@creature Skeletal Knight|ToL}. (the statistics for Skeletal Knight are in Tales of Lumeeria}",
+        "Necrotic energies gAether at your fingertips as you pull from the grounds two {@creature Skeletal Knight|ToL}. (the statistics for Skeletal Knight are in Tales of Lumeeria}",
         "You can use a bonus action to mentally command the creatures you make with this spell, issuing the same command to both of them. To receive the command, a creature must be within 60 feet of you. You decide what action the creatures will take and where they will move during their next turn, or you can issue a general command, such as to guard a chamber or passageway against your foes. If you issue no commands, the creatures do nothing except defend themselves against hostile creatures. Once given an order, the creatures continue to follow it until their task is complete.",
         "The creatures are under your control until the spell ends, after which they become inanimate once more."
       ],
@@ -5686,7 +5686,7 @@
         ]
       },
       "entries": [
-        "For a brief moment, you gather Lotoza's moon energy in your palm. As you slam your wrists together and aim your palms at your target, a beam of compact moonlight flashes out from your palms in a 10-foot wide, 60-foot long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes {@damage 12d6} radiant damage. On a successful save, it takes half as much damage. Undead and oozes have disadvantage on this saving throw.",
+        "For a brief moment, you gAether Lotoza's moon energy in your palm. As you slam your wrists together and aim your palms at your target, a beam of compact moonlight flashes out from your palms in a 10-foot wide, 60-foot long line. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes {@damage 12d6} radiant damage. On a successful save, it takes half as much damage. Undead and oozes have disadvantage on this saving throw.",
         "If the spell is cast at night and while in an area where it's outside and there is visibility to Lotoza, the red moon, then Nightshades' Moonbeam has a reddish color to it and will deal an extra {@dice 6d6} while being 5 feet wider."
       ],
       "source": "ToL",
@@ -5889,7 +5889,7 @@
       "components": {
         "v": true,
         "s": true,
-        "m": "a golden eagle's feather worth 100 gold, not consumed"
+        "m": "a golden eagle's feAether worth 100 gold, not consumed"
       }
     },
     {
@@ -7430,7 +7430,7 @@
                     "type": "entries",
                     "name": "Primitive",
                     "entries": [
-                      "Hill giants dwell in hills and mountain valleys across the world, congregating in steadings built of rough timber or in clusters of well-defended mud-and-wattle huts. Their skins are tan from lives spent lumbering up and down the hilly slopes and dozing beneath the sun. Their weapons are uprooted trees and rocks pulled from the earth. The sweat of their bodies adds to the reek of the crude animal skins they wear, poorly stitched together with hair and leather thongs."
+                      "Hill giants dwell in hills and mountain valleys across the world, congregating in steadings built of rough timber or in clusters of well-defended mud-and-wattle huts. Their skins are tan from lives spent lumbering up and down the hilly slopes and dozing beneath the sun. Their weapons are uprooted trees and rocks pulled from the earth. The sweat of their bodies adds to the reek of the crude animal skins they wear, poorly stitched together with hair and leAether thongs."
                     ]
                   },
                   {
@@ -7497,7 +7497,7 @@
                 "type": "inset",
                 "name": "Giant Gods",
                 "entries": [
-                  "When the giants' ancient empires fell, Annam, father of all giants, forsook his children and the world. He swore never to look upon either again until the giants had returned to their glory and reclaimed their birthright as rulers of the world. As a result, giants pray not to Annam but to his divine children, along with a host of hero-deities and godly villains that make up the giants' pantheon.",
+                  "When the giants' ancient empires fell, Annam, fAether of all giants, forsook his children and the world. He swore never to look upon either again until the giants had returned to their glory and reclaimed their birthright as rulers of the world. As a result, giants pray not to Annam but to his divine children, along with a host of hero-deities and godly villains that make up the giants' pantheon.",
                   "Chief among these gods are the children of Annam, whose sons represent each type of giant: Stronmaus for storm giants, Memnor for cloud giants, Skoraeus Stonebones for stone giants, Thrym for frost giants, Surtur for fire giants, and Grolantor for hill giants. Not all giants automatically revere their kind's primary deity, however. Many good cloud giants refuse to worship the deceitful Memnor, and a storm giant dwelling in the icy mountains of the north might pay more homage to Thrym than Stronmaus. Other giants feel a stronger connection to Annam's daughters, who include Hiatea, the huntress and home warden; Iallanis, goddess of love and peace; and Diancastra, an impetuous and arrogant trickster.",
                   "Some giants abandon their own gods and fall prey to demon cults, paying homage to Baphomet or Kostchtchie. To worship them or any other non-giant deity is a great sin against the ordning, and almost certain to make a giant an outcast."
                 ]
@@ -7643,7 +7643,7 @@
                     "type": "entries",
                     "name": "Primitive",
                     "entries": [
-                      "Hill giants dwell in hills and mountain valleys across the world, congregating in steadings built of rough timber or in clusters of well-defended mud-and-wattle huts. Their skins are tan from lives spent lumbering up and down the hilly slopes and dozing beneath the sun. Their weapons are uprooted trees and rocks pulled from the earth. The sweat of their bodies adds to the reek of the crude animal skins they wear, poorly stitched together with hair and leather thongs."
+                      "Hill giants dwell in hills and mountain valleys across the world, congregating in steadings built of rough timber or in clusters of well-defended mud-and-wattle huts. Their skins are tan from lives spent lumbering up and down the hilly slopes and dozing beneath the sun. Their weapons are uprooted trees and rocks pulled from the earth. The sweat of their bodies adds to the reek of the crude animal skins they wear, poorly stitched together with hair and leAether thongs."
                     ]
                   },
                   {
@@ -7710,7 +7710,7 @@
                 "type": "inset",
                 "name": "Giant Gods",
                 "entries": [
-                  "When the giants' ancient empires fell, Annam, father of all giants, forsook his children and the world. He swore never to look upon either again until the giants had returned to their glory and reclaimed their birthright as rulers of the world. As a result, giants pray not to Annam but to his divine children, along with a host of hero-deities and godly villains that make up the giants' pantheon.",
+                  "When the giants' ancient empires fell, Annam, fAether of all giants, forsook his children and the world. He swore never to look upon either again until the giants had returned to their glory and reclaimed their birthright as rulers of the world. As a result, giants pray not to Annam but to his divine children, along with a host of hero-deities and godly villains that make up the giants' pantheon.",
                   "Chief among these gods are the children of Annam, whose sons represent each type of giant: Stronmaus for storm giants, Memnor for cloud giants, Skoraeus Stonebones for stone giants, Thrym for frost giants, Surtur for fire giants, and Grolantor for hill giants. Not all giants automatically revere their kind's primary deity, however. Many good cloud giants refuse to worship the deceitful Memnor, and a storm giant dwelling in the icy mountains of the north might pay more homage to Thrym than Stronmaus. Other giants feel a stronger connection to Annam's daughters, who include Hiatea, the huntress and home warden; Iallanis, goddess of love and peace; and Diancastra, an impetuous and arrogant trickster.",
                   "Some giants abandon their own gods and fall prey to demon cults, paying homage to Baphomet or Kostchtchie. To worship them or any other non-giant deity is a great sin against the ordning, and almost certain to make a giant an outcast."
                 ]
@@ -8789,7 +8789,7 @@
               "spells": [
                 "{@spell catapult|XGE}",
                 "{@spell detect magic}",
-                "{@spell feather fall}",
+                "{@spell feAether fall}",
                 "{@spell inflict wounds}",
                 "{@spell magic missile}",
                 "{@spell shield}"
@@ -9481,7 +9481,7 @@
 							{
 								"type": "quote",
 								"entries": [
-									"Beyond the unopenable doors lay a grand hall ending before a towering stone throne, upon which sat an iron statue taller and wider than two men. In one  and it clutched an iron sword, in the other, a feather whip. We should have turned back then."
+									"Beyond the unopenable doors lay a grand hall ending before a towering stone throne, upon which sat an iron statue taller and wider than two men. In one  and it clutched an iron sword, in the other, a feAether whip. We should have turned back then."
 								],
 								"by": "Mordenkainen the Archmage",
 								"from": "chronicling his party's harrowing exploits in the dungeons below Maure Castle"
@@ -11674,7 +11674,7 @@
 				{
 					"ac": 20,
 					"from": [
-						"Wind Blessed Studded Leather Armor +1"
+						"Wind Blessed Studded LeAether Armor +1"
 					]
 				}
 			],
@@ -14504,7 +14504,7 @@
 			],
 			"regionalEffects": [
 				"The region containing a kraken's lair is warped by the creature's presence, creating the following magical effects:",
-				"{@b Never ending Storms} The kraken can alter the weather at will in a 12-mile radius centered on its lair. The effect is identical to the control weather spell. ",
+				"{@b Never ending Storms} The kraken can alter the weAether at will in a 12-mile radius centered on its lair. The effect is identical to the control weAether spell. ",
 				"{@b Repelling Currents} Strong currents try to push unwanted visitors away from the lair. These currents can be first encountered within 10 miles of the lair and become more common closer to the lair. ",
 				"{@b Cursed Waters} Rifts to the Divine Plane of Avathis: Sailor's Grave may open within 6 miles of the lair. ",
 				"{@b Titan's servants} Aquatic creatures within 6 miles of the lair that have an intelligence score of 2 or lower are charmed by the kraken and become aggressive toward intruders in the area. ",
