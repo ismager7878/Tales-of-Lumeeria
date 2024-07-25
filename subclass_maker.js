@@ -82,7 +82,6 @@ const mergeList = (x, y) => {
 
 classes = mergeList(classes, homebrewClasses);
 
-console.log(classes);
 const mainClass = await select({
   message: "What the main class?",
   choices: classes.map((x) => {
@@ -104,6 +103,7 @@ const subclassSource = await select({
       name: source.full,
       value: source.json,
     };
+    return object;
   }),
 });
 console.log(mainClass);
