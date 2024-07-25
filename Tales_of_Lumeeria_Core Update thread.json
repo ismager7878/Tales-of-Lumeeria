@@ -3570,6 +3570,102 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Ather Touched",
+      "source": "ToL",
+      "className": "Wizard",
+      "classSource": "phb",
+      "subclassShortName": "Ather Touched",
+      "subclassSource": "ToL",
+      "level": 2,
+      "entries": [
+        "Aether Touched Wizards are wizards who have, in some way, been affected by the Aetherwall and have managed to glean some of its untamed magical secrets. These wizards display abilities that break the rules of the multiverse, which even gods cannot do."
+      ]
+    },
+    {
+      "name": "Aetheric Adaptability",
+      "source": "ToL",
+      "className": "Wizard",
+      "classSource": "phb",
+      "subclassShortName": "Ather Touched",
+      "subclassSource": "ToL",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        "Starting at 2nd level, you gain the ability to adapt your spell repertoire on the fly, reflecting the unpredictable nature of the Aetherwall.",
+        "When you finish a long rest, roll your adaptability die and record the number rolled. Once per day, as a bonus action, you can swap a prepared spell with a different spell from your spellbook of the same level or lower.",
+        "The adaptability die starts as a d4 and changes to a {@dice d6} at {@i 6th level}, {@dice 2d4} at {@i 10th level}.",
+        "At {@i 14th level}, you no longer roll the adaptability die. Instead you can choose to swap any spell of 9th level or lower with any other spell of 9th level or lower in your spellbook.",
+        "{@bold For example}, if you are a 6th-level wizard, you roll a 5 on your adaptability die. You can then swap a prepared second-level spell with an unprepared third-level spell from your spellbook."
+      ]
+    },
+    {
+      "name": "Aetheric Manipulation",
+      "source": "ToL",
+      "className": "Wizard",
+      "classSource": "phb",
+      "subclassShortName": "Ather Touched",
+      "subclassSource": "ToL",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Starting at 6th level, you gain the ability to reshape and manipulate the raw arcane energies around you to your will. When you cast a spell that deals damage, you can change the damage type to force damage.",
+        "Starting at 6th level, the chaotic energies of the Aetherwall have fortified your body against the raw energy of magic. You gain resistance to force damage."
+      ]
+    },
+    {
+      "name": "Aetheric Resilience",
+      "source": "ToL",
+      "className": "Wizard",
+      "classSource": "phb",
+      "subclassShortName": "Ather Touched",
+      "subclassSource": "ToL",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Starting at 6th level, the chaotic energies of the Aetherwall have fortified your body against the raw energy of magic. You gain resistance to force damage."
+      ]
+    },
+    {
+      "name": "Aetheric Insight",
+      "source": "ToL",
+      "className": "Wizard",
+      "classSource": "phb",
+      "subclassShortName": "Ather Touched",
+      "subclassSource": "ToL",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "Starting at 10th level, you can use your reaction to reroll an initiative roll, attack roll, saving throw, or ability check that you make. You must use the new roll. You can use this feature a number of times equal to half your Intelligence modifier (Rounded down) per long rest."
+      ]
+    },
+    {
+      "name": "Mastery of the Aether",
+      "source": "ToL",
+      "className": "Wizard",
+      "classSource": "phb",
+      "subclassShortName": "Ather Touched",
+      "subclassSource": "ToL",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "Starting at 14th level, you can now use your Aetheric Adaptability feature twice per day."
+      ]
+    },
+    {
+      "name": "Aetheric Shield",
+      "source": "ToL",
+      "className": "Wizard",
+      "classSource": "phb",
+      "subclassShortName": "Ather Touched",
+      "subclassSource": "ToL",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "Starting at 14th level, you gain the ability to bend magic to your will to work as a shield against other magical sources.",
+        "You can as a bonus action surround yourself or an ally, within 30ft of you, with a Aetheric Shield. While under the Aetheric Shield you have advantage on all saving throws. The Aetheric Shield lasts for 1 minute and does require you to maintain concentration."
+      ]
     }
   ],
   "subclass": [
@@ -3588,6 +3684,22 @@
       "source": "ToL",
       "shortName": "Steward",
       "className": "Rogue",
+      "classSource": "phb"
+    },
+    {
+      "name": "Ather Touched",
+      "subclassFeatures": [
+        "Ather Touched|Wizard||Ather Touched|ToL|2",
+        "Aetheric Adaptability|Wizard||Ather Touched|ToL|2",
+        "Aetheric Manipulation|Wizard||Ather Touched|ToL|6",
+        "Aetheric Resilience|Wizard||Ather Touched|ToL|6",
+        "Aetheric Insight|Wizard||Ather Touched|ToL|10",
+        "Mastery of the Aether|Wizard||Ather Touched|ToL|14",
+        "Aetheric Shield|Wizard||Ather Touched|ToL|14"
+      ],
+      "source": "ToL",
+      "shortName": "Ather Touched",
+      "className": "Wizard",
       "classSource": "phb"
     },
     {

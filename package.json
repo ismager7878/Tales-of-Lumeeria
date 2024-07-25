@@ -1,0 +1,17 @@
+{
+  "name": "tales-of-lumeeria",
+  "version": "1.0.0",
+  "description": "Homebrew for ToL",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@inquirer/prompts": "^5.3.2",
+    "@inquirer/select": "^2.4.2",
+    "inquirer": "^10.1.2"
+  }
+}
