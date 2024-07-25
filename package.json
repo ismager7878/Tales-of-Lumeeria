@@ -2,7 +2,7 @@
   "name": "tales-of-lumeeria",
   "version": "1.0.0",
   "description": "Homebrew for ToL",
-  "main": "index.js",
+  "main": "subclass_maker.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
