@@ -222,21 +222,7 @@ const getNewSubclassFeature = async (isLore) => {
       header: isLore ? 1 : 2,
       entries 
     }
-    //console.log(entries)
 }
-// {
-//     "name": "Quick Movement",
-//     "source": "ToL",
-//     "className": "Fighter",
-//     "classSource": "phb",
-//     "subclassShortName": "Lumeerian Gunslinger",
-//     "subclassSource": "ToL",
-//     "level": 15,
-//     "header": 2,
-//     "entries": [
-//       "Starting at 15th level, you gain an additional 10 feet of movement, and you can use the {@action Disengage}, or {@action Dash} action as a bonus action."
-//     ]
-//   },
 classes = mergeList(classes, homebrewClasses);
 
 const mainClass = await select({
