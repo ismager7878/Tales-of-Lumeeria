@@ -1,9 +1,9 @@
-import { input, select , Separator} from "@inquirer/prompts";
-import { getRandomValues } from "node:crypto";
+import { input, select , number, Separator} from "@inquirer/prompts";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from 'url';
-import types from "./types.js"
+import types from "./types.js";
+import clipboard from "clipboardy";
 
 
 const __filename = fileURLToPath(import.meta.url)
@@ -12,6 +12,8 @@ const __dirname = path.dirname(__filename)
 const json = fs.readFileSync(
   path.join(__dirname, "Tales_of_Lumeeria_Core Update thread.json")
 );
+
+
 
 let homebrew = JSON.parse(json);
 
@@ -37,7 +39,7 @@ const attributesList = [
         value: "wis"
     },
     {
-        name: "End",
+        name: "Done",
         value: null
     }
 ]
@@ -97,6 +99,8 @@ let classes = [
   },
 ];
 
+let subclassFeatures = []
+
 const homebrewClasses = homebrew.class.map((x) => {
   const object = {
     name: x.name,
@@ -128,15 +132,19 @@ const getSubclassSource = async () => await select({
           };
           return object;
         }),
-    });
+});
+
+const getLevel = async () => await number({message: "What's the first level of your subclass?"}) 
 
 const getTextParagraph = async () => await input({message: "Write or paste your paragraph WITHOUT TABS!!"});
 
-const getNewHeading = async () => {
+const getNewHeading = async (former) => {
+    const name = await input({message:"Heading title:"})
+    const entries = await fillEntries(name, former);
     return {
         type: types.entries,
-        name: await input({message:"Heading title:"}),
-        entries: await fillEntries()
+        name,
+        entries,
     }
 }
 const fillAttributes = async () => {
@@ -168,12 +176,63 @@ const getDCModifier = async () => {
         attributes: await fillAttributes()
     }
 }
-const fillEntries = async () => {
+
+const getList = async (former, subcount) => {
+    const items = await fillItems(former, subcount)
+    return {
+        type: types.list,
+        items
+    }
+}
+
+const fillItems = async (former, subcount) => {
+    let name = "list"
+    for(let i = 0; i < subcount; i++){
+        name = "sub-" + name
+    }
+    subcount++
+    const items = []
+    let done = false
+    while(!done){
+        const item = await select({
+            message: `What's your ${name} item`,
+            choices: [
+                {
+                    name: "Text",
+                    value: async () => await getTextParagraph()
+                },
+                {
+                    name: "Sublist",
+                    value: async () => await getList(name, subcount)
+                },
+                {
+                    name: `Back to ${former}`,
+                    value: async () => {
+                        done = true;
+                    }
+                }
+            ]
+        })
+        
+        const result = await item()
+
+        if(!done) items.push(result)
+    }
+
+    return items
+}
+
+const getTable = () => {
+    console.log("Work overload, please try again...")
+    return ""
+}
+
+const fillEntries = async (name, former) => {
     let entries = []
     let done = false;
     while(!done){
         const segment = await select({
-            message: "What's your next paragraph?",
+            message: `Whats the next paragraph for ${name}`,
             loop: false,
             choices: [
                 {
@@ -182,7 +241,15 @@ const fillEntries = async () => {
                 },
                 {
                     name: "Heading",
-                    value: async () => await getNewHeading()
+                    value: async () => await getNewHeading(name)
+                },
+                {
+                    name: "List",
+                    value: async () => await getList(name, 0),
+                },
+                {
+                    name: "Table",
+                    value: async () => await getTable()
                 },
                 {
                     name: "Ability Attack modifer",
@@ -193,7 +260,7 @@ const fillEntries = async () => {
                     value: async () => await getDCModifier()
                 },
                 {
-                    name: "Done",
+                    name: former ? `Back to ${former}` : "Done",
                     value: () => {
                         done = true
                     },
@@ -208,21 +275,31 @@ const fillEntries = async () => {
 }
 
 const getNewSubclassFeature = async (isLore) => {
-    const name = await input({ message: "What's the name of the feature?"})
-    const level = +(await input({ message: "What's the level?"}))
-    const entries = await fillEntries();
+    const name = isLore ? newSubclass.name : await input({ message: "What's the name of the feature?"})
+    const level = isLore ? newSubclass.startingLevel : +(await number({ message: "What's the level?"}))
+    const entries = await fillEntries(isLore ? "subclass lore" : name);
+    const source = newSubclass.source
+    const className = mainClass.name
+    const classSource = mainClass.source
+    const subclassShortName = newSubclass.shortName
+    const subclassSource = newSubclass.source
+    const header = isLore ? 1 : 2
+
+    newSubclass.subclassFeatures.push(`${name}|${className}|${classSource}|${subclassShortName}|${subclassSource}|${level}`)
+
     return {
       name,
-      source: newSubclass.source,
-      className: mainClass.name,
-      classSource: mainClass.source,
-      subclassShortName: newSubclass.shortName,
-      subclassSource: newSubclass.source,
+      source,
+      className,
+      classSource,
+      subclassShortName,
+      subclassSource,
       level,
-      header: isLore ? 1 : 2,
+      header,
       entries 
     }
 }
+
 classes = mergeList(classes, homebrewClasses);
 
 const mainClass = await select({
@@ -242,13 +319,41 @@ const subClassName = await getSubclassName()
 let newSubclass = {
     name: subClassName,
     shortName: await getSubclassShortName(subClassName),
+    startingLevel: +(await getLevel()),
     source: await getSubclassSource(),
     subclassFeatures:[],
     className: mainClass.name,
     classSource: mainClass.source,
 }
 
-newSubclass.subclassFeatures.push(await getNewSubclassFeature(false))
+subclassFeatures.push(await getNewSubclassFeature(true))
 
-const prettyJson = JSON.stringify(newSubclass, null, 2);
-console.log(prettyJson);
+while(true){
+    console.log("Current features:")
+    subclassFeatures.forEach( feature => {
+        const isLore = subclassFeatures.indexOf(feature) == 0 ? true : false
+        console.log(`- ${isLore ? "Lore" : feature.name}${!isLore ? `(Lvl ${feature.level})` : ""}`)
+    })
+    const isDone = await select({
+        message: "Do you need another feature?",
+        choices: [
+            {
+                name: "Yes",
+                value: false
+            },
+            {
+                name:"No",
+                value: true
+            }
+        ]
+    }) 
+    if(isDone) break;
+    subclassFeatures.push(await getNewSubclassFeature(false))
+}
+
+homebrew.subclass.push(newSubclass)
+homebrew.subclassFeature = mergeList(homebrew.subclassFeature, subclassFeatures)
+
+const updatedHomebrew = JSON.stringify(homebrew, null, 2);
+
+clipboard.writeSync(updatedHomebrew)
