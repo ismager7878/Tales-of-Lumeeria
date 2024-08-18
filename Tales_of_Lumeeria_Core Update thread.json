@@ -2525,9 +2525,9 @@
         {
           "type": "list",
           "items": [
-            "{@bold Soulfire Surge:} Your weapon crackles with intense flames as you channel the fiery essence of your soul into it. When you make a weapon attack with a weapon infused with Soulfire Surge, you add your Soulburn Die to the damage roll as fire damage. Additionally, any creature hit by your weapon attack must make a Dexterity saving throw against your Soul Power DC or catch fire, taking additional fire damage equal to your Soulburn Die at the start of each of its turns until it takes an action to extinguish the flames. Additionally Each time the target takes fire damage from catching on fire, they can redo the Dexterity saving throw.",
-            "{@bold Frostbound Edge:} Frost swirls around your weapon as you infuse it with bitter cold, chilling the very soul of your enemies. When you make a weapon attack with a weapon infused with Frostbound Edge, you add your Soulburn Die to the damage roll as cold damage. Additionally, any creature hit by your weapon attack must succeed on a Constitution saving throw against your Soul Power DC or have its movement speed halved until the end of your next turn as it struggles to endure the numbing cold.",
-            "{@bold Stormforged Strike:} Arcs of crackling lightning envelop your weapon as you harness the raw power of lightning. When you make a weapon attack with a weapon infused with Stormforged Strike, you add your Soulburn Die to the damage roll as lightning damage. Additionally, any creature hit by your weapon attack must make a Dexterity saving throw against your Soul Power DC. On a failed save, the target takes an additional 1d6 lightning damage. If the target is within 5 feet of another creature, the lightning arcs to the closest ally. The closest ally must then make a Dexterity saving throw against the same DC. On a failed save, the ally takes 1d6 lightning damage."
+            "{@bold Soulfire Surge:} When you deal damage with a weapon infused with fire damage, the target must make a Dexterity saving throw against your Soul Power DC or catch on fire and take fire damage equal to 1 roll of your Soulburn Die. They take the same damage at the start of each of their turns, unless they succeed on an additional Dexterity saving throw, or they take an action to extinguish the flames.",
+            "{@bold Frostbound Edge:} When you deal damage with a weapon infused with cold damage, the target must make a Constitution saving throw against your Soul Power DC or have their movement halved until the start of your next turn.",
+            "{@bold Stormforged Strike:} When you deal damage with a weapon infused with lightning damage, the target must make a Dexterity saving throw against your Soul Power DC or take an additional 1d6 lightning damage. Additionally, if the target is within 5 feet of another creature, the lightning will arc between the two, forcing the second creature to make a Dexterity saving throw, taking 1d6 lightning damage on a failed save."
           ]
         },
         "Each of these enhancements follows the same mechanics as the standard Soul Infusion ability, requiring you to suffer necrotic damage equal to your Soulburn Die when activating the infusion. The only difference is that each elemental version of Greater Soul Infusion comes with additional effects tailored to its elemental nature."
@@ -5997,6 +5997,162 @@
       },
       "conditionInflict": ["prone", "restrained"]
     },
+		{
+			"name": "Holy Spear",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You conjure a spear of radiant light and hurl it toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d8} radiant damage."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Grass straws dried and soaked in holy water (Unique"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			]
+		},
+		{
+			"name": "Silvanus' Drought",
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You conjure a swarm of cicadas that fly towards a creature of your choice within range. The cicadas swarm the target, which must succeed on a Constitution saving throw or take {@damage 1d8} piercing damage and have its speed reduced by 10 feet until the start of its next turn."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"This spell's damage increases by {@dice 1d8}, and the speed reduction increases by 5 feet when you reach 5th level ({@dice 2d8} and reduce by 15 feet), 11th level ({@dice 3d8} and reduce by 20 feet), and 17th level ({@dice 4d8} and reduce by 25 feet)."
+					]
+				}
+			]
+		},
+		{
+			"name": "Stellar Mending",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You call upon the soothing and rejuvenating power of the stars. As you cast the spell, Star Dust  envelops your hand, and as you touch a creature, the healing energy of the cosmos knits their wounds and restores their vitality. The target regains hit points equal to {@dice 2d6}. This spell has no effect on Undead or Constructs."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "Star Dust worth 10gp, consumed"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the healing increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			]
+		},
     {
       "name": "Sova's Undead Beasts",
       "level": 3,
@@ -13988,6 +14144,116 @@
 			},
 			"damageTags": [
 				"P"
+			]
+		},
+		{
+			"name": "Weaker Child of Decay",
+			"size": [
+				"L"
+			],
+			"type": "Undead and ooze",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d10 + 18",
+				"average": 51
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 10
+			},
+			"str": 14,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 10,
+			"cha": 6,
+			"passive": 10,
+			"cr": "2",
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"senseTags": [
+				"B"
+			],
+			"save": {
+				"con": "+5"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				"acid",
+				"necrotic"
+			],
+			"immune": [
+				"poison",
+				"slashing"
+			],
+			"trait": [
+				{
+					"name": "Withering Aura",
+					"entries": [
+						"All plants and vegetation within 10 feet of the Child of Decay wither and die. At the start of each of a creature's turns while within 10 feet of the Child of Decay, it must make a {@dc 13} Constitution saving throw, taking {@damage 1d6} necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the Child of Decay to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the Child of Decay drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The weaker child of decay can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The weaker child of decay can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous",
+				"Spider Climb",
+				"Undead Fortitude"
+			],
+			"action": [
+				{
+					"name": "Pseudopod.",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 2}) bludgeoning damage plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"fluff": {
+				"entries": [
+					"The Child of Decay is a horrifying fusion of undead and ooze, possessing a black tar-like body that saps life from anything nearby. Originating from the Celestial Necropolis, it is thought to have been created by Alaso, known as the Herald of Decay. These creatures are relentless in their hunger, growing stronger as they drain life force from their surroundings. Their presence causes all vegetation within ten feet to wither and die, marking their territory with death and decay. Legends say that the more life they consume, the more formidable they become, making them a growing threat. Often found in desolate areas, their very existence is a blight on the living world. Their creation remains a dark testament to Alaso's mastery over decay and corruption."
+				]
+			},
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"savingThrowForced": [
+				"constitution"
 			]
 		},
 		{
