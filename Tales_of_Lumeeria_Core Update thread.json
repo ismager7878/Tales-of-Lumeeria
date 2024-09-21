@@ -6153,6 +6153,109 @@
 				}
 			]
 		},
+		{
+			"name": "Adran's banner",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Adran's Banner creates a magical banner that is placed on a fixed location within range and cannot be moved. The banner has an AC of 14 and hit points equal to 5 times the caster's proficiency bonus. It can be targeted and is considered a temporary object for all mechanical purposes.",
+				"While within 15 feet of the banner, allied creatures gain the following benefits:",
+				"\t- Advantage on saving throws against being {@condition charmed}, {@condition frightened}, or {@condition stunned}.",
+				"Additionally, the spellcaster can choose one of the following additional effects:",
+				"\t- Allies have a +2 bonus to their attack rolls and damage rolls.",
+				"\t- Allies have a +2 increase to their Armor Class.",
+				"The banner's magical effects persist for the duration of the spell, until the spellcaster loses {@status concentration}, or until the banner is destroyed or dispelled. Once the spell ends, the banner vanishes, leaving no trace of its presence."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small steel rod worth 50 gold, consumed upon casting"
+			}
+		},
+		{
+			"name": "Grow Plant",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Upon casting this spell, you touch a non-sentient plant of your choice, causing it to rapidly grow to its full maturity. Over a few seconds, the plant visibly stretches and expands, reaching its natural, fully developed form. If the plant normally produces fruits, flowers, or any other harvestable parts, these also bloom and are ready for harvest instantly. The plant remains in its mature state and continues its natural life cycle from this point onward. The spell does not alter the natural lifespan of the plant or accelerate its decay; it simply advances the plant to its mature state.",
+				"After casting this spell on a plant, any further castings of the spell on the same plant will have no effect once it has reached maturity. This spell does not work on magically-created plants or plants that are sentient or otherwise animated."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true
+			}
+		},
     {
       "name": "Sova's Undead Beasts",
       "level": 3,
@@ -14711,6 +14814,1312 @@
 			],
 			"savingThrowForcedSpell": [
 				"wisdom"
+			]
+		},
+		{
+			"name": "Owlbear Cub",
+			"size": [
+				"M"
+			],
+			"type": "monstrosity",
+			"source": "ToL",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d10 + 3",
+				"average": 19
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1/2",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"skill": {
+				"perception": "+2"
+			},
+			"save": {
+				"str": "+17",
+				"dex": "+13",
+				"con": "+14",
+				"int": "+3",
+				"wis": "+11",
+				"cha": "+7"
+			},
+			"trait": [
+				{
+					"name": "Keen Sight and Smell",
+					"entries": [
+						"The owlbear cub has advantage on Wisdom ({@skill Perception}) checks that rely on sight or smell."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses"
+			],
+			"action": [
+				{
+					"name": "Multiattack.",
+					"entries": [
+						"The owlbear makes two attacks: one with its beak and one with its claws."
+					]
+				},
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) slashing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Redglow",
+			"size": [
+				"M"
+			],
+			"type": "fey",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d8 + 108",
+				"average": 189
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 22,
+			"con": 22,
+			"int": 14,
+			"wis": 16,
+			"cha": 18,
+			"passive": 10,
+			"cr": "10",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"Common",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"save": {
+				"dex": "+10",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+11",
+				"survival": "+11",
+				"insight": "+7"
+			},
+			"resist": [
+				"force",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Redglow's innate spellcasting ability is Charisma (spell save {@dc 16}). It can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"2": [
+							"{@spell teleport}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"trait": [
+				{
+					"name": "Shadow Form.",
+					"entries": [
+						"The Redglow can move through a space as narrow as 1 inch wide without squeezing. It has advantage on Dexterity (Stealth) checks made to hide in dim light or darkness."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Dark Step",
+					"entries": [
+						"As a bonus action, the Redglow can teleport up to 60 feet to an unoccupied space it can see."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Redglow makes three attacks: two with its claws and one with its bite."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 10 ft., one target. {@h}15 ({@damage 2d8 + 6}) slashing damage plus 7 ({@damage 2d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d10 + 6}) piercing damage plus 10 ({@damage 3d6}) necrotic damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"reactionHeader": [
+				"The Redglow has 3 reactions"
+			],
+			"reaction": [
+				{
+					"name": "Shadowstep Ambush.",
+					"entries": [
+						"When a creature targets the Redglow with a ranged weapon attack, the Redglow can use its reaction to teleport up to 60 feet to an unoccupied space adjacent to the attacking creature. It then makes one claw attack against that creature."
+					]
+				},
+				{
+					"name": "Teleportation Dodge.",
+					"entries": [
+						"When the Redglow is targeted by a melee attack, it can use its reaction to teleport up to 30 feet to an unoccupied space it can see. The triggering attack misses the Redglow."
+					]
+				}
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Shadeclaw",
+			"size": [
+				"S"
+			],
+			"type": "fey",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "4d6 + 8",
+				"average": 22
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"passive": 13,
+			"cr": "1",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Sylvan"
+			],
+			"languageTags": [
+				"S"
+			],
+			"skill": {
+				"stealth": "+5",
+				"perception": "+3"
+			},
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Shadeclaw's innate spellcasting ability is Charisma (spell save {@dc 12}). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell eldritch blast}",
+						"{@spell minor illusion}"
+					],
+					"daily": {
+						"1": [
+							"{@spell invisibility}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"action": [
+				{
+					"name": "Shade blast",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 120/120 ft., one target. {@h}10 ({@damage 1d10 + 2}) force damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The shadeclaw can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Shadow Stealth",
+					"entries": [
+						"While in dim light or darkness, the shadeclaw can take the {@action Hide} action as a bonus action."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb"
+			],
+			"fluff": {
+				"entries": [
+					"The Shadeclaw is a small, shadowy fey creature with piercing red eyes that glow ominously in the dark. It moves with unsettling grace, its long claws leaving faint trails of darkness as it effortlessly crawls along walls and ceilings. Shadeclaws are cunning and elusive, often using their minor illusion and invisibility abilities to deceive and disorient their foes. Though individually weak, they are rarely encountered alone. Shadeclaws rely on their numbers to overwhelm and subdue stronger adversaries, swarming them with a combination of stealthy strikes and magical trickery.",
+					"These creatures are typically lesser minions, controlled by powerful dark archfey. Commanding the Shadeclaw's to venture into the Material Plane to spread chaos and fear. Serving as spies, assassins, and saboteurs, Shadeclaws carry out their master's will with ruthless efficiency, leaving behind only whispers and shadows in their wake."
+				]
+			},
+			"damageTags": [
+				"O",
+				"S"
+			],
+			"damageTagsSpell": [
+				"O"
+			]
+		},
+		{
+			"name": "Adorian Wizard",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"condition": "(15 with mage armor)"
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 14,
+			"int": 18,
+			"wis": 12,
+			"cha": 10,
+			"passive": 15,
+			"cr": "9",
+			"languages": [
+				"Common",
+				"Adorian",
+				"Alasian Script",
+				"Draconic",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"I"
+			],
+			"resist": [
+				"necrotic"
+			],
+			"save": {
+				"int": "+8",
+				"wis": "+5",
+				"con": "+6"
+			},
+			"skill": {
+				"arcana": "+12",
+				"history": "+12",
+				"insight": "+5",
+				"perception": "+5"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Adorian Wizard is a 11th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 16}, +8 to hit with spell attacks), The Adorian Wizard has the following Wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell prestidigitation}",
+								"{@spell spectral blast|ToL}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell adran's disabling eye|ToL}",
+								"{@spell misty step}",
+								"{@spell sova's undead mount|ToL}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell fireball}",
+								"{@spell fly}",
+								"{@spell sova's undead beasts|ToL}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell blight}",
+								"{@spell dimension door}",
+								"{@spell greater invisibility}",
+								"{@spell sova's corpse explosion|ToL}"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell scrying}",
+								"{@spell sova's dead giants|ToL}",
+								"{@spell teleportation circle}"
+							],
+							"slots": 2
+						},
+						"6": {
+							"spells": [
+								"{@spell circle of death}",
+								"{@spell disintegrate}",
+								"{@spell sova's deathly hand|ToL}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"trait": [
+				{
+					"name": "Unknowable Secrets",
+					"entries": [
+						"Any attempt to form a mental link with the Adorian Wizard, cast scrying or cast speak with dead on the wizard automatically fails, and the creature that initiated the attempt takes 21 ({@damage 6d6}) psychic damage"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Adorian Dagger",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage plus 7 ({@damage 2d6}) necrotic damage. Hit points lost to this weapon's damage can only be regained through a long rest."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"F",
+				"I",
+				"N",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Adorian Agent",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"special": "20 (Plate,Shield)"
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 18",
+				"average": 58
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 12,
+			"wis": 13,
+			"cha": 10,
+			"passive": 17,
+			"cr": "5",
+			"languages": [
+				"Common",
+				"Adorian"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"arcana": "+4",
+				"athletics": "+6",
+				"history": "+4",
+				"perception": "+7"
+			},
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The adorian agent has advantage on an attack roll against a creature if at least one of the adorian agent's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Dutiful Agent",
+					"entries": [
+						"The Adorian Agent has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Adorian Agent makes two attacks. One with its longsword and one with its shield bash"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"attachedItems": [
+				"heavy crossbow|phb",
+				"longsword|phb"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The Adorian Agent adds 2 to its AC against one melee attack that would hit it. To do so, the Adorian Agent must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Slush Affected",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"save": {
+				"str": "+4"
+			},
+			"skill": {
+				"perception": "+2"
+			},
+			"traitTags": [
+				"Brute",
+				"Rampage",
+				"Reckless"
+			],
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The slush affected has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee attack deals one extra die of its damage when the slush affected hits with it."
+					]
+				},
+				{
+					"name": "Crazed State",
+					"entries": [
+						"Due to the Slush Drug their to hit is reduced by 6"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Strangle",
+					"entries": [
+						"{@atk mw} {@hit -2} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 12}) and knocked {@condition prone}. Until the grapple ends, the target can't speak properly or cast spells with verbal components. "
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit -2} to hit, reach 5 ft., one target. {@h}6 ({@damage 2d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Hurl Rock",
+					"entries": [
+						"{@atk rw} {@hit -2} to hit, range 20/30 ft., one target. {@h}4 ({@damage 1d4 + 2}) bludgeoning damage."
+					]
+				}
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			]
+		},
+		{
+			"name": "Agent of the Black Root",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item breastplate|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 16,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"passive": 13,
+			"cr": "4",
+			"languages": [
+				"Common",
+				"Da'lian",
+				"Infernal"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"save": {
+				"cha": "+6",
+				"con": "+5",
+				"dex": "+4"
+			},
+			"skill": {
+				"arcana": "+3",
+				"deception": "+6",
+				"religion": "+3",
+				"persuasion": "+6",
+				"perception": "+3"
+			},
+			"trait": [
+				{
+					"name": "Hex Warrior.",
+					"entries": [
+						"The warlock's weapon attacks use its Charisma modifier to calculate attack rolls and damage (included in the attack)."
+					]
+				},
+				{
+					"name": "Eldritch Grasp",
+					"entries": [
+						"When the warlock hits a creature with its eldritch blast, the target is pulled 10 feet in a straight line toward the warlock, and the target's speed is reduced by 10 feet until the end of the warlock's next turn."
+					]
+				},
+				{
+					"name": "Pact Weapon",
+					"entries": [
+						"This weapon functions as a magical +1 weapon. ",
+						"The pact weapon disappears if it is away from the warlock for 1 minute or more, the warlock dismisses it (no action required), or the warlock dies."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The warlock's innate spellcasting ability is Charisma (spell save {@dc 14}, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast} (two beams | 2 x 1d10)"
+							]
+						}
+					},
+					"daily": {
+						"2": [
+							"{@spell banishing smite}",
+							"{@spell dispel magic}"
+						]
+					},
+					"will": [
+						"{@spell alter self}"
+					],
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I",
+				"CL"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Agent of the Black Root makes Two longsword attacks. "
+					]
+				},
+				{
+					"name": "Pact Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 5}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack",
+				"Parry"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The Agent adds 2 to its AC against one Melee attack that would hit it, to do so the agent must see the attacker and be wielding a melee weapon"
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"B",
+				"O",
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Average Trained Guard",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 12,
+			"cr": "1/2",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"perception": "+2"
+			},
+			"action": [
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) Slashing damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"attachedItems": [
+				"longsword|phb",
+				"shortbow|phb"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Seasoned Guard",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item chain mail|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"passive": 12,
+			"cr": "2",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"perception": "+3",
+				"acrobatics": "+4"
+			},
+			"attachedItems": [
+				"longsword|phb"
+			],
+			"save": {
+				"str": "+5"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Seasoned Guard has 2 attacks it can make choosing any from Longsword, Shield Bash or Flintlock Pistol"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 3}) bludgeoning damage, and the target must succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Flintlock Pistol",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 40/160 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Veteran Guard",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 36",
+				"average": 76
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 14,
+			"con": 18,
+			"int": 10,
+			"wis": 16,
+			"cha": 10,
+			"passive": 16,
+			"cr": "5",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"perception": "+6",
+				"athletics": "+8",
+				"insight": "+6"
+			},
+			"attachedItems": [
+				"longsword|phb",
+				"revolver|dmg"
+			],
+			"save": {
+				"str": "+8"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Veteran Guard has 2 attacks it can make choosing any from Longsword, Shield Bash or Revolver"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 5}) bludgeoning damage, and the target must succeed on a {@dc 14} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Revolver",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 40/160 ft., one target. {@h}8 ({@damage 2d6 + 2}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The veteran guard has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the veteran guard hits with it."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Elite Guard",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item plate armor|phb}",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d8 + 75",
+				"average": 142
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 16,
+			"con": 20,
+			"int": 12,
+			"wis": 18,
+			"cha": 10,
+			"passive": 18,
+			"cr": "9",
+			"languages": [
+				"Common"
+			],
+			"languageTags": [
+				"C"
+			],
+			"skill": {
+				"athletics": "+8",
+				"insight": "+6",
+				"perception": "+8"
+			},
+			"attachedItems": [
+				"longsword|phb",
+				"revolver|dmg"
+			],
+			"save": {
+				"str": "+8",
+				"con": "+9",
+				"wis": "+8"
+			},
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Elite Guard has 3 attacks it can make choosing any from Longsword, Shield Bash or Revolver"
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d8 + 6}) slashing damage."
+					]
+				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d4 + 6}) bludgeoning damage, and the target must succeed on a {@dc 16} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Revolver",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 40/160 ft., one target. {@h}9 ({@damage 2d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The Elite guard has advantage on saving throws against being {@condition frightened}."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A melee weapon deals one extra die of its damage when the Elite guard hits with it."
+					]
+				}
+			],
+			"traitTags": [
+				"Brute"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
 			]
 		}    
 	],
