@@ -7334,6 +7334,115 @@
 				"s": true,
 				"m": "A small feather from an eagle, a tiny silver bell, or a dried flower petal, depending on the sense being enhanced, not consumed"
 			}
+		},
+		{
+			"name": "Atharack's Righteous Smite",
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Paladin",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You call forth the divine power of righteousness, striking only those who lack purity in their souls. The spell creates a burst of holy energy, harming creatures of neutral or evil alignment while leaving good-aligned creatures unharmed.",
+				"The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra {@damage 1d8} radiant damage to Neutral aligned creatures and {@damage 2d8} radiant damage to evil aligned creatures. ",
+				"Creatures that are evil outsiders (Not from the material plane), such as Devils and Demons takes {@damage 3d8} radiant damage instead.",
+				"Creatures of the good alignment are unaffected by this spell. "
+			],
+			"source": "ToL",
+			"components": {
+				"v": true
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Effer's Phantom Spells",
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Upon casting Effer's Phantom Spells, the caster is cloaked in subtle, suppressive magic designed to disrupt the lingering traces of arcane energy. The spell grants the caster 9 Phantom Strings, ethereal threads visible only to the caster’s eyes. These strings are extensions of the caster’s intent, poised to snuff out any disturbances created within the arcane realm.",
+				"While the spell is active, whenever an arcane spell is cast within 30 feet of the caster—whether by themselves or another creature—the caster can choose to expend Phantom Strings to dispel the arcane residue that would otherwise linger. The expenditure is equal to the level of the spell (e.g., a 3rd-level spell consumes 3 Phantom Strings)."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an arcane crystal, consumed) (Unique"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you gain an additional 3 Phantom Strings for each level above 3rd, and the spell’s duration is extended by 1 hour per additional level."
+					]
+				}
+			]
 		}
   ],
   "monster": [
@@ -15705,6 +15814,18 @@
 					"entries": [
 						"The the soul shepherds has advantage on saving throws against spells and other magical effects."
 					]
+				},
+				{
+					"name": "Ethereal Sight",
+					"entries": [
+						"The Soul Shepherds can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"The the soul shepherds can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@dice 1d10}) force damage if it ends its turn inside an object."
+					]
 				}
 			],
 			"spellcasting": [
@@ -15736,7 +15857,8 @@
 				"I"
 			],
 			"traitTags": [
-				"Magic Resistance"
+				"Incorporeal Movement",
+        "Magic Resistance"
 			],
 			"action": [
 				{
@@ -15791,6 +15913,7 @@
 			],
 			"damageTags": [
 				"B",
+        "O",
 				"R"
 			],
 			"savingThrowForced": [
@@ -15989,6 +16112,172 @@
 			"savingThrowForcedSpell": [
 				"intelligence",
 				"wisdom"
+			]
+		},
+		{
+			"name": "Deathworm",
+			"size": [
+				"G"
+			],
+			"type": "undead",
+			"source": "ToL",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d20 + 119",
+				"average": 297
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 30
+			},
+			"str": 28,
+			"dex": 10,
+			"con": 25,
+			"int": 4,
+			"wis": 12,
+			"cha": 5,
+			"passive": 23,
+			"cr": "17",
+			"senses": [
+				"blindsight 60 ft.",
+				"tremorsense 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"save": {
+				"str": "+15",
+				"con": "+13",
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+13"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"trait": [
+				{
+					"name": "Undead Fortitude",
+					"entries": [
+						"If damage reduces the deathworm to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the deathworm drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Tunneler",
+					"entries": [
+						"The deathworm can burrow through solid rock at half its burrow speed and leaves a 10-foot-diameter tunnel in its wake."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The deathworm has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Curse of Decay",
+					"entries": [
+						"A creature infected by the Curse of Decay will begin transforming into an undead version of themselves. The Transformation takes {@dice 3d6} days, during which the creature's alignment becomes neutral evil and it loses its sanity. When the transformation is complete, the target dies and rises again as an undead version of itself. It becomes Resistant to Necrotic damage and vulnerable to Radiant damage. ",
+						"The process can be halted by a greater restoration spell or similar magic before the transformation is complete. "
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Tunneler",
+				"Undead Fortitude"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Deathworm makes two attacks: one with its Bite and one with its Tail."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 10 ft., one target. {@h}33 ({@damage 4d10 + 9}) piercing damage. If the target is a creature, it must succeed on a {@dc 19} Dexterity saving throw or be swallowed by the Deathworm. A swallowed creature is {@condition blinded} and {@condition restrained}, has total cover against attacks and other effects outside the Deathworm, and takes 35 ({@damage 10d6}) necrotic damage at the start of each of the Deathworm's turns. If the Deathworm takes 30 damage or more on a single turn from a creature inside it, the Deathworm must succeed on a {@dc 21} Constitution saving throw at the end of that turn or regurgitate the creature, which falls {@condition prone} in a space within 10 feet of the Deathworm. If the Deathworm dies, a swallowed creature is no longer {@condition restrained} by it and can escape from the corpse by using 20 feet of movement, exiting {@condition prone}."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 15} to hit, reach 15 ft., one target. {@h}24 ({@damage 3d8 + 9}) bludgeoning damage. The target must make a {@dc 21} Constitution saving throw or be infected with the Deathworm's Curse of Decay (See Curse of Decay)"
+					]
+				},
+				{
+					"name": "Necrotic Breath {@recharge 5}",
+					"entries": [
+						"The Deathworm exhales a wave of necrotic energy in a 60-foot cone. Each creature in that area must make a {@dc 21} Constitution saving throw, taking 49 ({@damage 14d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack",
+				"Swallow"
+			],
+			"conditionInflict": [
+				"blinded",
+				"restrained"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"AOE"
+			],
+			"fluff": {
+				"entries": [
+					"The Deathworms were horrific creations birthed by Alaso, the God of Undeath, during the Great Undeath War. This conflict saw Zeena, the Blood Monarch, and Alaso clash in a destructive struggle, devastating the continent of Navaro. As the two forces of undeath vied for supremacy, Alaso shaped these gargantuan monstrosities to ravage the battlefield, tearing through both living and undead alike.",
+					"Deathworms were designed to burrow beneath the earth, emerging with terrifying speed to devour entire battalions or drag down the unfortunate into the cursed soil. Their very presence exudes necrotic energy, corrupting the land and leaving it barren in their wake. Even after the war ended, many Deathworms remained in the desolate, accursed lands of Navaro, eternally hunting anything that still clings to life. These colossal undead creatures now roam the wasteland, driven by an insatiable hunger for destruction."
+				]
+			},
+			"damageTags": [
+				"B",
+				"N",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"dexterity"
 			]
 		}
   ],
