@@ -3300,7 +3300,7 @@
       ]
     },
     {
-      "name": "Touch of Death",
+      "name": "Soul Touch",
       "source": "ToL",
       "className": "Monk",
       "classSource": "phb",
@@ -3400,7 +3400,7 @@
       ]
     },
     {
-      "name": "Hour of Reaping",
+      "name": "Eyes of Death",
       "source": "ToL",
       "className": "Monk",
       "classSource": "phb",
@@ -3413,7 +3413,7 @@
       ]
     },
     {
-      "name": "Mastery of Death",
+      "name": "Death's Ally",
       "source": "ToL",
       "className": "Monk",
       "classSource": "phb",
@@ -3426,7 +3426,7 @@
       ]
     },
     {
-      "name": "Touch of the Wicked",
+      "name": "Touch of the Corrupt",
       "source": "ToL",
       "className": "Monk",
       "classSource": "phb",
@@ -3819,6 +3819,197 @@
         "You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action.",
         "You need to finish a long rest before you can use this feature again "
       ]
+    },
+    {
+      "name": "The Demon",
+      "source": "ToL",
+      "className": "Warlock",
+      "classSource": "phb",
+      "subclassShortName": "Demon",
+      "subclassSource": "ToL",
+      "level": 1,
+      "header": 1,
+      "entries": [
+        "You have made a pact with a demon from the Abyssal floors. A being whose aims are evil, even if you strive against those aims. Such beings often desire the corruption or destruction of all things, ultimately including you. Plunging the world into chaos and waging war against the gods are the sole reason for these beings existence."
+      ]
+    },
+    {
+      "name": "Expaned Spell List",
+      "source": "ToL",
+      "className": "Warlock",
+      "classSource": "phb",
+      "subclassShortName": "Demon",
+      "subclassSource": "ToL",
+      "level": 1,
+      "header": 2,
+      "entries": [
+        "At each indicated Warlock level, The Demon adds the listed spells to your known spell list.",
+        {
+          "type": "table",
+          "caption": "Demon Expaned Spells",
+          "colLabels": ["Spell Level", "Spells"],
+          "colStyles": ["col-2 text-center", "col-10"],
+          "rows": [
+            ["1st", "{@spell Burning Hands}, {@spell Command}"],
+            ["2nd", "{@spell Blindness/Deafness}, {@spell Scorching Ray}"],
+            ["3rd", "{@spell Fireball}, {@spell Stinking Cloud}"],
+            ["4th", "{@spell Fire Shield}, {@spell Wall of Fire}"],
+            ["5th", "{@spell Flame Strike}, {@spell Hallow}"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Demon's Gift",
+      "source": "ToL",
+      "className": "Warlock",
+      "classSource": "phb",
+      "subclassShortName": "Demon",
+      "subclassSource": "ToL",
+      "level": 1,
+      "header": 2,
+      "entries": [
+        " Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1). "
+      ]
+    },
+    {
+      "name": "Demon's Gambit",
+      "source": "ToL",
+      "className": "Warlock",
+      "classSource": "phb",
+      "subclassShortName": "Demon",
+      "subclassSource": "ToL",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a {@dice d10} to your roll. You can do so after seeing the initial roll but before any of the roll's effects occur. ",
+        "Once you use this feature, you can't use it again until you finish a short or long rest. "
+      ]
+    },
+    {
+      "name": "Demonic Endurance",
+      "source": "ToL",
+      "className": "Warlock",
+      "classSource": "phb",
+      "subclassShortName": "Demon",
+      "subclassSource": "ToL",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance. "
+      ]
+    },
+    {
+      "name": "Cast Into The Abyss",
+      "source": "ToL",
+      "className": "Warlock",
+      "classSource": "phb",
+      "subclassShortName": "Demon",
+      "subclassSource": "ToL",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        " Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the abyssal floors along the Anchor Chains. The creature disappears and hurtles through a nightmare landscape. ",
+        "At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes {@dice 10d10} psychic damage as it reels from its horrific experience. ",
+        "Once you use this feature, you can't use it again until you finish a long rest. "
+      ]
+    },
+    {
+      "name": "Circle of Wilderness",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Wilderness",
+      "subclassSource": "ToL",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "Druids of the Circle of Wilderness are fierce guardians of the wilds. They haunt the deepest parts of the wilderness, where they might go for weeks on end before crossing paths with another humanoid creature, let alone another druid. ",
+        " A druid of this circle might prowl as a great cat one night, soar over the treetops as an eagle the next day, and crash through the undergrowth in bear form to drive off a trespassing monster. The wild is in the druid's blood.  "
+      ]
+    },
+    {
+      "name": "Untamed Wild Shape",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Wilderness",
+      "subclassSource": "ToL",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        "You gain the ability to use {@classFeature Wild Shape|Druid||2} on your turn as a bonus action, rather than as an action.",
+        "Additionally, while you are transformed by {@classFeature Wild Shape|Druid||2}, you can use a bonus action to expend one spell slot to regain 1d8 hit points per level of the spell slot expended. "
+      ]
+    },
+    {
+      "name": "Circle Forms",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Wilderness",
+      "subclassSource": "ToL",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        "The rites of your circle grant you the ability to transform into more dangerous animal forms. Starting at 2nd level, you can use your {@classFeature Wild Shape|Druid||2} to transform into a beast with a challenge rating as high as 1 (you ignore the Max. CR column of the Beast Shapes table, but must abide by the other limitations there). ",
+        "Starting at 6th level, you can transform into a beast with a challenge rating as high as your druid level divided by 3, rounded down. ",
+        {
+          "type": "table",
+          "caption": "Circle of Wilderness Beast Shapes",
+          "colLabels": ["Level", "Max CR", "Limitations"],
+          "colStyles": ["col-1  text-center", "col-1 text-center", "col-8"],
+          "rows": [
+            ["2nd", "1", "No flying or swimming speed "],
+            ["4th", "1", "No flying speed"],
+            ["6th", "2", "No flying speed"],
+            ["8th", "2", "-"],
+            ["9th", "3", "-"],
+            ["12th", "4", "-"],
+            ["15th", "5", "-"],
+            ["18th", "6", "-"]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Natural Ferocity",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Wilderness",
+      "subclassSource": "ToL",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        "Starting at 6th level, your attacks in beast form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. "
+      ]
+    },
+    {
+      "name": "Primordial Avatar",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Wilderness",
+      "subclassSource": "ToL",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "At 10th level, you can expend two uses of {@classFeature Wild Shape|Druid||2} at the same time to transform into an air elemental, an earth elemental, a fire elemental, or a water elemental. "
+      ]
+    },
+    {
+      "name": "Natural Adaptation",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Wilderness",
+      "subclassSource": "ToL",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        "By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the {@spell Alter Self} spell at will. "
+      ]
     }
   ],
   "subclass": [
@@ -3859,11 +4050,11 @@
       "name": "Way of the Soul Guide",
       "subclassFeatures": [
         "Way of the Soul Guide|Monk||Soul Guide|ToL|3",
-        "Touch of Death|Monk||Soul Guide|ToL|3",
+        "Soul Touch|Monk||Soul Guide|ToL|3",
         "Guide of the Corrupt|Monk||Soul Guide|ToL|3",
-        "Hour of Reaping|Monk||Soul Guide|ToL|6",
-        "Mastery of Death|Monk||Soul Guide|ToL|11",
-        "Touch of the Wicked|Monk||Soul Guide|ToL|17"
+        "Eyes of Death |Monk||Soul Guide|ToL|6",
+        "Death's Ally |Monk||Soul Guide|ToL|11",
+        "Touch of the Corrupt |Monk||Soul Guide|ToL|17"
       ],
       "source": "ToL",
       "shortName": "Soul Guide",
@@ -4029,6 +4220,38 @@
       ],
       "className": "Soulburner",
       "classSource": "ToL"
+    },
+    {
+      "name": "The Demon",
+      "shortName": "Demon",
+      "startingLevel": 1,
+      "source": "ToL",
+      "subclassFeatures": [
+        "The Demon|Warlock|phb|Demon|ToL|1",
+        "Expaned Spell List|Warlock|phb|Demon|ToL|1",
+        "Demon's Gift|Warlock|phb|Demon|ToL|1",
+        "Demon's Gambit |Warlock|phb|Demon|ToL|6",
+        "Demonic Endurance |Warlock|phb|Demon|ToL|10",
+        "Cast Into The Abyss |Warlock|phb|Demon|ToL|14"
+      ],
+      "className": "Warlock",
+      "classSource": "phb"
+    },
+    {
+      "name": "Circle of Wilderness",
+      "shortName": "Wilderness",
+      "startingLevel": 2,
+      "source": "ToL",
+      "subclassFeatures": [
+        "Circle of Wilderness|Druid|phb|Wilderness|ToL|2",
+        "Untamed Wild Shape|Druid|phb|Wilderness|ToL|2",
+        "Circle Forms |Druid|phb|Wilderness|ToL|2",
+        "Natural Ferocity|Druid|phb|Wilderness|ToL|6",
+        "Primordial Avatar|Druid|phb|Wilderness|ToL|10",
+        "Natural Adaptation|Druid|phb|Wilderness|ToL|14"
+      ],
+      "className": "Druid",
+      "classSource": "phb"
     }
   ],
   "classFluff": [
@@ -7190,151 +7413,151 @@
       ]
     },
     {
-			"name": "Evermoor's Arcane Thread",
-			"level": 1,
-			"school": "C",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "self"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "hour",
-						"amount": 1
-					}
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Artificer",
-						"source": "TCE"
-					},
-					{
-						"name": "Warlock",
-						"source": "PHB"
-					},
-					{
-						"name": "Bard",
-						"source": "PHB"
-					}
-				],
-				"fromSubclass": [
-					{
-						"class": {
-							"name": "Rogue",
-							"source": "PHB"
-						},
-						"subclass": {
-							"name": "Arcane Trickster",
-							"shortName": "Arcane Trickster",
-							"source": "PHB"
-						}
-					}
-				]
-			},
-			"entries": [
-				"You conjure a nearly {@condition invisible}, magical thread of arcane energy that extends from your fingertips. The thread can be up to 90 feet long, and its presence is detectable only with a successful DC 20 Perception check or through magical means such as Detect Magic. This ethereal filament is as thin as a spider’s silk and appears almost ghostly, shimmering faintly under close inspection. Even with its extreme thin appearance, it is comfortable and easy to grip and climb. ",
-				"The Arcane Thread is incredibly resilient and can only be severed by a magical weapon or dispelled by Dispel magic. It can support objects up to 500 kilograms (1100 pounds), but if this weight limit is exceeded, the spell ends immediately, and the thread dissipates harmlessly. ",
-				"While the spell is active, you can use your bonus action to mentally command the thread, causing it to move 10 feet per turn or anchor itself to surfaces within 120 feet of you, as long as you have line of sight and no additional weight is affecting the thread. It can slide through small spaces, wrap around objects, or even tie itself into simple knots.",
-				"Additionally, as a bonus action, you can cause the thread to emit a soft, luminous glow, shedding dim light in a 5-foot radius. ",
-				"The thread remains in place for the duration, as long as you are within 120ft of it or until you dismiss it as a bonus action."
-			],
-			"source": "ToL",
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "A spool of fine silk thread worth 5 gold pieces, not consumed"
-			},
-			"meta": {
-				"ritual": true
-			}
-		},
-		{
-			"name": "Evermoor's Heightened Sense",
-			"level": 1,
-			"school": "T",
-			"time": [
-				{
-					"number": 1,
-					"unit": "action"
-				}
-			],
-			"range": {
-				"type": "point",
-				"distance": {
-					"type": "touch"
-				}
-			},
-			"duration": [
-				{
-					"type": "timed",
-					"duration": {
-						"type": "minute",
-						"amount": 10
-					}
-				}
-			],
-			"classes": {
-				"fromClassList": [
-					{
-						"name": "Wizard",
-						"source": "PHB"
-					},
-					{
-						"name": "Sorcerer",
-						"source": "PHB"
-					},
-					{
-						"name": "Druid",
-						"source": "PHB"
-					},
-					{
-						"name": "Ranger",
-						"source": "PHB"
-					}
-				]
-			},
-			"entries": [
-				"You touch a willing creature and heightened one of its senses for the duration of the spell. Choose one of the following effects; the target gains that effect until the spell ends.",
-				"{@bold Sight:}",
-				"\t• The target gains advantage on Wisdom (Perception) checks that rely on sight.",
-				"\t• In conditions of clear visibility, the target can discern details of distant creatures and objects as small as 2 feet across, even from hundreds of feet away.",
-				"\t• The target gains darkvision up to 120 feet. If the target already has darkvision, its range increases by 60 feet.",
-				"{@bold Hearing:}",
-				"\t• The target gains advantage on Wisdom (Perception) checks that rely on hearing.",
-				"\t• The target can detect sounds as quiet as a whisper up to 300 feet away, allowing it to pick up conversations or the faintest of noises with ease.",
-				"\t• The target gains blindsight out to a range of 30 feet, allowing it to perceive its surroundings without sight, provided the sounds are not completely muffled.",
-				"{@bold Smell:}",
-				"\t• The target gains advantage on Wisdom (Perception) checks that rely on smell.",
-				"\t• The target can identify scents and track creatures or objects by smell within a 120-foot radius, even discerning subtle differences between similar odors.",
-				"\t• The target can detect the presence of {@condition invisible} or hidden creatures within 30 feet as long as they have a distinguishable scent."
-			],
-			"source": "ToL",
-			"components": {
-				"v": true,
-				"s": true,
-				"m": "A small feather from an eagle, a tiny silver bell, or a dried flower petal, depending on the sense being enhanced, not consumed"
-			}
-		}
+      "name": "Evermoor's Arcane Thread",
+      "level": 1,
+      "school": "C",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "self"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "hour",
+            "amount": 1
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Artificer",
+            "source": "TCE"
+          },
+          {
+            "name": "Warlock",
+            "source": "PHB"
+          },
+          {
+            "name": "Bard",
+            "source": "PHB"
+          }
+        ],
+        "fromSubclass": [
+          {
+            "class": {
+              "name": "Rogue",
+              "source": "PHB"
+            },
+            "subclass": {
+              "name": "Arcane Trickster",
+              "shortName": "Arcane Trickster",
+              "source": "PHB"
+            }
+          }
+        ]
+      },
+      "entries": [
+        "You conjure a nearly {@condition invisible}, magical thread of arcane energy that extends from your fingertips. The thread can be up to 90 feet long, and its presence is detectable only with a successful DC 20 Perception check or through magical means such as Detect Magic. This ethereal filament is as thin as a spider’s silk and appears almost ghostly, shimmering faintly under close inspection. Even with its extreme thin appearance, it is comfortable and easy to grip and climb. ",
+        "The Arcane Thread is incredibly resilient and can only be severed by a magical weapon or dispelled by Dispel magic. It can support objects up to 500 kilograms (1100 pounds), but if this weight limit is exceeded, the spell ends immediately, and the thread dissipates harmlessly. ",
+        "While the spell is active, you can use your bonus action to mentally command the thread, causing it to move 10 feet per turn or anchor itself to surfaces within 120 feet of you, as long as you have line of sight and no additional weight is affecting the thread. It can slide through small spaces, wrap around objects, or even tie itself into simple knots.",
+        "Additionally, as a bonus action, you can cause the thread to emit a soft, luminous glow, shedding dim light in a 5-foot radius. ",
+        "The thread remains in place for the duration, as long as you are within 120ft of it or until you dismiss it as a bonus action."
+      ],
+      "source": "ToL",
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "A spool of fine silk thread worth 5 gold pieces, not consumed"
+      },
+      "meta": {
+        "ritual": true
+      }
+    },
+    {
+      "name": "Evermoor's Heightened Sense",
+      "level": 1,
+      "school": "T",
+      "time": [
+        {
+          "number": 1,
+          "unit": "action"
+        }
+      ],
+      "range": {
+        "type": "point",
+        "distance": {
+          "type": "touch"
+        }
+      },
+      "duration": [
+        {
+          "type": "timed",
+          "duration": {
+            "type": "minute",
+            "amount": 10
+          }
+        }
+      ],
+      "classes": {
+        "fromClassList": [
+          {
+            "name": "Wizard",
+            "source": "PHB"
+          },
+          {
+            "name": "Sorcerer",
+            "source": "PHB"
+          },
+          {
+            "name": "Druid",
+            "source": "PHB"
+          },
+          {
+            "name": "Ranger",
+            "source": "PHB"
+          }
+        ]
+      },
+      "entries": [
+        "You touch a willing creature and heightened one of its senses for the duration of the spell. Choose one of the following effects; the target gains that effect until the spell ends.",
+        "{@bold Sight:}",
+        "\t• The target gains advantage on Wisdom (Perception) checks that rely on sight.",
+        "\t• In conditions of clear visibility, the target can discern details of distant creatures and objects as small as 2 feet across, even from hundreds of feet away.",
+        "\t• The target gains darkvision up to 120 feet. If the target already has darkvision, its range increases by 60 feet.",
+        "{@bold Hearing:}",
+        "\t• The target gains advantage on Wisdom (Perception) checks that rely on hearing.",
+        "\t• The target can detect sounds as quiet as a whisper up to 300 feet away, allowing it to pick up conversations or the faintest of noises with ease.",
+        "\t• The target gains blindsight out to a range of 30 feet, allowing it to perceive its surroundings without sight, provided the sounds are not completely muffled.",
+        "{@bold Smell:}",
+        "\t• The target gains advantage on Wisdom (Perception) checks that rely on smell.",
+        "\t• The target can identify scents and track creatures or objects by smell within a 120-foot radius, even discerning subtle differences between similar odors.",
+        "\t• The target can detect the presence of {@condition invisible} or hidden creatures within 30 feet as long as they have a distinguishable scent."
+      ],
+      "source": "ToL",
+      "components": {
+        "v": true,
+        "s": true,
+        "m": "A small feather from an eagle, a tiny silver bell, or a dried flower petal, depending on the sense being enhanced, not consumed"
+      }
+    }
   ],
   "monster": [
     {
@@ -15030,967 +15253,721 @@
       "damageTags": ["B", "P", "S"],
       "savingThrowForced": ["strength"]
     },
-		{
-			"name": "Malgrinner",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": {
-					"choose": [
-						"fiend",
-						"Demon"
-					]
-				}
-			},
-			"source": "ToL",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 17,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "11d8 + 44",
-				"average": 93
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 12,
-			"dex": 20,
-			"con": 18,
-			"int": 16,
-			"wis": 14,
-			"cha": 22,
-			"passive": 16,
-			"cr": "9",
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"senseTags": [
-				"SD"
-			],
-			"languages": [
-				"Common",
-				"Abyssal"
-			],
-			"languageTags": [
-				"C",
-				"AB"
-			],
-			"save": {
-				"con": "+8",
-				"cha": "+10"
-			},
-			"skill": {
-				"deception": "+10",
-				"perception": "+6",
-				"performance": "+14",
-				"insight": "+6",
-				"arcana": "+7",
-				"stealth": "+9",
-				"sleight of hand": "+9"
-			},
-			"resist": [
-				"cold",
-				"fire",
-				"lightning",
-				"poison"
-			],
-			"conditionImmune": [
-				"poisoned"
-			],
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The Malgrinner's innate spellcasting ability is Charisma (spell save {@dc 18}, +10 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
-					],
-					"will": [
-						"{@spell detect magic}",
-						"{@spell detect thoughts}"
-					],
-					"daily": {
-						"1": [
-							"{@spell dimension door}",
-							"{@spell plane shift} (Self Only)",
-							"{@spell summon greater demon|XGE}"
-						],
-						"4": [
-							"{@spell counterspell}",
-							"{@spell dispel magic}",
-							"{@spell fear}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"traitTags": [
-				"Magic Resistance",
-				"Shapechanger"
-			],
-			"trait": [
-				{
-					"name": "Shapechange",
-					"entries": [
-						"The Malgrinner can use its action to polymorph into a small or medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
-					]
-				},
-				{
-					"name": "Invisible Passage",
-					"entries": [
-						"The Malgrinner magically turns {@condition invisible} until it attacks or casts a spell, or until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell). While {@condition invisible}, it leaves no physical evidence of its passage, so it can be tracked only by magic. Any equipment it wears or carries is {@condition invisible} with it."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The malgrinner has advantage on saving throws against spells and other magical effects."
-					]
-				}
-			],
-			"conditionInflict": [
-				"invisible",
-				"poisoned"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The Malgrinner makes two attacks with its poison dagger. After those attacks the Malgrinner uses its Invisible Passage ability"
-					]
-				},
-				{
-					"name": "Poison Dagger",
-					"entries": [
-						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage, plus 10 ({@damage 3d6}) poison damage. The Target must succeed on a {@dc 18} Constitution saving throw or be {@condition poisoned} for 1 minute. The {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MW",
-				"MLW"
-			],
-			"damageTags": [
-				"I",
-				"P"
-			],
-			"damageTagsSpell": [
-				"O"
-			],
-			"savingThrowForced": [
-				"constitution"
-			],
-			"savingThrowForcedSpell": [
-				"charisma",
-				"wisdom"
-			]
-		},
-		{
-			"name": "Malkris",
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": {
-					"choose": [
-						"fiend",
-						"Demon"
-					]
-				}
-			},
-			"source": "ToL",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"unarmored defense"
-					]
-				}
-			],
-			"hp": {
-				"formula": "7d8 + 14",
-				"average": 45
-			},
-			"speed": {
-				"walk": 50
-			},
-			"str": 14,
-			"dex": 18,
-			"con": 14,
-			"int": 6,
-			"wis": 16,
-			"cha": 6,
-			"passive": 17,
-			"cr": "3",
-			"languages": [
-				"Understands Abyssal but can't speak"
-			],
-			"languageTags": [
-				"AB",
-				"CS"
-			],
-			"skill": {
-				"perception": "+7"
-			},
-			"trait": [
-				{
-					"name": "Bladed Body",
-					"entries": [
-						"Any creature that makes a melee attack against the Malkris takes {@damage 1d6} slashing damage from touching the blades on its body."
-					]
-				},
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"The malkris has advantage on an attack roll against a creature if at least one of the malkris's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
-					]
-				}
-			],
-			"traitTags": [
-				"Pack Tactics"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The Malkris makes one bite attack and two claw attacks."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 4}) piercing damage. The target must make a {@dc 13} Constitution saving throw or take 5 ({@damage 1d10}) acid damage"
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 4}) slashing damage."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"damageTags": [
-				"A",
-				"P",
-				"S"
-			],
-			"savingThrowForced": [
-				"constitution"
-			]
-		},
-		{
-			"name": "Xylokra",
-			"size": [
-				"L"
-			],
-			"type": "aberration",
-			"source": "ToL",
-			"alignment": [
-				"N",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "20d10 + 80",
-				"average": 190
-			},
-			"speed": {
-				"fly": {
-					"number": 40,
-					"condition": "Hover"
-				},
-				"canHover": true
-			},
-			"str": 10,
-			"dex": 14,
-			"con": 18,
-			"int": 26,
-			"wis": 20,
-			"cha": 17,
-			"passive": 27,
-			"cr": "20",
-			"languages": [
-				"Deep Speech",
-				"Telepathy 240ft"
-			],
-			"languageTags": [
-				"DS"
-			],
-			"senses": [
-				"truesight 120 ft."
-			],
-			"senseTags": [
-				"U"
-			],
-			"save": {
-				"con": "+10",
-				"int": "+14",
-				"wis": "+11",
-				"cha": "+9"
-			},
-			"skill": {
-				"arcana": "+20",
-				"intimidation": "+9",
-				"perception": "+17"
-			},
-			"resist": [
-				"acid",
-				"cold",
-				"force"
-			],
-			"immune": [
-				"psychic",
-				{
-					"immune": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"poisoned",
-				"prone",
-				"stunned"
-			],
-			"trait": [
-				{
-					"name": "Psychic Impact.",
-					"entries": [
-						"When the Xylokra deals Force damage to a creature. The creature has to succeed a {@dc 22} Intelligence saving throw or take additional 16 ({@damage 3d10}) Psychic damage."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The xylokra has advantage on saving throws against spells and other magical effects."
-					]
-				},
-				{
-					"name": "Tentacle Sacrifice.",
-					"entries": [
-						"The Xylokra has 5 Tentacles. Whenever it fails a saving throw, it can choose to lose one of its tentacles to succeed on the save instead."
-					]
-				},
-				{
-					"name": "Regrow Tentacle (Regrow 6).",
-					"entries": [
-						"If the Xylokra loses one or more of its Tentacles. At the end of each of its turns roll a {@dice d6}. On a 6 it regrows a Tentacle together with 20 hit points."
-					]
-				},
-				{
-					"name": "Death Burst.",
-					"entries": [
-						"When the Xylokra dies, it explodes in a burst of a Psychic screech that appears in every creature's head that within 240ft. Each creature within 240 ft. of it must make a {@dc 22} Intelligence saving throw, taking 27 ({@damage 5d10}) Psychic damage on a failed save, or half as much damage on a successful one."
-					]
-				}
-			],
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"action": [
-				{
-					"name": "Multiattack.",
-					"entries": [
-						"The Xylokra makes up to five attacks using its tentacle beams, 3 Tentacle beams and Intense Observation or 2 Tentacle beams and Psychic Elimination. "
-					]
-				},
-				{
-					"name": "Tentacle beam.",
-					"entries": [
-						"{@atk rs} {@hit 14} to hit, range 120/300 ft., one target. {@h}15 ({@damage 2d6 + 8}) Force damage.",
-						"The target must make a saving throw for Psychic Impact"
-					]
-				},
-				{
-					"name": "Psychic Elimination {@recharge 5}",
-					"entries": [
-						"The Xylokra gathers its tentacles in front of its eye. Shooting out a translucent beam in a 120-foot cone. Each creature in that area must make a {@dc 22} Intelligence saving throw, taking 55 ({@damage 10d10}) force damage plus 5 for each tentacle that it uses on a failed save or half as much damage on a successful one"
-					]
-				},
-				{
-					"name": "Intense observation.",
-					"entries": [
-						"The Xylokra focuses its arcane eye on a creature it can see within 120 feet of it. The Xylokra intensely observes the target for 6 seconds (1 round). The target must succeed on a {@dc 22} Intelligence saving throw or the Xylokra learns about the target's vulnerabilities, resistances, immunities, abilities, and whether it poses a threat to the Xylokra. On a successful save, the target is unaffected. A creature that successfully saves against this ability can't be affected by it again for 24 hours."
-					]
-				}
-			],
-			"miscTags": [
-				"RA",
-				"AOE"
-			],
-			"bonus": [
-				{
-					"name": "Astral Shift.",
-					"entries": [
-						"As a bonus action, the Xylokra can teleport up to 60 feet to an unoccupied space it can see"
-					]
-				}
-			],
-			"reaction": [
-				{
-					"name": "Tentacle shielding",
-					"entries": [
-						"As a reaction the Xylokra raises a tentacle to block an incoming attack. Raising its AC by 5 against a melee or range attack that would hit it. This is essentially the Xylokra summoning a shield spell on that individual tentacle"
-					]
-				}
-			],
-			"reactionHeader": [
-				"The Xylokra has the same amount of reactions as tentacles. For each Tentacle that it loses, it loses a reaction.",
-				"Each Xylokra naturally have 5 tentacles. "
-			],
-			"legendaryActions": 5,
-			"legendaryHeader": [
-				"The xylokra can take 1 legendary action for each tentacle it currently has, (standard 5) choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The xylokra regains spent legendary actions at the start of its turn."
-			],
-			"legendary": [
-				{
-					"name": "Tentacle Beam (Costs 1 Action)",
-					"entries": [
-						"The Xylokra makes a Tentacle beam attack"
-					]
-				},
-				{
-					"name": "Astral Shift (Costs 2 Actions)",
-					"entries": [
-						"The Xylokra uses its Astral Shift ability."
-					]
-				},
-				{
-					"name": "Mind Flare (Costs 3 Actions).",
-					"entries": [
-						"The Xylokra releases a pulse of psychic energy in a 30-foot radius centered on itself. Each creature in that area must make a {@dc 22} Intelligence saving throw, taking 22 ({@damage 4d10}) psychic damage on a failed save or half as much damage on a successful one."
-					]
-				}
-			],
-			"legendaryGroup": {
-				"name": "Xylokra",
-				"source": "ToL"
-			},
-			"damageTags": [
-				"O",
-				"Y"
-			],
-			"damageTagsLegendary": [
-				"O"
-			],
-			"savingThrowForced": [
-				"intelligence"
-			]
-		},
-		{
-			"name": "Vepus Scout",
-			"size": [
-				"M"
-			],
-			"type": "humanoid",
-			"source": "ToL",
-			"alignment": [
-				"C",
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 15,
-					"from": [
-						"{@item studded leather armor|phb}"
-					]
-				}
-			],
-			"hp": {
-				"formula": "3d8 + 3",
-				"average": 16
-			},
-			"speed": {
-				"walk": 35
-			},
-			"str": 8,
-			"dex": 16,
-			"con": 12,
-			"int": 12,
-			"wis": 12,
-			"cha": 10,
-			"passive": 13,
-			"cr": "1/2",
-			"senses": [
-				"darkvision 60 ft."
-			],
-			"senseTags": [
-				"D"
-			],
-			"languages": [
-				"Vepus"
-			],
-			"skill": {
-				"perception": "+3",
-				"stealth": "+5"
-			},
-			"trait": [
-				{
-					"name": "Nimble Escape",
-					"entries": [
-						"The vepus scout can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns."
-					]
-				},
-				{
-					"name": "Pack Tactics",
-					"entries": [
-						"The vepus scout has advantage on an attack roll against a creature if at least one of the vepus scout's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
-					]
-				},
-				{
-					"name": "Thin Frame",
-					"entries": [
-						"You can squeeze through spaces as if you were a Small creature."
-					]
-				}
-			],
-			"traitTags": [
-				"Pack Tactics"
-			],
-			"resist": [
-				"poison"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The Vepus Scout makes two attacks"
-					]
-				},
-				{
-					"name": "Scimitar",
-					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) damage."
-					]
-				},
-				{
-					"name": "Light Crossbow",
-					"entries": [
-						"{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MW",
-				"MLW",
-				"RW",
-				"RNG"
-			],
-			"attachedItems": [
-				"light crossbow|phb",
-				"scimitar|phb"
-			]
-		},
-		{
-			"name": "The Soul Shepherds",
-			"size": [
-				"M"
-			],
-			"type": "celestial",
-			"source": "ToL",
-			"alignment": [
-				"L",
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 18,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "16d8 + 80",
-				"average": 152
-			},
-			"speed": {
-				"walk": 30,
-				"fly": 90
-			},
-			"str": 20,
-			"dex": 18,
-			"con": 20,
-			"int": 17,
-			"wis": 22,
-			"cha": 20,
-			"passive": 26,
-			"cr": "14",
-			"senses": [
-				"darkvision 120 ft.",
-				"truesight 30 ft."
-			],
-			"senseTags": [
-				"SD",
-				"U"
-			],
-			"languages": [
-				"All",
-				"Telepathy 120ft"
-			],
-			"save": {
-				"str": "+10",
-				"wis": "+11",
-				"cha": "+10"
-			},
-			"skill": {
-				"insight": "+11",
-				"perception": "+16",
-				"survival": "+11"
-			},
-			"resist": [
-				"necrotic",
-				"radiant",
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from nonmagical attacks",
-					"cond": true
-				}
-			],
-			"conditionImmune": [
-				"charmed",
-				"frightened",
-				"stunned"
-			],
-			"trait": [
-				{
-					"name": "Angelic Weapons",
-					"entries": [
-						"The soul shepherd's weapon attacks are magical. When the soul shepherd hits with any weapon, the weapon deals an extra {@damage 4d8} radiant damage (included in the attack)."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The the soul shepherds has advantage on saving throws against spells and other magical effects."
-					]
-				}
-			],
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The soul shepherd's spellcasting ability is Wisdom (spell save {@dc 19}, +11 to hit with spell attack). The soul shepherd can innately cast the following spells, requiring no material components:"
-					],
-					"will": [
-						"{@spell detect evil and good}",
-						"{@spell detect thoughts}"
-					],
-					"daily": {
-						"1": [
-							"{@spell commune}",
-							"{@spell raise dead}"
-						],
-						"3": [
-							"{@spell cure wounds}",
-							"{@spell lesser restoration}",
-							"{@spell remove curse}"
-						]
-					},
-					"ability": "wis",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"traitTags": [
-				"Magic Resistance"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The soul shepherd makes two Mace attacks or uses Ethereal Bolt twice. As well as Teleport on their turn. In no specific order"
-					]
-				},
-				{
-					"name": "Mace",
-					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 5}) bludgeoning damage plus 13 ({@damage 4d6}) radiant damage."
-					]
-				},
-				{
-					"name": "Ethereal Bolt",
-					"entries": [
-						"{@atk rs} {@hit 10} to hit, range 120 ft., one target. {@h}22 ({@damage 4d8 + 6}) radiant damage."
-					]
-				},
-				{
-					"name": "Teleport",
-					"entries": [
-						"The soul shepherd magically teleports, along with any equipment it is wearing or carrying, up to 90 feet to an unoccupied space it can see."
-					]
-				},
-				{
-					"name": "Healing Touch (3/Day)",
-					"entries": [
-						"The soul shepherd touches a creature. The target magically regains 20 ({@dice 4d8 + 6}) hit points and is freed from any curse, disease, poison, blindness, or deafness."
-					]
-				},
-				{
-					"name": "Guiding Light {@recharge 5}",
-					"entries": [
-						"The soul shepherd emits a radiant burst of energy in a 30-foot radius. Each creature in that area must make a {@dc 19} Wisdom saving throw, taking 28 ({@damage 8d6}) radiant damage on a failed save, or half as much damage on a successful one. Undead and fiends have disadvantage on this saving throw."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack",
-				"Teleport"
-			],
-			"miscTags": [
-				"MW",
-				"MLW",
-				"RA",
-				"AOE"
-			],
-			"attachedItems": [
-				"mace|phb"
-			],
-			"damageTags": [
-				"B",
-				"R"
-			],
-			"savingThrowForced": [
-				"wisdom"
-			],
-			"savingThrowForcedSpell": [
-				"wisdom"
-			]
-		},
-		{
-			"name": "Fragment of the Red Priest",
-			"size": [
-				"M"
-			],
-			"type": "undead",
-			"source": "ToL",
-			"alignment": [
-				"N"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "16d8 + 64",
-				"average": 136
-			},
-			"speed": {
-				"walk": 0,
-				"fly": {
-					"number": 50,
-					"condition": "hover"
-				},
-				"canHover": true
-			},
-			"str": 7,
-			"dex": 18,
-			"con": 18,
-			"int": 17,
-			"wis": 17,
-			"cha": 22,
-			"passive": 17,
-			"cr": "10",
-			"senses": [
-				"darkvision 120 ft."
-			],
-			"senseTags": [
-				"SD"
-			],
-			"languages": [
-				"All"
-			],
-			"save": {
-				"dex": "+8",
-				"wis": "+7",
-				"cha": "+10"
-			},
-			"skill": {
-				"arcana": "+11",
-				"deception": "+10",
-				"religion": "+11",
-				"insight": "+7",
-				"persuasion": "+10",
-				"stealth": "+8",
-				"perception": "+7"
-			},
-			"resist": [
-				"acid",
-				"fire",
-				"lightning",
-				"thunder",
-				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
-					"note": "from Nonmagical Attacks",
-					"cond": true
-				}
-			],
-			"immune": [
-				"cold",
-				"necrotic",
-				"poison"
-			],
-			"conditionImmune": [
-				"charmed",
-				"exhaustion",
-				"frightened",
-				"grappled",
-				"paralyzed",
-				"petrified",
-				"poisoned",
-				"prone",
-				"restrained"
-			],
-			"trait": [
-				{
-					"name": "Incorporeal Movement",
-					"entries": [
-						"The fragment of the red priest can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@dice 1d10}) force damage if it ends its turn inside an object."
-					]
-				},
-				{
-					"name": "Turn Immunity",
-					"entries": [
-						"The fragment of the red priest is immune to effects that turn undead."
-					]
-				},
-				{
-					"name": "Magic Resistance",
-					"entries": [
-						"The fragment of the red priest has advantage on saving throws against spells and other magical effects."
-					]
-				}
-			],
-			"traitTags": [
-				"Incorporeal Movement",
-				"Magic Resistance",
-				"Turn Immunity"
-			],
-			"spellcasting": [
-				{
-					"name": "Innate Spellcasting",
-					"headerEntries": [
-						"The Fragment’s innate spellcasting ability is Charisma (spell save {@dc 18}). It can innately cast the following spells, requiring no material components:"
-					],
-					"will": [
-						"{@spell charm person}",
-						"{@spell command}",
-						"{@spell detect thoughts}"
-					],
-					"daily": {
-						"3e": [
-							"{@spell dominate person}",
-							"{@spell hold person}",
-							"{@spell phantasmal killer}"
-						],
-						"1e": [
-							"{@spell dominate monster}",
-							"{@spell feeblemind}"
-						]
-					},
-					"ability": "cha",
-					"type": "spellcasting"
-				}
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The Fragment makes two Spectral Claw attacks or uses its Possession."
-					]
-				},
-				{
-					"name": "Spectral Claw.",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) necrotic damage."
-					]
-				},
-				{
-					"name": "Possession (Recharge 5-6).",
-					"entries": [
-						"The Fragment of the Red Priest targets one humanoid that it can see within 30 feet of it. The target must succeed on a {@dc 17} Charisma saving throw or be possessed by the Fragment; the Fragment then disappears, and the target is {@condition incapacitated} and loses control of its body. The Fragment now controls the body but doesn't deprive the target of awareness. The Fragment can't be targeted by any attack, spell, or other effect, and it retains its alignment, Intelligence, Wisdom, and Charisma. It otherwise uses the possessed target's statistics but doesn't gain access to the target's knowledge, class features, or proficiencies.",
-						"The possession lasts until the body drops to 0 hit points, the Fragment ends it as a bonus action, or the Fragment is forced out by an effect like the dispel evil and good spell. When the possession ends, the Fragment reappears in an unoccupied space within 5 feet of the body. The target is immune to this Fragment's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
-					]
-				}
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"incapacitated"
-			],
-			"damageTags": [
-				"N",
-				"O"
-			],
-			"damageTagsSpell": [
-				"Y"
-			],
-			"savingThrowForced": [
-				"charisma"
-			],
-			"savingThrowForcedSpell": [
-				"intelligence",
-				"wisdom"
-			]
-		}
+    {
+      "name": "Malgrinner",
+      "size": ["M"],
+      "type": {
+        "type": {
+          "choose": ["fiend", "Demon"]
+        }
+      },
+      "source": "ToL",
+      "alignment": ["C", "E"],
+      "ac": [
+        {
+          "ac": 17,
+          "from": ["natural armor"]
+        }
+      ],
+      "hp": {
+        "formula": "11d8 + 44",
+        "average": 93
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 12,
+      "dex": 20,
+      "con": 18,
+      "int": 16,
+      "wis": 14,
+      "cha": 22,
+      "passive": 16,
+      "cr": "9",
+      "senses": ["darkvision 120 ft."],
+      "senseTags": ["SD"],
+      "languages": ["Common", "Abyssal"],
+      "languageTags": ["C", "AB"],
+      "save": {
+        "con": "+8",
+        "cha": "+10"
+      },
+      "skill": {
+        "deception": "+10",
+        "perception": "+6",
+        "performance": "+14",
+        "insight": "+6",
+        "arcana": "+7",
+        "stealth": "+9",
+        "sleight of hand": "+9"
+      },
+      "resist": ["cold", "fire", "lightning", "poison"],
+      "conditionImmune": ["poisoned"],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The Malgrinner's innate spellcasting ability is Charisma (spell save {@dc 18}, +10 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": ["{@spell detect magic}", "{@spell detect thoughts}"],
+          "daily": {
+            "1": [
+              "{@spell dimension door}",
+              "{@spell plane shift} (Self Only)",
+              "{@spell summon greater demon|XGE}"
+            ],
+            "4": [
+              "{@spell counterspell}",
+              "{@spell dispel magic}",
+              "{@spell fear}"
+            ]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": ["I"],
+      "traitTags": ["Magic Resistance", "Shapechanger"],
+      "trait": [
+        {
+          "name": "Shapechange",
+          "entries": [
+            "The Malgrinner can use its action to polymorph into a small or medium humanoid, or back into its true form. Its statistics, other than its size, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+          ]
+        },
+        {
+          "name": "Invisible Passage",
+          "entries": [
+            "The Malgrinner magically turns {@condition invisible} until it attacks or casts a spell, or until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell). While {@condition invisible}, it leaves no physical evidence of its passage, so it can be tracked only by magic. Any equipment it wears or carries is {@condition invisible} with it."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The malgrinner has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "conditionInflict": ["invisible", "poisoned"],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Malgrinner makes two attacks with its poison dagger. After those attacks the Malgrinner uses its Invisible Passage ability"
+          ]
+        },
+        {
+          "name": "Poison Dagger",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) piercing damage, plus 10 ({@damage 3d6}) poison damage. The Target must succeed on a {@dc 18} Constitution saving throw or be {@condition poisoned} for 1 minute. The {@condition poisoned} creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "actionTags": ["Multiattack"],
+      "miscTags": ["MW", "MLW"],
+      "damageTags": ["I", "P"],
+      "damageTagsSpell": ["O"],
+      "savingThrowForced": ["constitution"],
+      "savingThrowForcedSpell": ["charisma", "wisdom"]
+    },
+    {
+      "name": "Malkris",
+      "size": ["M"],
+      "type": {
+        "type": {
+          "choose": ["fiend", "Demon"]
+        }
+      },
+      "source": "ToL",
+      "alignment": ["N"],
+      "ac": [
+        {
+          "ac": 15,
+          "from": ["unarmored defense"]
+        }
+      ],
+      "hp": {
+        "formula": "7d8 + 14",
+        "average": 45
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 14,
+      "dex": 18,
+      "con": 14,
+      "int": 6,
+      "wis": 16,
+      "cha": 6,
+      "passive": 17,
+      "cr": "3",
+      "languages": ["Understands Abyssal but can't speak"],
+      "languageTags": ["AB", "CS"],
+      "skill": {
+        "perception": "+7"
+      },
+      "trait": [
+        {
+          "name": "Bladed Body",
+          "entries": [
+            "Any creature that makes a melee attack against the Malkris takes {@damage 1d6} slashing damage from touching the blades on its body."
+          ]
+        },
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The malkris has advantage on an attack roll against a creature if at least one of the malkris's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+          ]
+        }
+      ],
+      "traitTags": ["Pack Tactics"],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": ["The Malkris makes one bite attack and two claw attacks."]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d10 + 4}) piercing damage. The target must make a {@dc 13} Constitution saving throw or take 5 ({@damage 1d10}) acid damage"
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 4}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": ["Multiattack"],
+      "miscTags": ["MW"],
+      "damageTags": ["A", "P", "S"],
+      "savingThrowForced": ["constitution"]
+    },
+    {
+      "name": "Xylokra",
+      "size": ["L"],
+      "type": "aberration",
+      "source": "ToL",
+      "alignment": ["N", "E"],
+      "ac": [
+        {
+          "ac": 18,
+          "from": ["natural armor"]
+        }
+      ],
+      "hp": {
+        "formula": "20d10 + 80",
+        "average": 190
+      },
+      "speed": {
+        "fly": {
+          "number": 40,
+          "condition": "Hover"
+        },
+        "canHover": true
+      },
+      "str": 10,
+      "dex": 14,
+      "con": 18,
+      "int": 26,
+      "wis": 20,
+      "cha": 17,
+      "passive": 27,
+      "cr": "20",
+      "languages": ["Deep Speech", "Telepathy 240ft"],
+      "languageTags": ["DS"],
+      "senses": ["truesight 120 ft."],
+      "senseTags": ["U"],
+      "save": {
+        "con": "+10",
+        "int": "+14",
+        "wis": "+11",
+        "cha": "+9"
+      },
+      "skill": {
+        "arcana": "+20",
+        "intimidation": "+9",
+        "perception": "+17"
+      },
+      "resist": ["acid", "cold", "force"],
+      "immune": [
+        "psychic",
+        {
+          "immune": ["bludgeoning", "piercing", "slashing"],
+          "note": "from nonmagical attacks",
+          "cond": true
+        }
+      ],
+      "conditionImmune": ["poisoned", "prone", "stunned"],
+      "trait": [
+        {
+          "name": "Psychic Impact.",
+          "entries": [
+            "When the Xylokra deals Force damage to a creature. The creature has to succeed a {@dc 22} Intelligence saving throw or take additional 16 ({@damage 3d10}) Psychic damage."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The xylokra has advantage on saving throws against spells and other magical effects."
+          ]
+        },
+        {
+          "name": "Tentacle Sacrifice.",
+          "entries": [
+            "The Xylokra has 5 Tentacles. Whenever it fails a saving throw, it can choose to lose one of its tentacles to succeed on the save instead."
+          ]
+        },
+        {
+          "name": "Regrow Tentacle (Regrow 6).",
+          "entries": [
+            "If the Xylokra loses one or more of its Tentacles. At the end of each of its turns roll a {@dice d6}. On a 6 it regrows a Tentacle together with 20 hit points."
+          ]
+        },
+        {
+          "name": "Death Burst.",
+          "entries": [
+            "When the Xylokra dies, it explodes in a burst of a Psychic screech that appears in every creature's head that within 240ft. Each creature within 240 ft. of it must make a {@dc 22} Intelligence saving throw, taking 27 ({@damage 5d10}) Psychic damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "traitTags": ["Magic Resistance"],
+      "action": [
+        {
+          "name": "Multiattack.",
+          "entries": [
+            "The Xylokra makes up to five attacks using its tentacle beams, 3 Tentacle beams and Intense Observation or 2 Tentacle beams and Psychic Elimination. "
+          ]
+        },
+        {
+          "name": "Tentacle beam.",
+          "entries": [
+            "{@atk rs} {@hit 14} to hit, range 120/300 ft., one target. {@h}15 ({@damage 2d6 + 8}) Force damage.",
+            "The target must make a saving throw for Psychic Impact"
+          ]
+        },
+        {
+          "name": "Psychic Elimination {@recharge 5}",
+          "entries": [
+            "The Xylokra gathers its tentacles in front of its eye. Shooting out a translucent beam in a 120-foot cone. Each creature in that area must make a {@dc 22} Intelligence saving throw, taking 55 ({@damage 10d10}) force damage plus 5 for each tentacle that it uses on a failed save or half as much damage on a successful one"
+          ]
+        },
+        {
+          "name": "Intense observation.",
+          "entries": [
+            "The Xylokra focuses its arcane eye on a creature it can see within 120 feet of it. The Xylokra intensely observes the target for 6 seconds (1 round). The target must succeed on a {@dc 22} Intelligence saving throw or the Xylokra learns about the target's vulnerabilities, resistances, immunities, abilities, and whether it poses a threat to the Xylokra. On a successful save, the target is unaffected. A creature that successfully saves against this ability can't be affected by it again for 24 hours."
+          ]
+        }
+      ],
+      "miscTags": ["RA", "AOE"],
+      "bonus": [
+        {
+          "name": "Astral Shift.",
+          "entries": [
+            "As a bonus action, the Xylokra can teleport up to 60 feet to an unoccupied space it can see"
+          ]
+        }
+      ],
+      "reaction": [
+        {
+          "name": "Tentacle shielding",
+          "entries": [
+            "As a reaction the Xylokra raises a tentacle to block an incoming attack. Raising its AC by 5 against a melee or range attack that would hit it. This is essentially the Xylokra summoning a shield spell on that individual tentacle"
+          ]
+        }
+      ],
+      "reactionHeader": [
+        "The Xylokra has the same amount of reactions as tentacles. For each Tentacle that it loses, it loses a reaction.",
+        "Each Xylokra naturally have 5 tentacles. "
+      ],
+      "legendaryActions": 5,
+      "legendaryHeader": [
+        "The xylokra can take 1 legendary action for each tentacle it currently has, (standard 5) choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The xylokra regains spent legendary actions at the start of its turn."
+      ],
+      "legendary": [
+        {
+          "name": "Tentacle Beam (Costs 1 Action)",
+          "entries": ["The Xylokra makes a Tentacle beam attack"]
+        },
+        {
+          "name": "Astral Shift (Costs 2 Actions)",
+          "entries": ["The Xylokra uses its Astral Shift ability."]
+        },
+        {
+          "name": "Mind Flare (Costs 3 Actions).",
+          "entries": [
+            "The Xylokra releases a pulse of psychic energy in a 30-foot radius centered on itself. Each creature in that area must make a {@dc 22} Intelligence saving throw, taking 22 ({@damage 4d10}) psychic damage on a failed save or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "legendaryGroup": {
+        "name": "Xylokra",
+        "source": "ToL"
+      },
+      "damageTags": ["O", "Y"],
+      "damageTagsLegendary": ["O"],
+      "savingThrowForced": ["intelligence"]
+    },
+    {
+      "name": "Vepus Scout",
+      "size": ["M"],
+      "type": "humanoid",
+      "source": "ToL",
+      "alignment": ["C", "N"],
+      "ac": [
+        {
+          "ac": 15,
+          "from": ["{@item studded leather armor|phb}"]
+        }
+      ],
+      "hp": {
+        "formula": "3d8 + 3",
+        "average": 16
+      },
+      "speed": {
+        "walk": 35
+      },
+      "str": 8,
+      "dex": 16,
+      "con": 12,
+      "int": 12,
+      "wis": 12,
+      "cha": 10,
+      "passive": 13,
+      "cr": "1/2",
+      "senses": ["darkvision 60 ft."],
+      "senseTags": ["D"],
+      "languages": ["Vepus"],
+      "skill": {
+        "perception": "+3",
+        "stealth": "+5"
+      },
+      "trait": [
+        {
+          "name": "Nimble Escape",
+          "entries": [
+            "The vepus scout can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns."
+          ]
+        },
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The vepus scout has advantage on an attack roll against a creature if at least one of the vepus scout's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+          ]
+        },
+        {
+          "name": "Thin Frame",
+          "entries": [
+            "You can squeeze through spaces as if you were a Small creature."
+          ]
+        }
+      ],
+      "traitTags": ["Pack Tactics"],
+      "resist": ["poison"],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": ["The Vepus Scout makes two attacks"]
+        },
+        {
+          "name": "Scimitar",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) damage."
+          ]
+        },
+        {
+          "name": "Light Crossbow",
+          "entries": [
+            "{@atk rw} {@hit 5} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
+          ]
+        }
+      ],
+      "actionTags": ["Multiattack"],
+      "miscTags": ["MW", "MLW", "RW", "RNG"],
+      "attachedItems": ["light crossbow|phb", "scimitar|phb"]
+    },
+    {
+      "name": "The Soul Shepherds",
+      "size": ["M"],
+      "type": "celestial",
+      "source": "ToL",
+      "alignment": ["L", "N"],
+      "ac": [
+        {
+          "ac": 18,
+          "from": ["natural armor"]
+        }
+      ],
+      "hp": {
+        "formula": "16d8 + 80",
+        "average": 152
+      },
+      "speed": {
+        "walk": 30,
+        "fly": 90
+      },
+      "str": 20,
+      "dex": 18,
+      "con": 20,
+      "int": 17,
+      "wis": 22,
+      "cha": 20,
+      "passive": 26,
+      "cr": "14",
+      "senses": ["darkvision 120 ft.", "truesight 30 ft."],
+      "senseTags": ["SD", "U"],
+      "languages": ["All", "Telepathy 120ft"],
+      "save": {
+        "str": "+10",
+        "wis": "+11",
+        "cha": "+10"
+      },
+      "skill": {
+        "insight": "+11",
+        "perception": "+16",
+        "survival": "+11"
+      },
+      "resist": [
+        "necrotic",
+        "radiant",
+        {
+          "resist": ["bludgeoning", "piercing", "slashing"],
+          "note": "from nonmagical attacks",
+          "cond": true
+        }
+      ],
+      "conditionImmune": ["charmed", "frightened", "stunned"],
+      "trait": [
+        {
+          "name": "Angelic Weapons",
+          "entries": [
+            "The soul shepherd's weapon attacks are magical. When the soul shepherd hits with any weapon, the weapon deals an extra {@damage 4d8} radiant damage (included in the attack)."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The the soul shepherds has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The soul shepherd's spellcasting ability is Wisdom (spell save {@dc 19}, +11 to hit with spell attack). The soul shepherd can innately cast the following spells, requiring no material components:"
+          ],
+          "will": ["{@spell detect evil and good}", "{@spell detect thoughts}"],
+          "daily": {
+            "1": ["{@spell commune}", "{@spell raise dead}"],
+            "3": [
+              "{@spell cure wounds}",
+              "{@spell lesser restoration}",
+              "{@spell remove curse}"
+            ]
+          },
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": ["I"],
+      "traitTags": ["Magic Resistance"],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The soul shepherd makes two Mace attacks or uses Ethereal Bolt twice. As well as Teleport on their turn. In no specific order"
+          ]
+        },
+        {
+          "name": "Mace",
+          "entries": [
+            "{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 5}) bludgeoning damage plus 13 ({@damage 4d6}) radiant damage."
+          ]
+        },
+        {
+          "name": "Ethereal Bolt",
+          "entries": [
+            "{@atk rs} {@hit 10} to hit, range 120 ft., one target. {@h}22 ({@damage 4d8 + 6}) radiant damage."
+          ]
+        },
+        {
+          "name": "Teleport",
+          "entries": [
+            "The soul shepherd magically teleports, along with any equipment it is wearing or carrying, up to 90 feet to an unoccupied space it can see."
+          ]
+        },
+        {
+          "name": "Healing Touch (3/Day)",
+          "entries": [
+            "The soul shepherd touches a creature. The target magically regains 20 ({@dice 4d8 + 6}) hit points and is freed from any curse, disease, poison, blindness, or deafness."
+          ]
+        },
+        {
+          "name": "Guiding Light {@recharge 5}",
+          "entries": [
+            "The soul shepherd emits a radiant burst of energy in a 30-foot radius. Each creature in that area must make a {@dc 19} Wisdom saving throw, taking 28 ({@damage 8d6}) radiant damage on a failed save, or half as much damage on a successful one. Undead and fiends have disadvantage on this saving throw."
+          ]
+        }
+      ],
+      "actionTags": ["Multiattack", "Teleport"],
+      "miscTags": ["MW", "MLW", "RA", "AOE"],
+      "attachedItems": ["mace|phb"],
+      "damageTags": ["B", "R"],
+      "savingThrowForced": ["wisdom"],
+      "savingThrowForcedSpell": ["wisdom"]
+    },
+    {
+      "name": "Fragment of the Red Priest",
+      "size": ["M"],
+      "type": "undead",
+      "source": "ToL",
+      "alignment": ["N"],
+      "ac": [
+        {
+          "ac": 16,
+          "from": ["natural armor"]
+        }
+      ],
+      "hp": {
+        "formula": "16d8 + 64",
+        "average": 136
+      },
+      "speed": {
+        "walk": 0,
+        "fly": {
+          "number": 50,
+          "condition": "hover"
+        },
+        "canHover": true
+      },
+      "str": 7,
+      "dex": 18,
+      "con": 18,
+      "int": 17,
+      "wis": 17,
+      "cha": 22,
+      "passive": 17,
+      "cr": "10",
+      "senses": ["darkvision 120 ft."],
+      "senseTags": ["SD"],
+      "languages": ["All"],
+      "save": {
+        "dex": "+8",
+        "wis": "+7",
+        "cha": "+10"
+      },
+      "skill": {
+        "arcana": "+11",
+        "deception": "+10",
+        "religion": "+11",
+        "insight": "+7",
+        "persuasion": "+10",
+        "stealth": "+8",
+        "perception": "+7"
+      },
+      "resist": [
+        "acid",
+        "fire",
+        "lightning",
+        "thunder",
+        {
+          "resist": ["bludgeoning", "piercing", "slashing"],
+          "note": "from Nonmagical Attacks",
+          "cond": true
+        }
+      ],
+      "immune": ["cold", "necrotic", "poison"],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained"
+      ],
+      "trait": [
+        {
+          "name": "Incorporeal Movement",
+          "entries": [
+            "The fragment of the red priest can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 5 ({@dice 1d10}) force damage if it ends its turn inside an object."
+          ]
+        },
+        {
+          "name": "Turn Immunity",
+          "entries": [
+            "The fragment of the red priest is immune to effects that turn undead."
+          ]
+        },
+        {
+          "name": "Magic Resistance",
+          "entries": [
+            "The fragment of the red priest has advantage on saving throws against spells and other magical effects."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Incorporeal Movement",
+        "Magic Resistance",
+        "Turn Immunity"
+      ],
+      "spellcasting": [
+        {
+          "name": "Innate Spellcasting",
+          "headerEntries": [
+            "The Fragment’s innate spellcasting ability is Charisma (spell save {@dc 18}). It can innately cast the following spells, requiring no material components:"
+          ],
+          "will": [
+            "{@spell charm person}",
+            "{@spell command}",
+            "{@spell detect thoughts}"
+          ],
+          "daily": {
+            "3e": [
+              "{@spell dominate person}",
+              "{@spell hold person}",
+              "{@spell phantasmal killer}"
+            ],
+            "1e": ["{@spell dominate monster}", "{@spell feeblemind}"]
+          },
+          "ability": "cha",
+          "type": "spellcasting"
+        }
+      ],
+      "spellcastingTags": ["I"],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Fragment makes two Spectral Claw attacks or uses its Possession."
+          ]
+        },
+        {
+          "name": "Spectral Claw.",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}18 ({@damage 4d6 + 4}) necrotic damage."
+          ]
+        },
+        {
+          "name": "Possession (Recharge 5-6).",
+          "entries": [
+            "The Fragment of the Red Priest targets one humanoid that it can see within 30 feet of it. The target must succeed on a {@dc 17} Charisma saving throw or be possessed by the Fragment; the Fragment then disappears, and the target is {@condition incapacitated} and loses control of its body. The Fragment now controls the body but doesn't deprive the target of awareness. The Fragment can't be targeted by any attack, spell, or other effect, and it retains its alignment, Intelligence, Wisdom, and Charisma. It otherwise uses the possessed target's statistics but doesn't gain access to the target's knowledge, class features, or proficiencies.",
+            "The possession lasts until the body drops to 0 hit points, the Fragment ends it as a bonus action, or the Fragment is forced out by an effect like the dispel evil and good spell. When the possession ends, the Fragment reappears in an unoccupied space within 5 feet of the body. The target is immune to this Fragment's Possession for 24 hours after succeeding on the saving throw or after the possession ends."
+          ]
+        }
+      ],
+      "actionTags": ["Multiattack"],
+      "miscTags": ["MW"],
+      "conditionInflict": ["incapacitated"],
+      "damageTags": ["N", "O"],
+      "damageTagsSpell": ["Y"],
+      "savingThrowForced": ["charisma"],
+      "savingThrowForcedSpell": ["intelligence", "wisdom"]
+    }
   ],
   "legendaryGroup": [
     {
@@ -16057,18 +16034,18 @@
       "mythicEncounter": [],
       "source": "ToL"
     },
-		{
-			"name": "Xylokra",
-			"lairActions": [
-				"When fighting inside its lair, the xylokra can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the xylokra can take one lair action to cause one of the following effects:",
-				"Eyes of the Astral sea: Thousands of purple eyes materialize along the edges of the dimension and fixate on creatures within. Each creature that can see these eyes must succeed on a DC 19 Wisdom saving throw or be frightened until the end of its next turn. A creature that fails the saving throw by 5 or more is paralyzed with fear instead.",
-				"Reality Shift: The Xylokra bends the fabric of the dimension, causing the ground to become treacherous and unstable. Each creature on the ground must succeed on a DC 19 Dexterity saving throw or fall prone. The ground becomes difficult terrain until the beginning of the Xylokra's next turn.",
-				"Arcane Surge: The arcane energy of the dimension surges, empowering the Xylokra's attacks. On its next turn, the Xylokra's Tentacle Beam and Psychic Elimination actions deal an additional 1d10 force damage on a hit.",
-				"The xylokra can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
-			],
-			"regionalEffects": [],
-			"mythicEncounter": [],
-			"source": "ToL"
-		}
+    {
+      "name": "Xylokra",
+      "lairActions": [
+        "When fighting inside its lair, the xylokra can invoke the ambient magic to take lair actions. On initiative count 20 (losing initiative ties), the xylokra can take one lair action to cause one of the following effects:",
+        "Eyes of the Astral sea: Thousands of purple eyes materialize along the edges of the dimension and fixate on creatures within. Each creature that can see these eyes must succeed on a DC 19 Wisdom saving throw or be frightened until the end of its next turn. A creature that fails the saving throw by 5 or more is paralyzed with fear instead.",
+        "Reality Shift: The Xylokra bends the fabric of the dimension, causing the ground to become treacherous and unstable. Each creature on the ground must succeed on a DC 19 Dexterity saving throw or fall prone. The ground becomes difficult terrain until the beginning of the Xylokra's next turn.",
+        "Arcane Surge: The arcane energy of the dimension surges, empowering the Xylokra's attacks. On its next turn, the Xylokra's Tentacle Beam and Psychic Elimination actions deal an additional 1d10 force damage on a hit.",
+        "The xylokra can't repeat an effect until they have all been used, and it can't use the same effect two rounds in a row."
+      ],
+      "regionalEffects": [],
+      "mythicEncounter": [],
+      "source": "ToL"
+    }
   ]
 }
