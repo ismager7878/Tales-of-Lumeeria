@@ -4259,7 +4259,7 @@
               {
                 "type": "list",
                 "items": [
-                  "Gain {@spell Spider Climb}, {@footnote Web Sense |While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.|Web Sense, Monster Manual(Giant Spider)} and {@footnote Web Sense |The spider ignores movement restrictions caused by webbing.|Web Walker, Monster Manual(Giant Spider)}",
+                  "Gain {@spell Spider Climb}, {@footnote Web Sense |While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.|Web Sense, Monster Manual(Giant Spider)} and {@footnote Web Walker |The spider ignores movement restrictions caused by webbing.|Web Walker, Monster Manual(Giant Spider)}",
                   "Gain climbing speed of 30ft",
                   "While in form, you can cast the {@spell Web} spell at will. "
                 ]
