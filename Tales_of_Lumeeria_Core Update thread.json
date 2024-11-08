@@ -15397,17 +15397,17 @@
       },
       "action": [
         {
-          "name": "Longsword",
-          "entries": [
-            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) Slashing damage."
-          ]
-        },
-        {
-          "name": "Shortbow",
-          "entries": [
-            "{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
-          ]
-        }
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) Slashing damage."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d8 + 2}) piercing damage."
+					]
+				}
       ],
       "miscTags": ["MW", "MLW", "RW", "RNG"],
       "attachedItems": ["longsword|phb", "shortbow|phb"],
