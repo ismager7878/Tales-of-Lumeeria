@@ -4010,6 +4010,283 @@
       "entries": [
         "By 14th level, you have learned to use magic to alter your physical form in more subtle ways. You can cast the {@spell Alter Self} spell at will. "
       ]
+    },
+    {
+      "name": "Circle of the Swarm",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Swarm",
+      "subclassSource": "ToL",
+      "level": 2,
+      "header": 1,
+      "entries": [
+        "Druids that are part of the Circle of the Swarm believe that the foundation of nature and regrowth, lies with the critters in microbiomes that tend to be forgotten, such as: insects, arachnids and worms. Without these creatures flowers would not get pollinated, mushrooms would spread too fast and bodies would not decompose. These druids either gather in their own small colonies, living as a hivemind, or travel into the world with their own hive living in the body of the druid host in a symbiotic relationship. "
+      ]
+    },
+    {
+      "name": "Hive Mind Link",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Swarm",
+      "subclassSource": "ToL",
+      "level": 2,
+      "header": 2,
+      "entries": [
+        "As a druid of the Circle of the Swarm, you possess a unique connection to insects, allowing you to claim and command them with a hive mind-like control. ",
+        {
+          "type": "entries",
+          "name": "Claiming Insects",
+          "entries": [
+            "You can sense the presence of nearby insects within your hive range by performing a 1-minute ritual. After completing the ritual, you become aware if there are enough insects nearby to form one of the swarm types. If sufficient insects are present, you can claim control over them by either expending a use of your {@classFeature Wild Shape|Druid||2}, or after completing a short or long rest. You can claim a number of swarms up to your Proficiency Bonus + Wisdom Modifier.",
+            "Once you claim a swarm, you cannot claim another for 24 hours.",
+            "You can only have an amount of swarms actively controlled equal to your proficiency bonus at any given time. Active swarms obey your commands and can participate in combat or other tasks. Active swarms in combat shares your initiative count, but takes their turns immediately after yours.",
+            "Non-active swarms remain under your control but cannot follow commands or interact in a significant way until activated. Non-active swarms can be made active by a bonus action.",
+            "Once claimed, the insects fall under your mental influence, obeying your telepathic commands and moving according to your will. If left without specific instructions, they return to their natural behavior, always staying within your hive range, until commanded again. The control lasts indefinitely as long as the swarm remains within your hive range .",
+            "Your hive rang is calculated with Proficiency Bonus x 30 feet from you. ",
+            "If a claimed swarm leaves this range for more than a number of hours equal to your level x 2 (for example, a level 2 druid can maintain control for 4 hours), the swarm reverts to its natural instincts and can no longer be telepathically commanded by you without performing the ritual again. "
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Telepathic Commands",
+          "entries": [
+            "While active swarms are within your telepathic range, you can as an action issue simple commands, to one swarm at a time, such as attacking, scouting, assisting or protecting something. The insects follow these commands to the best of their ability and intelligence. Insects claimed by you do not act aggressively toward you or your allies unless directed to do so. "
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Insect Swarm Examples",
+          "entries": [
+            "When using Hive Mind Link, you can gather and claim swarms of tiny creatures. Here are the amounts of insects needed to form various types of swarms: ",
+            {
+              "type": "table",
+              "colLabels": ["Type", "Amount needed", "Statblock", "Note"],
+              "colStyles": ["col-2", "col-2 text-center", "col-3", "col-3"],
+              "rows": [
+                [
+                  "Swarm of Insects (ants, flies, gnats etc.)",
+                  "100–200",
+                  "{@creature Swarm of Insects}",
+                  "Mostly found in damp and dark places."
+                ],
+                [
+                  "Swarm of Centipedes",
+                  "75–125",
+                  "{@creature Swarm of Centipedes}",
+                  "Mostly found in damp and dark places."
+                ],
+                [
+                  "Swarm of Beetles",
+                  "80–130",
+                  "{@creature Swarm of Insects||Swarm of Insects (Beetles)}",
+                  "Requires effort to gather due to their varied habitats."
+                ],
+                [
+                  "Swarm of Spiders",
+                  "50–80",
+                  "{@creature Swarm of Spiders}",
+                  "Reclusive and harder to find in large numbers."
+                ],
+                [
+                  "Swarm of Wasps",
+                  "30–70",
+                  "{@creature Swarm of Insects||Swarm of Insects (Wasps)}",
+                  "Aggressive and dangerous, requiring careful collection."
+                ],
+                [
+                  "Swarm of Maggots",
+                  "200–300",
+                  "{@creature Swarm of Insects||Swarm of Insects (Maggots)}",
+                  "Abundant in decaying environments but fragile"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Swarm Master's Command",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Swarm",
+      "subclassSource": "ToL",
+      "level": 6,
+      "header": 2,
+      "entries": [
+        " At 6th level, your bond with the swarm deepens, allowing you to wield the collective power of your swarm with precision and versatility. You gain access to several specialized commands that enable you to use your swarms in new ways.",
+        "At 6th level, you learn three of these commands.  You learn an additional command of your choice at 9th, 13th and 17th level.  You can replace one command you know with a different one after finishing a long rest.",
+        {
+          "type": "entries",
+          "name": "Symbiotic Vitality",
+          "entries": [
+            "Your connection with your swarm becomes a source of healing for you or your allies. As a bonus action, you can sacrifice one of your active swarms that is within 30 feet of the target to heal them. The target regains hit points equal to the swarm’s remaining hit points. Once used, the swarm is immediately destroyed, as they wither away."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Enraged Swarm",
+          "entries": [
+            "When you are struck in combat, your swarms retaliate fiercely. When a creature hits you with a melee attack, you can use your reaction to command one of your active swarms to rush at the attacker. The swarm moves up to its speed and, if within range, makes a melee attack against the creature. If the attack hits, the creature must succeed on a Strength saving throw or be knocked {@condition Prone||prone}, overwhelmed by the mass of insects."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Swarming Restraint",
+          "entries": [
+            "Your control over the swarm allows you to restrain enemies with sheer numbers. As an action, you can command one of your active swarms to latch onto and overwhelm a small or tiny creature within 10 feet of the active swarm. The creature must make a Strength saving throw. On a failed save, the swarm {@condition Restrained||restrains} the creature for up to 1 minute. The creature can attempt to break free at the end of each of its turns by succeeding on a Strength saving throw."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Shielding Swarm",
+          "entries": [
+            " You can command your active flying swarm to form a protective barrier around you or an ally. As a reaction, when you or an ally within 30 feet is targeted by an attack, you can command one of your active flying swarms to intercept the blow, granting the target +2 AC until the start of your next turn. The swarm takes the same amount of  damage if the attack still hits."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Blinding Swarm",
+          "entries": [
+            "As an action, you can command an active flying swarm to engulf an enemy's face, obscuring their vision. Choose a creature within 30 feet; they must make a Constitution saving throw or be {@condition Blinded||blinded} for 1 minute as the swarm moves over and engulfs their face. The creature can repeat the saving throw at the end of each of its turns to end the effect. The blinded creature can still target the swarm without the attack being at disadvantage."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Hive Vision",
+          "entries": [
+            "As a bonus action you can choose an active swarm, you then perceive through the active swarms senses (sight and sound). The active swarm can still receive your telepathic commands even after it's left your range for as long as you remain in Hive Vision. While in hive vision you are deaf and blind with regard to your own senses. "
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Natures Sacrifice",
+          "entries": [
+            "As an action, you can choose an active swarm within 5 feet of yourself or an ally to sacrifice. The swarm is destroyed, and the chosen creature regains a spell slot of a level equal to half your proficiency bonus (rounded up).  "
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Relocation Command",
+          "entries": [
+            "As an action, you can magically teleport to the location of one of your active swarms within your hive range, as long as you can see it (including through your Hive Vision Command). Upon teleporting, the swarm is sacrificed and destroyed."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Insect Portal",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Swarm",
+      "subclassSource": "ToL",
+      "level": 10,
+      "header": 2,
+      "entries": [
+        "At 10th level, your deep connection to insects allows you to harness their collective power to create temporary gateways for swift travel over great distances. ",
+        "By performing a 1-minute ritual, you can sacrifice 3 of your claimed swarms to form an Insect Portal at your current location. The sacrificed swarms merge with the earth, creating a dull, ring-shaped structure made from their remains. Once established, this portal connects to other Insect Portals that you have previously created.",
+        "To activate an Insect Portal, you must spend one use of your {@classFeature Wild Shape|Druid||2}. Once activated, the portal remains open for 1 minute, allowing creatures of Large size or smaller to pass through it. The portal can transport you and others to the location of any previously established Insect Portal.",
+        "Each Insect Portal remains dormant after creation for up to one year. To keep the portal functional, you must sacrifice another swarm before the year ends. If no sacrifice is made, the portal deteriorates and becomes unusable.",
+        "You can maintain a number of active Insect Portals equal to your Wisdom modifier (minimum of 1). If you create a new portal beyond this limit, one of your existing portals of your choice will close permanently"
+      ]
+    },
+    {
+      "name": "Perfect Synchronization",
+      "source": "ToL",
+      "className": "Druid",
+      "classSource": "phb",
+      "subclassShortName": "Swarm",
+      "subclassSource": "ToL",
+      "level": 14,
+      "header": 2,
+      "entries": [
+        " At 14th level, your hive mind has been perfected, allowing you to enter perfect synchronization where you take on the abilities and traits of your swarm. ",
+        "As an action you can spend a use of {@classFeature Wild Shape|Druid||2}, to take on abilities and traits of any active swarm.",
+        "You remain in Perfect Synchronization form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a bonus action.",
+        "You can choose from the different Swarm types and their abilities below.",
+        "Every swarm gives these standard buffs.",
+        {
+          "type": "list",
+          "items": [
+            {
+              "type": "list",
+              "items": [
+                "Gain resistance to non-magical bludgeoning, piercing and slashing ",
+                "+2 to armor class "
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "caption": "Swarm Buffs",
+          "colLabels": ["Swarm type", "Buffs"],
+          "colStyles": ["col-2", "col-10"],
+          "rows": [
+            [
+              "Swarm of Insects",
+              {
+                "type": "list",
+                "items": ["Gain 22 points of temporary hit points."]
+              }
+            ],
+            [
+              "Swarm of Centipedes",
+              {
+                "type": "list",
+                "items": [
+                  "Your weapon attacks add Wisdom to their overall modifier and deal an additional {@dice 3d6} + druid level as poison damage.",
+                  "You can as a reaction to getting hit by a melee attack deal {@dice 3d6} + druid level to the enemy attacker."
+                ]
+              }
+            ],
+            [
+              "Swarm of Beetles {@bold (Overrules standard)}",
+              {
+                "type": "list",
+                "items": [
+                  "Gain resistance to both non-magical and magical bludgeoning, piercing and slashing ",
+                  "+4 to armor class"
+                ]
+              }
+            ],
+            [
+              "Swarm of Spiders",
+              {
+                "type": "list",
+                "items": [
+                  "Gain {@spell Spider Climb}, {@footnote Web Sense |While in contact with a web, the spider knows the exact location of any other creature in contact with the same web.|Web Sense, Monster Manual(Giant Spider)} and {@footnote Web Sense |The spider ignores movement restrictions caused by webbing.|Web Walker, Monster Manual(Giant Spider)}",
+                  "Gain climbing speed of 30ft",
+                  "While in form, you can cast the {@spell Web} spell at will. "
+                ]
+              }
+            ],
+            [
+              "Swarm of Wasps",
+              {
+                "type": "list",
+                "items": [
+                  "Gain flying speed of 60ft",
+                  "Upon moving at least 30ft toward and enemy, they need to make a wisdom saving throw, on a failure they become {@condition Frightened} of you for 1 minute. They can repeat the saving throw at the end of each of their turns."
+                ]
+              }
+            ],
+            [
+              "Swarm of Maggots",
+              {
+                "type": "list",
+                "items": [
+                  "As an action you can sling maggots over to a friendly creature within 30ft, the maggots remove any {@condition Poisoned} conditions and heals the target {@dice 3d6} + druid level."
+                ]
+              }
+            ]
+          ]
+        }
+      ]
     }
   ],
   "subclass": [
@@ -4249,6 +4526,21 @@
         "Natural Ferocity|Druid|phb|Wilderness|ToL|6",
         "Primordial Avatar|Druid|phb|Wilderness|ToL|10",
         "Natural Adaptation|Druid|phb|Wilderness|ToL|14"
+      ],
+      "className": "Druid",
+      "classSource": "phb"
+    },
+    {
+      "name": "Circle of the Swarm",
+      "shortName": "Swarm",
+      "startingLevel": 2,
+      "source": "ToL",
+      "subclassFeatures": [
+        "Circle of the Swarm|Druid|phb|Swarm|ToL|2",
+        "Hive Mind Link|Druid|phb|Swarm|ToL|2",
+        "Swarm Master's Command|Druid|phb|Swarm|ToL|6",
+        "Insect Portal|Druid|phb|Swarm|ToL|10",
+        "Perfect Synchronization|Druid|phb|Swarm|ToL|14"
       ],
       "className": "Druid",
       "classSource": "phb"
