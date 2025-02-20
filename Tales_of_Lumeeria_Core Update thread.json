@@ -3367,7 +3367,7 @@
               {
                 "type": "list",
                 "items": [
-                  "You can now cast the spell {@spell Plane Shift} requiring no material component, once per day.",
+                  "You can now cast the {@spell Plane Shift} spell once per day.",
                   "You now deal 1d(Martial Die) extra necrotic damage on all your Melee Strikes"
                 ]
               }
