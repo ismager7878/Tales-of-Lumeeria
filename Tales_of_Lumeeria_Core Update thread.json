@@ -7958,6 +7958,178 @@
           ]
         }
       ]
+    },
+		{
+			"name": "Sova's Last Dance",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You pull out the platinum thread, which corrodes into ash as an illusory version of it arcs toward a friendly creature within range. ",
+				"While the spell is active, if the targeted creature is reduced to 0 hit points or less, they do not immediately fall {@condition unconscious}. Instead, they enter a state called \"Last Dance.\" In this state, the creature is arcanely held conscious, enabling them to act as normal on their turn. However, they cannot receive hit points from potions, spells, or any other effects or features. They remain conscious until the end of their next turn, at which point they automatically fall {@condition unconscious} and gain 1 level of {@condition exhaustion}.",
+				"If, before or during their turn under \"Last Dance,\" the creature manages to reduce a hostile creature to 0 hit points, they immediately regain hit points equal to their level, and the spell ends. ",
+				"This spell also works if the initial damage type that reduced the friendly creature to 0 hit points was necrotic. ",
+				"For each single instance of 20 or more points of damage received while in the \"Last Dance\" state, the creature must make a DC 20 Constitution saving throw. On a failure, the creature gains 1 point of {@condition exhaustion}.",
+				"Additionally, if the caster loses {@status concentration} on Sova's Last Dance while the friendly creature is in the \"Last Dance\" state, the creature immediately falls {@condition unconscious}."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "(A platinum thread soaked in the targeted creature's blood, worth 100 gp, consumed)"
+			}
+		},
+		{
+			"name": "Sova's Ray of Decay",
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"A thin, sickly green ray springs from your pointing finger toward a creature you can see within range. The target must make a Constitution saving throw. On a failed save, the target takes {@damage 4d10} necrotic damage and becomes afflicted by Sova's Curse of Decay. On a successful save, the creature takes half damage and is not cursed.",
+				"Sova's Curse of Decay",
+				"A creature afflicted by Sova's Curse of Decay cannot benefit from short or long rests. This means it cannot regain spell slots, hit points (except through spells or consumables), or class features requiring rests. Each day, at dawn, the creature's body decays further. Hands, arms, and legs slowly begin to blacken, harden, and shatter into gray dust. The creature takes {@damage 2d10} necrotic damage at the start of each new day.",
+				"If the creature is reduced to 0 hit points while cursed, its body and everything it is wearing and carrying (except magic items) disintegrate into gray dust.",
+				"The curse can only be removed by a Greater Restoration, Heal, or Wish spell."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "An emerald skull soaked in death energy from being in the plane of Axion for 100 years) (Unique, not consumed"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the immediate necrotic damage increases by {@dice 2d10} per slot level above 4th, and the daily decay damage increases by {@dice 1d10} per slot level above 4th."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sova's Death Bloom",
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					},
+					"concentration": true
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You mark a creature within range that you can see. ",
+				"As ethereal withered rose buds will appear above the marked creature. Each time the marked creature takes damage from an attack or spell they receive an additional {@damage 1d4} necrotic damage. ",
+				"Once the marked creature is reduced to 0 hit points, a black rose will grow from the creatures corpse, and each ally of the caster within 15 feet of the corpse will regain {@dice 2d8} hit points. "
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "A withered rose coated in gold worth 50 Gold coins, Not consumed"
+			}
     }
   ],
   "monster": [
@@ -16502,6 +16674,1706 @@
       },
       "damageTags": ["B", "N", "P"],
       "savingThrowForced": ["constitution", "dexterity"]
+      },
+      {
+        "name": "Aiden Thorn (Weakened)",
+        "size": [
+          "M"
+        ],
+        "type": "Humanoid (Human)",
+        "source": "ToL",
+        "alignment": [
+          "N"
+        ],
+        "ac": [
+          {
+            "ac": 17,
+            "from": [
+              "natural armor"
+            ]
+          }
+        ],
+        "hp": {
+          "formula": "10d10 + 40",
+          "average": 95
+        },
+        "speed": {
+          "walk": 30
+        },
+        "str": 20,
+        "dex": 12,
+        "con": 18,
+        "int": 10,
+        "wis": 16,
+        "cha": 12,
+        "passive": 21,
+        "cr": "9",
+        "languages": [
+          "Talmerian",
+          "Thieves' cant"
+        ],
+        "languageTags": [
+          "TC"
+        ],
+        "save": {
+          "str": "+9",
+          "wis": "+7",
+          "con": "+8"
+        },
+        "skill": {
+          "perception": "+11",
+          "insight": "+7",
+          "religion": "+4"
+        },
+        "trait": [
+          {
+            "name": "Action Surge (1/Short or Long Rest)",
+            "entries": [
+              "Aiden Thorn takes one additional action"
+            ]
+          },
+          {
+            "name": "Improved Critical",
+            "entries": [
+              "Aiden Thorn's attacks score a critical hit on a roll of 19 or 20."
+            ]
+          },
+          {
+            "name": "Indomitable (2/Day)",
+            "entries": [
+              "Aiden Thorn rerolls a failed saving throw. He must use the new roll."
+            ]
+          },
+          {
+            "name": "Brute",
+            "entries": [
+              "A melee attack deals one extra die of its damage when Aiden thorn hits with it. (Already Added)"
+            ]
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "entries": [
+              "Aiden Thorn makes two unarmed Strikes"
+            ]
+          },
+          {
+            "name": "Unarmed Strike",
+            "entries": [
+              "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage."
+            ]
+          },
+          {
+            "name": "Unarmed Strike (Hellfire Strikes)",
+            "entries": [
+              "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) bludgeoning damage, plus 3 ({@damage 1d6}) fire damage."
+            ]
+          }
+        ],
+        "actionTags": [
+          "Multiattack"
+        ],
+        "miscTags": [
+          "MW"
+        ],
+        "traitTags": [
+          "Brute"
+        ],
+        "resist": [
+          "fire"
+        ],
+        "bonus": [
+          {
+            "name": "Hellfire Steps (Infernal Steps Technique)",
+            "entries": [
+              "Aiden thorn's steps leave behind burning hellfire. The hellfire does not spread, but it damages both friends and foes. If a creature enters or starts their turn in the area where hellfire is burning, they take {@damage 2d6} fire damage. The hellfire disappears after 4 turns. "
+            ]
+          },
+          {
+            "name": "Hellfire strikes (Infernal Steps Technique)",
+            "entries": [
+              "Aiden thorn takes {@damage 4d6} fire damage (Ignoring his Resistance) and for the next minute, his attacks deal an additional {@damage 1d6} fire damage. "
+            ]
+          }
+        ],
+        "damageTags": [
+          "B",
+          "F"
+        ]
+      },
+      {
+        "name": "Kunat Scorpion",
+        "size": [
+          "M"
+        ],
+        "type": "beast",
+        "source": "ToL",
+        "alignment": [
+          "N"
+        ],
+        "ac": [
+          {
+            "ac": 15,
+            "from": [
+              "natural armor"
+            ]
+          }
+        ],
+        "hp": {
+          "formula": "7d8 + 14",
+          "average": 45
+        },
+        "speed": {
+          "walk": 40
+        },
+        "str": 16,
+        "dex": 15,
+        "con": 14,
+        "int": 1,
+        "wis": 8,
+        "cha": 2,
+        "passive": 13,
+        "cr": "3",
+        "senses": [
+          "darkvision 60 ft."
+        ],
+        "senseTags": [
+          "D"
+        ],
+        "skill": {
+          "perception": "+3",
+          "stealth": "+4"
+        },
+        "traitTags": [
+          "Keen Senses"
+        ],
+        "trait": [
+          {
+            "name": "Keen Sight",
+            "entries": [
+              "The kunat scorpion has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+            ]
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "entries": [
+              "The Kunat Scorpion makes two attacks. One with its Pincers and one with its stinger. "
+            ]
+          },
+          {
+            "name": "Pincer",
+            "entries": [
+              "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) bludgeoning damage."
+            ]
+          },
+          {
+            "name": "Stinger",
+            "entries": [
+              "{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage, plus 10 ({@damage 3d6}) poison damage.",
+              "The target must make a {@dc 12} Constitution saving throw. If the saving throw fails, the target's strength score increases by +4 for {@dice 2d12} hours. During this time, the target is {@condition poisoned}, and they are blind beyond 10 feet. The temporary strength increase disappears if the {@condition poisoned} effect is removed. "
+            ]
+          }
+        ],
+        "actionTags": [
+          "Multiattack"
+        ],
+        "miscTags": [
+          "MW",
+          "RCH"
+        ],
+        "conditionInflict": [
+          "poisoned"
+        ],
+        "damageTags": [
+          "B",
+          "I",
+          "P"
+        ],
+        "savingThrowForced": [
+          "constitution"
+        ]
+      },
+      {
+        "name": "Imperial Inquisitor",
+        "size": [
+          "M"
+        ],
+        "type": "humanoid",
+        "source": "ToL",
+        "alignment": [
+          "N"
+        ],
+        "ac": [
+          {
+            "ac": 17,
+            "from": [
+              "{@item studded leather armor|phb}"
+            ]
+          }
+        ],
+        "hp": {
+          "formula": "10d8 + 30",
+          "average": 75
+        },
+        "speed": {
+          "walk": 30
+        },
+        "str": 14,
+        "dex": 20,
+        "con": 16,
+        "int": 18,
+        "wis": 12,
+        "cha": 10,
+        "passive": 17,
+        "cr": "6",
+        "languages": [
+          "Talmerian"
+        ],
+        "save": {
+          "dex": "+8",
+          "int": "+7"
+        },
+        "skill": {
+          "insight": "+7",
+          "investigation": "+10",
+          "perception": "+7",
+          "stealth": "+11"
+        },
+        "trait": [
+          {
+            "name": "Inquisitor's Training",
+            "entries": [
+              "The Imperial Inquisitor has expertise in stealth, investigation, insight, and perception skills. They have advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+            ]
+          },
+          {
+            "name": "Evasion",
+            "entries": [
+              "If the imperial inquisitor is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the imperial inquisitor instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+            ]
+          },
+          {
+            "name": "Sneak Attack (1/Turn)",
+            "entries": [
+              "Once per turn, the imperial inquisitor deals an extra 10 ({@dice 3d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the imperial inquisitor that isn't {@condition incapacitated} and the imperial inquisitor doesn't have disadvantage on the attack roll."
+            ]
+          }
+        ],
+        "reaction": [
+          {
+            "name": "Uncanny Dodge",
+            "entries": [
+              "When an attacker that the Imperial Inquisitor Agent can see hits them with an attack, they can use their reaction to halve the attack's damage against them."
+            ]
+          }
+        ],
+        "traitTags": [
+          "Sneak Attack"
+        ],
+        "bonus": [
+          {
+            "name": "Steady Aim",
+            "entries": [
+              "The Imperial Inquisitor gives themselves advantage on their next attack roll on the current turn. They can use this bonus action only if they haven't moved during this turn, and after they use the bonus action, their speed is 0 until the end of the current turn."
+            ]
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "entries": [
+              "The Imperial Inquisitor Agent makes two attacks with their shortswords or throwing their daggers."
+            ]
+          },
+          {
+            "name": "Shortswords",
+            "entries": [
+              "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 5}) piercing damage."
+            ]
+          },
+          {
+            "name": "Daggers",
+            "entries": [
+              "{@atk rw} {@hit 8} to hit, range 20/40 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage."
+            ]
+          }
+        ],
+        "actionTags": [
+          "Multiattack"
+        ],
+        "miscTags": [
+          "MW",
+          "RW"
+        ],
+        "damageTags": [
+          "P"
+        ]
+      },
+      {
+        "name": "Talon",
+        "source": "ToL",
+        "page": 233,
+        "size": [
+          "M"
+        ],
+        "type": {
+          "type": "humanoid",
+          "tags": [
+            "human"
+          ]
+        },
+        "alignment": [
+          "C",
+          "E"
+        ],
+        "ac": [
+          15
+        ],
+        "hp": {
+          "average": 27,
+          "formula": "5d8 + 5"
+        },
+        "speed": {
+          "walk": 40
+        },
+        "str": 11,
+        "dex": 20,
+        "con": 13,
+        "int": 15,
+        "wis": 12,
+        "cha": 16,
+        "skill": {
+          "intimidation": "+5",
+          "perception": "+5",
+          "persuasion": "+5",
+          "stealth": "+9"
+        },
+        "senses": [
+          "darkvision 60 ft."
+        ],
+        "passive": 15,
+        "languages": [
+          "Talmerian",
+          "Thieves' cant"
+        ],
+        "cr": "2",
+        "spellcasting": [
+          {
+            "name": "Innate Spellcasting",
+            "headerEntries": [
+              "The Talon's innate spellcasting ability is Charisma (spell save {@dc 13}). It can innately cast the following spells, requiring no material components:"
+            ],
+            "daily": {
+              "1e": [
+                "{@spell charm person}",
+                "{@spell disguise self}",
+                "{@spell sanctuary}"
+              ]
+            },
+            "ability": "cha",
+            "type": "spellcasting"
+          }
+        ],
+        "trait": [
+          {
+            "name": "Aura of Murder",
+            "entries": [
+              "As long as the Talon is not {@condition incapacitated}, hostile creatures within 5 feet of it gain vulnerability to piercing damage unless they have resistance or immunity to such damage."
+            ]
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "entries": [
+              "The Talon makes two dagger attacks and uses Shroud Self."
+            ]
+          },
+          {
+            "name": "Dagger",
+            "entries": [
+              "{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage."
+            ]
+          },
+          {
+            "name": "Shroud Self",
+            "entries": [
+              "The Talon magically turns {@condition invisible} until the start of its next turn. This invisibility ends if the Talon makes an attack roll, makes a damage roll, or casts a spell."
+            ]
+          }
+        ],
+        "attachedItems": [
+          "dagger|phb"
+        ],
+        "senseTags": [
+          "D"
+        ],
+        "actionTags": [
+          "Multiattack"
+        ],
+        "spellcastingTags": [
+          "I"
+        ],
+        "miscTags": [
+          "RW",
+          "MW",
+          "MLW",
+          "THW"
+        ],
+        "conditionInflict": [
+          "invisible"
+        ],
+        "conditionInflictSpell": [
+          "charmed"
+        ],
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "languageTags": [
+          "TC"
+        ],
+        "tokenHref": {
+          "type": "external",
+          "url": ""
+        },
+        "damageTags": [
+          "P"
+        ],
+        "savingThrowForcedSpell": [
+          "wisdom"
+        ]
+      },
+      {
+        "name": "The Crimson Talon",
+        "source": "ToL",
+        "page": 233,
+        "size": [
+          "M"
+        ],
+        "type": {
+          "type": "humanoid",
+          "tags": [
+            "Changeling"
+          ]
+        },
+        "alignment": [
+          "C",
+          "E"
+        ],
+        "ac": [
+          {
+            "ac": 18,
+            "from": [
+              "{@item studded leather armor|phb}"
+            ]
+          }
+        ],
+        "hp": {
+          "formula": "11d8 + 22",
+          "average": 71
+        },
+        "speed": {
+          "walk": 40
+        },
+        "str": 12,
+        "dex": 22,
+        "con": 14,
+        "int": 16,
+        "wis": 12,
+        "cha": 18,
+        "skill": {
+          "intimidation": "+7",
+          "perception": "+7",
+          "persuasion": "+7",
+          "stealth": "+12",
+          "insight": "+4",
+          "deception": "+10"
+        },
+        "senses": [
+          "darkvision 60 ft."
+        ],
+        "passive": 17,
+        "languages": [
+          "Talmerian",
+          "Thieves' cant"
+        ],
+        "cr": "6",
+        "spellcasting": [
+          {
+            "name": "Innate Spellcasting",
+            "headerEntries": [
+              "The Talon's innate spellcasting ability is Charisma (spell save {@dc 15}). It can innately cast the following spells, requiring no material components:"
+            ],
+            "daily": {
+              "1e": [
+                "{@spell banishment}",
+                "{@spell charm person}",
+                "{@spell detect magic}",
+                "{@spell true seeing}"
+              ]
+            },
+            "will": [
+              "{@spell mage hand}"
+            ],
+            "ability": "cha",
+            "type": "spellcasting"
+          }
+        ],
+        "trait": [
+          {
+            "name": "Shapechanger (Changeling)",
+            "entries": [
+              "The the crimson talon As an action, you can change your appearance and your voice. You determine the specifics of the changes, including your coloration, hair length, and sex. You can also adjust your height and weight, but not so much that your size changes. You can make yourself appear as a member of another race, though none of your game statistics change. You can't duplicate the appearance of a creature you've never seen, and you must adopt a form that has the same basic arrangement of limbs that you have. Your clothing and equipment aren't changed by this trait.",
+              "You stay in the new form until you use an action to revert to your true form or until you die."
+            ]
+          },
+          {
+            "name": "Fey Ancestry",
+            "entries": [
+              "The the crimson talon has advantage on saving throws against being {@condition charmed}, and magic can't put the the crimson talon to sleep."
+            ]
+          },
+          {
+            "name": "Sneak Attack",
+            "entries": [
+              "Once per turn, the the crimson talon deals an extra 14 ({@dice 4d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the the crimson talon that isn't {@condition incapacitated} and the the crimson talon doesn't have disadvantage on the attack roll."
+            ]
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "entries": [
+              "The Crimson Talon makes two dagger attacks and uses Shroud Self."
+            ]
+          },
+          {
+            "name": "Dagger",
+            "entries": [
+              "{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}7 ({@damage 1d4 + 5}) piercing damage."
+            ]
+          },
+          {
+            "name": "Shroud Self",
+            "entries": [
+              "The Talon magically turns {@condition invisible} until the start of its next turn. This invisibility ends if the Talon makes an attack roll, makes a damage roll, or casts a spell."
+            ]
+          }
+        ],
+        "attachedItems": [
+          "dagger|phb"
+        ],
+        "senseTags": [
+          "D"
+        ],
+        "actionTags": [
+          "Multiattack"
+        ],
+        "spellcastingTags": [
+          "I"
+        ],
+        "miscTags": [
+          "RW",
+          "MW",
+          "MLW",
+          "THW"
+        ],
+        "conditionInflict": [
+          "invisible"
+        ],
+        "conditionInflictSpell": [
+          "charmed"
+        ],
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "languageTags": [
+          "TC"
+        ],
+        "tokenHref": {
+          "type": "external",
+          "url": ""
+        },
+        "traitTags": [
+          "Fey Ancestry",
+          "Shapechanger",
+          "Sneak Attack"
+        ],
+        "damageTags": [
+          "P"
+        ],
+        "savingThrowForcedSpell": [
+          "charisma",
+          "wisdom"
+        ]
+      },
+      {
+        "name": "Captain A",
+        "source": "ToL",
+        "size": [
+          "M"
+        ],
+        "type": "humanoid",
+        "alignment": [
+          "N",
+          "E"
+        ],
+        "ac": [
+          {
+            "ac": 16,
+            "from": [
+              "{@item chain mail|phb}"
+            ]
+          }
+        ],
+        "hp": {
+          "formula": "10d8 + 40",
+          "average": 85
+        },
+        "speed": {
+          "walk": 30
+        },
+        "str": 20,
+        "dex": 12,
+        "con": 18,
+        "int": 12,
+        "wis": 12,
+        "cha": 18,
+        "save": {
+          "str": "+8",
+          "con": "+7",
+          "cha": "+7"
+        },
+        "skill": {
+          "intimidation": "+7",
+          "insight": "+4",
+          "perception": "+7",
+          "deception": "+7",
+          "stealth": "+4"
+        },
+        "senses": [
+          "darkvision 60 ft."
+        ],
+        "passive": 17,
+        "languages": [
+          "Talmerian"
+        ],
+        "cr": "5",
+        "trait": [
+          {
+            "name": "Killer's Fury",
+            "entries": [
+              "Captain Anderson deals an extra 4 ({@dice 1d8}) damage when he hits with a weapon attack (included in the attacks)."
+            ]
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "entries": [
+              "Captain Anderson makes two attacks with his Blood Cleaver or Javelin"
+            ]
+          },
+          {
+            "name": "Blood Cleaver +1",
+            "entries": [
+              "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d12 + 6}) slashing damage, plus 4 ({@damage 1d8}) damage.",
+              "(Reflavored Greataxe, Magical Damage)"
+            ]
+          },
+          {
+            "name": "Harpoon (Javelin)",
+            "entries": [
+              "{@atk rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 5}) damage, plus 4 ({@damage 1d8}) damage."
+            ]
+          },
+          {
+            "name": "Battle Cry (1/Day)",
+            "entries": [
+              "Each creature of Captain Anderson's choice that is within 30 feet of him, can hear him, must succeed on a {@dc 16} Wisdom Saving Throw or be {@condition frightened} of Captain Anderson for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+            ]
+          }
+        ],
+        "environment": [
+          "arctic",
+          "forest",
+          "grassland",
+          "hill",
+          "mountain",
+          "swamp",
+          "underdark"
+        ],
+        "soundClip": {
+          "type": "external",
+          "url": "https://2014.5e.tools/audio/bestiary/orc-war-chief.mp3"
+        },
+        "traitTags": [
+          "Aggressive"
+        ],
+        "senseTags": [
+          "D"
+        ],
+        "actionTags": [
+          "Multiattack"
+        ],
+        "miscTags": [
+          "MW",
+          "RW",
+          "MLW",
+          "THW"
+        ],
+        "hasFluff": true,
+        "hasFluffImages": true,
+        "bonus": [
+          {
+            "name": "Aggressive",
+            "entries": [
+              "As a bonus action, Captain Anderson can move up to his speed toward a hostile creature that he can see. "
+            ]
+          }
+        ],
+        "reaction": [
+          {
+            "name": "Rageful Strike",
+            "entries": [
+              "As a reaction to getting hit by a melee attack, Captain Anderson can use his reaction to attack the creature back. "
+            ]
+          }
+        ],
+        "conditionInflict": [
+          "frightened"
+        ],
+        "tokenHref": {
+          "type": "external",
+          "url": ""
+        },
+        "damageTags": [
+          "S"
+        ],
+        "savingThrowForced": [
+          "wisdom"
+        ]
+      },
+      {
+        "name": "Architect's Protector Golem",
+        "source": "ToL",
+        "summonedByClass": "Artificer|TCE",
+        "size": [
+          "M"
+        ],
+        "type": "construct",
+        "ac": [
+          {
+            "special": "15 + PB"
+          }
+        ],
+        "hp": {
+          "special": "10 + three times your Architect level (the Protector has a number of Hit Dice [d8s] equal to your Architect level)"
+        },
+        "speed": {
+          "walk": 40
+        },
+        "str": 14,
+        "dex": 12,
+        "con": 14,
+        "int": 4,
+        "wis": 10,
+        "cha": 6,
+        "save": {
+          "dex": "+1 plus PB",
+          "con": "+2 plus PB",
+          "str": "+2 plus PB"
+        },
+        "skill": {
+          "athletics": "+2 plus PB"
+        },
+        "senses": [
+          "darkvision 60 ft."
+        ],
+        "immune": [
+          "poison",
+          "psychic"
+        ],
+        "conditionImmune": [
+          "charmed",
+          "exhaustion",
+          "poisoned"
+        ],
+        "languages": [
+          "understands the languages you speak"
+        ],
+        "pbNote": "Equals your bonus",
+        "trait": [
+          {
+            "name": "Vigilant",
+            "entries": [
+              "The Protector can't be {@status surprised}."
+            ]
+          },
+          {
+            "name": "Shared Perception",
+            "entries": [
+              "The Protector has the same Passive Perception as you "
+            ]
+          }
+        ],
+        "actionNote": "Requires Your Bonus Action",
+        "action": [
+          {
+            "name": "Empowered Strike",
+            "entries": [
+              "{@atk mw} {@hitYourSpellAttack} to hit, reach 5 ft., one target you can see. {@h}{@damage 1d8 + PB} force damage."
+            ]
+          },
+          {
+            "name": "Repair (2/Day)",
+            "entries": [
+              "The magical mechanisms inside the Protector restore {@dice 2d6 + PB} hit points to itself or to one construct or object within 5 feet of it."
+            ]
+          }
+        ],
+        "senseTags": [
+          "D"
+        ],
+        "miscTags": [
+          "MW"
+        ],
+        "hasFluffImages": true,
+        "tokenHref": {
+          "type": "internal",
+          "path": ""
+        },
+        "passive": 0,
+        "damageTags": [
+          "O"
+        ]
+      },
+      {
+        "name": "Architect's Arcane Turret",
+        "source": "ToL",
+        "summonedByClass": "Artificer|TCE",
+        "size": [
+          "V"
+        ],
+        "type": "construct",
+        "ac": [
+          {
+            "special": "12 + PB"
+          }
+        ],
+        "hp": {
+          "special": "10 + two times your Architect level (the Arcane Turret has a number of Hit Dice [d8s] equal to your Architect level)"
+        },
+        "speed": {
+          "walk": 0
+        },
+        "str": 10,
+        "dex": 10,
+        "con": 10,
+        "int": 10,
+        "wis": 10,
+        "cha": 10,
+        "senses": [
+          "darkvision 60 ft."
+        ],
+        "immune": [
+          "poison",
+          "psychic"
+        ],
+        "conditionImmune": [
+          "blinded",
+          "charmed",
+          "deafened",
+          "exhaustion",
+          "frightened",
+          "grappled",
+          "incapacitated",
+          "paralyzed",
+          "petrified",
+          "poisoned",
+          "prone",
+          "restrained",
+          "stunned",
+          "unconscious"
+        ],
+        "pbNote": "Equals your bonus",
+        "trait": [
+          {
+            "name": "Vigilant",
+            "entries": [
+              "The Arcane Turret can't be {@status surprised}."
+            ]
+          },
+          {
+            "name": "Shared Perception",
+            "entries": [
+              "The Arcane Turret has the same Passive Perception as you "
+            ]
+          }
+        ],
+        "action": [
+          {
+            "name": "Arcane Shot",
+            "entries": [
+              "{@atk rw} {@hitYourSpellAttack} to hit, range 120/480 ft., one target you can see. {@h}{@damage 1d8 + PB} force damage."
+            ]
+          },
+          {
+            "name": "Multiattack (Architect 5th level)",
+            "entries": [
+              "The Arcane Turret makes two arcane shot attacks. "
+            ]
+          },
+          {
+            "name": "Arcane Shot (Architect 9th level)",
+            "entries": [
+              "{@atk rw} {@hitYourSpellAttack} to hit, range 120/480 ft., one target you can see. {@h}{@damage 2d8 + PB} force damage."
+            ]
+          },
+          {
+            "name": "Arcane Shot (Architect 15th level)",
+            "entries": [
+              "{@atk rw} {@hitYourSpellAttack} to hit, range 120/480 ft., one target you can see. {@h}{@damage 3d8 + PB} force damage."
+            ]
+          },
+          {
+            "name": "Arcane Disruption (1/day) (Architect 15th level)",
+            "entries": [
+              "As an action, the turret can unleash Arcane Disruption, creating a massive arcane explosion at a point of your choice within 60 feet of the turret. Each creature within a 20-foot-radius sphere centered on that point must make a Constitution saving throw against your Architect spell save DC.",
+              "On a failed save, a creature takes {@damage 3d10} + your Intelligence modifier force damage and becomes {@condition stunned} until the end of its next turn. On a successful save, the creature takes half damage and is not {@condition stunned}."
+            ]
+          }
+        ],
+        "senseTags": [
+          "D"
+        ],
+        "miscTags": [
+          "RW",
+          "AOE"
+        ],
+        "hasFluffImages": true,
+        "tokenHref": {
+          "type": "internal",
+          "path": ""
+        },
+        "passive": 10,
+        "actionTags": [
+          "Multiattack"
+        ],
+        "conditionInflict": [
+          "stunned"
+        ],
+        "resist": [
+          {
+            "resist": [
+              "bludgeoning",
+              "piercing",
+              "slashing"
+            ],
+            "note": "from nonmagical attacks",
+            "cond": true
+          }
+        ],
+        "damageTags": [
+          "O"
+        ]
+      },
+      {
+        "name": "Father Christmas - Huge - (Oneshot 2024)",
+        "size": [
+          "H"
+        ],
+        "type": "fey",
+        "source": "ToL",
+        "alignment": [
+          "C",
+          "E"
+        ],
+        "ac": [
+          13
+        ],
+        "hp": {
+          "special": "250"
+        },
+        "speed": {
+          "walk": 60,
+          "climb": 60
+        },
+        "str": 32,
+        "dex": 16,
+        "con": 22,
+        "int": 21,
+        "wis": 26,
+        "cha": 20,
+        "passive": 30,
+        "cr": "20",
+        "senses": [
+          "truesight 120 ft."
+        ],
+        "senseTags": [
+          "U"
+        ],
+        "languages": [
+          "All"
+        ],
+        "save": {
+          "dex": "+9",
+          "wis": "+14",
+          "int": "+11",
+          "con": "+12"
+        },
+        "resist": [
+          "fire",
+          "lightning",
+          "psychic",
+          "radiant"
+        ],
+        "immune": [
+          "cold"
+        ],
+        "skill": {
+          "perception": "+20"
+        },
+        "trait": [
+          {
+            "name": "Illusiary form",
+            "entries": [
+              "While beyond 60ft of Father Christmas, a friendly illusion of the jolly man will appear, while inside 60ft the true ripped form of Saint Nick is visible. Here he is smoking a cigar, tattoos across his arms and along his head"
+            ]
+          },
+          {
+            "name": "Magic Resistance",
+            "entries": [
+              "Father Christmas' has advantage on saving throws against spells and other magical effects."
+            ]
+          },
+          {
+            "name": "Magic Weapons",
+            "entries": [
+              "Father Christmas' weapon attacks are magical."
+            ]
+          },
+          {
+            "name": "Legendary Resistance (3/Day) (Reset on new form)",
+            "entries": [
+              "If father Christmas' fails a saving throw, it can choose to succeed instead."
+            ]
+          },
+          {
+            "name": "Presence of Christmas",
+            "entries": [
+              "A creature that starts its turn within 60ft of Father Christmas takes {@damage 2d10} psychic damage."
+            ]
+          }
+        ],
+        "traitTags": [
+          "Legendary Resistances",
+          "Magic Resistance",
+          "Magic Weapons"
+        ],
+        "shortName": "Father Christmas",
+        "bonus": [
+          {
+            "name": "Naughty List",
+            "entries": [
+              "As a bonus action, Father Christmas can choose a creature within 60ft. ",
+              "Adding their name to his Naughty List.",
+              "A creature whose name is on the list will have a illusiary stocking hovering over their head additionally If they are reduced below 50 hit points by Father Christmas, the are decapitated and immediately die. "
+            ]
+          }
+        ],
+        "action": [
+          {
+            "name": "Multiattack",
+            "entries": [
+              "Father Christmas can attack two times"
+            ]
+          },
+          {
+            "name": "Candy Greatsword +3",
+            "entries": [
+              "{@atk mw} {@hit 20} to hit, reach 10 ft., one target. {@h}22 ({@damage 2d12 + 14}) slashing damage.",
+              "Crit on 19 and 20."
+            ]
+          },
+          {
+            "name": "Coal Boulder",
+            "entries": [
+              "{@atk rw} {@hit 13} to hit, range 60/240 ft., one target. {@h}21 ({@damage 3d10 + 7}) damage bludgeoning damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+            ]
+          }
+        ],
+        "actionTags": [
+          "Multiattack"
+        ],
+        "miscTags": [
+          "MW",
+          "RCH",
+          "MLW",
+          "RW"
+        ],
+        "conditionInflict": [
+          "prone"
+        ],
+        "legendaryActions": 3,
+        "legendary": [
+          {
+            "name": "Move & Attack (1)",
+            "entries": [
+              "Father Christmas moves up to his speed without provoking opportunity attacks, and does a Candy Greatsword against a target within range. "
+            ]
+          }
+        ],
+        "damageTags": [
+          "S"
+        ],
+        "savingThrowForced": [
+          "strength"
+        ]
+      },
+      {
+        "name": "Father Christmas - Medium - (Oneshot 2024)",
+        "size": [
+          "M"
+        ],
+        "type": "fey",
+        "source": "ToL",
+        "alignment": [
+          "C",
+          "E"
+        ],
+        "ac": [
+          17
+        ],
+        "hp": {
+          "special": "150"
+        },
+        "speed": {
+          "walk": 60,
+          "fly": 60
+        },
+        "str": 24,
+        "dex": 20,
+        "con": 22,
+        "int": 21,
+        "wis": 26,
+        "cha": 20,
+        "passive": 30,
+        "cr": "20",
+        "senses": [
+          "truesight 120 ft."
+        ],
+        "senseTags": [
+          "U"
+        ],
+        "languages": [
+          "All"
+        ],
+        "save": {
+          "dex": "+11",
+          "wis": "+14",
+          "int": "+11",
+          "con": "+12"
+        },
+        "resist": [
+          "fire",
+          "lightning",
+          "psychic",
+          "radiant"
+        ],
+        "immune": [
+          "cold"
+        ],
+        "skill": {
+          "perception": "+20"
+        },
+        "trait": [
+          {
+            "name": "Magic Resistance",
+            "entries": [
+              "Father Christmas' has advantage on saving throws against spells and other magical effects."
+            ]
+          },
+          {
+            "name": "Legendary Resistance (3/Day) (Reset on new form)",
+            "entries": [
+              "If father Christmas' fails a saving throw, it can choose to succeed instead."
+            ]
+          }
+        ],
+        "traitTags": [
+          "Legendary Resistances",
+          "Magic Resistance",
+          "Magic Weapons"
+        ],
+        "shortName": "Father Christmas",
+        "actionTags": [
+          "Multiattack"
+        ],
+        "spellcasting": [
+          {
+            "name": "Innate Spellcasting",
+            "headerEntries": [
+              "Father Christmas is an 20th-level spellcaster. Its spellcasting ability is Wisdom, requiring no material components (spell save {@dc 22}, +14 to hit with spell attacks). Father Christmas has the following spells prepared:"
+            ],
+            "will": [
+              "{@spell detect magic}"
+            ],
+            "daily": {
+              "3e": [
+                "{@spell counterspell} (3rd level)",
+                "{@spell fireball}",
+                "{@spell magic missile} (3rd level)",
+                "{@spell sova's deathly hand|ToL}"
+              ],
+              "1e": [
+                "{@spell disintegrate}",
+                "{@spell inflict wounds} (9th level) 10d10",
+                "{@spell obliteration|ToL}",
+                "{@spell power word kill}"
+              ]
+            },
+            "ability": "wis",
+            "type": "spellcasting"
+          }
+        ],
+        "spellcastingTags": [
+          "I"
+        ],
+        "legendaryActions": 5,
+        "legendary": [
+          {
+            "name": "Cast Spell (2)",
+            "entries": [
+              "Father Christmas cast's a spell of 3rd level or lower"
+            ]
+          },
+          {
+            "name": "Gift of Manipulation (1)",
+            "entries": [
+              "Choose a creature within 60ft. They need to make a {@dc 22} Charisma Check, on a failure, they spend their reaction attacking a creature within their reach. "
+            ]
+          }
+        ],
+        "bonus": [
+          {
+            "name": "You've been naughty",
+            "entries": [
+              "Father Christmas targets a creature within 120ft that has been Naughty. The creature must succeed on a {@dc 22} Wisdom saving throw or they will have Disadvantage on all saving throws for the next 1 minute. "
+            ]
+          }
+        ],
+        "damageTagsSpell": [
+          "F",
+          "N",
+          "O"
+        ],
+        "savingThrowForced": [
+          "wisdom"
+        ],
+        "savingThrowForcedSpell": [
+          "dexterity"
+        ]
+      },
+      {
+        "name": "Santa's Reindeer (Oneshot 2024)",
+        "size": [
+          "M"
+        ],
+        "type": "beast",
+        "source": "ToL",
+        "alignment": [
+          "N"
+        ],
+        "ac": [
+          {
+            "ac": 12,
+            "from": [
+              "natural armor"
+            ]
+          }
+        ],
+        "hp": {
+          "formula": "5d8 + 15",
+          "average": 37
+        },
+        "speed": {
+          "walk": 40
+        },
+        "str": 20,
+        "dex": 10,
+        "con": 16,
+        "int": 2,
+        "wis": 13,
+        "cha": 7,
+        "passive": 13,
+        "skill": {
+          "perception": "+3"
+        },
+        "senses": [
+          "darkvision 60 ft."
+        ],
+        "senseTags": [
+          "D"
+        ],
+        "trait": [
+          {
+            "name": "Keen Smell",
+            "entries": [
+              "The reindeer has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+            ]
+          }
+        ],
+        "traitTags": [
+          "Keen Senses"
+        ],
+        "shortName": "Reindeer",
+        "action": [
+          {
+            "name": "Multiattack",
+            "entries": [
+              "The Reindeer makes two attacks: one with its bite and the other with its fist. "
+            ]
+          },
+          {
+            "name": "Bite",
+            "entries": [
+              "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) damage."
+            ]
+          },
+          {
+            "name": "Fist",
+            "entries": [
+              "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) damage."
+            ]
+          }
+        ],
+        "actionTags": [
+          "Multiattack"
+        ],
+        "miscTags": [
+          "MW"
+        ],
+        "cr": "3"
+      },
+      {
+        "name": "Klaus Klattermaus (Oneshot 2024)",
+        "size": [
+          "S"
+        ],
+        "type": "humanoid",
+        "source": "ToL",
+        "alignment": [
+          "L",
+          "E"
+        ],
+        "ac": [
+          {
+            "ac": 19,
+            "from": [
+              "natural armor + Architect's armor"
+            ]
+          }
+        ],
+        "hp": {
+          "formula": "16d6 + 48",
+          "average": 104
+        },
+        "speed": {
+          "walk": 60
+        },
+        "str": 10,
+        "dex": 18,
+        "con": 16,
+        "int": 22,
+        "wis": 15,
+        "cha": 20,
+        "passive": 17,
+        "cr": "14",
+        "shortName": "Klaus",
+        "trait": [
+          {
+            "name": "Gnome Cunning",
+            "entries": [
+              "The klaus has advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+            ]
+          },
+          {
+            "name": "Arcane Turrets",
+            "entries": [
+              "Klaus Klattermaus has 4 arcane turrets protecting him. Using the Architect's Arcane Turret lvl 14 statblock. "
+            ]
+          },
+          {
+            "name": "Focus Stabilizer",
+            "entries": [
+              "When Klaus fails a constitution saving throw to maintain {@status concentration} on a spell. He can use his reaction to automatically succeed instead. "
+            ]
+          },
+          {
+            "name": "Enhanced Mobility",
+            "entries": [
+              "Klaus Klattermaus' speed increased by 30ft"
+            ]
+          }
+        ],
+        "senses": [
+          "darkvision 60 ft."
+        ],
+        "senseTags": [
+          "D"
+        ],
+        "languages": [
+          "Common",
+          "Fey",
+          "Gnomish"
+        ],
+        "languageTags": [
+          "C",
+          "G"
+        ],
+        "save": {
+          "dex": "+9",
+          "int": "+11",
+          "con": "+8",
+          "wis": "+7",
+          "cha": "+10"
+        },
+        "skill": {
+          "arcana": "+11",
+          "perception": "+7",
+          "deception": "+15",
+          "insight": "+12",
+          "persuasion": "+15"
+        },
+        "spellcasting": [
+          {
+            "name": "Spellcasting",
+            "headerEntries": [
+              "Klaus is a 14th-level Architect. His spellcasting ability is Intelligence (spell save {@dc 19}, +11 to hit with spell attacks). He has the following Architect spells prepared:"
+            ],
+            "constant": [
+              "{@spell detect magic}"
+            ],
+            "daily": {
+              "3e": [
+                "{@spell counterspell}",
+                "{@spell fireball}",
+                "{@spell lightning bolt}",
+                "{@spell magic missile}"
+              ],
+              "1e": [
+                "{@spell banishment}",
+                "{@spell disintegrate}"
+              ]
+            },
+            "will": [
+              "{@spell shield}"
+            ],
+            "ability": "int",
+            "type": "spellcasting"
+          }
+        ],
+        "spellcastingTags": [
+          "O"
+        ],
+        "bonus": [
+          {
+            "name": "Arcane Step (3 times)",
+            "entries": [
+              "Klaus can use Misty step 3 times a day as a bonus action. (30ft)"
+            ]
+          }
+        ],
+        "reaction": [
+          {
+            "name": "Shield",
+            "entries": [
+              "Klaus as a reaction cast's Shield"
+            ]
+          }
+        ],
+        "damageTagsSpell": [
+          "F",
+          "L",
+          "O"
+        ],
+        "savingThrowForcedSpell": [
+          "charisma",
+          "dexterity"
+        ]
+      },
+      {
+        "name": "Nulku",
+        "size": [
+          "H"
+        ],
+        "type": "aberration",
+        "source": "ToL",
+        "alignment": [
+          "L",
+          "E"
+        ],
+        "ac": [
+          {
+            "ac": 17,
+            "from": [
+              "natural armor"
+            ]
+          }
+        ],
+        "hp": {
+          "formula": "18d12 + 72",
+          "average": 189
+        },
+        "speed": {
+          "walk": 40,
+          "climb": 40
+        },
+        "str": 18,
+        "dex": 16,
+        "con": 18,
+        "int": 20,
+        "wis": 16,
+        "cha": 16,
+        "passive": 18,
+        "cr": "15",
+        "senses": [
+          "blindsight 120 ft."
+        ],
+        "senseTags": [
+          "B"
+        ],
+        "languages": [
+          "Cannot speak. Can telepathically speak any language that its larvae's host knows"
+        ],
+        "languageTags": [
+          "X"
+        ],
+        "save": {
+          "con": "+9",
+          "int": "+10",
+          "wis": "+8"
+        },
+        "skill": {
+          "arcana": "+10",
+          "deception": "+8",
+          "insight": "+8",
+          "intimidation": "+8",
+          "perception": "+8",
+          "persuasion": "+8"
+        },
+        "resist": [
+          "force",
+          "psychic",
+          {
+            "resist": [
+              "bludgeoning",
+              "piercing",
+              "slashing"
+            ],
+            "note": "from nonmagical attacks",
+            "cond": true
+          }
+        ],
+        "trait": [
+          {
+            "name": "Hive Mind",
+            "entries": [
+              "The Nulku can control all creatures that have a functioning larva fused with them, as long as they are on the same plane of existence as the Nulku. This control is facilitated through the arcane realm, acting as a tether between the Nulku and its controlled subjects."
+            ]
+          },
+          {
+            "name": "Elite Resistance (1/Day)",
+            "entries": [
+              "If the Nulku fails a saving throw, it can choose to succeed instead."
+            ]
+          },
+          {
+            "name": "Magic Resistance",
+            "entries": [
+              "The nulku has advantage on saving throws against spells and other magical effects."
+            ]
+          },
+          {
+            "name": "Spider Climb",
+            "entries": [
+              "The nulku can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+            ]
+          }
+        ],
+        "traitTags": [
+          "Magic Resistance",
+          "Spider Climb"
+        ],
+        "spellcasting": [
+          {
+            "name": "Innate Spellcasting",
+            "headerEntries": [
+              "The Nulku's innate spellcasting ability is Intelligence (spell save {@dc 18}, +10 to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+            ],
+            "will": [
+              "{@spell detect thoughts}"
+            ],
+            "daily": {
+              "3e": [
+                "{@spell hold person}",
+                "{@spell mass suggestion}",
+                "{@spell modify memory}"
+              ]
+            },
+            "ability": "int",
+            "type": "spellcasting"
+          }
+        ],
+        "spellcastingTags": [
+          "I"
+        ],
+        "action": [
+          {
+            "name": "Multiattack.",
+            "entries": [
+              "The Nulku makes three attacks: One with its bite and two with its legs."
+            ]
+          },
+          {
+            "name": "Bite",
+            "entries": [
+              "{@atk mw} {@hit 9} to hit, reach 10ft., one target. {@h}15 ({@damage 2d10 + 4}) piercing damage."
+            ]
+          },
+          {
+            "name": "Leg Strike",
+            "entries": [
+              "{@atk mw} {@hit 9} to hit, reach 10ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+            ]
+          },
+          {
+            "name": "Psychic Assault {@recharge 5}",
+            "entries": [
+              "The Nulku targets one creature it can see within 60 feet of it. The target must make a {@dc 18} Intelligence saving throw, taking 33 ({@damage 8d6 + 5}) psychic damage on a failed save, or half as much damage on a successful one. If the saving throw fails by 5 or more, the target is {@condition stunned} until the end of its next turn and suffers Minor Brain Damage - ",
+              "*You have disadvantage on Wisdom and Intelligence checks, as well as Constitution saving throws to maintain {@status concentration}. This effect heals after 2 weeks of rest or with a greater restoration spell.*",
+              "-"
+            ]
+          }
+        ],
+        "miscTags": [
+          "MW"
+        ],
+        "conditionInflict": [
+          "stunned"
+        ],
+        "damageTags": [
+          "P",
+          "Y"
+        ],
+        "savingThrowForced": [
+          "intelligence"
+        ],
+        "savingThrowForcedSpell": [
+          "wisdom"
+        ]
     }
   ],
   "legendaryGroup": [
