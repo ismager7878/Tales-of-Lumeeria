@@ -3338,8 +3338,7 @@
               {
                 "type": "list",
                 "items": [
-                  "You have advantage on initiative rolls.",
-                  "By spending an bonus action observing a humanoid, you can make an insight check against their deception check. If you succeed, you learn if the target is of the evil alignment or not.",
+                  "By spending a bonus action observing a humanoid, you can make an insight check against their deception check. If you succeed, you learn if the target is of the evil alignment or not.",
                   "You gain a dragonfly spirit, as per the spell {@spell Find Familiar}, requiring no material component."
                 ]
               }
@@ -3349,7 +3348,7 @@
               {
                 "type": "list",
                 "items": [
-                  "You can as a bonus action manifest black ethereal feAethered wings on your back that give you a flying speed equal to half your speed. After a minute the wings dissapear.",
+                  "You can as a bonus action manifest black ethereal feathered wings on your back that give you a flying speed equal to your speed. After a minute the wings disappear. You can do this once per long rest. ",
                   "You no longer need to be located at an temple of Kalin, to implore her to appear."
                 ]
               }
@@ -3359,7 +3358,7 @@
               {
                 "type": "list",
                 "items": [
-                  "    You now deal 1d(Martial Die) extra necrotic damage on all your Melee Strikes"
+                  "You have advantage on initiative rolls."
                 ]
               }
             ],
@@ -3368,7 +3367,8 @@
               {
                 "type": "list",
                 "items": [
-                  "You can now cast the spell {@spell Plane Shift} requiring no material component, once per day."
+                  "You can now cast the spell {@spell Plane Shift} requiring no material component, once per day.",
+                  "You now deal 1d(Martial Die) extra necrotic damage on all your Melee Strikes"
                 ]
               }
             ],
@@ -8129,6 +8129,76 @@
 				"v": true,
 				"s": true,
 				"m": "A withered rose coated in gold worth 50 Gold coins, Not consumed"
+			}
+    },
+		{
+			"name": "Eternal Redemption",
+			"level": 9,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "special"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					}
+				],
+				"fromSubclass": [
+					{
+						"class": {
+							"name": "Warlock",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "The Celestial",
+							"shortName": "Celestial",
+							"source": "XGE"
+						}
+					},
+					{
+						"class": {
+							"name": "Sorcerer",
+							"source": "PHB"
+						},
+						"subclass": {
+							"name": "Divine Soul",
+							"shortName": "Divine Soul",
+							"source": "XGE"
+						}
+					}
+				]
+			},
+			"entries": [
+				"Verbal command Word : \"Purge\" or \"Arc\".",
+				"Purge:",
+				"You choose a creature within 60 feet of you. That creature must make a Constitution saving throw. If the creature is of the evil alignment they have disadvantage. If the creature is an undead or vampire they automatically fail, and any Legendary Resistances or similar effects are ignored. ",
+				"A radiant beam of the sun itself appears from the heavens and crashes down onto the target, like a spear hurled from the goddess Aurorah purging evil. ",
+				"They take {@damage 30d10} radiant damage. On a successful save, the damage is halved. ",
+				"The creature for the next 1 minute is vulnerable to Radiant damage and they have disadvantage on any saving throws from spells cast by a cleric.",
+				"Arc:",
+				"You choose up to 10 creatures within 320 feet of you. Each chosen creature must make a constitution saving throw. If the creature is an undead or vampire they have disadvantage. ",
+				"The heavens open up, as radiant beams of light crash down and envelope the targets. ",
+				"They take {@damage 10d10} radiant damage. On a successful save, the damage is halved. ",
+				"If a target is an undead or vampire, and their CR is 10 or below. They take max damage regardless if they succeeded the saving throw."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a lock of the goddess Aurorah's hair, consumed) (Unique"
 			}
     }
   ],
