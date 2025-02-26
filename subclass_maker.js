@@ -13,8 +13,6 @@ const json = fs.readFileSync(
   path.join(__dirname, "Tales_of_Lumeeria_Core Update thread.json")
 );
 
-
-
 let homebrew = JSON.parse(json);
 
 const attributesList = [
@@ -37,6 +35,14 @@ const attributesList = [
     {
         name: "Wisdom",
         value: "wis"
+    },
+    {
+      name: "Constitution",
+      value: "con"
+    },
+    {
+      name: "Custom",
+      value: "custom"
     },
     {
         name: "Done",
@@ -150,12 +156,13 @@ const getNewHeading = async (former) => {
 const fillAttributes = async () => {
     let attributes = []
     while(true) {
-        const attribute = await select({
+        let attribute = await select({
             message: "Select an atribute",
             loop: false,
             choices: attributesList,
         })
         if (!attribute) break;
+        if (attribute == "custom") attribute = await input({message: "Atribute name:"})
         attributes.push(attribute);
     }
     return attributes
