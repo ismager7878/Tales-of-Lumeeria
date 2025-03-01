@@ -1233,6 +1233,112 @@
       ]
     },
     {
+      "name": "Architect's Tools",
+      "source": "ToL",
+      "rarity": "Artisan's tools",
+      "value": 10000,
+      "weight": 3,
+      "entries": [
+        "Architect's Tools are a set of specialized instruments that enable an Architect to perform their craft. These tools are essential for inscribing sigils into Architect's Arcane Crystals, calibrating magical constructs, and conducting arcane research. Without these tools, an Architect cannot prepare new spells or fine-tune their crystals. ",
+        {
+          "type": "entries",
+          "name": "Components",
+          "entries": [
+            {
+              "type": "list",
+              "items": [
+                "{@bold Engraving Needle:} For carving intricate sigils into crystals.",
+                "{@bold Arcane Lens:} A magnifier for precision work.",
+                "{@bold Crystal Clamp:} Holds crystals steady during inscription.",
+                "{@bold Tuning Fork:} Tests resonance and ensures proper alignment with Etheria."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Usage",
+          "entries": [
+            {
+              "type": "list",
+              "items": [
+                "{@bold Sigil Scribing:} Inscribing spells onto Architect's Arcane Crystals.",
+                "{@bold Calibration:} Adjusting the flow of energy in arcane devices or constructs.",
+                "{@bold Research and Repair:} Holds crystals steady during inscription.",
+                "{@bold Tuning Fork:} Analyzing raw arcane crystals or repairing damaged components."
+              ]
+            }
+          ]
+        },
+        "Architects rely on their tools and expertise to interact with the arcane engineering of the world. Below are examples of how different ability checks can complement an Architect’s work:",
+        {
+          "type": "entries",
+          "entries": [
+            {
+              "type": "list",
+              "items": [
+                "{@bold Investigation (Intelligence):} Used to detect hidden mechanisms, spot flaws in constructs, Spotting subtle energy leaks, identifying distortions in the air from a malfunctioning device, noticing cracks in an arcane crystal that indicate imminent failure or analyze clues related to arcane engineering. For example, determining the weak point of a malfunctioning construct or deducing the purpose of a mysterious device. ",
+                "{@bold Arcana (Intelligence):} A key skill for deciphering and understanding the principles behind arcane engineering. This includes attempting to repair or recalibrate an arcane device, such as an overloaded Architect’s Arcane Crystal, or understanding why a magical construct has malfunctioned. ",
+                "{@bold History (Intelligence):} Used to uncover the origin, age, and historical significance of an arcane device or construct. For instance, determining whether a construct was created in a long-lost civilization and discovering insights about its purpose. ",
+                "{@bold Sleight of Hand (Dexterity):} In delicate operations, such as inscribing sigils on an Architect's Arcane Crystal or reattaching intricate mechanisms, this skill ensures precision and care in execution."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Proficiency with Architect's Tools",
+          "entries": [
+                "If you are proficient with Architect's Tools, you add your proficiency bonus to any checks made to scribe sigils, modify arcane crystals, or repair constructs."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Architect's Staff",
+      "source": "ToL",
+      "rarity": "Rare, Spellcasting Focus",
+      "weight": 5,
+      "value": 25000,
+      "entries": [
+        "The Architect's Staff is a specialized tool and spellcasting focus, designed exclusively for Architects. It houses sockets for Architect's Arcane Crystals and channels the energy within them, enabling precise spellcasting. Each staff is a reflection of its creator's ingenuity, often incorporating personal modifications and features.",
+        {
+          "type": "entries",
+          "name": "Properties",
+          "entries": [
+            {
+              "type": "list",
+              "items": [
+                "{@bold Crystal Sockets:}The staff contains sockets that securely hold Architect's Arcane Crystals",
+                "{@bold Energy Conduit:} The staff channels arcane energy from the crystals into spells, serving as a focus for casting."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Alternative Designs", 
+          "entries": [
+            "Architects lacking the means to obtain a staff may use alternative spellcasting foci, such as: ",
+            {
+              "type": "list",
+              "items": [
+                "{@bold Crystal Pouches:} Organized compartments to store and manage prepared crystals.",
+                "{@bold Compact Scepters:} Smaller, lightweight versions of the staff with fewer features."
+              ]
+            }
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Replacement",
+          "entries": [
+            "If your Architect's Staff is lost or destroyed, crafting a new one requires 1 week of downtime and 250 gp worth of materials. You must have access to your Architect's Tools to complete the process. "
+          ]
+        }
+      ]
+    },
+    {
       "name": "Revolver",
       "source": "ToL",
       "type": "R",
@@ -1819,7 +1925,7 @@
         }
       ],
       "subclassTitle": "Soul Path",
-      "hasFluff": false
+      "hasFluff": true
     },
     {
       "name": "Architect",
@@ -1919,131 +2025,155 @@
         "Fly",
         "Fey Guest's Refuge|ToL",
         "Fireball",
-        "Flashburst",
+        "Flashburst|ToL",
         "Glyph of Warding",
         "Haste",
-        "Intellect Fortress",
+        "Intellect Fortress|TCE",
         "Protection from Energy",
         "Revivify",
-        "Tiny Servant",
+        "Tiny Servant|xge",
         "Water Breathing",
         "Water Walk",
-        "Adran's Banner",
+        "Adran's Banner|ToL",
         "Sending",
-        "Evermoor's Lightning Shackle", 
+        "Evermoor's Lightning Shackle|ToL", 
         "Counterspell",
         "Nondetection",
-        "Nitto's Vitality Orb",
-        "Sapphire's Sanctu",
+        "Nitto's Vitality Orb|ToL",
+        "Sapphire's Sanctum|ToL",
         "Arcane Eye",
-        "Elemental Bane",
-        "Evermoor's Tornado",
+        "Elemental Bane|xge",
+        "Evermoor's Tornado|ToL",
         "Fabricate",
         "Freedom of Movement",
         "Secret Chest",
         "Faithful Hound",
         "Private Sanctum",
         "Resilient Sphere",
-        "Shadow Trace",
+        "Shadow Trace|ToL",
         "Stone Shape",
         "Stoneskin",
-        "Summon Construct",
+        "Summon Construct|TCE",
         "Death Ward",
         "Banishment",
         "Dimension Door",
         "Greater Invisibility",
-        "Sova's Last Danc",
+        "Sova's Last Dance|ToL",
         "Animate Objects",
         "Greater Restoration",
-        "Skill Empowerment",
+        "Skill Empowerment|xge",
         "Wall of Stone",
         "Mass Cure Wounds",
         "Scrying",
-        "Kalezandra's Reflective Bar", 
+        "Kalezandra's Reflective Barrier|ToL", 
         "Teleportation Circle",
         "Legend Lore",
-        "Synaptic Static",
-        "Seemin",
+        "Synaptic Static|xge",
+        "Seeming",
         "Find the Path",
         "True Seeing",
         "Arcane Gate",
-        "Evermoor's Gigantification",
+        "Evermoor's Gigantification|ToL",
         "Globe of Invulnerability",
         "Mass Suggestion",
-        "Mental Prison",
-        "Nightshades' Moonbeam",
+        "Mental Prison|xge",
+        "Nightshades' Moonbeam|ToL",
         "Programmed Illusion",
-        "Scatte",
+        "Scatter|xge",
         "Fire Storm",
         "Plane Shift",
         "Regenerate",
         "Symbol",
-        "Crown of Stars",
+        "Crown of Stars|xge",
         "Delayed Blast Fireball",
         "Forcecage",
-        "Greater Haste",
+        "Greater Haste|ToL",
         "Magnificent Mansion",
         "Project Image",
-        "Rivel's Red Star",
-        "Telepor",
+        "Rivel's Red Star|ToL",
+        "Teleport",
         "Antimagic Field",
         "Demiplane",
         "Dominate Monster",
-        "Evermoor's Power Word Fall",
+        "Evermoor's Power Word Fall|ToL",
         "Feeblemind",
         "Mind Blank",
-        "Power Word Stu",
+        "Power Word Stun",
         "Astral Projection",
         "Gate",
         "Heal",
-        "Invulnerability",
-        "Obliteration",
-        "Psychic Scream",
-        "Time Stop",
+        "Invulnerability|xge",
+        "Obliteration|ToL",
+        "Psychic Scream|xge",
+        "Time Stop"
       ],
       "classTableGroups": [
         {
-          "colLabels": ["Innovation Points", "{@filter Cantrips Known|spells|level=0|class=Architect}"],
+          "colLabels": ["Innovation  Points", " {@filter Cantrips Known|spells|level=0|class=Architect (ToL)}", "{@filter Spells Known|spells|class=Architect (ToL)}"],
           "rows": [
-            ["{@dice 1d6}"],
-            ["{@dice 1d6}"],
-            ["{@dice 1d6}"],
-            ["{@dice 1d6}"],
-            ["{@dice 1d8}"],
-            ["{@dice 1d8}"],
-            ["{@dice 1d8}"],
-            ["{@dice 1d8}"],
-            ["{@dice 1d8}"],
-            ["{@dice 1d8}"],
-            ["{@dice 1d10}"],
-            ["{@dice 1d10}"],
-            ["{@dice 1d10}"],
-            ["{@dice 1d10}"],
-            ["{@dice 1d10}"],
-            ["{@dice 1d10}"],
-            ["{@dice 1d12}"],
-            ["{@dice 1d12}"],
-            ["{@dice 1d12}"],
-            ["{@dice 1d12}"]
+            [0, 2, 4],
+            [4, 2, 5],
+            [5, 2, 7],
+            [6, 3, 8],
+            [8,3,10],
+            [9,3,11],
+            [10,3,13],
+            [11,3,14],
+            [13,3,16],
+            [14,4,17],
+            [15,4,19],
+            [16,4,20],
+            [18,4,22],
+            [19,4,23],
+            [20,4,25],
+            [21,4,26],
+            [23,4,28],
+            [24,4,29],
+            [25,4,30],
+            [26,4,30]
+          ]
+        },
+        {
+          "title": "Spells Slots per Spell Level",
+          "colLabels": ["1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th"],
+          "rows": [
+            [2, 0, 0, 0, 0, 0, 0, 0, 0],
+            [3, 0, 0, 0, 0, 0, 0, 0, 0],
+            [4, 2, 0, 0, 0, 0, 0, 0, 0],
+            [4, 3, 0, 0, 0, 0, 0, 0, 0],
+            [4, 3, 2, 0, 0, 0, 0, 0, 0],
+            [4, 3, 3, 0, 0, 0, 0, 0, 0],
+            [4, 3, 3, 1, 0, 0, 0, 0, 0],
+            [4, 3, 3, 2, 0, 0, 0, 0, 0],
+            [4, 3, 3, 3, 1, 0, 0, 0, 0],
+            [4, 3, 3, 3, 2, 0, 0, 0, 0],
+            [4, 3, 3, 3, 2, 1, 0, 0, 0],
+            [4, 3, 3, 3, 2, 1, 0, 0, 0],
+            [4, 3, 3, 3, 2, 1, 1, 0, 0],
+            [4, 3, 3, 3, 2, 1, 1, 0, 0],
+            [4, 3, 3, 3, 2, 1, 1, 1, 0],
+            [4, 3, 3, 3, 2, 1, 1, 1, 0],
+            [4, 3, 3, 3, 2, 1, 1, 1, 1],
+            [4, 3, 3, 3, 3, 1, 1, 1, 1],
+            [4, 3, 3, 3, 3, 2, 1, 1, 1],
+            [4, 3, 3, 3, 3, 2, 2, 1, 1]
           ]
         }
       ],
       "startingProficiencies": {
-        "armor": ["light", "medium", "{@item shield|phb}"],
-        "weapons": ["simple", "martial"],
-        "tools": ["None"],
+        "armor": ["light"],
+        "weapons": ["{@item dagger|phb|Daggers}", "{@item quarterstaff|phb|Quarterstaffs}", "{@item sling|phb|Slings}", "{@item light crossbow|phb|Light crossbows}", "{@item hand crossbow|phb|Hand crossbows}", "{@filter Firearms|items|source=ToL|type=firearm}"],
+        "tools": ["{@item tinker's tools|phb|Tinker's tools}", "{@item thieves' tools|phb|Thieves' Tools}", "{@item smith's tools|phb|Smith's Tools", "{@item architect's tools|ToL|Architect's Tools}"],
         "skills": [
           {
             "choose": {
               "from": [
-                "athletics",
-                "acrobatics",
-                "medicine",
-                "persuasion",
-                "intimidation",
-                "history",
                 "arcana",
-                "insight"
+                "history",
+                "investigation",
+                "insight",
+                "sleight of hand",
+                "percetion"
               ],
               "count": 2
             }
@@ -2053,10 +2183,10 @@
       "startingEquipment": {
         "additionalFromBackground": true,
         "default": [
-          "(a) a {@filter martial weapon|items|source=phb|category=basic|type=martial weapon} or (b) two {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-          "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) an {@item handaxe|phb|two handaxes}",
-          "(a) {@item studded leAether armor|phb} and {@item scale mail|phb}",
-          "An {@item explorer's pack|phb}"
+          "(a) two {@item dagger|phb|Daggers} or (b) a {@item quaterstaff|phb|Quaterstaff}",
+          "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) A {@item flintlock pistol|ToL|Flintlock Pistol}",
+          "(a) {@item leather armor|phb}",
+          "{@item architect's tools|ToL|Architect's Tools}, {@item architect's staff|ToL|Architect's Staff} and a {@item scholar's pack|phb}"
         ]
       },
       "classFeatures": [
@@ -2099,7 +2229,7 @@
         }
       ],
       "subclassTitle": "Soul Path",
-      "hasFluff": false
+      "hasFluff": true
   }
   ],
   "classFeature": [
@@ -4827,6 +4957,17 @@
     }
   ],
   "classFluff": [
+    {
+      "name": "Architect",
+      "source": "ToL",
+      "entries":[
+        "The Architects of Lumeeria are masters of arcane innovation, blending ancient magic with cutting-edge engineering. Their art lies in harnessing arcane crystals—natural repositories of magical energy—and inscribing them with intricate, function-driven runes to manipulate the raw power within. Unlike wizards who memorize spells or sorcerers born with innate magic, Architects approach magic as a system of precision, logic, and creativity.",
+        "Architects first emerged during the Reconstruction Era after the Millennia of the Lost, when magic and technology had to be united to rebuild civilizations. These pioneers discovered that by embedding specific arcane scripts into crystals, they could replicate the effects of traditional spells without needing a caster. This breakthrough revolutionized industry, warfare, and daily life, leading to a technological renaissance in Lumeeria.",
+        "From walking automata powered by crystal cores to weapons of war that unleash devastating magical energy, Architects have redefined the limits of what magic can achieve. Their workshops, often brimming with mechanical constructs and glowing runes, are hubs of invention. However, their work requires precision—an incorrectly inscribed crystal can lead to catastrophic failures.",
+        "While revered for their brilliance, Architects tread a dangerous path. Overuse or misuse of arcane crystals brings huge risks with dire consequences. Thus, Architects are often viewed with a mix of admiration and caution. To them, the world is not just a place to live—it is a puzzle to decode, reimagine, and transform.",
+        "Architects are divided into various study paths, each pushing the boundaries of innovation. Whether focused on creating intricate constructs, enhancing weapons, or exploring new energy sources, Architects stand as the bridge between the arcane past and the technological future of Lumeeria."
+      ]
+    },
     {
       "name": "Soulburner",
       "source": "ToL",
