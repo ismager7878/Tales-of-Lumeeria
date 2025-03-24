@@ -4704,9 +4704,9 @@
       "subclassSource": "ToL",
       "level": 1,
       "entries": [
-        "{@italic Created By : Victor}",
-        "Puppeteer sorcerers, whispered to be Velena's children, wield the dark art of manipulation. Hailing from the elusive Black Rose organization, these enigmatic sorcerers instill fear across Lumeeria. Their mastery over behind-the-scenes control, akin to the rumored powers of The Black Rose, chills the hearts of those who possess valuable secrets. Feared for their ability to puppeteer destinies, Puppeteer sorcerers embody the unsettling legacy of Velena's shadowy offspring, leaving an indelible mark on the lands they tread."
-      ]
+				"{@italic Created By : Victor}",
+				"Puppeteer sorcerers, whispered to be Velena's children, wield the dark art of manipulation. Hailing from the elusive Chained Court, these enigmatic sorcerers instill fear across Lumeeria. Their mastery over behind-the-scenes control, akin to the rumored powers of The Chained Court chills the hearts of those who possess valuable secrets. Feared for their ability to puppeteer destinies, Puppeteer sorcerers embody the unsettling legacy of Velena's shadowy offspring, leaving an indelible mark on the lands they tread."
+			]
     },
     {
       "name": "Puppeteer Spells",
@@ -5268,7 +5268,7 @@
               {
                 "type": "list",
                 "items": [
-                  "You can now cast the {@spell Plane Shift} spell once per day.",
+                  "Once per long rest, as a free action you can channel necrotic energy into your unarmed strikes and for one turn you deal 1d(Martial Die) extra necrotic damage.",
                   "You now deal 1d(Martial Die) extra necrotic damage on all your Melee Strikes"
                 ]
               }
@@ -8124,17 +8124,17 @@
           }
         ]
       },
-      "entries": [
-        "As you sit and concentrate on the spell, you create a calming aura around yourself. Up to three individuals within a 10-foot radius of you can join your aura by sitting and meditating, refraining from other activities or rest.",
-        "After an hour has passed, the individuals within the aura, excluding yourself, experience a soothing effect, reducing their level of {@condition exhaustion} by one."
-      ],
-      "source": "ToL",
-      "components": {
-        "v": true,
-        "s": true,
-        "m": "75 gold worth of silver chains for each individual affected, consumed"
-      }
-    },
+			"entries": [
+				"As you sit and concentrate on the spell, you create a calming aura around yourself. Up to three individuals within a 10-foot radius of you can join your aura by sitting and meditating, refraining from other activities or rest.",
+				"After an hour has passed, the individuals within the aura, including yourself, experience a soothing effect, reducing their level of {@condition exhaustion} by one."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "25 gold worth of silver chains for each individual affected, consumed"
+			}
+		},
     {
       "name": "Shadow Trace",
       "level": 4,
@@ -8671,7 +8671,7 @@
       }
     },
     {
-      "name": "Ral's Mobile Aid",
+      "name": "Ral's Mobile Aid (Retired)",
       "level": 4,
       "school": "C",
       "time": [
@@ -8725,9 +8725,10 @@
       "school": "A",
       "time": [
         {
-          "number": 1,
-          "unit": "reaction"
-        }
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when an ally within range is hit by an attack"
+				}
       ],
       "range": {
         "type": "point",
@@ -8769,7 +8770,7 @@
       }
     },
     {
-      "name": "Ral's Empowered Infusion",
+      "name": "Ral's Empowered Infusion (Retired)",
       "level": 1,
       "school": "T",
       "time": [
@@ -10071,12 +10072,12 @@
           }
         ]
       },
-      "entries": [
-        "You stretch out your arm, reaching for something, as you manifest a piece of the Red Moon Lotoza as it comes plummeting down to the ground.",
-        "Choose a point within range. A shimmering portal opens in the sky above that point, revealing a fragment of the Red Moon Lotoza hurtling towards the ground. You can adjust the size of the resulting sphere upon casting, ranging from 50 feet to 120 feet in radius.",
-        "Each creature within the chosen sphere must make a Dexterity saving throw for each damage type from the spell. The sphere spreads around corners. On a failed save, a creature takes {@damage 10d10} bludgeoning damage, {@damage 10d10} fire damage, {@damage 10d10} radiant damage, {@damage 10d10} cold damage, and {@damage 10d10} force damage. On a successful save, the damage is halved.",
-        "The spell also damages objects in the area, shattering and incinerating them. Additionally, upon impact, the spell leaves behind a permanent crater with 20-foot-tall walls surrounding the area."
-      ],
+			"entries": [
+				"You stretch out your arm, reaching for something, as you manifest a piece of the Red Moon Lotoza as it comes plummeting down to the ground.",
+				"Choose a point within range. A shimmering portal opens in the sky above that point, revealing a fragment of the Red Moon Lotoza hurtling towards the ground. You can adjust the size of the resulting sphere upon casting, ranging from 50 feet to 120 feet in radius.",
+				"Each creature within the chosen sphere must make a Dexterity saving throw for each damage type from the spell. The sphere spreads around corners. On a failed save, a creature takes {@damage 7d10} bludgeoning damage, {@damage 7d10} fire damage, {@damage 7d10} radiant damage, {@damage 7d10} cold damage, and {@damage 7d10} force damage. On a successful save, the damage is halved.",
+				"The spell also damages objects in the area, shattering and incinerating them. Additionally, upon impact, the spell leaves behind a permanent crater with 20-foot-tall walls surrounding the area."
+			],
       "source": "ToL",
       "components": {
         "v": true,
@@ -10615,11 +10616,12 @@
           }
         ]
       },
-      "entries": [
-        "You mark a creature within range that you can see. ",
-        "As ethereal withered rose buds will appear above the marked creature. Each time the marked creature takes damage from an attack or spell they receive an additional {@damage 1d4} necrotic damage. ",
-        "Once the marked creature is reduced to 0 hit points, a black rose will grow from the creatures corpse, and each ally of the caster within 15 feet of the corpse will regain {@dice 2d8} hit points. "
-      ],
+			"entries": [
+				"You mark a creature within range that you can see. ",
+				"As ethereal withered rose buds will appear above the marked creature. Each time the marked creature takes damage from an attack or spell they receive an additional {@damage 1d4} necrotic damage. ",
+				"Once the marked creature is reduced to 0 hit points, a black rose will grow from the creatures corpse, and each ally of the caster within 15 feet of the corpse will regain {@dice 2d8} hit points. ",
+				"A {@spell remove curse} spell cast on the target ends this spell early."
+			],
       "source": "ToL",
       "components": {
         "v": true,
@@ -10696,6 +10698,112 @@
         "s": true,
         "m": "a lock of the goddess Aurorah's hair, consumed) (Unique"
       }
+    },
+		{
+			"name": "Valstina's Psychic Strain",
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You whisper a curse to a creature that you can see within range. Until the spell ends, the creature takes {@damage 1d4} Psychic damage on each of your turns, as blood shot eyes and foaming from the mouth appears on the target. ",
+				"If the target drops to 0 hit points before this spell ends, the curse automatically targets a new creature within range and restarts the duration. ",
+				"A {@spell remove curse} cast on the target, or the target moving more than 90 feet away from the caster, ends this spell early."
+			],
+			"source": "ToL",
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "The dried tongue from a fey Shadeclaw, not consumed) (Unique"
+			}
+		},
+		{
+			"name": "Arcane Imprint",
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"As you cast this spell, you focus on a subject within 30 feet that you can see. Ink seeps from the writing stone, hovering momentarily before meticulously arranging itself on the arcane paper to form a detailed image. The image captures the current appearance of the subject with exceptional clarity, especially if you are closer to the subject.",
+				"The picture is permanent, and after 24 hours, even {@spell Dispel Magic} cannot remove the ink from the page. The quality and detail of the imprint increase with proximity to the subject and the level at which the spell is cast."
+			],
+			"source": "ToL",
+			"components": {
+				"m": "a piece of special arcane Imprint paper worth 1 gold which is consumed, and an enchanted writing stone worth 50 gold which is not consumed"
+			},
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level, the casting time is reduced to 1 action, and the range extends to 120 feet. When you cast this spell using a spell slot of 5th level or higher, the range extends to 1 mile. The detail of the imprint then relies on the caster's perception. "
+					]
+				}
+			]
     }
   ],
   "monster": [
@@ -19233,7 +19341,8 @@
       "skill": {
         "perception": "+11",
         "survival": "+11",
-        "insight": "+7"
+        "insight": "+7",
+				"stealth": "+14"
       },
       "resist": [
         "force",
@@ -19262,6 +19371,7 @@
           ],
           "daily": {
             "2": [
+              "{@spell invisibility}",
               "{@spell teleport}"
             ]
           },
@@ -19336,7 +19446,10 @@
         "N",
         "P",
         "S"
-      ]
+      ],
+			"damageTagsSpell": [
+				"O"
+			]
     },
     {
       "name": "Shadeclaw",
@@ -21570,10 +21683,12 @@
       "cr": "9",
       "languages": [
         "Talmerian",
-        "Thieves' cant"
+        "Thieves' cant",
+				"Elvish"
       ],
       "languageTags": [
-        "TC"
+        "TC",
+				"E"
       ],
       "save": {
         "str": "+9",
@@ -21937,15 +22052,7 @@
           "type": "spellcasting"
         }
       ],
-      "trait": [
-        {
-          "name": "Aura of Murder",
-          "entries": [
-            "As long as the Talon is not {@condition incapacitated}, hostile creatures within 5 feet of it gain vulnerability to piercing damage unless they have resistance or immunity to such damage."
-          ]
-        }
-      ],
-      "action": [
+			"action": [
         {
           "name": "Multiattack",
           "entries": [
@@ -21998,9 +22105,17 @@
         "type": "external",
         "url": ""
       },
-      "damageTags": [
-        "P"
-      ],
+			"bonus": [
+				{
+					"name": "Cower",
+					"entries": [
+						"Hostile creatures within 10ft of the Talon must make a Charisma Saving Throw {@dc 15}. On a failed save they gain vulnerability to piercing damage while within 10ft of the Talon, unless they have resistance or immunity to such damage. "
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
       "savingThrowForcedSpell": [
         "wisdom"
       ]
@@ -22160,7 +22275,15 @@
         "Shapechanger",
         "Sneak Attack"
       ],
-      "damageTags": [
+			"bonus": [
+				{
+					"name": "Cower",
+					"entries": [
+						"Hostile creatures within 10ft of the Crimson Talon must make a Charisma Saving Throw {@dc 17}. On a failed save they gain vulnerability to piercing damage while within 10ft of the Crimson Talon, unless they have resistance or immunity to such damage."
+					]
+				}
+			],
+			"damageTags": [
         "P"
       ],
       "savingThrowForcedSpell": [
