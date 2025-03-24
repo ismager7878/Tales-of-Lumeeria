@@ -5268,8 +5268,8 @@
               {
                 "type": "list",
                 "items": [
-                  "Once per long rest, as a free action you can channel necrotic energy into your unarmed strikes and for one turn you deal 1d(Martial Die) extra necrotic damage.",
-                  "You now deal 1d(Martial Die) extra necrotic damage on all your Melee Strikes"
+                  "You can now cast the {@spell Plane Shift} spell once per day.",
+                  "Once per long rest, as a free action you can channel necrotic energy into your unarmed strikes and for one turn you deal 1d(Martial Die) extra necrotic damage."
                 ]
               }
             ],
