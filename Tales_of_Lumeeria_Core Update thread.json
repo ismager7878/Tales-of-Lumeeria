@@ -34,7 +34,7 @@
       ],
       "entries": [
         "{@bold Repeatble:} No",
-        "While maintaining this Innovation, you are always under the effects of the {@spell Detect Magic} spell. This does not require concentration and functions as though cast at will."
+        "While maintaining this Innovation, you can cast {@spell Detect Magic} at will, without needing a spell slot. "
       ]
     },
     {
@@ -109,7 +109,7 @@
       ],
       "entries": [
         "{@bold Repeatble:} No",
-        "Choose one damage type from Acid, Cold, Fire, Lightning, Poison, or Thunder when you maintain this Innovation. You gain resistance to the chosen damage type. The chosen resistance can be changed at the end of a long rest."
+        "While maintaining this Innovation, your Armor Class increases by an amount equal to half your proficiency bonus (rounded down)."
       ]
     },
     {
@@ -124,7 +124,7 @@
       ],
       "entries": [
         "{@bold Repeatble:} No",
-        "While maintaining this Innovation, you can cast {@spell Disguise Self} at will without expending a spell slot."
+        "While maintaining this Innovation, you can cast {@spell Disguise Self} at will without needing a spell slot."
       ]
     },
     {
@@ -147,7 +147,7 @@
       "source": "ToL",
       "consumes": {
         "name": "Innovation Point",
-        "amount": 5
+        "amount": 8
       },
       "prerequisite": [
         {
@@ -180,21 +180,6 @@
       "entries": [
         "{@bold Repeatble:} No",
         "You gain advantage on Intelligence (Arcana) checks and the ability to identify the properties of magical objects or spells with 10 minutes of study."
-      ]
-    },
-    {
-      "name": "Passive Innovation: Precision Calibration",
-      "source": "ToL",
-      "consumes": {
-        "name": "Innovation Point",
-        "amount": 6
-      },
-      "featureType": [
-        "Innovation"
-      ],
-      "entries": [
-        "{@bold Repeatble:} No",
-        "When making a ranged spell attack, you gain a bonus to the attack roll equal to half your proficiency bonus (rounded down)."
       ]
     },
     {
@@ -237,7 +222,7 @@
       "prerequisite": [
         {
           "level": {
-            "level": 15,
+            "level": 5,
             "class": {
               "name": "Architect"
             }
@@ -257,7 +242,7 @@
       "source": "ToL",
       "consumes": {
         "name": "Innovation Point",
-        "amount": 10
+        "amount": 7
       },
       "prerequisite": [
         {
@@ -273,8 +258,8 @@
         "Innovation"
       ],
       "entries": [
-        "{@bold Repeatble:} No",
-        "While this Innovation is active, you gain a bonus to your saving throws equal to your Intelligence modifier (minimum +1)."
+        "{@bold Repeatble:} Up to 3 Times",
+        "While this Innovation is active, you choose a saving throw that you lack proficiency in, you are now proficient in it."
       ]
     },
     {
@@ -382,7 +367,7 @@
       "source": "ToL",
       "consumes": {
         "name": "Innovation Point",
-        "amount": 5
+        "amount": 7
       },
       "prerequisite": [
         {
@@ -468,7 +453,7 @@
         "Innovation"
       ],
       "entries": [
-        "As a bonus action, you can spend 2 Innovation Points to magically reinforce a single non-magical object of size Large or smaller, such as a door, a section of a wall, or a similar structure. The reinforced object gains a damage threshold of 5, meaning it only takes damage from attacks or effects that deal 5 or more damage in a single instance. Damage below this threshold is negated entirely, as the object is treated as immune to it.",
+        "As a bonus action, you can spend 2 Innovation Points to magically reinforce a single non-magical stationary object of size Large or smaller that you touch, such as a door, a section of a wall, or a similar structure. The reinforced object gains a damage threshold of 5, meaning it only takes damage from attacks or effects that deal 5 or more damage in a single instance. Damage below this threshold is negated entirely, as the object is treated as immune to it.",
         "For every additional 2 Innovation Points you spend beyond the initial cost, the damage threshold increases by 5, to a maximum threshold of 20. Similarly, for every additional 2 Innovation Points spent, the duration of the reinforcement increases by 1 hour, up to a maximum duration of 4 hours. The reinforcement ends when the duration expires or if the object is destroyed."
       ]
     },
@@ -493,7 +478,7 @@
         "Innovation"
       ],
       "entries": [
-        "As a bonus action, you can spend 4 Innovation Points to form a magical crystalline armor over your body, bristling with sharp arcane spikes. While the armor is active, you have advantage on checks to escape being {@condition grappled}. Additionally, whenever a creature within 5 feet of you hits you with a melee attack, they take [{@dice 2d6} force damage. The armor lasts for 1 minute or until you dismiss it as a bonus action."
+        "As a bonus action, you can spend 4 Innovation Points to form a magical crystalline armor over your body, bristling with sharp arcane spikes. While the armor is active, you have advantage on checks to escape being grappled. Additionally, whenever a creature within 5 feet of you hits you with a melee attack, they take 2d6 force damage. You can hold concentration on this effect as if it was a spell for up to 1 minute or until you dismiss it as a bonus action."
       ]
     },
     {
