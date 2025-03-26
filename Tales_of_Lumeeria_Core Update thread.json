@@ -4942,14 +4942,14 @@
           "name": "Trick Shots:",
           "entries": [
             "Trick Shots. You learn four trick shots of your choice, which are detailed under {@subclassFeature Gunslinger: Trick Shots|Fighter||Lumeerian Gunslinger|ToL|3|ToL|Trick Shots} below. Many trick shots enhance an attack in some way. Each use of a trick shot must be declared before the attack roll is made.",
-            "You learn two additional trick shot of your choice at 7th, 10th, 15th and 18th level. Each time you learn a new trick shot, you can also replace one trick shot you know with a different one."
+            "You learn one additional trick shot of your choice at 7th, 10th, 15th and 18th level. Each time you learn a new trick shot, you can also replace one trick shot you know with a different one."
           ]
         },
         {
           "type": "entries",
           "name": "Grit:",
           "entries": [
-            "You gain a number of grit points equal to your Intelligence modifier (minimum of 1) + your proficiency bonus. You regain 2 expended grit point each time you roll a 20 on the d20 roll for an attack with a firearm. You regain all expended grit points after a short or long rest."
+            "You gain a number of grit points equal to your Intelligence modifier (minimum of 1) + your proficiency bonus. You regain 1 expended grit point each time you roll a 20 on the d20 roll for an attack with a firearm. You regain all expended grit points after a long rest."
           ]
         },
         {
@@ -4989,28 +4989,28 @@
           "type": "entries",
           "name": "Dazing Shot:",
           "entries": [
-            "When you make a firearm attack against a creature, you can expend one grit point to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw or suffer disadvantage on attacks until the end of their next turn."
+            "When you make a firearm attack against a creature, you can expend two grit points to attempt to dizzy your opponent. On a hit, the creature suffers normal damage and must make a Constitution saving throw or suffer disadvantage on attacks until the end of their next turn."
           ]
         },
         {
           "type": "entries",
           "name": "Deadeye Shot:",
           "entries": [
-            "When you make a firearm attack against a creature, you can expend one grit point to gain advantage on the attack roll."
+            "When you make a firearm attack against a creature, you can expend two grit points to gain advantage on the attack roll."
           ]
         },
         {
           "type": "entries",
           "name": "Disarming Shot:",
           "entries": [
-            "When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or drop 1 held object of your choice and have that object be pushed 10 feet away from you."
+            "When you make a firearm attack against a creature, you can expend one grit point to attempt to shoot an object from their hands. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or drop one held object of your choice and have that object be pushed 10 feet away from you."
           ]
         },
         {
           "type": "entries",
           "name": "Forceful Shot:",
           "entries": [
-            "When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 15 feet away from you."
+            "When you make a firearm attack against a creature, you can expend one grit point to attempt to trip them up and force them back. On a hit, the creature suffers normal damage and must succeed on a Strength saving throw or be pushed 10 feet away from you."
           ]
         },
         {
@@ -5038,35 +5038,28 @@
           "type": "entries",
           "name": "Blinding Shot:",
           "entries": [
-            "When you make a firearm attack against a creature, you can expend one grit point to attempt to blind your target with a well-aimed shot. On a hit, the creature suffers normal damage and must succeed on a Constitution saving throw or be {@condition blinded} until the end of its next turn."
+            "When you make a firearm attack against a creature, you can expend two grit points to attempt to blind your target with a well-aimed shot. On a hit, the creature suffers normal damage and must succeed on a Constitution saving throw or be blinded until the end of its next turn."
           ]
         },
         {
           "type": "entries",
           "name": "Concussive Shot:",
           "entries": [
-            "When you make a firearm attack against a creature, you can expend three grit points to unleash a concussive blast with your shot. On a hit, the creature suffers normal damage and must succeed on a Constitution saving throw or be {@condition stunned} until the end of its next turn."
+            "When you make a firearm attack against a creature, you can expend five grit points to unleash a concussive blast with your shot. On a hit, the creature suffers normal damage and must succeed on a Constitution saving throw or be stunned until the end of its next turn."
           ]
         },
         {
           "type": "entries",
           "name": "Staggering Shot:",
           "entries": [
-            "When you make a firearm attack against a creature, you can expend one grit point to disrupt their balance and coordination. On a hit, the creature suffers normal damage and must succeed on a Dexterity saving throw or have its movement speed reduced to 0 until the end of its next turn."
+            "When you make a firearm attack against a creature, you can expend two grit point to disrupt their balance and coordination. On a hit, the creature suffers normal damage and must succeed on a Dexterity saving throw or have its movement speed reduced to 0 until the end of its next turn."
           ]
         },
         {
           "type": "entries",
           "name": "Swift Shot:",
           "entries": [
-            "You can expend one grit point to make a lightning-fast shot, allowing you to fire your firearm with incredible speed. When you use this shot, you can make one additional firearm attack as a bonus action on your turn."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Smoke Bomb Shot:",
-          "entries": [
-            "You can expend one grit point to load your firearm with a specially prepared bullet that releases a cloud of obscuring smoke upon impact. On a hit, the creature suffers normal damage, and a 10-foot radius sphere of thick smoke is created at the point of impact, {@table Screen; Obscured Areas|screendungeonkit|heavily obscured} the area for 1 minute. Smoke Bomb Ammunition is required to use this Trick shot and costs 20sp to make."
+            "You can expend one grit point to make a lightning-fast shot, allowing you to fire your firearm with incredible speed. When you use this trick shot, you can make one additional firearm attack as a bonus action on your turn. This bonus action cannot benefit from any other trick shots."
           ]
         },
         {
@@ -5087,15 +5080,7 @@
           "type": "entries",
           "name": "Startling Shot:",
           "entries": [
-            "You can expend one grit point, to fire a shot designed to startle your opponent, causing them to lose focus momentarily. On a hit, the creature suffers normal damage, and it must succeed on a Wisdom saving throw or have disadvantage on its next saving throw until the end of its next turn."
-          ]
-        },
-        {
-          "type": "entries",
-          "name": "Grit Guard:",
-          "entries": [
-            "As a reaction to an ally being hit with a critical hit by an attacker within 30 feet, you can expend 2 grit points. You quickly toss a bag of black powder onto the attacker, attempting to distract them enough to disrupt their critical hit. The attacker and the affected ally must both be within 30 feet of you for this trick shot to take effect",
-            "The attacker must succeed on a Constitution saving throw or the critical hit is turned into a normal hit. Any effects triggered by a critical hit are canceled."
+            "You can expend one grit point, to fire a shot designed to startle your opponent, causing them to lose focus momentarily. On a hit, the creature suffers normal damage, and it must succeed on a Wisdom saving throw or have disadvantage on its next saving throw until the end of its next turn. "
           ]
         }
       ]
@@ -5125,8 +5110,8 @@
       "header": 2,
       "entries": [
         "Upon reaching 10th level, your sharp wit and quick reflexes enable you to recalibrate your aim when your shots go awry in the heat of battle.",
-        "Once per round, when you miss with an attack roll, you can add your Intelligence modifier to the roll to potentially hit the target. If the modified roll is successful, you also add your Intelligence modifier to the damage dealt.",
-        "You can use this feature a number of times equal to your Intelligence modifier, regaining expended uses after completing a long rest."
+        "As a reaction to missing with an attack roll, you can add your Intelligence modifier to the roll to potentially hit the target. If the modified roll is successful, you also add your Intelligence modifier to the damage dealt.",
+        "You can use this feature three times per long rest."
       ]
     },
     {
@@ -5143,19 +5128,6 @@
       ]
     },
     {
-      "name": "Slinger's Aim",
-      "source": "ToL",
-      "className": "Fighter",
-      "classSource": "phb",
-      "subclassShortName": "Lumeerian Gunslinger",
-      "subclassSource": "ToL",
-      "level": 15,
-      "header": 2,
-      "entries": [
-        "When you reach 15th level, you add half of your proficiency bonus (rounded down) to attack rolls with firearms."
-      ]
-    },
-    {
       "name": "Vicious Intent",
       "source": "ToL",
       "className": "Fighter",
@@ -5165,20 +5137,7 @@
       "level": 18,
       "header": 2,
       "entries": [
-        "At 18th level, your firearm attacks score a critical hit on a roll of 19-20, and you regain a grit point on a roll of 19 or 20 on a d20 attack roll."
-      ]
-    },
-    {
-      "name": "Hemorrhaging Critical",
-      "source": "ToL",
-      "className": "Fighter",
-      "classSource": "phb",
-      "subclassShortName": "Lumeerian Gunslinger",
-      "subclassSource": "ToL",
-      "level": 18,
-      "header": 2,
-      "entries": [
-        "Upon reaching 18th level, whenever you score a critical hit on an attack with a firearm, the target additionally suffers half of the damage from the attack at the end of its next turn."
+        "At 18th level, you regain a grit point on a roll of 19 or 20 on a d20 attack roll. Additionally you now learn all trick shots and you regain all your grit points on a short and long rest."
       ]
     },
     {
