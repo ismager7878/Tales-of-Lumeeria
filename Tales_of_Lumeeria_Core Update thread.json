@@ -6643,9 +6643,7 @@
         "Quickdraw|Fighter||Lumeerian Gunslinger|ToL|7",
         "Quick Thinking|Fighter||Lumeerian Gunslinger|ToL|10",
         "Quick Movement|Fighter||Lumeerian Gunslinger|ToL|15",
-        "Slinger's Aim|Fighter||Lumeerian Gunslinger|ToL|15",
-        "Vicious Intent|Fighter||Lumeerian Gunslinger|ToL|18",
-        "Hemorrhaging Critical|Fighter||Lumeerian Gunslinger|ToL|18"
+        "Vicious Intent|Fighter||Lumeerian Gunslinger|ToL|18"
       ],
       "source": "ToL",
       "shortName": "Lumeerian Gunslinger",
