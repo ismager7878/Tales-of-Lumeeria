@@ -5443,8 +5443,8 @@
       "level": 6,
       "header": 2,
       "entries": [
-        "Starting at 6th level, you gain the ability to reshape and manipulate the raw arcane energies around you to your will. When you cast a spell that deals damage, you can change the damage type to force damage.",
-        "Starting at 6th level, the chaotic energies of the Aetherwall have fortified your body against the raw energy of magic. You gain resistance to force damage."
+        "Starting at 6th level, you gain the ability to reshape and manipulate the raw arcane energies around you to your will. When you cast a leveled spell that deals damage, you can change the damage type to force damage.",
+        "You can use this feature a number of times equal to your Intelligence modifier per long rest."
       ]
     },
     {
