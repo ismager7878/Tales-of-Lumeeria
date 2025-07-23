@@ -6391,7 +6391,9 @@
         "v": true,
         "s": true,
         "m": {
-          "text": "A glass eye worth 50gp, not consumed"
+          "text": "A glass eye worth 50gp, not consumed",
+          "cost": 5000,
+          "consume": false
         }
       },
       "entriesHigherLevel": [
@@ -6982,7 +6984,9 @@
       "components": {
         "v": true,
         "s": true,
-        "m": "a drop of blood, a piece of flesh, and a pinch of bone dust"
+        "m": {
+          "text": "a drop of blood, a piece of flesh, and a pinch of bone dust"
+        }
       },
       "entriesHigherLevel": [
         {
@@ -7190,7 +7194,9 @@
       "components": {
         "v": true,
         "s": true,
-        "m": "A piece of amber"
+        "m": {
+          "text": "A piece of amber"
+        }
       },
       "conditionInflict": ["restrained"],
       "entriesHigherLevel": [
@@ -7244,7 +7250,9 @@
       "components": {
         "v": true,
         "s": true,
-        "m": "A small crystal or glass sphere"
+        "m": {
+          "text": "A small crystal or glass sphere"
+        }
       },
       "conditionInflict": ["blinded", "deafened"],
       "entriesHigherLevel": [
@@ -7719,7 +7727,9 @@
       "source": "ToL",
       "components": {
         "s": true,
-        "m": "Water droplets"
+        "m": {
+          "text": "Water droplets"
+        }
       },
       "conditionInflict": ["prone"],
       "entriesHigherLevel": [
@@ -7779,7 +7789,9 @@
       "components": {
         "v": true,
         "s": true,
-        "m": "a Bottle or Waterskin"
+        "m": {
+          "text": "a Bottle or Waterskin"
+        }
       },
       "conditionInflict": ["prone"],
       "entriesHigherLevel": [
@@ -7850,7 +7862,9 @@
       "components": {
         "v": true,
         "s": true,
-        "m": "A small piece of Sapphire"
+        "m": {
+          "text": "A small piece of Sapphire"
+        }
       }
     },
     {
@@ -8171,7 +8185,7 @@
         "v": true,
         "s": true,
         "m": {
-          "text": "a piece of Golden Bloom seaweed, which the spell consumes (Unique) ",
+          "text": "a piece of Golden Bloom seaweed, which the spell consumes)(Unique ",
           "consume": true
         }
       },
@@ -8395,8 +8409,7 @@
         "v": true,
         "s": true,
         "m": {
-          "text": "grass straws dried and soaked in holy water (Unique)",
-          "cost": 0,
+          "text": "grass straws dried and soaked in holy water) (Unique",
           "consume": false
         }
       },
@@ -8677,7 +8690,9 @@
       "components": {
         "v": true,
         "s": true,
-        "m": "a drop of blood, a piece of flesh, and a pinch of bone dust"
+        "m": {
+          "text": "a drop of blood, a piece of flesh, and a pinch of bone dust"
+        }
       }
     },
     {
@@ -8959,7 +8974,10 @@
       "components": {
         "v": true,
         "s": true,
-        "m": "Consumes a Claimed Fireshard crystal"
+        "m": {
+          "text": "a Claimed Fireshard crystal, which the spell consumes",
+          "consume": true
+        }
       },
       "entriesHigherLevel": [
         {
@@ -9065,7 +9083,9 @@
       "components": {
         "v": true,
         "s": true,
-        "m": "a pendulum dripping with blood"
+        "m": {
+          "text": "a pendulum dripping with blood"
+        }
       },
       "entriesHigherLevel": [
         {
@@ -9669,7 +9689,7 @@
         "v": true,
         "s": true,
         "m": {
-          "text": "an arcane crystal, which the spell consumes(Unique)",
+          "text": "an arcane crystal, which the spell consumes (Unique",
           "consume": true
         }
       },
@@ -9792,7 +9812,7 @@
         "v": true,
         "s": true,
         "m": {
-          "text": "an emerald skull soaked in death energy from being in the plane of Axion for 100 years (Unique)",
+          "text": "an emerald skull soaked in death energy from being in the plane of Axion for 100 years) (Unique",
           "consume": false
         }
       },
@@ -9935,7 +9955,7 @@
         "v": true,
         "s": true,
         "m": {
-          "text": "a lock of the goddess Aurorah's hair, which the spell consumes (Unique)",
+          "text": "a lock of the goddess Aurorah's hair, which the spell consumes) (Unique",
           "consume": true
         }
       }
@@ -9997,7 +10017,7 @@
         "v": true,
         "s": true,
         "m": {
-          "text": "the dried tongue from a fey Shadeclaw (Unique)",
+          "text": "the dried tongue from a fey Shadeclaw) (Unique",
           "consume": false
         }
       }
