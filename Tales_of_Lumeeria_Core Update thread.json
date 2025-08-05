@@ -1591,11 +1591,10 @@
         {
           "type": "list",
           "items": [
-            "Increase your maximum hit points by rolling a toughened die, which is a d4, and adding the result to your hit point total. Roll a toughened die for all previous levels as well.",
-            "Each time you gain a level, roll the toughened die and add the result to your hit point total."
+						"The Toughened effect is similar as Tough",
+						"Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points."
           ]
-        },
-        "This feat enhances the character's durability over time, granting them additional hit points with each level gained. It builds upon the foundation laid by the Tough feat, further solidifying the character's resilience in the face of adversity."
+				}
       ]
     },
     {
@@ -10746,6 +10745,57 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Ruin",
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"Sacrificing a piece of yourself, you turn your own pain into the downfall of something more powerful or numerous than yourself. As part of casting the spell, you take {@damage 2d10} necrotic damage, which cannot be reduced in any way. Afterwards, choose one of the following effects:",
+				"KINGSLAYER",
+				"Choose a single creature within range, which must then make a Constitution Saving Throw. On a failed save, the target takes 3 times the amount of damage you took as part of casting the spell. If the target has Legendary Resistances, it loses the ability to use them until the start of your next turn. On a success, it takes half damage and does not lose the use of Legendary Resistance.",
+				"CULL THE HERD",
+				"Choose a creature within range, which must then make a Constitution saving throw. On a failed save, forces of life and death crash over the creature, and up to 3 creatures of your choice within 15 feet of it, draining them and revitalizing them in an exhausting symphony of pain. The first creature takes 2 times the amount of damage you initially took as part of casting the spell, while the other 3 take the same amount of damage you took. If one of the creatures is killed by this damage, the excess then spreads to the other creatures and distributes evenly."
+			],
+			"source": "ToL",
+			"components": {
+				"s": true,
+				"m": "A skull of a slain demi-lich, Consumed, Unique"
+			}
     }
   ],
   "monster": [
@@ -22234,7 +22284,7 @@
       ]
     },
     {
-      "name": "Captain A",
+			"name": "Captain B",
       "source": "ToL",
       "size": [
         "M"
@@ -22253,8 +22303,8 @@
         }
       ],
       "hp": {
-        "formula": "10d8 + 40",
-        "average": 85
+				"formula": "15d8 + 60",
+				"average": 127
       },
       "speed": {
         "walk": 30
@@ -22275,7 +22325,8 @@
         "insight": "+4",
         "perception": "+7",
         "deception": "+7",
-        "stealth": "+4"
+				"stealth": "+4",
+				"arcana": "+4"
       },
       "senses": [
         "darkvision 60 ft."
@@ -22289,7 +22340,19 @@
         {
           "name": "Killer's Fury",
           "entries": [
-            "Captain Anderson deals an extra 4 ({@dice 1d8}) damage when he hits with a weapon attack (included in the attacks)."
+						"Whenever the Captain reduces are creature to 0 hit points, he restores {@dice 2d6} hit points to himself."
+					]
+				},
+				{
+					"name": "Elite unit",
+					"entries": [
+						"Captain is an Elite unit and has Elite Actions and Elite Resistances like Legendary creatures. "
+					]
+				},
+				{
+					"name": "Elite Resistance (1/Day)",
+					"entries": [
+						"If the captain fails a saving throw, he can choose to succeed instead."
           ]
         }
       ],
@@ -22297,26 +22360,33 @@
         {
           "name": "Multiattack",
           "entries": [
-            "Captain Anderson makes two attacks with his Blood Cleaver or Javelin"
+						"Captain makes two attacks with his Blood Cleaver or Javelin"
           ]
         },
         {
           "name": "Blood Cleaver +1",
           "entries": [
-            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d12 + 6}) slashing damage, plus 4 ({@damage 1d8}) damage.",
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 1d12 + 6}) slashing damage. (Plus {@dice 1d6} Hemorrhaging Injuries?)",
             "(Reflavored Greataxe, Magical Damage)"
           ]
         },
         {
           "name": "Harpoon (Javelin)",
           "entries": [
-            "{@atk rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 5}) damage, plus 4 ({@damage 1d8}) damage."
+						"{@atk rw} {@hit 8} to hit, range 30/120 ft., one target. {@h}7 ({@damage 1d6 + 5}) damage. (Plus {@dice 1d6} Hemorrhaging Injuries?)"
           ]
         },
         {
           "name": "Battle Cry (1/Day)",
           "entries": [
-            "Each creature of Captain Anderson's choice that is within 30 feet of him, can hear him, must succeed on a {@dc 16} Wisdom Saving Throw or be {@condition frightened} of Captain Anderson for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+						"Each creature of Captain's choice that is within 30 feet of him, can hear him, must succeed on a {@dc 16} Wisdom Saving Throw or be {@condition frightened} of Captain for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Items",
+					"entries": [
+						"3 Scrolls of Invisibility (Action, Guaranteed)",
+						"{@spell Invisibility}"
           ]
         }
       ],
@@ -22334,7 +22404,8 @@
         "url": "https://2014.5e.tools/audio/bestiary/orc-war-chief.mp3"
       },
       "traitTags": [
-        "Aggressive"
+				"Aggressive",
+				"Legendary Resistances"
       ],
       "senseTags": [
         "D"
@@ -22350,19 +22421,11 @@
       ],
       "hasFluff": true,
       "hasFluffImages": true,
-      "bonus": [
-        {
-          "name": "Aggressive",
-          "entries": [
-            "As a bonus action, Captain Anderson can move up to his speed toward a hostile creature that he can see. "
-          ]
-        }
-      ],
       "reaction": [
         {
           "name": "Rageful Strike",
           "entries": [
-            "As a reaction to getting hit by a melee attack, Captain Anderson can use his reaction to attack the creature back. "
+						"As a reaction to getting hit by a melee attack, Captain can use his reaction to attack the creature back. "
           ]
         }
       ],
@@ -22373,10 +22436,33 @@
         "type": "external",
         "url": ""
       },
+			"shortName": "Captain",
+			"legendaryActions": 1,
+			"legendary": [
+				{
+					"name": "Blood Rush",
+					"entries": [
+						"Captain moves up to his speed toward a hostile creature that he can see and makes a Blood Cleaver attack. "
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Captain has 1 Elite Action (Functions as Legendary)"
+			],
+			"bonus": [
+				{
+					"name": "Hemorrhaging injuries",
+					"entries": [
+						"Captain chooses a creature within 30ft of him, as murderous energy circulate them they must succeed on a {@dc 16} constitution saving throw. On a failure, for the next 1 minute, whenever they take damage, they take an additional {@dice 1d6} as their injuries bleed excessively. ",
+						"A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
       "damageTags": [
         "S"
       ],
       "savingThrowForced": [
+				"constitution",
         "wisdom"
       ]
     },
@@ -23299,6 +23385,1270 @@
       "savingThrowForcedSpell": [
         "wisdom"
       ]
+		},
+		{
+			"name": "Luna - Oakshade Oneshot",
+			"source": "ToL",
+			"page": 350,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any race"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item splint armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 24",
+				"average": 78
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"athletics": "+7",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"any one language (usually Common)"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 4}) slashing damage, or 8 ({@damage 1d10 + 4}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"heavy crossbow|phb",
+				"longsword|phb",
+				"shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"hasFluff": true,
+			"trait": [
+				{
+					"name": "Blood Hounds Training",
+					"entries": [
+						"Luna has been trained from the Blood Hounds, and therefor deals an additional {@damage 1d8} radiant damage whenever she fights against Undead creatures. "
+					]
+				},
+				{
+					"name": "Blood Hounds Immunity",
+					"entries": [
+						"Luna has been trained by the Blood hounds to become immune against any attempt from Vampires charm magic or being turned into vampire spawn"
+					]
+				}
+			],
+			"tokenHref": {
+				"type": "internal",
+				"path": ""
+			},
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Vampire - Death Denied",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "30d8 + 120",
+				"average": 255
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 50
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 19,
+			"int": 20,
+			"wis": 15,
+			"cha": 18,
+			"passive": 17,
+			"cr": "13",
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"The languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"save": {
+				"dex": "+9",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"deception": "+9",
+				"perception": "+7",
+				"stealth": "+9"
+			},
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Blood Eternal",
+					"entries": [
+						"If the vampire is reduced to 0 hit points, it does not die or fall {@condition unconscious}. Instead, it loses the ability to take actions other than Bonus Actions, and cannot regain any hit points until it completes a Long Rest in its resting place. If it does not return to its resting place by the following dawn, the vampire is destroyed."
+					]
+				},
+				{
+					"name": "Vampiric Traits.",
+					"entries": [
+						"The vampire has two traits from the Common Weaknesses table, two traits from the Uncommon Weaknesses table, and four traits from the vampiric powers table. Its weaknesses must include a method of destruction."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the vampire fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"shortName": "Vampire",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire makes three melee attacks, one of which may be with its Blood Drain."
+					]
+				},
+				{
+					"name": "Grasping Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one creature. {@h}13 ({@damage 2d8 + 4}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 17})."
+					]
+				},
+				{
+					"name": "Blood Drain",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one {@condition grappled}, {@condition incapacitated}, {@condition restrained}, or willing creature. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 17 ({@damage 5d6}) necrotic damage and the target must succeed on a {@dc 17} Constitution saving throw or lose three unexpended hit dice, or drop to 0 hit points if it cannot. A creature killed by this attack rises as a Vampire Spawn at the next sunset."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"One creature within 30 feet that can see the vampire must succeed on a {@dc 17} Wisdom saving throw or be Charmed by the vampire and its allies for 24 hours. A {@condition charmed} creature repeats this save whenever it takes damage, ending the effect on a success."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"legendaryHeader": [
+				"The vampire can take 3 legendary actions, choosing from the options below."
+			],
+			"legendary": [
+				{
+					"name": "Leaping Strike",
+					"entries": [
+						"The vampire move up to half its speed without provoking attacks of opportunity and makes a Grasping Strike attack."
+					]
+				},
+				{
+					"name": "Children of the Night",
+					"entries": [
+						"The vampire conjures a swarm of spectral vermin that envelop a creature it can see within 30 feet, heavily obscuring the area in a 5 foot radius around it until the vampire uses this ability again."
+					]
+				},
+				{
+					"name": "Blood Drain (Cost 2 Actions)",
+					"entries": [
+						"The vampire makes a Blood Drain attack."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Vampire Spawn Starveling - Death Denied",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d8 + 36",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 11,
+			"wis": 10,
+			"cha": 12,
+			"passive": 12,
+			"cr": "3",
+			"shortName": "Vampire",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"save": {
+				"dex": "+5",
+				"wis": "+2"
+			},
+			"skill": {
+				"deception": "+3",
+				"perception": "+2",
+				"stealth": "+5"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				"necrotic"
+			],
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Blood-Starved",
+					"entries": [
+						"If the vampire has not fed on humanoid blood in the last 24 hours, it cannot use its multiattack."
+					]
+				},
+				{
+					"name": "Inherited Weaknesses",
+					"entries": [
+						"The vampire has each of its creator's weaknesses."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire makes two attacks, one of which may be with its bite."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}8 ({@damage 2d4 + 3}) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 13})."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one {@condition grappled}, {@condition incapacitated}, {@condition restrained}, or willing creature. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 7 ({@damage 2d6}) necrotic damage and the target must succeed on a {@dc 14} Constitution saving throw or lose one unexpended hit die, or drop to 0 hit points if it cannot. If the creature expends a hit die in this way, the vampire spawn gains resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks Not Made With Wooden Weapons until the beginning of its next turn."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"reaction": [
+				{
+					"name": "Blood-Crazed Advance",
+					"entries": [
+						"As a reaction when a creature within 30 feet takes piercing or slashing damage, the vampire moves up to half its speed directly toward the creature."
+					]
+				}
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Vampire Spawn Bloodletter- Death Denied",
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"source": "ToL",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 56",
+				"average": 119
+			},
+			"speed": {
+				"walk": 50,
+				"climb": 30
+			},
+			"str": 17,
+			"dex": 18,
+			"con": 18,
+			"int": 14,
+			"wis": 10,
+			"cha": 12,
+			"passive": 13,
+			"cr": "5",
+			"shortName": "Vampire",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"save": {
+				"dex": "+7",
+				"wis": "+3"
+			},
+			"skill": {
+				"deception": "+4",
+				"perception": "+3",
+				"stealth": "+7"
+			},
+			"vulnerable": [
+				"radiant"
+			],
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from Nonmagical Attacks Not Made With Wooden Weapons",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Uncanny Speed",
+					"entries": [
+						"Attacks of opportunity made against the vampire are made at disadvantage."
+					]
+				},
+				{
+					"name": "Inherited Weaknesses",
+					"entries": [
+						"The vampire has each of its creator's weaknesses."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire makes three attacks, one of which may be with its bite."
+					]
+				},
+				{
+					"name": "Bloodletter Blade",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one creature. {@h}7 ({@damage 1d8 + 3}) slashing damage and the target must succeed on a {@dc 15} Constitution saving throw or lose 10 ({@dice 3d6}) hit points."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one creature. {@h}8 ({@damage 2d4 + 3}) slashing damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 13})."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one {@condition grappled}, {@condition incapacitated}, {@condition restrained}, or willing creature. {@h}6 ({@damage 1d6 + 3}) piercing damage plus 7 ({@damage 2d6}) necrotic damage and the target must succeed on a {@dc 14} Constitution saving throw or lose one unexpended hit die, or drop to 0 hit points if it cannot. If the creature expends a hit die in this way, the vampire spawn gains resistance to Bludgeoning, Piercing, and Slashing from Nonmagical Attacks Not Made With Wooden Weapons until the beginning of its next turn."
+					]
+				},
+				{
+					"name": "Blood Channeling (3rd Level Spell, Recharge 5-6)",
+					"entries": [
+						"The vampire loses 16 ({@dice 3d10}) hit points and another vampire that it can see within 30 feet gains that many temporary hit points. While it has any of these temporary hit points, the target's attacks are made at advantage, and once per turn it may impose disadvantage on a saving throw a creature makes agaist one of its spells or abilities."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Tik the Goblin",
+			"size": [
+				"S"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "6d6",
+				"average": 21
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 11,
+			"int": 16,
+			"wis": 8,
+			"cha": 8,
+			"passive": 11,
+			"cr": "3",
+			"skill": {
+				"perception": "+1",
+				"sleight of hand": "+7",
+				"stealth": "+5"
+			},
+			"languages": [
+				"Talmerian",
+				"Goblin"
+			],
+			"languageTags": [
+				"GO"
+			],
+			"trait": [
+				{
+					"name": "Nimble Escape",
+					"entries": [
+						"Tik the goblin can take the {@action Disengage} or {@action Hide} action as a bonus action on each of its turns."
+					]
+				},
+				{
+					"name": "Has Feats",
+					"entries": [
+						"{@feat Firearms Expert | tol}"
+					]
+				}
+			],
+			"save": {
+				"dex": "+5",
+				"int": "+5"
+			},
+			"action": [
+				{
+					"name": "Revolver",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 40/120 ft., one target. {@h}10 ({@damage 2d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Blunderbuss",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 15/30 ft., one target. {@h}12 ({@damage 2d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Box of Boom {@recharge 5}",
+					"entries": [
+						"Tik throws a Box of Boom somewhere within 30ft. The Box of Boom explodes where it lands and anything within a radius of 10ft must make a {@dc 13} Dexterity saving throw. Taking {@damage 4d8} fire damage on a failure, or half on a success."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"RNG"
+			],
+			"attachedItems": [
+				"revolver|dmg"
+			],
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Darae",
+			"source": "ToL",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 16,
+			"int": 10,
+			"wis": 13,
+			"cha": 15,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+4",
+				"athletics": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "4",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Darae makes two claw attacks or one Life Drain and one claw attack."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}5 ({@damage 1d6 + 3}) necrotic damage. The target must succeed on a {@dc 13} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.",
+						"A humanoid slain by this attack rises immediately as a {@creature zombie} under the Darae's control, unless the humanoid is restored to life or its body is destroyed. The Darae can have no more than twelve zombies under its control at one time."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 3}) piercing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"miscTags": [
+				"MW",
+				"HPR"
+			],
+			"tokenHref": {
+				"type": "external",
+				"url": ""
+			},
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Talen Rennin",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "ToL",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 6",
+				"average": 33
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 13,
+			"int": 16,
+			"wis": 18,
+			"cha": 14,
+			"passive": 14,
+			"cr": "4",
+			"languages": [
+				"Talmerian"
+			],
+			"save": {
+				"wis": "+6",
+				"int": "+5",
+				"cha": "+4"
+			},
+			"skill": {
+				"insight": "+8",
+				"religion": "+5",
+				"perception": "+6",
+				"stealth": "+6"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Talen Rennin's spellcasting ability is Wisdom (spell save {@dc 14}, +6 to hit with spell attacks). He can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"2": [
+							"{@spell scorching ray}",
+							"{@spell thunder fist|ToL}"
+						],
+						"3": [
+							"{@spell bless}",
+							"{@spell shield}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell Fire Bolt||firebolt}",
+								"{@spell guidance}"
+							]
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Frightening Appearance",
+					"entries": [
+						"Talen can as an action choose a creature within 60 ft. The creatures attention is drawn toward Talen as Talen's eyes flash black and the creature feels its very being become swallowed by a mysterious power. "
+					]
+				},
+				{
+					"name": "Firebolt",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/120 ft., one target. {@h}7 ({@damage 1d10}) fire damage."
+					]
+				},
+				{
+					"name": "Strike of Death {@recharge}",
+					"entries": [
+						"As an Action Talen Rennin manifests black ethereal feathered wings on his back. He chooses a creature within 60 ft and immediately dives onto them, striking them with his fist as necrotic energies hit the being. The creature has to make a {@dc 14} Constitution saving throw and take {@damage 4d10} necrotic damage on a failure, or half on a success. Then Talen flies back to his original spot without provoking opportunity attacks. And has a flying speed of 30ft for the next minute. "
+					]
+				}
+			],
+			"actionTags": [
+				"Swallow"
+			],
+			"miscTags": [
+				"RW"
+			],
+			"trait": [
+				{
+					"name": "Accompanied",
+					"entries": [
+						"Talen is always accompanied by a Black Dragonfly that seems to always be in the vicinity of where Talen is, only the most perceptive can spot it. ({@dc 20})"
+					]
+				}
+			],
+			"damageTags": [
+				"F"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Hans Fritzel",
+			"source": "ToL",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"Gnome"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item chain mail|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 7",
+				"average": 38
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 10,
+			"dex": 10,
+			"con": 12,
+			"int": 13,
+			"wis": 18,
+			"cha": 13,
+			"skill": {
+				"medicine": "+7",
+				"persuasion": "+3",
+				"religion": "+5",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"Talmerian",
+				"Celestial"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Hans Fritzel is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save {@dc 15}, {@hit 7} to hit with spell attacks). The priest has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell sacred flame}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell guiding bolt}",
+								"{@spell holy spear|ToL}",
+								"{@spell sanctuary}",
+								"{@spell stellar mending|ToL}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell lesser restoration}",
+								"{@spell naza's divine resurgence|ToL}",
+								"{@spell spiritual weapon}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell adran's banner|ToL}",
+								"{@spell nitto's vitality orb|ToL}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"attachedItems": [
+				"mace|phb"
+			],
+			"languageTags": [
+				"CE"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"hasFluff": true,
+			"token": {
+				"name": "",
+				"source": ""
+			},
+			"trait": [
+				{
+					"name": "Gnome Cunning",
+					"entries": [
+						"The hans fritzel has advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+					]
+				},
+				{
+					"name": "Necklace of Guaranteed Health",
+					"entries": [
+						"When Hans Firtzel is attuned to this necklace. (Only Clerics can attune) The lowest he can roll on a dice for healing spells is a 3. As if it rolls on a 1 or 2, it automatically becomes 3. "
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"O",
+				"R"
+			],
+			"savingThrowForcedSpell": [
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Giant Rock Crab",
+			"source": "ToL",
+			"size": [
+				"M"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d8"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 11,
+			"int": 1,
+			"wis": 9,
+			"cha": 3,
+			"skill": {
+				"stealth": "+3"
+			},
+			"senses": [
+				"blindsight 30 ft."
+			],
+			"passive": 9,
+			"cr": "1/8",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The crab can breathe air and water."
+					]
+				},
+				{
+					"name": "False Appearance",
+					"entries": [
+						"While hidden among rocks of the same color as you, you are indistinguishable from your surrounding rocks as long as you remain motionless. Your equipment needs to be hidden for this to be most effective."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) bludgeoning damage, and the target is {@condition grappled} (escape {@dc 13}). The crab has two claws, each of which can grapple only one target."
+					]
+				}
+			],
+			"traitTags": [
+				"Amphibious",
+				"False Appearance"
+			],
+			"senseTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"token": {
+				"name": "",
+				"source": ""
+			},
+			"environment": [
+				"grassland"
+			],
+			"damageTags": [
+				"B"
+			]
+		},
+		{
+			"name": "Adult Arcane Dragon",
+			"size": [
+				"H"
+			],
+			"type": "dragon",
+			"source": "ToL",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "18d20 + 108",
+				"average": 297
+			},
+			"speed": {
+				"walk": 40,
+				"burrow": 40,
+				"fly": 80
+			},
+			"str": 25,
+			"dex": 16,
+			"con": 22,
+			"int": 26,
+			"wis": 18,
+			"cha": 18,
+			"passive": 26,
+			"cr": "18",
+			"dragonAge": "adult",
+			"senses": [
+				"blindsight 60 ft.",
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"languages": [
+				"All",
+				"telepathy (Whole Arcane Realm)"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"save": {
+				"cha": "+10",
+				"wis": "+10",
+				"int": "+14",
+				"con": "+12",
+				"str": "+13"
+			},
+			"skill": {
+				"arcana": "+20",
+				"history": "+20",
+				"perception": "+16",
+				"religion": "+20"
+			},
+			"resist": [
+				"psychic",
+				"radiant"
+			],
+			"immune": [
+				"force",
+				{
+					"immune": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the dragon fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Guarded Thoughts",
+					"entries": [
+						"Magical attempts to read the dragon's mind or glean its thoughts fail automatically."
+					]
+				},
+				{
+					"name": "Dual consciousness",
+					"entries": [
+						"The dragon's two heads gives it the ability to concentrate on two spells simultaneously. Whenever it takes damage, it needs to make {@status concentration} checks as normal, failing results in losing both spells. "
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The dragon has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Greater concentration",
+					"entries": [
+						"The dragon has advantage on {@status concentration} checks. "
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Adult Arcane Dragon makes two arcane beam attacks Or 1 spell and 1 beam attack or Aether Breath"
+					]
+				},
+				{
+					"name": "Arcane Beam",
+					"entries": [
+						"{@atk rw} {@hit 14} to hit, range 120 ft., one target. {@h}22 ({@damage 4d6 + 8}) force damage."
+					]
+				},
+				{
+					"name": "Aether Breath {@recharge 5}",
+					"entries": [
+						"The chest of the dragon rapidly grows light blue as a bright blue and purple 90-foot cone of light explodes outward. Each creature in that area must make a {@dc 20} Intelligence saving throw. On a failed save, a creature takes 27 ({@damage 6d8}) force damage and they must roll a {@dice d6}. They lose a leveled spell slot equal to the number rolled. If a character has no spell slots left of the number rolled or below, or does not have the spellcasting or similar features. They take 9 ({@damage 2d8}) extra force damage",
+						"On a successful save, a creature takes half as much damage and does not lose any spell slots. "
+					]
+				}
+			],
+			"actionTags": [
+				"Breath Weapon",
+				"Multiattack"
+			],
+			"miscTags": [
+				"RW",
+				"AOE"
+			],
+			"damageTags": [
+				"O"
+			],
+			"savingThrowForced": [
+				"intelligence"
+			]
     }
   ],
   "legendaryGroup": [
