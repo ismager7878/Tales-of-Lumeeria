@@ -4531,7 +4531,7 @@
       "header": 2,
       "entries": [
         "Starting when you choose this tradition at 3rd level, you gain the ability to guide the corrupt souls to the plane of Judgement, Uzelon.",
-        "You can spend a minute to collect the soul from a humanoid corpse. This ritual can fail for various reasons, whereas some examples for the reasons are as follows. If the soul is no longer there, if the humanoid was not of the evil alignment or if you already hold a corrupt soul in your body.",
+        "You can spend a minute to collect the soul from a humanoid corpse. This ritual can fail for various reasons, as only the truly depraved souls are for your taking. Additional examples are as follows: If the soul is no longer there, if the humanoid is not of the evil alignment, if the soul still has a chance of redemption or if you already hold a corrupt soul in your body.",
         "Successfully performing the sacred ritual, you now carry with you the corrupt soul in your body. This can lead to various experiences and dangers, such as hearing persuasive whispers, catching glimps of memories or even becoming possessed. But it all depends on the soul.",
         "When you are located at a temple of Kalin, The Black Angel, you can spend an hour performing a ritual where you implore Kalin to appear and receive the corrupt soul, so that she can lead it to Uzelon. For each corrupt soul that you guide to Kalin, you grow stronger, as shown on the Guide of the Corrupt Table.",
         "After Guide of the corrupt has been used, and the corrupt soul is gone from your body. You must take a long rest before using this feature again.",
@@ -4542,11 +4542,20 @@
           "colStyles": ["col-1  text-center", "col-8"],
           "rows": [
             [
+              "1",
+              {
+                "type": "list",
+                "items": [
+                  "You can once every short rest, stop you're heart from beating, turning your body cold, you're skin pale for an amount up to 10 minutes. During these 10 minutes, if you are not moving, you appear dead to all, even magical means will register you as dead. "
+                ]
+              }
+            ],
+            [
               "3",
               {
                 "type": "list",
                 "items": [
-                  "By spending a bonus action observing a humanoid, you can make an insight check against their deception check. If you succeed, you learn if the target is of the evil alignment or not.",
+                  "By spending an bonus action observing a humanoid, you can make an insight check against their deception check. If you succeed, you learn if the humanoid is among those that are truly depraved and without saving and of the evil alignment.",
                   "You gain a dragonfly spirit, as per the spell {@spell Find Familiar}, requiring no material component."
                 ]
               }
@@ -4557,7 +4566,7 @@
                 "type": "list",
                 "items": [
                   "You can as a bonus action manifest black ethereal feathered wings on your back that give you a flying speed equal to your speed. After a minute the wings disappear. You can do this once per long rest. ",
-                  "You no longer need to be located at an temple of Kalin, to implore her to appear."
+                  "• You no longer need to be located at a temple of Kalin, to implore her to appear. Now you can set a ritual anywhere, taking an hour and after the ritual, within 24 hours Kalin may appear and receive the corrupt soul."
                 ]
               }
             ],
@@ -4573,7 +4582,7 @@
               {
                 "type": "list",
                 "items": [
-                  "You can now cast the {@spell Plane Shift} spell once per day.",
+                  "You can now cast the {@spell Plane Shift} spell once per 1d4 day(s).",
                   "Once per long rest, as a free action you can channel necrotic energy into your unarmed strikes and for one turn you deal 1d(Martial Die) extra necrotic damage."
                 ]
               }
@@ -4587,12 +4596,12 @@
                     "type": "entries",
                     "name": "Keeper of The Corrupt",
                     "entries": [
-                      "You attempt to banish yourself and a creature to an endless demiplane. You touch a creature and the target must suceed on a Wisdom Saving throw against your Ki Save DC. On a fail, both you and the target are transferred to a realm of infinite emptiness removed from all other planes.",
+                      "You attempt to banish yourself and a creature to an endless demiplane. You touch a creature and the target must succeed on a Wisdom Saving throw against your Ki Save DC. On a fail, both you and the target are transferred to a realm of infinite emptiness removed from all other planes.",
                       "Within this realm, neither you or the creature age or need to breathe, eat, drink or sleep and are functionally immortal. You cannot be reduced below 1 hit point.",
-                      "Time flow feels normal for you, but in truth it is a 100 times slower. Escape through conventional magical means, including teleportation or planat travel, is impossible.",
+                      "Time flow feels normal for you, but in truth it is a 100 times slower. Escape through conventional magical means, including teleportation or planar travel, is impossible.",
                       "You can end this effect as an action.",
                       "Alternatively, the target of this feature, can make a Wisdom check against your Ki Save DC, this can be done after 1 minute since arrival. On a success the effect ends.",
-                      "Each failure increases the waiting period before another attempt can be made, from 1 minute to 1 hour, 1 day, 1 year, 1 decade, 1 century and ultimately capping at 1 millenium.",
+                      "Each failure increases the waiting period before another attempt can be made, from 1 minute to 1 hour, 1 day, 1 year, 1 decade, 1 century and ultimately capping at 1 millennium.",
                       "Upon conclusion of the effect, both you and the target are returned to your original locations or to the nearest unoccupid space, with your original hit points from when the Keeper of the Corrupt was initially activated.",
                       "Keeper of the Corrupt can be done once every 7 days.",
                       "{@italic Keeper of the Corrupt is greatly inspired by AdramastesGM on Instagram}"
@@ -4615,7 +4624,7 @@
       "level": 6,
       "header": 2,
       "entries": [
-        "At 6th level, you gain the ability to unsettle or terrify those around you as an action, for your soul has been touched by death. When you take this action, each non-friendly creature within 30 feet of you that can see you must succeed on a Wisdom saving throw or be {@condition frightened} of you until the end of your next turn."
+        "At 6th level, you gain the ability to unsettle or terrify those around you as an action, for your soul has been touched by death. When you take this action, you expend 2 ki points, and each non-friendly creature within 30 feet of you that can see you must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn."
       ]
     },
     {
@@ -4628,7 +4637,7 @@
       "level": 11,
       "header": 2,
       "entries": [
-        "Beginning at 11th level, you use your connection with death to escape its grasp. When you are reduced to 0 hit points, you can expend 1 ki point (no action required) to have 1 hit point instead."
+        "Beginning at 11th level, you use your connection with death to escape its grasp. When you are reduced to 0 hit points, you can expend 3 ki point (no action required) to have 1 hit point instead."
       ]
     },
     {
