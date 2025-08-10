@@ -4599,6 +4599,7 @@
                       "You attempt to banish yourself and a creature to an endless demiplane. You touch a creature and the target must succeed on a Wisdom Saving throw against your Ki Save DC. On a fail, both you and the target are transferred to a realm of infinite emptiness removed from all other planes.",
                       "Within this realm, neither you or the creature age or need to breathe, eat, drink or sleep and are functionally immortal. You cannot be reduced below 1 hit point.",
                       "Time flow feels normal for you, but in truth it is a 100 times slower. Escape through conventional magical means, including teleportation or planar travel, is impossible.",
+                      "Conversing with the outside of the demiplane is also impossible",
                       "You can end this effect as an action.",
                       "Alternatively, the target of this feature, can make a Wisdom check against your Ki Save DC, this can be done after 1 minute since arrival. On a success the effect ends.",
                       "Each failure increases the waiting period before another attempt can be made, from 1 minute to 1 hour, 1 day, 1 year, 1 decade, 1 century and ultimately capping at 1 millennium.",
