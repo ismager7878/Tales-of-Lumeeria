@@ -6529,7 +6529,7 @@
         "You and up to 5 willing creatures you choose within range become enchanted with the magic of the desert, gaining the ability to traverse sandy landscapes with unprecedented speed.",
         "While under the effect of Sand Stepping, your movement speed increases to 60 feet while traversing sand. ",
         "If you are hit by an attack or offensive spell while the spell is active, its effect is immediately dispelled, and the enchantment is lost.",
-        "The spell provides protection against the abrasive forces of sandstorms. Sand Stepping ignores {@status concentration} checks caused by damage taken during such harsh weAether conditions.",
+        "The spell provides protection against the abrasive forces of sandstorms. Sand Stepping ignores {@status concentration} checks caused by damage taken during such harsh weather conditions.",
         "Dashing while under this spell has no effect. "
       ],
       "source": "ToL",
